@@ -1,0 +1,76 @@
+.highlight-pages__title {
+    width: 100%;
+    text-align: center;
+    color: $color-brand-blue;
+    border-top: 1px solid $color-brand-blue;
+    padding-top: 1rem;
+}
+
+.may .highlight-pages__title {
+    text-align: left;
+}
+
+.highlight-pages {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto;
+    &--wrapper {
+        flex: 1 0 columns(10);
+        margin: 1rem 9%;
+        overflow: hidden;
+        &-2 {
+            @include responsive('medium') {
+                flex: 1 0 columns(6);
+                margin: 1.8%;
+            }
+        }
+        &-3 {
+            @include responsive('medium') {
+                flex: 1 0 columns(4);
+                margin: 0.8%;
+            }
+        }
+        &-4 {
+            @include responsive('medium') {
+                flex: 1 0 columns(3);
+                margin: 0.8%;
+            }
+        }
+    }
+}
+
+.highlight-page {
+    display: block;
+    width: 100%;
+    position: relative;
+    color: $color-white;
+    text-decoration: none;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: color-burn;
+    transition: transform 0.5s;
+    &:hover {
+        transform: scale(1.2);
+        color: $color-white;
+        p {
+            transform: scale(0.9);
+        }
+    }
+    &:after {
+        content: '';
+        display: block;
+        padding-bottom: 100%;
+    }
+    p {
+        position: absolute;
+        width: calc(100% - 2rem);
+        text-align: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        bottom: 1rem;
+        font-size: $features-header;
+        transition: transform 0.5s;
+    }
+}

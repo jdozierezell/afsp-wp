@@ -1,0 +1,20 @@
+.flex > div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  > * {
+    @include columns(8);
+  }
+  > div {
+    margin-bottom: 2em;
+  }
+  p:first-child {
+    @include columns(12);
+  }
+  // &:after, p:after, ul:after {
+  //   content: "";
+  //   display: table;
+  //   clear: both;
+  // }
+}

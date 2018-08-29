@@ -1,0 +1,17 @@
+a {
+    color: $color-poppy;
+    transition: color 0.2s ease-in-out;
+    &:hover {
+        color: $color-brand-blue;
+    }
+}
+
+.home__link {
+    display: block;
+    width: 22rem;
+    &:first-child {
+        @include responsive('medium') {
+            padding-right: 2rem;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.partners {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 2rem;
+  @include responsive('medium') {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.partners__wrapper {
+  @include columns(12);
+  background-color: $color-white;
+  border: 0;
+  margin: 0 1% 1rem;
+  position: relative;
+  top: 0;
+  transition: all 0.2s ease-in-out;
+  &:focus, &:hover {
+    outline: none;
+    top: -4px;
+    transform: scale(1.1);
+  }
+  @include responsive('medium') {
+    flex: 0 0 auto;
+    width: 18%;
+    border: 1px solid $color-brand-dark-gray;
+    padding: 10px;
+  }
+}
+
+.partners__name {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.partners__description {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.partners__button {
+  @extend .button;
+  background-color: $color-poppy;
+  display: inline-block;
+}

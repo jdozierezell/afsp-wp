@@ -1,0 +1,45 @@
+.social__networks, .social__messages {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0.5rem 0;
+  border-bottom: 1px $color-brand-blue solid;
+  & > h2, & > div {
+    @include columns(6);
+    padding: 1rem;
+    transition: all 0.5s;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    position: inherit;
+  }
+  & > div:hover {
+   background-color: rgba($color-brand-light-gray, 0.7);
+  }
+}
+
+.social__instructions {
+  width: columns(10);
+  margin: 0 auto;
+  @include responsive('large') {
+    width: 100%;
+  }
+}
+
+.features__button--facebook, .features__button--twitter {
+  cursor: pointer;
+  position: relative;
+}
+
+#fb_textarea {
+  width: columns(12);
+  height: 5rem;
+  margin: 0 auto;
+  border: none;
+  &:focus {
+    background-color: rgba($color-brand-light-gray, 0.5);
+    outline: none;
+  }
+}

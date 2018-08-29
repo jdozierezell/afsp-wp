@@ -1,0 +1,48 @@
+$gutter: 1.5rem !default;
+
+
+// @function columns($columns, $totalColumns: 12, $gutter: $gutter) {
+//     $colDiff: $columns/$totalColumns + rem;
+//     @if $colDiff == '1rem' {
+//       $trueGutter: 0%;
+//     } @else {
+//       $trueGutter: #{$gutter} - #{$colDiff};
+//     }
+//     $calc: calc(#{$columns} / #{$totalColumns} * 100% - (#{$trueGutter}));
+//     @return $calc;
+//   }
+
+@function columns($columns) {
+  $flex: 100%;
+  @if $columns == 1 {
+    $flex: 6.75%;
+  } @else if $columns == 2 {
+    $flex: 15%;
+  } @else if $columns == 3 {
+    $flex: 23.25%;
+  } @else if $columns == 4 {
+    $flex: 31.5%;
+  } @else if $columns == 5 {
+    $flex: 39.75%;
+  } @else if $columns == 6 {
+    $flex: 46%;
+  } @else if $columns == 7 {
+    $flex: 56.25%;
+  } @else if $columns == 8 {
+    $flex: 64.5%;
+  } @else if $columns == 9 {
+    $flex: 72.75%;
+  } @else if $columns == 10 {
+    $flex: 81%;
+  } @else if $columns == 11 {
+    $flex: 89.25%;
+  } @else if $columns == 12 {
+    $flex: 100%;
+  }
+  @return $flex;
+}
+
+@mixin columns($columns, $totalColumns: 12, $gutter: $gutter) {
+  flex: 0 0 auto;
+  width: columns($columns);
+}

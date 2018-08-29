@@ -1,0 +1,21 @@
+// .sw-wrapper {
+//   @include responsive('medium') {
+//     width: 33%;
+//   }
+//   .quilt__detail-body & {
+//     width: 50%;
+//   }
+// }
+// div.nc_socialPanel .nc_tweetContainer {
+//   margin: 0;
+//   margin-right: 0.5rem;
+// }
+
+// .mobile .nc_tweetContainer:nth-last-child(2), .nc_tweetContainer.totes:nth-last-child(1) {
+//   margin-right:0.5rem;
+// }
+
+.sw-wrapper div {
+	display: flex;
+	justify-content: space-between;
+}

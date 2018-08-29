@@ -1,0 +1,77 @@
+.email {
+    background-color: $color-dark-blue;
+    color: $color-white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+    padding: 1em;
+}
+
+.email__cta {
+    display: none;
+    @include responsive('medium') {
+        display: block;
+        @include columns(4);
+        font-weight: 100;
+        font-size: 1.2em;
+    }
+}
+
+.email__form {
+    @include columns(5);
+    background-color: $color-dark-blue;
+    border: 0;
+    border-bottom: 1px solid $color-white;
+    border-radius: 0px;
+    padding: 0.25em 0.5em 0.25em 0.25em;
+    transition: all 0.2s ease-in-out;
+    &::placeholder {
+        color: $color-white;
+    }
+    &:focus {
+        background-color: $color-white;
+        color: $color-brand-dark-gray;
+        outline: 0;
+        border-radius: 0.5em;
+        padding-left: 1em;
+        &::placeholder {
+            color: $color-brand-dark-gray;
+        }
+    }
+}
+
+.email__button {
+    @include columns(3);
+    text-align: right;
+    font-size: 1.2em;
+    input {
+        background: {
+            color: transparent;
+            image: url(assets/icons/circle-right.svg);
+            repeat: no-repeat;
+            position: right 0.5em center;
+            size: 1em;
+        }
+        padding: 0.5em 2.1em 0.5em 0.5em;
+        border: 0;
+        border-radius: 0.5em;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            background-color: $color-brand-light-gray;
+            color: $color-brand-blue;
+        }
+    }
+}
+
+#mc_embed_signup {
+    background-color: $color-dark-blue;
+}
+
+#mc_embed_signup .button {
+    background-color: $color-brand-blue !important;
+    &:hover {
+        background-color: $color-brand-blue-light !important;
+    }
+}

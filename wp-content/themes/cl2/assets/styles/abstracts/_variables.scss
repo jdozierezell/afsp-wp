@@ -1,0 +1,164 @@
+/* ------------------------------------ *\
+    #VARIABLES
+\* ------------------------------------ */
+
+/* ------------------------------------ *\
+    #MODULAR SCALE
+\* ------------------------------------ */
+
+/*
+ * Major 3rd scale based on http://www.modularscale.com/?1&em&1.25
+ */
+
+$ms-8: 5.96rem;
+$ms-7: 4.768rem;
+$ms-6: 3.815rem;
+$ms-5: 3.052rem;
+$ms-4: 2.441rem;
+$ms-3: 1.953rem;
+$ms-2: 1.563rem;
+$ms-1: 1.25rem;
+$ms-base: 1rem;
+$ms--1: 0.8rem;
+$ms--2: 0.64rem;
+$ms--3: 0.512rem;
+$ms--4: 0.41rem;
+$ms--5: 0.328rem;
+$ms--6: 0.262rem;
+$ms--7: 0.21rem;
+$ms--8: 0.168rem;
+
+/* ------------------------------------ *\
+    #COLORS
+\* ------------------------------------ */
+
+/*
+ * 1) Color variables involve a two-tier system to keep colors in sync. The
+ *    first tier defines the brand and neutral colors, and the second tier
+ *    defines the application of those colors.
+ */
+
+/*
+ * Primary & Secondary Colors
+ * 1) Brand color variables use English names to define colors to make palettes easier to
+ *    identify.
+ * 2) Brand color variables should typically not be used directly in Sass partials. Instead, use
+ *    second-tier application colors.
+ *
+ */
+$color-brand-blue: rgb(57, 109, 255);
+$color-brand-dark-gray: rgb(38, 38, 38);
+$color-brand-light-gray: rgb(234, 234, 234);
+$color-yellow: rgb(255, 206, 8);
+$color-dark-blue: rgb(57, 40, 189);
+$color-poppy: rgb(255, 87, 59);
+$color-green: rgb(42, 216, 145);
+$color-fuschia: rgb(235, 65, 159);
+$color-white: rgb(255, 255, 255);
+
+/*
+ * Text Colors
+ * 1) These are non-linked text colors, such as body copy.
+*/
+$color-text: $color-brand-dark-gray;
+$color-text-light: $color-brand-light-gray;
+
+/*
+ * Heading Colors
+ * 1) These are non-linked heading colors, such as h2, h3, etc.
+ */
+$color-heading: $color-brand-dark-gray;
+$color-heading-light: $color-brand-light-gray;
+
+/*
+ * Text Link Colors
+ * 1) These are for linked text, such as a link found within an article,
+ *    navigation link, footer link, etc.
+ */
+$color-text-link: $color-brand-blue;
+$color-text-link-hover: $color-green;
+$color-text-link-visited: $color-dark-blue;
+$color-text-link-active: $color-green;
+
+$color-text-link-light: $color-white;
+$color-text-link-light-hover: $color-white;
+$color-text-link-light-visited: $color-white;
+
+/*
+ * Border Colors
+ * 1) Border colors are used as decoration or dividers, such as as a seperator
+ *    for navigation items, block borders, etc.
+ */
+$color-border: $color-brand-light-gray;
+
+/* ------------------------------------ *\
+    #TYPOGRAPHY
+\* ------------------------------------ */
+
+$font : AvenirNextLTPro-Regular, Arial, sans-serif;
+$font-demi : AvenirNextLTPro-Demi, Arial, sans-serif;
+$font-paul : PaulGroteskSoft-Bold, Arial, sans-serif;
+
+/* ------------------------------------ *\
+    #LAYOUT
+\* ------------------------------------ */
+$l-max-width: 80em;
+
+/**
+ * Column Widths
+ */
+$col-1: calc(8% - (#{$ms-base} * 2));
+$col-2: calc(17% - (#{$ms-base} * 2));
+$col-3: calc(25% - (#{$ms-base} * 2));
+$col-4: calc(33% - (#{$ms-base} * 2));
+$col-5: calc(42% - (#{$ms-base} * 2));
+$col-6: calc(50% - (#{$ms-base} * 2));
+$col-7: calc(58% - (#{$ms-base} * 2));
+$col-8: calc(67% - (#{$ms-base} * 2));
+$col-9: calc(75% - (#{$ms-base} * 2));
+$col-10: calc(83% - (#{$ms-base} * 2));
+$col-11: calc(91% - (#{$ms-base} * 2));
+$col-12: calc(100% - (#{$ms-base} * 2));
+
+/**
+ * Spacing Defaults
+ */
+$space : 1em;
+$space-and-half : $space*1.5;
+$space-double : $space*2;
+$space-quad : $space*4;
+$space-half : $space/2;
+$pad : 1em;
+$pad-and-half : $pad*1.5;
+$pad-double : $pad*2;
+$pad-half : $pad/2;
+$pad-quarter :$pad/4;
+
+/* ------------------------------------ *\
+    #BORDERS
+\* ------------------------------------ */
+
+/* ------------------------------------ *\
+    #ANIMATION
+\* ------------------------------------ */
+$anim-speed-1: 1s;
+$anim-speed-05: 0.5s;
+$anim-speed-02: 0.2s;
+$anim-ease: ease;
+$anim-in-out: ease-in-out;
+
+/* ------------------------------------ *\
+    #BREAKPOINTS
+\* ------------------------------------ */
+
+$bp-small : 24em;
+$bp-small-2 : 31em;
+$bp-small-3 : 38em;
+$bp-med : 45em;
+$bp-med-2 : 52em;
+$bp-med-3 : 59em;
+$bp-large : 66em;
+$bp-large-2 : 73em;
+$bp-large-3 : 80em;
+$bp-xl : 87em;
+$bp-xl-2 : 94em;

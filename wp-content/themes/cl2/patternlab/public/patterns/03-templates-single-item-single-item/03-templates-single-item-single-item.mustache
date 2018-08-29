@@ -1,0 +1,17 @@
+<main class="main main--single-item">
+  <header class="page-header">
+    <h1>{{ title.titleText }}</h1>
+    <div class="{{ buttonWrapperClass }}">
+      {{# listItems.two }}
+        {{> atoms-button }}
+      {{/ listItems.two }}
+    </div>
+  </header>
+  <div class="{{ img.containerClass }}">
+    {{> atoms-image }}
+  </div>
+  <div class="{{ descriptionClass }}">
+    <p><strong>Updated: <time class="updated" datetime="2017-09-15T11:43:21+00:00">September 15, 2017</time> by Jonathan&nbsp;Dozier-Ezell</strong></p>
+    {{> atoms-paragraphs }}
+  </div>
+</main>

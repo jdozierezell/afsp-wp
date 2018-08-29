@@ -1,0 +1,20 @@
+.alignleft {
+  @include responsive('medium') {
+    float: left;
+    margin: 1em 1em 1em 0;
+  }
+}
+
+.aligncenter {
+  @include responsive('medium') {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.alignright {
+  @include responsive('medium') {
+    float: right;
+    margin: 1em 0 1em 1em;
+  }
+}

@@ -1,0 +1,30 @@
+.social-icon__container {
+    @include columns(12);
+    background-color: $color-dark-blue;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: baseline;
+    padding: 2rem;
+    h2 {
+        width: 100%;
+        text-align: center;
+        color: $color-white;
+        margin-bottom: 1rem;
+    }
+}
+
+.social-icon {
+    display: inline-block;
+    width: 1.6em;
+    height: 1.6em;
+    margin: 1em;
+    fill: $color-brand-blue;
+    &:hover {
+        fill: $color-green;
+        transition: fill 0.1s ease-in-out;
+    }
+    &--white {
+        fill: $color-white;
+    }
+}

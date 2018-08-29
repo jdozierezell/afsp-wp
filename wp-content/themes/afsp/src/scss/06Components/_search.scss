@@ -1,0 +1,126 @@
+.header__search {
+  flex: 0 0 8%;
+  fill: $color-brand-dark-gray;
+  display: block;
+  padding: 0 1%;
+  cursor: pointer;
+  &:hover {
+    fill: $color-poppy;
+  }
+  order: 2;
+  @include responsive('nav') {
+    flex: 0 0 5%;
+    order: 3;
+  }
+  svg {
+    max-height: 2.5rem;
+    max-width: 2.5rem;
+  }
+}
+
+.search__overlay {
+  background-color: rgba($color-white, 0.9);
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  &--active {
+    visibility: visible;
+    
+  }
+}
+
+.search__form {
+  position: absolute;
+  top:50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  .search__overlay--active & {
+    top: 40%;
+    transition: all 0.2s ease-in-out;
+  }
+  form {
+    display: inline-block;
+  }
+}
+
+.search-field {
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  width: 14rem;
+  background: transparent;
+  @include responsive('medium') {
+    font-size: 3rem;
+    width: auto;
+  }
+  .broken__search & {
+    border-bottom: 1px solid $color-brand-dark-gray;
+  }
+}
+
+.search-submit {
+  display: none;
+}
+
+.search__close {
+  width: 2rem;
+  fill: $color-brand-blue;
+  vertical-align: text-bottom;
+  cursor: pointer;
+  @include responsive('medium') {
+    width: 3rem;
+  }
+}
+
+.search-results {
+  margin-top: 2rem;
+  article {
+    margin: 1rem;
+  }
+}
+
+.search-results__header {
+  font-size: $features-header;
+  margin: 1rem auto;
+  color: $color-brand-blue;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid $color-brand-blue;
+}
+
+/* Change color of search result text */
+.swiftype-widget .autocomplete ul li p.title {
+  color: $color-poppy;
+}
+
+/* Change background color of selected search result */
+.swiftype-widget .autocomplete {
+  ul {
+    background: transparent;
+    font-family: $avenir-regular;
+    li {
+      border: none;
+      &.active {
+        background: none;
+        background-color: rgba($color-poppy, 0.9);
+        -webkit-box-shadow: 0 1px 0 #C0242D inset;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+/* change the color of the section text (displayed below the title) */
+.swiftype-widget .autocomplete ul li.active .sections em {
+  color: $color-white;
+}
+
+.swiftype-result {
+  margin: 1.25rem 0;
+}

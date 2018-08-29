@@ -1,0 +1,40 @@
+.blog__header {
+  position: relative;
+}
+
+.blog__featured-image {
+  width: 100%;
+}
+
+.blog__masthead {
+  width: 100%;
+  color: $color-brand-dark-gray;
+  margin-bottom: 1em;
+}
+
+.blog__title {
+  font-size: $title;
+  padding: 0.5em 0;
+}
+
+.blog__meta {
+  font-size: 0.6em;
+}
+
+.blog__article {
+  max-width: $blog;
+  margin: 0 auto;
+}
+
+.blog__content {
+  @include columns(10);
+  margin: 0 auto;
+  font-size: 1em;
+  line-height: 1.4em;
+  @include responsive('medium') {
+    @include columns(12);
+  }
+  img {
+    height: auto;
+  }
+}

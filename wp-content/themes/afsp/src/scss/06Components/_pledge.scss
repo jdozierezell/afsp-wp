@@ -1,0 +1,91 @@
+.pledge {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.pledge__content {
+  @include columns(12);
+  background-color: rgba($color-brand-blue, 0.6);
+  color: $color-white;
+  padding: 2rem;
+  font-size: $feature-body;
+  @include responsive('medium') {
+    @include columns(4);
+    order: 2;
+    margin-top: 7rem;
+  }
+  p:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.pledge__title {
+  @include responsive('medium') {
+    display: none;
+  }
+}
+
+.pledge__form {
+  @include columns(12);
+  background-color: $color-white;
+  @include responsive('medium') {
+    @include columns(3);
+    order: 1;
+  }
+  h2, h3 {
+    margin: 1.5rem 1rem;
+    text-align: center;
+  }
+}
+
+.pledge_wrapper {
+  margin: 1rem !important;
+  max-width: initial !important;
+  label {
+    display: none !important;
+  }
+  .button {
+    @extend .features__button;
+  }
+  input.large {
+    width: 98% !important;
+  }
+}
+
+.pledge__share {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  a {
+    @extend .features__button;
+    @include columns(6);
+    margin: 0 auto;
+    text-align: center;
+    border-radius: $rounded;
+    font-size: inherit;
+  }
+}
+
+.optin .gfield_checkbox label {
+  display: inline-block !important;
+  position: relative;
+  top: -1.1rem;
+  font-size: 0.75rem;
+}
+
+.pledge__signatures {
+  margin: 0 1rem 1rem;
+  padding: 0;
+  width: calc(100% - 2rem);
+  font-size: 1rem;
+  li {
+    list-style: none;
+    border-bottom: 1px solid $color-brand-light-gray;
+  }
+}
+
+#gform_ajax_spinner_1 {
+  display: none !important;
+}

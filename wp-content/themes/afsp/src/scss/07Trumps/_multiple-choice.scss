@@ -1,0 +1,38 @@
+.multiple-choice {
+  dd {
+    margin: 0.5rem;
+  }
+  dt {
+    font-weight: bold;
+    font-size: $button;
+  }
+  input {
+    display: none;
+  }
+  .letter-choice {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    border: 1px solid $color-brand-blue;
+    color: $color-brand-blue;
+    border-radius: 50%;
+    text-align: center;
+    &--checked {
+      background-color: $color-poppy;
+      color: $color-white;
+      border: 0px;
+      transition: background-color 0.5s, color 0.5s, border 0.5s;
+    }
+  }
+  .answer-choice {
+    display: inline-flex;
+    padding-left: 0.5rem;
+    width: 85%;
+  }
+}
+
+.multiple-choice__answer {
+  border: 1px solid $color-brand-blue;
+  padding: 2rem;
+}

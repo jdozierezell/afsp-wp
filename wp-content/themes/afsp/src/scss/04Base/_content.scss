@@ -1,0 +1,7 @@
+.content {
+  // position: relative;
+  min-height: 60vh;
+  @include responsive('medium') {
+    margin-top: 0em;
+  }
+}

@@ -1,0 +1,18 @@
+img, figure {
+  width: 100%;
+//  height: 100%;
+  max-width: 100%;
+}
+
+.sidebar__content-section img {
+  width: initial;
+}
+
+.imgix-fluid {
+  display: block;
+}
+
+.flex div img.left-third {
+  @include columns(4);
+  height: auto;
+}

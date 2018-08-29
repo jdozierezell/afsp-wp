@@ -1,0 +1,274 @@
+.nspw__video {
+    background-image: url(//afsp.imgix.net/wp-content/themes/afsp/assets/images/tsl.png?w=1400);
+    background-color: $color-brand-blue;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    padding: 1vh 0 5vh;
+    width: 100%;
+    text-align: center;
+    color: $color-white;
+    h1 {
+        font-size: 4vw;
+    }
+    h3 {
+        font-size: 2vw;
+        padding: 1vh 0 2vh;
+    }
+    iframe,
+    img {
+        margin: 0 auto;
+        display: block;
+        width: 90vw;
+        height: calc(90vw / 16 * 9);
+        overflow: hidden;
+        @include responsive('medium') {
+            width: 90vh;
+            height: calc(90vh / 16 * 9);
+        }
+    }
+    &--2025 {
+        background-image: url(//afsp.imgix.net/wp-content/uploads/2016/07/Bold-Video.jpg?w=1400);
+        padding: 6vh 0;
+    }
+    &--talk {
+        background-image: url(//afsp.imgix.net/wp-content/uploads/2016/08/Screen-Shot-2016-08-15-at-8.22.23-AM.png?w=1400);
+        padding: 6vh 0;
+    }
+}
+
+.nspw__header {
+    background: $color-poppy;
+    color: $color-white;
+    line-height: 5vw;
+    font-size: 1rem;
+    padding: 1vh 0 1vh 4vh;
+    cursor: pointer;
+    @include responsive('medium') {
+        font-size: 1.5rem;
+    }
+    &:before {
+        background-image: url(//afsp.org/wp-content/themes/afsp/assets/icons/arrow.svg);
+        background-size: cover;
+        display: inline-block;
+        content: " ";
+        height: 2rem;
+        width: 2rem;
+        margin-right: 1rem;
+        position: relative;
+        top: 1.25vh;
+        transform: rotate(-90deg);
+        transition: transform 0.25s ease-in-out;
+    }
+    &--active {
+        &:before {
+            transform: rotate(0deg);
+            transition: transform 0.25s ease-in-out;
+        }
+    }
+}
+
+.nspw__content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nspw__overlay {
+    opacity: 0;
+    display: block;
+    text-align: center;
+    padding: 40% 1vw 0;
+    background-color: rgba($color-brand-blue, 0.8);
+    color: $color-white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    @include responsive('medium') {
+        font-size: 2vw;
+    }
+    &:hover {
+        color: $color-white;
+    }
+}
+
+.nspw__image {
+    display: block;
+    width: 104%;
+    max-width: inherit;
+    position: relative;
+    top: -2%;
+    left: -2%;
+    transition: all 0.2s ease-in-out;
+}
+
+.nspw__content--you {
+    div {
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+        &:nth-child(-n+2) {
+            width: 100%;
+            height: 100vw;
+            background-color: $color-poppy;
+            @include responsive('medium') {
+                width: 50%;
+                height: 50vw;
+            }
+        }
+        &:nth-child(2) {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: center;
+            height: inherit;
+            div {
+                width: 100%;
+                height: 100vw;
+                background-color: $color-brand-blue;
+                @include responsive('medium') {
+                    width: 50%;
+                    height: 25vw;
+                }
+            }
+        }
+        &:nth-child(n+3) {
+            width: 100%;
+            height: 100vw;
+            background-color: $color-brand-light-gray;
+            @include responsive('medium') {
+                width: 25%;
+                height: 25vw;
+            }
+        }
+    }
+}
+
+.nspw__content--we {
+    .nspw__2025-video {
+        width: 100%;
+        img {
+            display: block;
+        }
+    }
+    .nspw__full-block {
+        width: 100%;
+        height: 25vw;
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+        .nspw__overlay {
+            padding-top: columns(1);
+        }
+    }
+    .nspw__bold {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+#firearm,
+#emergency,
+#healthcare,
+#donate {
+    width: 100%;
+    height: 100vw;
+    overflow: hidden;
+    position: relative;
+    @include responsive('medium') {
+        width: 25%;
+        height: 25vw;
+    }
+}
+
+.nspw__content--our div {
+    @extend #firearm;
+    &.nspw__video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.nspw__large-square:hover,
+.nspw__small-square:hover,
+.nspw__full-block:hover,
+.nspw__bold div:hover,
+.nspw__content--our div:hover {
+    img {
+        width: 110%;
+        margin-top: -2.5%;
+        margin-left: -2.5%;
+    }
+    .nspw__overlay {
+        opacity: 1;
+    }
+}
+
+.nspw__full-block:hover img {
+    margin-top: -1.25%;
+    margin-left: -3%;
+}
+
+.button--selfie {
+    width: 30%;
+    margin-right: 1%;
+}
+
+.nspw__pledge--confirmation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nspw__pledge--image-confirmation {
+    @include columns(10);
+    margin: 0 auto 1rem;
+    @include responsive('medium') {
+        @include columns(6);
+        margin-bottom: 0;
+    }
+}
+
+.nspw__pledge--text-confirmation {
+    @include columns(10);
+    margin: 0 auto;
+    text-align: left;
+    @include responsive('medium') {
+        @include columns(6);
+    }
+}
+
+.project2025__modal {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        display: none;
+        @include responsive('medium') {
+            display: block;
+            width: columns(6);
+        }
+    }
+    p {
+        width: columns(12);
+        @include responsive('medium') {
+            width: columns(6);
+        }
+    }
+    .modal__button {
+        min-width: columns(6);
+        margin: 1rem 0;
+        text-align: center;
+    }
+}

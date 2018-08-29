@@ -1,0 +1,65 @@
+.firearm__wrapper {
+	position: relative;
+}
+
+.firearm__title {
+	position: absolute;
+	bottom: 0;
+	padding: 1.8rem 0;
+	margin: 0;
+	width: 100%;
+	text-align: center;
+	font-size: $features-title;
+	color: $color-white;
+	background-color: rgba($color-brand-dark-gray, 0.6);
+}
+
+.firearm__content {
+	@include columns(10);
+	font-size: $body-copy;
+	@include responsive('medium') {
+		@include columns(12);
+	}
+}
+
+.firearm__header {
+	margin: 2rem auto;
+	font-size: $title;
+	text-align: center;
+}
+
+.firearm__learn {
+	font-size: $features-title;
+	text-align: center;
+	color: $color-brand-blue;
+	margin: 2rem auto;
+}
+
+.firearm__links {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+
+.firearm__link {
+	@include columns(12);
+	position: relative;
+	margin-bottom: 1rem;
+	@include responsive('medium') {
+		@include columns(3);
+	}
+}
+
+.firearm__link-text {
+	position: absolute;
+	bottom: 0;
+	min-height: 33%;
+	background-color: rgba($color-brand-dark-gray, 0.4);
+	font-weight: bold;
+	color: $color-white;
+	width: 100%;
+	padding: 1rem;
+	text-align: center;
+}

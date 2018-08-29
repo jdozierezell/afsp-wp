@@ -1,0 +1,21 @@
+.title__header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0.6em 0;
+  color: $color-brand-dark-gray;
+  // background-image: linear-gradient(to bottom right, $color-poppy, $color-white 33%);
+}
+
+.title {
+  font-size: $title;
+  // &:before {
+  //   content:"\2014  ";
+  //   color: $color-poppy;
+  //   font-weight: 800;
+  // }
+  // &:after {
+  //   content:"  \2014";
+  //   color: $color-poppy;
+  //   font-weight: 800;
+  // }
+}

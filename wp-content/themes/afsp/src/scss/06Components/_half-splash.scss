@@ -1,0 +1,26 @@
+.half-splash {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.half-splash__image {
+  @include columns(12);
+  width: 100%;
+  @include responsive('medium') {
+    @include columns(6);
+  }
+}
+
+.half-splash__cta {
+  @include columns(12);
+  @include responsive('medium') {
+    @include columns(6);
+  }
+}
+
+.half-splash__action {
+  margin: 0 0 0.5em 0;
+  font-size: $features-header;
+}

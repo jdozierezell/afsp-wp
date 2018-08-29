@@ -1,0 +1,50 @@
+.highlight-pages-summary {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto;
+    &--wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: columns(10);
+        margin: 1rem auto;
+        @include responsive('medium') {
+            width: columns(12);
+        }
+    }
+    .highlight-pages__title {
+        text-align: left;
+    }
+    .image {
+        @include columns(12);
+        margin-bottom: 0.5rem;
+        @include responsive('medium') {
+            @include columns(2);
+        }
+    }
+    .page-summary {
+        @include columns(12);
+        @include responsive('medium') {
+            @include columns(10);
+        }
+        h3 {
+            color: $color-brand-blue;
+        }
+        p {
+            margin-top: 0.5rem;
+        }
+        > a {
+            font-size: 1rem !important;
+            padding: 0.5rem 3rem 0.5rem 1rem !important;
+        }
+    }
+}
+
+.highlight-intro {
+    p:first-of-type {
+        margin-top: 0;
+    }
+}

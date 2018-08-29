@@ -1,0 +1,26 @@
+label {
+  display: inline-block;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="search"] {
+  border-radius: $ms--3;
+  border: 1px solid $color-brand-light-gray;
+  padding: $ms--1;
+  font-size: $ms-base;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+input[type="search"]::placeholder {
+  color: $color-brand-light-gray;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus {
+  background-color: $color-brand-dark-gray;
+  color: $color-white;
+  outline: none;
+}

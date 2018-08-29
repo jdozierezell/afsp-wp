@@ -1,0 +1,234 @@
+.forum__splash {
+    position: relative;
+    div {
+        position: absolute;
+        top: 25%;
+        width: 100%;
+        @include responsive('medium') {
+            top: 40%;
+        }
+    }
+    h1,
+    h3 {
+        text-align: center;
+        color: $color-white;
+        font-weight: bold;
+        font-size: $video;
+    }
+    h3 {
+        font-size: $features-header;
+    }
+}
+
+.forum__feed {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    @include responsive('medium') {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    h3 {
+        display: none;
+        @include columns(3);
+        padding: 2rem;
+        font-size: $features-header;
+        @include responsive('medium') {
+            display: block;
+        }
+    }
+    &--live {
+        @include columns(12);
+        position: relative;
+        @include responsive('medium') {
+            @include columns(6);
+        }
+        .countdown__labels {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: center;
+            width: 88%;
+            margin: 0 auto;
+            max-width: 340px;
+            h4 {
+                width: 30%;
+                text-align: center;
+                display: block;
+            }
+        }
+        .countdown__wrapper {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            bottom: 0%;
+            .countdown {
+                display: inline-block;
+                width: auto;
+                margin: 0 auto;
+            }
+        }
+    }
+    iframe {
+        width: 100vw;
+        height: 56.25vw;
+    }
+}
+
+@media (min-width: 960px) {
+    .forum__feed iframe {
+        width: 960px;
+        height: 540px;
+    }
+}
+
+.email--forum {
+    margin: 0;
+}
+
+.forum__background-svg {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    @include responsive('medium') {
+        display: block;
+    }
+}
+
+.forum__teaser h2 {
+    @include columns(12);
+    margin: 3rem auto 1rem;
+    font-size: $body-copy;
+    @include responsive('medium') {
+        font-size: $title;
+    }
+}
+
+.forum__points,
+.forum__highlights,
+.forum__afspforum16 {
+    @include columns(12);
+    position: relative;
+    margin-top: 3rem;
+    h2 {
+        text-align: left;
+        font-size: $title;
+        width: 100%;
+    }
+}
+
+.forum__afspforum16 {
+    margin-top: 4rem;
+}
+
+.forum__points {
+    background: $color-brand-blue;
+    @include responsive('medium') {
+        background: none;
+    }
+    h2 {
+        color: $color-white;
+        padding-top: 1rem;
+        @include responsive('medium') {
+            color: $color-brand-blue;
+            padding-top: 0;
+        }
+    }
+}
+
+.forum__points__container {
+    width: columns(10);
+    position: relative;
+    z-index: 10;
+    margin: -2rem auto 2rem;
+    padding: 2rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    @include responsive('medium') {
+        margin-top: 3rem;
+    }
+}
+
+.forum__highlights__container {
+    height: 62vw;
+    max-height: 410px;
+}
+
+.forum__point,
+.forum__highlight {
+    @include columns(12);
+    margin: 1rem auto;
+    padding: 0.5rem;
+    color: $color-brand-blue;
+    background-color: $color-white;
+    text-align: center;
+    text-decoration: none;
+    @include responsive('medium') {
+        @include columns(3);
+    }
+    &:hover {
+        color: $color-poppy;
+    }
+}
+
+.forum__highlight {
+    @include columns(5);
+    @include responsive('medium') {
+        @include columns(4);
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.forum__hash {
+    color: $color-poppy;
+}
+
+// edit the clock face size
+$clock: 0.75;
+$clock-font: $clock * 1rem;
+.flip-clock-wrapper ul {
+    width: $clock-font * 3;
+    height: $clock-font * 4;
+}
+
+.flip-clock-wrapper ul li a {
+    div .shadow {
+        font-size: $clock-font * 2;
+        height: $clock-font * 4.5;
+    }
+    div div.inn {
+        font-size: $clock-font * 2;
+        height: 4rem;
+        @include responsive('medium') {
+            height: 4.15rem;
+        }
+    }
+    div.up div.inn {
+        line-height: 2.2;
+    }
+}
+
+.flip-clock-divider {
+    height: $clock-font * 6;
+    .top {
+        top: $clock-font * 1.5;
+    }
+    .bottom {
+        bottom: $clock-font * 2.5;
+    }
+}
+
+.flip-clock-divider .flip-clock-label {}
+
+.flip-clock-label {
+    display: none;
+}

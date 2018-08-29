@@ -1,0 +1,11 @@
+{
+  "siteSearchClass": "site-header__search m-col-9",
+  "textInput": {
+    "placeholder": "What can we help you find?"
+  },
+  "title": {
+    "titleText": "Currently Showing Results for",
+    "searchText": "About AFSP",
+    "titleClass": "col-12"
+  }
+}

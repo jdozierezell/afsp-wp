@@ -1,0 +1,12 @@
+.page-header {
+  width: $col-12;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 $ms-3;
+}
+
+.page-header h1 {
+  margin: $ms-base 0 0;
+}

@@ -1,0 +1,37 @@
+.site {
+  position: relative;
+}
+
+.ootd {
+  display: block;
+  text: {
+    transform: uppercase;
+    decoration: none;
+    align: right;
+  }
+  color: $color-brand-dark-gray;
+  font: {
+    size: 0.8em;
+    weight: 800;
+  }
+  padding: 0.5em 0;
+  // background-color: $light-cool-gray;
+  transition: all 0.2s ease-in-out;
+  @include responsive('medium') {
+    font-size: 0.6em;
+  }
+}
+
+.ootd__wrapper {
+  display: block;
+  text-align: right;
+  // background-color: $light-cool-gray;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  top: 0.6em;
+  z-index: 1;
+  .ootd {
+    display: inline-block;
+    padding: 0.4em;
+  }
+}

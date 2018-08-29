@@ -1,0 +1,140 @@
+.counter__circles {
+  width: columns(10);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 2rem auto;
+  @include responsive('large') {
+    width: columns(12);
+  }
+}
+
+.counter {
+  @include columns(6);
+  background: $color-brand-dark-gray;
+  border-radius: 50%;
+  padding: 1vh;
+  text-align: center;
+  float: left;
+  display: table;
+  color: $color-brand-light-gray;
+  margin-bottom: 1rem;
+  @include responsive('medium') {
+    @include columns(3);
+  }
+}
+.counterText {
+  display: table-cell;
+  vertical-align: middle;
+}
+.counterText span {
+  font-size: 2rem;
+  color: $color-white;
+}
+.stats--hidden {
+  display: none;
+}
+.stats--active {
+  mask: url(#mask-stripe);
+}
+.stats__tooltip {   
+  position: absolute;           
+  text-align: center;                 
+  padding: 0.5rem;             
+  font: 12px sans-serif;        
+  border: 1px solid $color-brand-dark-gray;
+  color: $color-brand-dark-gray;
+  background: rgba($color-white, 0.8);
+  pointer-events: none;         
+}
+
+.y-axis path, .y-axis line, .x-axis path, .x-axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.key-facts {
+  @include columns(10);
+  margin: 2rem auto;
+  @include responsive('large') {
+    @include columns(12);
+  }
+}
+
+.key-facts__list {
+  @include columns(12);
+  list-style-type: disc;
+  margin: 1rem 0;
+  padding: 0 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  li {
+    display: list-item;
+    width: columns(12);
+    @include responsive('medium') {
+      width: columns(6);
+    }
+  }
+}
+
+.pie__age {
+  @include columns(4);
+}
+
+.viz {
+  width: columns(12);
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#map {
+  @include columns(12);
+  margin: 0 auto; 
+  height: 48vh * 0.8;
+  @include responsive('medium') {
+    @include columns(6);
+    height: 48vw * 0.8;
+  }
+}
+
+#chart {
+  @include columns(6);
+  height: 40vw * 0.8;
+  margin: 2rem auto 0;
+  @media (max-width: 768px) {
+    display: none;
+  }
+  .x-axis text {
+    font-size: 0.8rem;
+  }
+}
+
+#state_table, #emptyTable {
+  width: 100%; 
+  text-align: center; 
+  border-collapse: collapse;
+  margin: 2rem auto;
+}
+
+.stats__intro {
+  @include columns(10);
+  margin: 0 auto;
+  @include responsive('large') {
+    @include columns(12);
+  }
+}
+
+.attempt-facts {
+  @include columns(10);
+  margin: 0 auto;
+  @include responsive('large') {
+    @include columns(12);
+  }
+}

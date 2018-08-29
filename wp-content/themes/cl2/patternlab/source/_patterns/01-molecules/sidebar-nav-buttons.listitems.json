@@ -1,0 +1,26 @@
+{
+  "1": {
+    "btn": {
+      "icon": "fa-star",
+      "class": "color-yellow"
+    }
+  },
+  "2": {
+    "btn": {
+      "icon": "fa-heart",
+      "class": "color-poppy"
+    }
+  },
+  "3": {
+    "btn": {
+      "icon": "fa-user-circle",
+      "class": "color-green"
+    }
+  },
+  "4": {
+    "btn": {
+      "icon": "fa-sign-out",
+      "class": "color-brand-blue"
+    }
+  }
+}

@@ -1,0 +1,521 @@
+State,Rank,Year,Age-Adjusted Rate,Deaths,Chart
+US Average,,2007,11.27,,states
+US Average,,2008,11.6,,states
+US Average,,2009,11.75,,states
+US Average,,2010,12.08,,states
+US Average,,2011,12.32,,states
+US Average,,2012,12.54,,states
+US Average,,2013,12.57,,states
+US Average,,2014,12.93,,states
+US Average,,2015,13.26,,states
+US Average,,2016,13.42,,states
+Alabama,,2007,12.39,,states
+Alabama,,2008,12.6,,states
+Alabama,,2009,13.74,,states
+Alabama,,2010,13.95,,states
+Alabama,,2011,13.18,,states
+Alabama,,2012,14.65,,states
+Alabama,,2013,14.35,,states
+Alabama,,2014,14.46,,states
+Alabama,,2015,14.87,,states
+Alabama,24,2016,15.61,,states
+Alaska,,2007,22.46,,states
+Alaska,,2008,24.33,,states
+Alaska,,2009,19.64,,states
+Alaska,,2010,22.93,,states
+Alaska,,2011,19.37,,states
+Alaska,,2012,22.99,,states
+Alaska,,2013,23.07,,states
+Alaska,,2014,21.97,,states
+Alaska,,2015,26.83,,states
+Alaska,2,2016,25.37,,states
+Arizona,,2007,16.52,,states
+Arizona,,2008,15.41,,states
+Arizona,,2009,16.73,,states
+Arizona,,2010,16.99,,states
+Arizona,,2011,17.86,,states
+Arizona,,2012,17.28,,states
+Arizona,,2013,17.39,,states
+Arizona,,2014,18,,states
+Arizona,,2015,18.19,,states
+Arizona,17,2016,17.59,,states
+Arkansas,,2007,14.2,,states
+Arkansas,,2008,15.51,,states
+Arkansas,,2009,14.38,,states
+Arkansas,,2010,15.45,,states
+Arkansas,,2011,15.96,,states
+Arkansas,,2012,16.34,,states
+Arkansas,,2013,17.25,,states
+Arkansas,,2014,17.25,,states
+Arkansas,,2015,19.11,,states
+Arkansas,14,2016,18.18,,states
+California,,2007,9.92,,states
+California,,2008,10.27,,states
+California,,2009,10.2,,states
+California,,2010,10.31,,states
+California,,2011,10.37,,states
+California,,2012,9.99,,states
+California,,2013,10.16,,states
+California,,2014,10.46,,states
+California,,2015,10.24,,states
+California,45,2016,10.46,,states
+Colorado,,2007,16.57,,states
+Colorado,,2008,16.15,,states
+Colorado,,2009,18.73,,states
+Colorado,,2010,16.69,,states
+Colorado,,2011,17.45,,states
+Colorado,,2012,19.55,,states
+Colorado,,2013,18.52,,states
+Colorado,,2014,19.78,,states
+Colorado,,2015,19.46,,states
+Colorado,10,2016,20.47,,states
+Connecticut,,2007,7.27,,states
+Connecticut,,2008,8.48,,states
+Connecticut,,2009,8.54,,states
+Connecticut,,2010,9.33,,states
+Connecticut,,2011,9.83,,states
+Connecticut,,2012,9.89,,states
+Connecticut,,2013,8.67,,states
+Connecticut,,2014,9.71,,states
+Connecticut,,2015,9.81,,states
+Connecticut,46,2016,10.01,,states
+Delaware,,2007,10.66,,states
+Delaware,,2008,11.89,,states
+Delaware,,2009,11.7,,states
+Delaware,,2010,11.44,,states
+Delaware,,2011,10.9,,states
+Delaware,,2012,13.19,,states
+Delaware,,2013,12.35,,states
+Delaware,,2014,13.2,,states
+Delaware,,2015,12.48,,states
+Delaware,42,2016,11.49,,states
+District of Columbia,,2007,6.03,,states
+District of Columbia,,2008,7.48,,states
+District of Columbia,,2009,4.58,,states
+District of Columbia,,2010,6.69,,states
+District of Columbia,,2011,5.62,,states
+District of Columbia,,2012,5.66,,states
+District of Columbia,,2013,5.77,,states
+District of Columbia,,2014,7.72,,states
+District of Columbia,,2015,4.92,,states
+District of Columbia,51,2016,5.09,,states
+Florida,,2007,13.21,,states
+Florida,,2008,13.84,,states
+Florida,,2009,14.38,,states
+Florida,,2010,13.64,,states
+Florida,,2011,13.88,,states
+Florida,,2012,14.32,,states
+Florida,,2013,13.73,,states
+Florida,,2014,13.84,,states
+Florida,,2015,14.38,,states
+Florida,32,2016,13.92,,states
+Georgia,,2007,10.87,,states
+Georgia,,2008,10.39,,states
+Georgia,,2009,11.87,,states
+Georgia,,2010,11.67,,states
+Georgia,,2011,11.7,,states
+Georgia,,2012,11.65,,states
+Georgia,,2013,11.94,,states
+Georgia,,2014,12.65,,states
+Georgia,,2015,12.66,,states
+Georgia,34,2016,13.27,,states
+Hawaii,,2007,9.48,,states
+Hawaii,,2008,9.78,,states
+Hawaii,,2009,12.43,,states
+Hawaii,,2010,15.02,,states
+Hawaii,,2011,12.58,,states
+Hawaii,,2012,12.97,,states
+Hawaii,,2013,11.58,,states
+Hawaii,,2014,13.64,,states
+Hawaii,,2015,13.49,,states
+Hawaii,41,2016,12.00,,states
+Idaho,,2007,15.06,,states
+Idaho,,2008,16.6,,states
+Idaho,,2009,20.3,,states
+Idaho,,2010,18.77,,states
+Idaho,,2011,18.2,,states
+Idaho,,2012,19.08,,states
+Idaho,,2013,19.23,,states
+Idaho,,2014,20.07,,states
+Idaho,,2015,22.19,,states
+Idaho,7,2016,21.32,,states
+Illinois,,2007,8.63,,states
+Illinois,,2008,9.26,,states
+Illinois,,2009,9.07,,states
+Illinois,,2010,8.96,,states
+Illinois,,2011,9.26,,states
+Illinois,,2012,9.74,,states
+Illinois,,2013,9.92,,states
+Illinois,,2014,10.43,,states
+Illinois,,2015,10.28,,states
+Illinois,44,2016,10.70,,states
+Indiana,,2007,12.33,,states
+Indiana,,2008,12.6,,states
+Indiana,,2009,12.76,,states
+Indiana,,2010,13.1,,states
+Indiana,,2011,13.55,,states
+Indiana,,2012,14.3,,states
+Indiana,,2013,14.26,,states
+Indiana,,2014,14.25,,states
+Indiana,,2015,14.40,,states
+Indiana,25,2016,15.36,,states
+Iowa,,2007,10.64,,states
+Iowa,,2008,12.62,,states
+Iowa,,2009,11.82,,states
+Iowa,,2010,12.09,,states
+Iowa,,2011,13.95,,states
+Iowa,,2012,12.57,,states
+Iowa,,2013,14.42,,states
+Iowa,,2014,12.78,,states
+Iowa,,2015,13.95,,states
+Iowa,29,2016,14.55,,states
+Kansas,,2007,13.67,,states
+Kansas,,2008,12.08,,states
+Kansas,,2009,13.57,,states
+Kansas,,2010,13.89,,states
+Kansas,,2011,13.73,,states
+Kansas,,2012,17.38,,states
+Kansas,,2013,14.55,,states
+Kansas,,2014,15.66,,states
+Kansas,,2015,16.21,,states
+Kansas,15,2016,17.92,,states
+Kentucky,,2007,15.06,,states
+Kentucky,,2008,14.03,,states
+Kentucky,,2009,13.48,,states
+Kentucky,,2010,14.17,,states
+Kentucky,,2011,15.14,,states
+Kentucky,,2012,16.17,,states
+Kentucky,,2013,15.52,,states
+Kentucky,,2014,15.88,,states
+Kentucky,,2015,17.06,,states
+Kentucky,20,2016,16.79,,states
+Louisiana,,2007,11.9,,states
+Louisiana,,2008,12.02,,states
+Louisiana,,2009,10.81,,states
+Louisiana,,2010,12.31,,states
+Louisiana,,2011,12.48,,states
+Louisiana,,2012,12.35,,states
+Louisiana,,2013,12.32,,states
+Louisiana,,2014,14.26,,states
+Louisiana,,2015,15.26,,states
+Louisiana,30,2016,14.13,,states
+Maine,,2007,13.61,,states
+Maine,,2008,12.7,,states
+Maine,,2009,13.96,,states
+Maine,,2010,13.04,,states
+Maine,,2011,16.61,,states
+Maine,,2012,14.64,,states
+Maine,,2013,17.4,,states
+Maine,,2014,15.73,,states
+Maine,,2015,16.14,,states
+Maine,22,2016,15.74,,states
+Maryland,,2007,9,,states
+Maryland,,2008,8.63,,states
+Maryland,,2009,9.33,,states
+Maryland,,2010,8.31,,states
+Maryland,,2011,9.15,,states
+Maryland,,2012,9.4,,states
+Maryland,,2013,9.08,,states
+Maryland,,2014,9.76,,states
+Maryland,,2015,8.76,,states
+Maryland,47,2016,9.35,,states
+Massachusetts,,2007,7.69,,states
+Massachusetts,,2008,7.54,,states
+Massachusetts,,2009,7.79,,states
+Massachusetts,,2010,8.73,,states
+Massachusetts,,2011,8.35,,states
+Massachusetts,,2012,8.63,,states
+Massachusetts,,2013,8.17,,states
+Massachusetts,,2014,8.25,,states
+Massachusetts,,2015,8.87,,states
+Massachusetts,48,2016,8.72,,states
+Michigan,,2007,11.09,,states
+Michigan,,2008,11.76,,states
+Michigan,,2009,11.47,,states
+Michigan,,2010,12.48,,states
+Michigan,,2011,12.17,,states
+Michigan,,2012,12.48,,states
+Michigan,,2013,12.84,,states
+Michigan,,2014,13.23,,states
+Michigan,,2015,13.74,,states
+Michigan,33,2016,13.27,,states
+Minnesota,,2007,10.79,,states
+Minnesota,,2008,11.15,,states
+Minnesota,,2009,10.77,,states
+Minnesota,,2010,11.21,,states
+Minnesota,,2011,12.42,,states
+Minnesota,,2012,11.97,,states
+Minnesota,,2013,12.08,,states
+Minnesota,,2014,12.24,,states
+Minnesota,,2015,13.19,,states
+Minnesota,35,2016,13.18,,states
+Mississippi,,2007,13.62,,states
+Mississippi,,2008,13.91,,states
+Mississippi,,2009,12.99,,states
+Mississippi,,2010,12.94,,states
+Mississippi,,2011,13.13,,states
+Mississippi,,2012,13.96,,states
+Mississippi,,2013,13.01,,states
+Mississippi,,2014,12.54,,states
+Mississippi,,2015,13.96,,states
+Mississippi,39,2016,12.68,,states
+Missouri,,2007,13.56,,states
+Missouri,,2008,12.98,,states
+Missouri,,2009,14.25,,states
+Missouri,,2010,14.03,,states
+Missouri,,2011,15.33,,states
+Missouri,,2012,14.8,,states
+Missouri,,2013,15.62,,states
+Missouri,,2014,16.31,,states
+Missouri,,2015,16.98,,states
+Missouri,13,2016,18.27,,states
+Montana,,2007,19.32,,states
+Montana,,2008,20.7,,states
+Montana,,2009,21.12,,states
+Montana,,2010,21.86,,states
+Montana,,2011,22.49,,states
+Montana,,2012,22.5,,states
+Montana,,2013,23.72,,states
+Montana,,2014,23.8,,states
+Montana,,2015,25.25,,states
+Montana,1,2016,26.01,,states
+Nebraska,,2007,10.19,,states
+Nebraska,,2008,10.57,,states
+Nebraska,,2009,9.28,,states
+Nebraska,,2010,10.4,,states
+Nebraska,,2011,10.63,,states
+Nebraska,,2012,12.49,,states
+Nebraska,,2013,11.66,,states
+Nebraska,,2014,13.35,,states
+Nebraska,,2015,11.59,,states
+Nebraska,37,2016,13.05,,states
+Nevada,,2007,17.96,,states
+Nevada,,2008,19.69,,states
+Nevada,,2009,18.65,,states
+Nevada,,2010,19.83,,states
+Nevada,,2011,18.35,,states
+Nevada,,2012,18.17,,states
+Nevada,,2013,18.61,,states
+Nevada,,2014,19.47,,states
+Nevada,,2015,18.38,,states
+Nevada,6,2016,21.41,,states
+New Hampshire,,2007,11.14,,states
+New Hampshire,,2008,13.17,,states
+New Hampshire,,2009,11.87,,states
+New Hampshire,,2010,14.11,,states
+New Hampshire,,2011,13.73,,states
+New Hampshire,,2012,14.15,,states
+New Hampshire,,2013,12.8,,states
+New Hampshire,,2014,17.63,,states
+New Hampshire,,2015,16.60,,states
+New Hampshire,18,2016,17.30,,states
+New Jersey,,2007,6.69,,states
+New Jersey,,2008,6.79,,states
+New Jersey,,2009,6.12,,states
+New Jersey,,2010,7.73,,states
+New Jersey,,2011,7.45,,states
+New Jersey,,2012,7.39,,states
+New Jersey,,2013,8.01,,states
+New Jersey,,2014,8.32,,states
+New Jersey,,2015,8.27,,states
+New Jersey,50,2016,7.17,,states
+New Mexico,,2007,20.18,,states
+New Mexico,,2008,20.83,,states
+New Mexico,,2009,18.29,,states
+New Mexico,,2010,20.09,,states
+New Mexico,,2011,20.45,,states
+New Mexico,,2012,21.34,,states
+New Mexico,,2013,20.3,,states
+New Mexico,,2014,20.96,,states
+New Mexico,,2015,23.53,,states
+New Mexico,4,2016,22.47,,states
+New York,,2007,7.01,,states
+New York,,2008,7.05,,states
+New York,,2009,7,,states
+New York,,2010,7.62,,states
+New York,,2011,8.08,,states
+New York,,2012,8.24,,states
+New York,,2013,8.07,,states
+New York,,2014,8.09,,states
+New York,,2015,7.81,,states
+New York,49,2016,8.08,,states
+North Carolina,,2007,11.63,,states
+North Carolina,,2008,12.26,,states
+North Carolina,,2009,12.21,,states
+North Carolina,,2010,12.02,,states
+North Carolina,,2011,12.25,,states
+North Carolina,,2012,12.65,,states
+North Carolina,,2013,12.53,,states
+North Carolina,,2014,13.03,,states
+North Carolina,,2015,13.39,,states
+North Carolina,38,2016,12.97,,states
+North Dakota,,2007,14.09,,states
+North Dakota,,2008,13.05,,states
+North Dakota,,2009,13.88,,states
+North Dakota,,2010,15.85,,states
+North Dakota,,2011,15.23,,states
+North Dakota,,2012,15.11,,states
+North Dakota,,2013,16.98,,states
+North Dakota,,2014,17.49,,states
+North Dakota,,2015,17.42,,states
+North Dakota,12,2016,19.00,,states
+Ohio,,2007,11.04,,states
+Ohio,,2008,12.17,,states
+Ohio,,2009,10.01,,states
+Ohio,,2010,12.25,,states
+Ohio,,2011,12.35,,states
+Ohio,,2012,12.97,,states
+Ohio,,2013,12.78,,states
+Ohio,,2014,12.57,,states
+Ohio,,2015,13.89,,states
+Ohio,31,2016,14.11,,states
+Oklahoma,,2007,14.69,,states
+Oklahoma,,2008,15.61,,states
+Oklahoma,,2009,15.23,,states
+Oklahoma,,2010,16.49,,states
+Oklahoma,,2011,18.51,,states
+Oklahoma,,2012,17.51,,states
+Oklahoma,,2013,17.28,,states
+Oklahoma,,2014,19.05,,states
+Oklahoma,,2015,20.42,,states
+Oklahoma,8,2016,20.94,,states
+Oregon,,2007,15.31,,states
+Oregon,,2008,14.59,,states
+Oregon,,2009,16.18,,states
+Oregon,,2010,17.11,,states
+Oregon,,2011,16.47,,states
+Oregon,,2012,17.74,,states
+Oregon,,2013,16.76,,states
+Oregon,,2014,18.65,,states
+Oregon,,2015,17.77,,states
+Oregon,16,2016,17.79,,states
+Pennsylvania,,2007,11.07,,states
+Pennsylvania,,2008,11.78,,states
+Pennsylvania,,2009,12.16,,states
+Pennsylvania,,2010,11.89,,states
+Pennsylvania,,2011,13.12,,states
+Pennsylvania,,2012,12.37,,states
+Pennsylvania,,2013,13.25,,states
+Pennsylvania,,2014,13.28,,states
+Pennsylvania,,2015,13.92,,states
+Pennsylvania,27,2016,14.66,,states
+Rhode Island,,2007,8.78,,states
+Rhode Island,,2008,9.9,,states
+Rhode Island,,2009,10.81,,states
+Rhode Island,,2010,12.32,,states
+Rhode Island,,2011,9.03,,states
+Rhode Island,,2012,9.5,,states
+Rhode Island,,2013,12.12,,states
+Rhode Island,,2014,10.01,,states
+Rhode Island,,2015,11.24,,states
+Rhode Island,43,2016,11.09,,states
+South Carolina,,2007,11.64,,states
+South Carolina,,2008,11.98,,states
+South Carolina,,2009,13.04,,states
+South Carolina,,2010,13.45,,states
+South Carolina,,2011,13.61,,states
+South Carolina,,2012,13.65,,states
+South Carolina,,2013,13.98,,states
+South Carolina,,2014,15.13,,states
+South Carolina,,2015,14.81,,states
+South Carolina,23,2016,15.65,,states
+South Dakota,,2007,12.51,,states
+South Dakota,,2008,15.75,,states
+South Dakota,,2009,16.24,,states
+South Dakota,,2010,17.6,,states
+South Dakota,,2011,15.68,,states
+South Dakota,,2012,16.94,,states
+South Dakota,,2013,18.2,,states
+South Dakota,,2014,17.03,,states
+South Dakota,,2015,20.57,,states
+South Dakota,9,2016,20.50,,states
+Tennessee,,2007,13.38,,states
+Tennessee,,2008,15.08,,states
+Tennessee,,2009,14.59,,states
+Tennessee,,2010,14.59,,states
+Tennessee,,2011,14.37,,states
+Tennessee,,2012,14.57,,states
+Tennessee,,2013,15.31,,states
+Tennessee,,2014,14.11,,states
+Tennessee,,2015,15.62,,states
+Tennessee,21,2016,16.28,,states
+Texas,,2007,10.48,,states
+Texas,,2008,10.78,,states
+Texas,,2009,11.55,,states
+Texas,,2010,11.72,,states
+Texas,,2011,11.49,,states
+Texas,,2012,11.84,,states
+Texas,,2013,11.66,,states
+Texas,,2014,12.18,,states
+Texas,,2015,12.44,,states
+Texas,40,2016,12.57,,states
+Utah,,2007,15.75,,states
+Utah,,2008,15.85,,states
+Utah,,2009,17.98,,states
+Utah,,2010,18.17,,states
+Utah,,2011,19.38,,states
+Utah,,2012,21.01,,states
+Utah,,2013,21.39,,states
+Utah,,2014,20.57,,states
+Utah,,2015,22.42,,states
+Utah,5,2016,21.79,,states
+Vermont,,2007,13.64,,states
+Vermont,,2008,14.24,,states
+Vermont,,2009,12.77,,states
+Vermont,,2010,15.66,,states
+Vermont,,2011,17.86,,states
+Vermont,,2012,13.13,,states
+Vermont,,2013,17.17,,states
+Vermont,,2014,18.64,,states
+Vermont,,2015,14.77,,states
+Vermont,19,2016,13.18,,states
+Virginia,,2007,11.11,,states
+Virginia,,2008,11.77,,states
+Virginia,,2009,11.72,,states
+Virginia,,2010,11.63,,states
+Virginia,,2011,12.48,,states
+Virginia,,2012,12.59,,states
+Virginia,,2013,12.52,,states
+Virginia,,2014,12.86,,states
+Virginia,,2015,12.65,,states
+Virginia,36,2016,13.18,,states
+Washington,,2007,13.08,,states
+Washington,,2008,13.08,,states
+Washington,,2009,13.37,,states
+Washington,,2010,13.93,,states
+Washington,,2011,14.24,,states
+Washington,,2012,14.49,,states
+Washington,,2013,13.99,,states
+Washington,,2014,15.18,,states
+Washington,,2015,15.37,,states
+Washington,26,2016,14.83,,states
+West Virginia,,2007,15.69,,states
+West Virginia,,2008,13.78,,states
+West Virginia,,2009,13.22,,states
+West Virginia,,2010,14.21,,states
+West Virginia,,2011,15.93,,states
+West Virginia,,2012,17.11,,states
+West Virginia,,2013,16.41,,states
+West Virginia,,2014,18.09,,states
+West Virginia,,2015,17.53,,states
+West Virginia,11,2016,19.47,,states
+Wisconsin,,2007,12.72,,states
+Wisconsin,,2008,12.8,,states
+Wisconsin,,2009,12.46,,states
+Wisconsin,,2010,13.4,,states
+Wisconsin,,2011,12.77,,states
+Wisconsin,,2012,12.29,,states
+Wisconsin,,2013,14.31,,states
+Wisconsin,,2014,13.1,,states
+Wisconsin,,2015,14.59,,states
+Wisconsin,28,2016,14.64,,states
+Wyoming,,2007,19.38,,states
+Wyoming,,2008,22.61,,states
+Wyoming,,2009,20.34,,states
+Wyoming,,2010,22.36,,states
+Wyoming,,2011,23.13,,states
+Wyoming,,2012,29.77,,states
+Wyoming,,2013,21.36,,states
+Wyoming,,2014,20.67,,states
+Wyoming,3,2015,28.24,,states
+Wyoming,3,2016,25.23,,states

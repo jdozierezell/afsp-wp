@@ -1,0 +1,161 @@
+:root {
+  --width: 3.5;
+  --height: 2;
+  --blue: #3f6ab3;
+}
+
+#design-form,
+#design-wrapper {
+  width: calc(((100vw - 2rem) - 19.075rem - 2em) / 2);
+  margin: 0;
+  float: left;
+  font-family: 'AvenirNextLTPro-Regular', Arial, sans-serif;
+  max-width: calc(600px - 2%);
+}
+
+#design-form label {
+  display: inline-block;
+  width: 22%;
+}
+
+#design-form input,
+#design-form select {
+  margin: 1rem;
+  font-size: 1rem;
+  border-radius: 0.512rem;
+  border: 1px solid rgb(234, 234, 234);
+}
+
+#design-form input {
+  padding: 0.8rem;
+  width: calc(66% - 2rem);
+}
+
+#design-form input::placeholder {
+  color: rgb(234, 234, 234);
+}
+
+#design-form input:focus {
+  background-color: rgb(38, 38, 38);
+  color: rgb(255, 255, 255);
+  outline: none;
+}
+
+#design-form select {
+  background-color: rgb(255, 255, 255);
+  width: calc(66% - 2px);
+  height: 3.052rem;
+  text-indent: 0.328rem;
+}
+
+#design {
+  border: 1px solid rgb(38, 38, 38);
+  position: relative;
+  /* set card size to proportional width = 3.5", height = 2" */
+  padding-bottom: calc(100% / (var(--width) / var(--height)));
+}
+
+#design>* {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  /* indent all elements proportionally 0.25" */
+  left: calc(100% * (0.25 / var(--width)));
+}
+
+#bar {
+  top: 0;
+  left: 0;
+  width: calc(100% * (0.125 / var(--width)));
+  padding-bottom: calc(100% / (var(--width) / var(--height)) + 1px);
+  background-color: var(--blue);
+}
+
+#name {
+  top: calc(100% * (0.19 / var(--height)));
+  /* 14pt font :: 1rem === 11.955168pt */
+  font-size: 2vw;
+  font-family: 'PaulGroteskSoft-Bold', Arial, sans-serif;
+}
+
+#name,
+#role {
+  color: var(--blue);
+}
+
+#role,
+#chapter-wrapper,
+#contact p {
+  /* 9pt font :: 1rem === 11.955168pt */
+  font-size: 1vw;
+}
+
+#role {
+  top: calc(100% * (0.57 / var(--height)));
+  font-family: 'AvenirNextLTPro-DemiIt', Arial, sans-serif;
+}
+
+#contact {
+  top: calc(100% * (1.03 / var(--height)));
+}
+
+#contact p {
+  margin: 0;
+  margin-bottom: 0.3vw;
+  line-height: 1.4vw;
+}
+
+.combine-pre {
+  font-family: 'AvenirNextLTPro-Bold';
+}
+
+#chapter-wrapper {
+  top: calc(100% * (1.63 / var(--height)));
+}
+
+#lifesaver {
+  top: calc(100% * (1.35 / var(--height)));
+  left: calc(100% * (2.85 / var(--width)));
+  width: calc(100% * (0.4 / var(--width)));
+}
+
+#back {
+  background-color: var(--blue);
+  margin-top: 2rem;
+  position: relative;
+  /* set card size to proportional width = 3.5", height = 2" */
+  padding-bottom: calc(100% / (var(--width) / var(--height)));
+}
+
+#logo {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  top: 50%;
+  margin-left: -25%;
+  margin-top: calc(-25% / (var(--width) / var(--height)));
+}
+
+#small {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(38, 38, 38, 0.8);
+  color: white;
+  font-size: 2rem;
+  font-family: avenir;
+  vertical-align: middle;
+}
+
+#small p {
+  margin: 30vh 2rem;
+}
+
+@media (min-width: 720px) {
+  #small {
+    display: none;
+  }
+}
+/*# sourceMappingURL=screen.css.map*/

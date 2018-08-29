@@ -1,0 +1,12 @@
+.item-list {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin: $ms-base 0 0;
+  padding: 0;
+}
+
+.item-list__toc {
+	display: block;
+}

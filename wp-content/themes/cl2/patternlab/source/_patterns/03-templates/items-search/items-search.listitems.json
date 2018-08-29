@@ -1,0 +1,82 @@
+{
+  "1": {
+    "img": {
+      "src": "http://placehold.it/300x400",
+      "alt": "This is a list item image.",
+      "class": "list-item__img"
+    },
+    "itemTitle": "Sample Item 1",
+    "nested": true,
+    "favorite": false
+  },
+  "2": {
+    "img": {
+      "src": "http://placehold.it/400x300",
+      "alt": "This is a list item image.",
+      "class": "list-item__img"
+    },
+    "itemTitle": "Sample Item 2",
+    "nested": false,
+    "favorite": true
+  },
+  "3": {
+    "img": {
+      "src": "http://placehold.it/600x100",
+      "alt": "This is a list item image.",
+      "class": "list-item__img"
+    },
+    "itemTitle": "Sample Item 3",
+    "nested": false,
+    "favorite": false
+  },
+  "4": {
+    "img": {
+      "src": "http://placehold.it/100x600",
+      "alt": "This is a list item image.",
+      "class": "list-item__img"
+    },
+    "itemTitle": "Sample Item 4",
+    "nested": false,
+    "favorite": true
+  },
+  "5": {
+    "img": {
+      "src": "http://placehold.it/400x400",
+      "alt": "This is a list item image.",
+      "class": "list-item__img"
+    },
+    "itemTitle": "Sample Item 5",
+    "nested": true,
+    "favorite": false
+  },
+  "6": {
+    "img": {
+      "src": "http://placehold.it/400x400",
+      "alt": "This is a list item image.",
+      "class": "list-item__img"
+    },
+    "itemTitle": "Sample Item 6",
+    "nested": false,
+    "favorite": false
+  },
+  "7": {
+    "img": {
+      "src": "http://placehold.it/768x90",
+      "alt": "This is a list item image.",
+      "class": "list-item__img"
+    },
+    "itemTitle": "Sample Item 7",
+    "nested": false,
+    "favorite": false
+  },
+  "8": {
+    "img": {
+      "src": "http://placehold.it/90x768",
+      "alt": "This is a list item image.",
+      "class": "list-item__img"
+    },
+    "itemTitle": "Sample Item 8",
+    "nested": false,
+    "favorite": true
+  }
+}

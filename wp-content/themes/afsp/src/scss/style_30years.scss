@@ -1,0 +1,40 @@
+.tl-timeline {
+  font-family:'AvenirNextLTW01-Regular', helvetica, arial, sans-serif !important; 
+}
+.tl-timeline h2, .tl-timeline h3 {
+  font-family:'Avenir Next LT W01 Bold', helvetica, arial, sans-serif !important;
+}
+.tl-slide .tl-slide-content {
+  display: flex !important;
+  align-items: center;
+}
+.tl-slide-titleslide .tl-slide-content {
+  display: flex !important;
+  -webkit-flex-direction: column-reverse !important;
+  flex-direction: column-reverse !important;
+}
+.tl-skinny .tl-slide:nth-of-type(2) .tl-slide-content {
+  -webkit-flex-direction: column !important;
+  flex-direction: column !important;
+}
+.tl-slide:nth-of-type(8) .tl-slide-content {
+  -webkit-flex-direction: column !important;
+  flex-direction: column !important;
+}
+.tl-slide .tl-slide-background {
+  background-repeat: no-repeat !important;
+  background-position: center 10% !important;
+  background-size: cover !important;
+}
+.tl-timeline img {
+  width: initial !important;
+}
+.tl-text {
+  max-width: 560px !important;
+}
+.tl-storyslider {
+  height: 80vh;
+}
+.tl-timenav {
+  height: 20vh;
+}

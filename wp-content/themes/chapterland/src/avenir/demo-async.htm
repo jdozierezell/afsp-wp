@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Webfonts Demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+	    body, textarea { font-family:Arial, Sans-Serif; line-height:1.6em; font-size:13px; }
+	    h1 { font-size:3em; }
+	    h2, h3 { color:#999; }
+	    .content { width:780px; margin: 20px auto 40px; }
+	    .demo { font-weight:bold; font-style:normal; color: #999 }
+	    .fontdisplay {font-size:2em;line-height:150%;margin: 10px 40px 0px 0px;}
+	    .guidelines { color:#333; }
+	    pre { padding:0 0 0 20px; }
+	    hr { border:0; border-bottom:1px solid #537094; margin:20px 0; }
+	    .link { color: #537094;text-decoration:none; font-weight:bold;}
+	    .uc {text-transform:uppercase}
+	    
+    </style>
+    <style type="text/css">
+@font-face{
+font-family:"Avenir Next W01 Thin";
+src:url("Fonts/42c793cf-df5a-4e07-bf3e-37de54df02b6.eot?#iefix");
+src:url("Fonts/42c793cf-df5a-4e07-bf3e-37de54df02b6.eot?#iefix") format("eot"),url("Fonts/64779e28-a3b8-4364-949c-771372a0a327.woff2") format("woff2"),url("Fonts/c6c8e4be-17eb-4475-bbfc-bb485ffde766.woff") format("woff"),url("Fonts/87a872d0-5af3-4231-a77c-37f41ec74662.ttf") format("truetype"),url("Fonts/91464696-717b-4eaa-adbd-0dfc5e5fd782.svg#91464696-717b-4eaa-adbd-0dfc5e5fd782") format("svg");
+}
+@font-face{
+font-family:"AvenirNextW01-ThinItali";
+src:url("Fonts/41537dd7-434f-4f85-b9d9-a88b160bc18d.eot?#iefix");
+src:url("Fonts/41537dd7-434f-4f85-b9d9-a88b160bc18d.eot?#iefix") format("eot"),url("Fonts/ec2dd1bd-4391-4b89-bf85-1a2346ea4342.woff2") format("woff2"),url("Fonts/fcf6f211-efa2-40f6-9c6b-e0ca63b6ea60.woff") format("woff"),url("Fonts/60fcc194-9529-4b99-9506-cdb26642656a.ttf") format("truetype"),url("Fonts/c110f1ef-6fdf-4008-bc75-b370649384a3.svg#c110f1ef-6fdf-4008-bc75-b370649384a3") format("svg");
+}
+@font-face{
+font-family:"AvenirNextLTW01-Regular";
+src:url("Fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix");
+src:url("Fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix") format("eot"),url("Fonts/2cd55546-ec00-4af9-aeca-4a3cd186da53.woff2") format("woff2"),url("Fonts/1e9892c0-6927-4412-9874-1b82801ba47a.woff") format("woff"),url("Fonts/46cf1067-688d-4aab-b0f7-bd942af6efd8.ttf") format("truetype"),url("Fonts/52a192b1-bea5-4b48-879f-107f009b666f.svg#52a192b1-bea5-4b48-879f-107f009b666f") format("svg");
+}
+@font-face{
+font-family:"AvenirNextLTW01-Italic";
+src:url("Fonts/d1fddef1-d940-4904-8f6c-17e809462301.eot?#iefix");
+src:url("Fonts/d1fddef1-d940-4904-8f6c-17e809462301.eot?#iefix") format("eot"),url("Fonts/7377dbe6-f11a-4a05-b33c-bc8ce1f60f84.woff2") format("woff2"),url("Fonts/92b66dbd-4201-4ac2-a605-4d4ffc8705cc.woff") format("woff"),url("Fonts/18839597-afa8-4f0b-9abb-4a30262d0da8.ttf") format("truetype"),url("Fonts/1de7e6f4-9d4d-47e7-ab23-7d5cf10ab585.svg#1de7e6f4-9d4d-47e7-ab23-7d5cf10ab585") format("svg");
+}
+@font-face{
+font-family:"Avenir Next LT W01 Demi";
+src:url("Fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix");
+src:url("Fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix") format("eot"),url("Fonts/aad99a1f-7917-4dd6-bbb5-b07cedbff64f.woff2") format("woff2"),url("Fonts/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff") format("woff"),url("Fonts/a0f4c2f9-8a42-4786-ad00-fce42b57b148.ttf") format("truetype"),url("Fonts/99affa9a-a5e9-4559-bd07-20cf0071852d.svg#99affa9a-a5e9-4559-bd07-20cf0071852d") format("svg");
+}
+@font-face{
+font-family:"Avenir Next LT W01 Bold";
+src:url("Fonts/dccb10af-07a2-404c-bfc7-7750e2716bc1.eot?#iefix");
+src:url("Fonts/dccb10af-07a2-404c-bfc7-7750e2716bc1.eot?#iefix") format("eot"),url("Fonts/14c73713-e4df-4dba-933b-057feeac8dd1.woff2") format("woff2"),url("Fonts/b8e906a1-f5e8-4bf1-8e80-82c646ca4d5f.woff") format("woff"),url("Fonts/890bd988-5306-43ff-bd4b-922bc5ebdeb4.ttf") format("truetype"),url("Fonts/ed104d8c-7f39-4e8b-90a9-4076be06b857.svg#ed104d8c-7f39-4e8b-90a9-4076be06b857") format("svg");
+}
+@font-face{
+font-family:"AvenirNextLTW01-BoldIta";
+src:url("Fonts/ac2d4349-4327-448f-9887-083a6a227a52.eot?#iefix");
+src:url("Fonts/ac2d4349-4327-448f-9887-083a6a227a52.eot?#iefix") format("eot"),url("Fonts/eaafcb26-9296-4a57-83e4-4243abc03db7.woff2") format("woff2"),url("Fonts/25e83bf5-47e3-4da7-98b1-755efffb0089.woff") format("woff"),url("Fonts/4112ec87-6ded-438b-83cf-aaff98f7e987.ttf") format("truetype"),url("Fonts/ab1835cb-df6f-4d8d-b8ee-3075f5ba758d.svg#ab1835cb-df6f-4d8d-b8ee-3075f5ba758d") format("svg");
+}
+@font-face{
+font-family:"AvenirNextLTW01-Heavy";
+src:url("Fonts/3418f6be-70a5-4c26-af1d-c09a8642ca20.eot?#iefix");
+src:url("Fonts/3418f6be-70a5-4c26-af1d-c09a8642ca20.eot?#iefix") format("eot"),url("Fonts/5c57b2e2-f641-421e-a95f-65fcb47e409a.woff2") format("woff2"),url("Fonts/181c847e-cdbc-43d5-ae14-03a81c8953b4.woff") format("woff"),url("Fonts/045d1654-97f2-4ff0-9d24-21ba9dfee219.ttf") format("truetype"),url("Fonts/3c111f4f-c9f7-45d4-b35f-4f4ed018842f.svg#3c111f4f-c9f7-45d4-b35f-4f4ed018842f") format("svg");
+}
+</style>
+<script type="text/javascript">
+var MTIProjectId='cc3b7850-1f38-44b1-a870-db07b61e4d06';
+ (function() {
+        var mtiTracking = document.createElement('script');
+        mtiTracking.type='text/javascript';
+        mtiTracking.async='true';
+         mtiTracking.src='mtiFontTrackingCode.js';
+        (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild( mtiTracking );
+   })();
+</script>
+</head>
+<body>
+    <div class="content">
+        <h1 class="demo">Fonts.com Web fonts</h1>
+        <p style="margin-top: -10px; font-size: 1.5em; color: #666"><b>@font-face implementation instructions</b></p>
+        <p>The asynchronous script loads in the background allowing the other elements of your website to load first and undeterred.</p>
+        <hr />
+        <p class="uc">The fonts contained in this kit are:</p>
+        <div class="fontdisplay">
+            <div style="font-family:'AvenirNextLTW01-Regular';"> Avenir® Next W01 Regular </div>
+<div style="font-family:'AvenirNextLTW01-Italic';"> Avenir® Next W01 Italic </div>
+<div style="font-family:'Avenir Next LT W01 Demi';"> Avenir® Next W01 Demi </div>
+<div style="font-family:'Avenir Next LT W01 Bold';"> Avenir® Next W01 Bold </div>
+<div style="font-family:'AvenirNextLTW01-BoldIta';"> Avenir® Next W01 Bold Italic </div>
+<div style="font-family:'AvenirNextLTW01-Heavy';"> Avenir® Next W01 Heavy </div>
+<div style="font-family:'Avenir Next W01 Thin';"> Avenir® Next W01 Thin </div>
+<div style="font-family:'AvenirNextW01-ThinItali';"> Avenir® Next W01 Thin Italic </div>
+
+        </div>
+        <hr />
+        Click here for <a class="link uc" href="demo.htm">css only</a> web fonts implementation
+        <hr />
+        <div class="guidelines">
+            <h2>CSS Implementation Guidelines</h2>
+            <p>You and any third party web font hosting service are responsible for ensuring that the font software in the self-hosting kit, in its original format, can only be used on the Web Sites for which the self-hosting kit was downloaded and cannot be used or referenced by any other web site. This includes, but is not limited to installing adequate technical protection measures that restrict the use and/or access to the font software, for instance by utilizing JavaScript or access control mechanism for cross-origin resource sharing and protecting against use on web sites other than the Web Sites for which the self-hosting kit was downloaded by restricting domain access only to such Web Sites. You must also retain the pageview tracking code on any Web Site that you self-host. In the event this Agreement terminates for any reason, the font software included with the self-hosting kit must be deleted from the server and all copies must be destroyed or returned to Monotype Imaging.</p>
+            <p>View <a class="link" href="http://new.fonts.com/info/legal/eula/web-fonts" target="_blank">"WEB FONT SOFTWARE" LICENSE AGREEMENT</a></p>
+            <h2>Asynchronous Implementation (Requires JavaScript)</h2>
+            <p>Font file names have been obfuscated to protect the font software. You can identify font format based on file ending:</p>
+            <ul>
+                <li>1 - TrueType (ttf)</li>
+                <li>2 - Embedded OpenType (eot)</li>
+                <li>3 - Web Open Font Format (woff)</li>
+                <li>4 - Web Open Font Format version 2 (woff2)</li>
+                <li>5 - Scalable Vector Graphics (svg)</li>
+                
+            </ul>
+            <p class="uc" style="margin: 20px 0px -20px;"><b>Copy and paste following code in head section of the page</b></p>
+            <hr />
+            <textarea style="width: 830px; height: 350px; border: 1 #fff solid; background-color: #fcfcfc;"><style type="text/css">
+@font-face{
+font-family:"Avenir Next W01 Thin";
+src:url("Fonts/42c793cf-df5a-4e07-bf3e-37de54df02b6.eot?#iefix");
+src:url("Fonts/42c793cf-df5a-4e07-bf3e-37de54df02b6.eot?#iefix") format("eot"),url("Fonts/64779e28-a3b8-4364-949c-771372a0a327.woff2") format("woff2"),url("Fonts/c6c8e4be-17eb-4475-bbfc-bb485ffde766.woff") format("woff"),url("Fonts/87a872d0-5af3-4231-a77c-37f41ec74662.ttf") format("truetype"),url("Fonts/91464696-717b-4eaa-adbd-0dfc5e5fd782.svg#91464696-717b-4eaa-adbd-0dfc5e5fd782") format("svg");
+}
+@font-face{
+font-family:"AvenirNextW01-ThinItali";
+src:url("Fonts/41537dd7-434f-4f85-b9d9-a88b160bc18d.eot?#iefix");
+src:url("Fonts/41537dd7-434f-4f85-b9d9-a88b160bc18d.eot?#iefix") format("eot"),url("Fonts/ec2dd1bd-4391-4b89-bf85-1a2346ea4342.woff2") format("woff2"),url("Fonts/fcf6f211-efa2-40f6-9c6b-e0ca63b6ea60.woff") format("woff"),url("Fonts/60fcc194-9529-4b99-9506-cdb26642656a.ttf") format("truetype"),url("Fonts/c110f1ef-6fdf-4008-bc75-b370649384a3.svg#c110f1ef-6fdf-4008-bc75-b370649384a3") format("svg");
+}
+@font-face{
+font-family:"AvenirNextLTW01-Regular";
+src:url("Fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix");
+src:url("Fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix") format("eot"),url("Fonts/2cd55546-ec00-4af9-aeca-4a3cd186da53.woff2") format("woff2"),url("Fonts/1e9892c0-6927-4412-9874-1b82801ba47a.woff") format("woff"),url("Fonts/46cf1067-688d-4aab-b0f7-bd942af6efd8.ttf") format("truetype"),url("Fonts/52a192b1-bea5-4b48-879f-107f009b666f.svg#52a192b1-bea5-4b48-879f-107f009b666f") format("svg");
+}
+@font-face{
+font-family:"AvenirNextLTW01-Italic";
+src:url("Fonts/d1fddef1-d940-4904-8f6c-17e809462301.eot?#iefix");
+src:url("Fonts/d1fddef1-d940-4904-8f6c-17e809462301.eot?#iefix") format("eot"),url("Fonts/7377dbe6-f11a-4a05-b33c-bc8ce1f60f84.woff2") format("woff2"),url("Fonts/92b66dbd-4201-4ac2-a605-4d4ffc8705cc.woff") format("woff"),url("Fonts/18839597-afa8-4f0b-9abb-4a30262d0da8.ttf") format("truetype"),url("Fonts/1de7e6f4-9d4d-47e7-ab23-7d5cf10ab585.svg#1de7e6f4-9d4d-47e7-ab23-7d5cf10ab585") format("svg");
+}
+@font-face{
+font-family:"Avenir Next LT W01 Demi";
+src:url("Fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix");
+src:url("Fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix") format("eot"),url("Fonts/aad99a1f-7917-4dd6-bbb5-b07cedbff64f.woff2") format("woff2"),url("Fonts/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff") format("woff"),url("Fonts/a0f4c2f9-8a42-4786-ad00-fce42b57b148.ttf") format("truetype"),url("Fonts/99affa9a-a5e9-4559-bd07-20cf0071852d.svg#99affa9a-a5e9-4559-bd07-20cf0071852d") format("svg");
+}
+@font-face{
+font-family:"Avenir Next LT W01 Bold";
+src:url("Fonts/dccb10af-07a2-404c-bfc7-7750e2716bc1.eot?#iefix");
+src:url("Fonts/dccb10af-07a2-404c-bfc7-7750e2716bc1.eot?#iefix") format("eot"),url("Fonts/14c73713-e4df-4dba-933b-057feeac8dd1.woff2") format("woff2"),url("Fonts/b8e906a1-f5e8-4bf1-8e80-82c646ca4d5f.woff") format("woff"),url("Fonts/890bd988-5306-43ff-bd4b-922bc5ebdeb4.ttf") format("truetype"),url("Fonts/ed104d8c-7f39-4e8b-90a9-4076be06b857.svg#ed104d8c-7f39-4e8b-90a9-4076be06b857") format("svg");
+}
+@font-face{
+font-family:"AvenirNextLTW01-BoldIta";
+src:url("Fonts/ac2d4349-4327-448f-9887-083a6a227a52.eot?#iefix");
+src:url("Fonts/ac2d4349-4327-448f-9887-083a6a227a52.eot?#iefix") format("eot"),url("Fonts/eaafcb26-9296-4a57-83e4-4243abc03db7.woff2") format("woff2"),url("Fonts/25e83bf5-47e3-4da7-98b1-755efffb0089.woff") format("woff"),url("Fonts/4112ec87-6ded-438b-83cf-aaff98f7e987.ttf") format("truetype"),url("Fonts/ab1835cb-df6f-4d8d-b8ee-3075f5ba758d.svg#ab1835cb-df6f-4d8d-b8ee-3075f5ba758d") format("svg");
+}
+@font-face{
+font-family:"AvenirNextLTW01-Heavy";
+src:url("Fonts/3418f6be-70a5-4c26-af1d-c09a8642ca20.eot?#iefix");
+src:url("Fonts/3418f6be-70a5-4c26-af1d-c09a8642ca20.eot?#iefix") format("eot"),url("Fonts/5c57b2e2-f641-421e-a95f-65fcb47e409a.woff2") format("woff2"),url("Fonts/181c847e-cdbc-43d5-ae14-03a81c8953b4.woff") format("woff"),url("Fonts/045d1654-97f2-4ff0-9d24-21ba9dfee219.ttf") format("truetype"),url("Fonts/3c111f4f-c9f7-45d4-b35f-4f4ed018842f.svg#3c111f4f-c9f7-45d4-b35f-4f4ed018842f") format("svg");
+}
+</style>
+<script type="text/javascript">
+var MTIProjectId='cc3b7850-1f38-44b1-a870-db07b61e4d06';
+ (function() {
+        var mtiTracking = document.createElement('script');
+        mtiTracking.type='text/javascript';
+        mtiTracking.async='true';
+         mtiTracking.src='mtiFontTrackingCode.js';
+        (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild( mtiTracking );
+   })();
+</script></textarea>
+            <h3>Licensing information should be included within the CSS</h3>
+<pre>/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+Imaging with any questions regarding Web Fonts:  http://www.fonts.com
+*/</pre>
+        </div>
+    </div>
+</body>
+</html>

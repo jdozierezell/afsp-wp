@@ -1,0 +1,62 @@
+.hl-brand-blue {
+  background-color: $color-brand-blue;
+}
+
+.hl-brand-dark-gray {
+  background-color: $color-brand-dark-gray;
+}
+
+.hl-brand-light-gray {
+  background-color: $color-brand-light-gray;
+}
+
+.hl-yellow {
+  background-color: $color-yellow;
+}
+
+.hl-dark-blue {
+  background-color: $color-dark-blue;
+}
+
+.hl-poppy {
+  background-color: $color-poppy;
+}
+
+.hl-green {
+  background-color: $color-green;
+}
+
+.hl-fuschia {
+  background-color: $color-fuschia;
+}
+
+.hl-white {
+  background-color: $color-white;
+}
+
+.hl-brand-blue,
+.hl-brand-dark-gray,
+.hl-dark-blue,
+.hl-poppy,
+.hl-green,
+.hl-fuschia {
+  color: $color-white;
+}
+
+.hl-brand-light-gray,
+.hl-yellow,
+.hl-white {
+  color: $color-brand-dark-gray;
+}
+
+.hl-brand-blue,
+.hl-brand-dark-gray,
+.hl-dark-blue,
+.hl-poppy,
+.hl-green,
+.hl-fuschia,
+.hl-brand-light-gray,
+.hl-yellow,
+.hl-white {
+  padding: $ms--8 $ms--4;
+}

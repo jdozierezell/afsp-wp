@@ -1,0 +1,14 @@
+.isp {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.isp__image {
+  flex: 0 0 auto;
+  width: columns(6);
+  @include responsive('medium') {
+    width: columns(3);
+  }
+}

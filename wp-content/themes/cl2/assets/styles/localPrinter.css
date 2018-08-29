@@ -1,0 +1,65 @@
+@media print {
+  #design,
+  #back {
+    border: none;
+    width: 3.75in;
+    height: 2.25in;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'AvenirNextLTPro-Regular', Arial, sans-serif;
+  }
+  #back {
+    background-color: #3f6ab3;
+    position: relative;
+  }
+  #design>* {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0.375in;
+  }
+  #bar {
+    top: 0;
+    left: 0;
+    width: 0.25in;
+    height: 2.25in;
+    background-color: #3f6ab3;
+  }
+  #name {
+    top: 0.3611in;
+    font-size: 14pt;
+    font-family: 'PaulGroteskSoft-Bold', Arial, sans-serif;
+  }
+  #name,
+  #role {
+    color: #3f6ab3;
+  }
+  #role,
+  #chapter-wrapper,
+  #contact p {
+    font-size: 9pt;
+  }
+  #role {
+    top: 0.719in;
+    font-family: 'AvenirNextLTPro-DemiIt', Arial, sans-serif;
+  }
+  #contact {
+    top: 1.1769in;
+  }
+  #contact p {
+    margin: 0;
+    line-height: 10.8pt;
+  }
+  .combine-pre {
+    font-family: 'AvenirNextLTPro-Bold';
+  }
+  #chapter-wrapper {
+    top: 1.765in;
+  }
+  #lifesaver {
+    top: 1.475in;
+    left: 2.975in;
+    width: 0.4in;
+  }
+}
+/*# sourceMappingURL=localPrinter.css.map*/

@@ -1,0 +1,45 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": ["scripts/main.js", "scripts/accordion.js"],
+      "main": true
+    },
+    "main.css": {
+      "files": ["styles/main.scss"],
+      "main": true
+    },
+    "templates/business-card/corsfonts.css": {
+      "files": ["styles/templates/business-card/corsfonts.css"]
+    },
+    "templates/business-card/atHome.css": {
+      "files": ["styles/templates/business-card/atHome.css"]
+    },
+    "templates/business-card/fedex.css": {
+      "files": ["styles/templates/business-card/fedex.css"]
+    },
+    "templates/business-card/localPrinter.css": {
+      "files": ["styles/templates/business-card/localPrinter.css"]
+    },
+    "templates/business-card/screen.css": {
+      "files": ["styles/templates/business-card/screen.css"]
+    },
+    "customizer.js": {
+      "files": ["scripts/customizer.js"]
+    },
+    "fittext.js": {
+      "files": ["scripts/fittext.js"]
+    },
+    "navigation.js": {
+      "files": ["scripts/navigation.js"]
+    },
+    "business-card.js": {
+      "files": ["scripts/business-card.js"]
+    },
+    "jquery.js": {
+      "bower": ["jquery"]
+    }
+  },
+  "config": {
+    "devUrl": "https://cl2.dev"
+  }
+}

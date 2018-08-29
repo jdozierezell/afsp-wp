@@ -1,0 +1,8 @@
+{
+  "img": {
+    "class": "list-item__img",
+    "src": "http://placehold.it/300x400",
+    "alt": "This is a list item image.",
+    "containerClass": "img-container__list-item"
+  }
+}

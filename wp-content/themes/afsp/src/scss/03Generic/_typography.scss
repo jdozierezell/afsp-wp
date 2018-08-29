@@ -1,0 +1,36 @@
+html,
+body {
+    font: {
+        family: $avenir-regular, helvetica, arial, sans-serif;
+        size: 16px;
+    }
+    color: $color-brand-dark-gray;
+}
+
+strong {
+    font-family: $avenir-bold, helvetica, arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-family: $avenir-demi, helvetica, arial, sans-serif;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+ol li {
+    padding-bottom: 0.5rem;
+}
+
+.bold {
+    font-weight: 800;
+}

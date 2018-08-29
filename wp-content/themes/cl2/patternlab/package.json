@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "patternlab-node-cli": "pattern-lab/patternlab-node-cli"
+  },
+  "dependencies": {
+    "edition-node": "^0.0.4",
+    "font-awesome": "^4.7.0",
+    "starterkit-mustache-base": "pattern-lab/starterkit-mustache-base"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "btn": {
+    "text": "Button",
+    "href": "#",
+    "class": "bg-brand-blue",
+    "icon": "fa-search"
+  },
+  "img": {
+    "src": "http://placehold.it/1080",
+    "alt": "If the image doesn't show, I'll do the job."
+  },
+  "headerImg": {
+    "src": "../../images/afsp_logo.png",
+    "alt": "AFSP Logo"
+  },
+  "textInput": {
+    "label": "Text Input",
+    "placeholder": "I'm a placeholder"
+  },
+  "itemTitle": "Sample Item",
+  "linkClass": "color-brand-blue"
+}

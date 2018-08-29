@@ -1,0 +1,137 @@
+.sidebar {
+    @include columns(10);
+    margin: 2rem auto 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 2rem;
+    @include responsive('x-large') {
+        @include columns(12);
+    }
+}
+
+.sidebar__nav-container {
+    @include columns(12);
+    @include responsive('x-large') {
+        flex: 1 0 columns(3);
+        padding-right: columns(1);
+    }
+}
+
+.sidebar__nav {
+    display: none;
+    &--fixed {
+        position: fixed;
+        top: 100px;
+    }
+    @include responsive('x-large') {
+        display: inherit;
+    }
+}
+
+.sidebar__nav-item {
+    display: block;
+    padding: 1em 0 1em 0.5em;
+    border-left: 0.25em solid $color-white;
+    color: $color-brand-dark-gray;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        color: $color-poppy;
+    }
+    &.active {
+        border-left: 0.25em solid $color-poppy;
+        color: $color-poppy;
+        font-weight: 800;
+    }
+}
+
+.sidebar__content {
+    @include columns(12);
+    @include responsive('medium') {
+        flex: 1 0 columns(8);
+        padding-top: 1rem;
+        width: columns(8);
+    }
+}
+
+.sidebar__content-header {
+    margin-bottom: 1rem;
+    font-size: $features-header;
+    color: $color-brand-blue;
+}
+
+.sidebar__content-section:not(:first-of-type) {
+    margin-top: 2rem;
+}
+
+.sidebar__content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.sidebar__content-image {
+    @include columns(12);
+    @include responsive('medium') {
+        @include columns(4);
+    }
+}
+
+.sidebar__content-text {
+    @include columns(12);
+    @include responsive('medium') {
+        @include columns(8);
+        *:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+.sidebar__top {
+    display: inline-block;
+    margin-bottom: 1rem;
+    @include responsive('medium') {
+        display: none;
+    }
+}
+
+.sidebar-link__container {
+    margin: 1rem auto;
+}
+
+.sidebar-link__title {}
+
+.sidebar-link__teaser {}
+
+.page__header {
+    @include columns(10);
+    margin: 0 auto;
+    color: $color-brand-dark-gray;
+    font-size: $features-header;
+    @include responsive('x-large') {
+        @include columns(12);
+    }
+}
+
+.slicknav_menu {
+    background: transparent;
+    margin-bottom: 2rem;
+    @include responsive('x-large') {
+        display: none;
+    }
+}
+
+.slicknav_btn {
+    background-color: $color-poppy;
+}
+
+.slicknav_nav {
+    background-color: $color-brand-blue;
+    a:hover {
+        background-color: $color-white;
+        color: $color-brand-blue;
+    }
+}

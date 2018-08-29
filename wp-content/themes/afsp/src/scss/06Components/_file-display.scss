@@ -1,0 +1,86 @@
+.file__intro {
+  @extend .actions__header;
+}
+
+.file__display {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.file {
+  @include columns(10);
+  position: relative;
+  margin: 0 auto 1rem;
+  border: 1px solid $color-brand-blue;
+  cursor: pointer;
+  display: inline-block;
+  @include responsive('small') {
+    @include columns(6);
+  }
+  @include responsive('medium') {
+    @include columns(4);
+  }
+  @include responsive('large') {
+    @include columns(3);
+  }
+}
+
+.file__name {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  text-align: center;
+  padding-top: 30%;
+  background: rgba($color-brand-blue, 0.8);
+  color: $color-white;
+  opacity: 0;
+  font: {
+    size: 1.2rem;
+    weight: bold;
+  }
+  &:hover {
+    color: $color-white;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+  }
+}
+
+.file__selected {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  &--hidden {
+    display: none;
+  }
+}
+
+.file__selected-image {
+  @include columns(12);
+}
+
+.file__link {
+  @extend .features__button;
+  @include columns(10);
+  margin: 0.5rem 0;
+  @include responsive('medium') {
+    @include columns(6);
+  }
+}
+
+.states__button {
+  margin: 0.5rem 0 2rem;
+}
+
+#download-image {
+  align-self: flex-start;
+}
+
+#download-pdf {
+  align-self: flex-end;
+}

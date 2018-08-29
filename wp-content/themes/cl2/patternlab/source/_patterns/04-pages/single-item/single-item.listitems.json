@@ -1,0 +1,15 @@
+{
+  "1": {
+    "btn": {
+      "icon": "fa-bars",
+      "text": "Download"
+    }
+  },
+  "2": {
+    "btn": {
+      "icon": "fa-search",
+      "text": "Add to Favorites",
+      "class": "bg-poppy"
+    }
+  }
+}

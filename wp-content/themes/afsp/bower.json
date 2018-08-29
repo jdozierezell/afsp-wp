@@ -1,0 +1,26 @@
+{
+  "name": "afsp",
+  "version": "0.0.0",
+  "authors": [
+    "Jonathan Dozier-Ezell <jdozierezell@gmail.com>"
+  ],
+  "description": "Theme for AFSP website",
+  "main": "index.php",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "Flowtype.js": "~1.1.0",
+    "flipclock": "FlipClock#^0.7.7"
+  },
+  "dependencies": {
+    "flickity": "^1.2.1",
+    "flickity-as-nav-for": "^1.0.4",
+    "clipboard": "^1.5.12"
+  }
+}

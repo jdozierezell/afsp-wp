@@ -1,0 +1,54 @@
+.multi-header {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.multi-header__icon {
+  position: relative;
+  bottom: 0.15rem;
+  transform: rotate(0deg);
+  transition: transform 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+.multi-header__icon.active-header__icon {
+  transform: rotate(90deg);
+}
+
+.multi-content__wrapper:not(:first-of-type) .multi-header {
+  margin-top: $ms-1;
+}
+
+.multi-header::after {
+  position: absolute;
+  bottom: (-$ms--2);
+  display: block;
+  height: $ms--7;
+  width: 10%;
+  background-color: $color-brand-blue;
+  content: '';
+  z-index: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.multi-header.active-header::after {
+  width: 100%;
+}
+
+.multi-section {
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.multi-section table tbody {
+  vertical-align: top;
+}
+
+@media (min-width: $bp-med) {
+  .multi-section table td {
+    width: 20vw;
+    padding-right: 1rem;
+  }
+}

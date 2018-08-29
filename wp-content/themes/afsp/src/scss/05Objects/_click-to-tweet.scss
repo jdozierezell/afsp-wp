@@ -1,0 +1,27 @@
+.sw-click-to-tweet {
+  border-left: 10px solid $color-poppy;
+  border-radius: 0.2em 0 0 0.2em;
+  margin: 0.5em 0 0.5em 1em;
+  padding: 0.5em;
+  quotes: "\201C""\201D""\2018""\2019";
+  width: 60%;
+  float: right;
+  font-family: $avenir-regular, sans-serif !important;
+  &:before {
+    color: rgba($color-poppy, 0.6);
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+}
+
+.sw-ctt-text {
+  display: inline-block !important;
+  font-size: $feature-header !important;
+}
+
+.sw-ctt-button {
+  padding: 1em 2em 1em 1em !important;
+}

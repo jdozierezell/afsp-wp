@@ -1,0 +1,11 @@
+.thoughts {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.thoughts__item {
+  @include columns(3);
+}

@@ -1,0 +1,133 @@
+.list-item {
+  width: $col-12;
+  list-style: none;
+  border-radius: $ms--2;
+  overflow: hidden;
+  box-shadow: 0 4px 11px 0 rgba($color-brand-dark-gray, 0.5);
+  margin: 0 $ms-base $ms-3;
+  flex-grow: 0;
+  flex-shrink: 0;
+  position: relative;
+  bottom: 0;
+  cursor: pointer;
+  transition: all $anim-speed-02 $anim-in-out;
+}
+
+.list-item:hover {
+  bottom: $ms--8;
+  box-shadow: 0 6px 20px 0 rgba($color-brand-dark-gray, 0.5);
+}
+
+.list-item a,
+.list-item a:hover,
+.list-item a:visited,
+.list-item a:active {
+  color: $color-brand-dark-gray;
+}
+
+.list-item__img {
+  background-color: $color-brand-light-gray;
+  max-width: 100%;
+  height: calc(#{$ms-6} * 4);
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+}
+
+.list-item__title {
+  margin: $ms-1 $ms-2 !important;
+  text-align: center;
+}
+
+.list-item__info .fa {
+  position: absolute;
+  bottom: ($ms--4);
+}
+
+.list-item__info .fa-folder {
+  color: $color-brand-blue;
+  left: $ms--1;
+}
+
+.list-item__info .fa-heart {
+  color: $color-poppy;
+  right: $ms--1;
+}
+
+@media (min-width: $bp-small) {
+  .list-item__img {
+    height: calc(#{$ms-6} * 6);
+  }
+}
+
+@media (min-width: $bp-small-2) {
+  .list-item {
+    width: $col-6;
+  }
+
+  .list-item__img {
+    height: calc(#{$ms-6} * 4);
+  }
+}
+
+@media (min-width: $bp-small-3) {
+  .list-item {
+    width: $col-4;
+  }
+
+  .list-item__img {
+    height: calc(#{$ms-6} * 3);
+  }
+}
+
+@media (min-width: $bp-med) {
+  .list-item {
+    width: $col-12;
+  }
+
+  .list-item__img {
+    height: calc(#{$ms-6} * 6);
+  }
+}
+
+@media (min-width: $bp-med-2) {
+  .list-item {
+    width: $col-6;
+  }
+
+  .list-item__img {
+    height: calc(#{$ms-6} * 4);
+  }
+}
+
+@media (min-width: $bp-med-3) {
+  .list-item__img {
+    height: calc(#{$ms-6} * 5);
+  }
+}
+
+@media (min-width: $bp-large) {
+  .list-item {
+    width: $col-4;
+  }
+
+  .list-item__img {
+    height: calc(#{$ms-6} * 4);
+  }
+}
+
+@media (min-width: $bp-large-2) {
+  .list-item {
+    width: $col-3;
+  }
+
+  .list-item__img {
+    height: calc(#{$ms-6} * 3);
+  }
+}
+
+@media (min-width: $bp-large-3) {
+  .list-item__img {
+    height: calc(#{$ms-6} * 4);
+  }
+}

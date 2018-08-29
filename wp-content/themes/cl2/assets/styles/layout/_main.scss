@@ -1,0 +1,46 @@
+.main {
+  width: $col-12;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: $ms-base;
+}
+
+.main--single-item {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.main--single-item::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.main--single-item .img-container__main .img--full {
+  box-shadow: 2px 2px 27px -7px $color-brand-dark-gray;
+}
+
+.main--multi-item {
+  margin-bottom: 1rem;
+}
+
+.main__button-wrapper {
+  margin: $ms-base 0 0;
+  display: flex;
+  align-items: stretch;
+}
+
+.main__button-wrapper .btn:not(:first-child) {
+  margin-left: $ms-base;
+}
+
+@media (min-width: $bp-med) {
+  .main {
+    width: calc(
+      #{$col-12} - (#{$ms-6} * 5) - 2em
+    ); // full width minus width of sidebar-nav
+  }
+}

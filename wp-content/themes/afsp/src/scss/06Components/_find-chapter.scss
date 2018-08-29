@@ -1,0 +1,255 @@
+.content-area {
+  min-height: 42vh;
+}
+
+.find-chapter__form {
+  background-color: $color-brand-blue;
+  color: $color-white;
+  width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 1rem;
+  @include responsive('medium') {
+    width: columns(12);
+  }
+  .features &, .sidebar__content-section &, .isosld__container & {
+    margin: 2rem -11.6%;
+    padding: 2rem 1rem 1rem;
+    @include responsive('medium') {
+      margin: 2rem auto;
+    }
+  }
+}
+
+
+.sidebar__content-section .find-chapter__form, 
+.isosld__container .find-chapter__form {
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  p {
+    display: none;
+  }
+  .find-chapter__locator {
+    order: 1;
+    width: 100%;
+  }
+  .gmw-radius-slider-wrapper {
+    order: 2;
+    width: 100%;
+  }
+  .find-chapter__dropdown {
+    order: 3;
+    margin-top: 1rem;
+    width: columns(12);
+    label {
+      color: $color-brand-light-gray;
+      padding: 0.5rem 0 0 0.5rem;
+    }
+    select {
+      margin-top: 0.5rem;
+    }
+  }
+  .gmw-submit-field-wrapper {
+    order: 4;
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+.find-chapter__locator {
+  @include columns(12);
+  font-size: 0.8rem;
+  order: 1;
+  @include responsive('medium') {
+    font-size: 1rem;
+  }
+  // .support-group__search & {
+  //   @include responsive('medium') {
+  //     @include columns(7);
+  //   }
+  // }
+}
+
+.find-chapter__input {
+  width: 100%;
+  background-color: $color-brand-blue;
+  border: 0;
+  border-bottom: 1px solid $color-white;
+  border-radius: 0px;
+  padding: 0.5rem 0rem 0.5rem 0.25rem;
+  transition: all 0.2s ease-in-out;
+  &:focus {
+    background-color: $color-white;
+    outline: 0;
+    border-radius: 0.5rem;
+    color: $color-brand-dark-gray;
+    padding-left: 1rem;
+  }
+  input {
+    border: none;
+    &::placeholder {
+      color: $color-brand-light-gray;
+    }
+  }
+}
+
+.find-chapter__dropdown {
+  font-size: 1rem;
+  order: 3;
+  width: columns(12);
+  color: $color-brand-dark-gray;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  @include responsive('medium') {
+    order: 4;
+    align-self: flex-end;
+    flex-grow: 1;
+    width: columns(6);
+  }
+  label {
+    width: 40%;
+    color: $color-white;
+    margin-top: 2rem;
+    text-align: left;
+    @include responsive('medium') {
+	  width: 30%;
+      &:nth-of-type(1) {
+        padding-left: 0.5rem;
+      }
+      &:nth-of-type(2) {
+      text-align: right;
+        padding-right: 1rem;
+      }
+    }
+  }
+  select {
+    width: 60%;
+    margin-top: 2rem;
+    @include responsive('medium') {
+      width: 70%;
+    }
+  }
+}
+
+.sidebar__content-section .find-chapter__dropdown label {
+  margin-top: 0;
+}
+
+.find-chapter__international {
+  width: 100%;
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: $color-brand-light-gray;
+  order: 5;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.find-chapter__results-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 5% 2rem;
+  width: 90%;
+  @include responsive('medium') {
+    margin: 0 auto 2rem;
+    width: 100%;
+  }
+}
+
+.find-chapter__pagination-wrapper {
+  margin: 0 auto;
+  width: columns(10);
+  order: 4;
+  @include responsive('medium') {
+    width: columns(6);
+  }
+  ul {
+    text-align: center;
+    li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.find-chapter__results-count {
+  @include columns(12);
+  order: 1;
+  padding: 0 0 2rem;
+  font-weight: 800;
+}
+
+.find-chapter__map {
+  @include columns(10);
+  order: 2;
+  height: 81vw;
+  margin: 0 auto;
+  @include responsive('medium') {
+    @include columns(7);
+    order: 3;
+    height: 60vh;
+    min-height: 25rem;
+    margin: 0;
+  }
+}
+
+.find-chapter__chapters-wrapper {
+  @include columns(12);
+  order: 3;
+  padding: 1em 0;
+  height: 60vh;
+  overflow-y: scroll;
+  @include responsive('medium') {
+    @include columns(5);
+    min-height: 25rem;
+    order: 2;
+  }
+}
+// http://jsfiddle.net/jeremy/Eh7xT/342/
+.find-chapter__chapters-wrapper::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.find-chapter__chapters-wrapper::-webkit-scrollbar:vertical {
+    width: 11px;
+}
+
+.find-chapter__chapters-wrapper::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white; /* should match background, can't be transparent */
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.find-chapter__chapters-wrapper h2 {
+	font-size: $feature-header;
+	font-family: $avenir-regular;
+}
+
+.wppl-single-result {
+  margin-bottom: 0.5em;
+}
+
+.support-group__content {
+  width: columns(10);
+  margin: 0 auto;
+  @include responsive('medium') {
+    width: columns(12);
+  }
+}
+
+.fa-map-marker {
+  position: relative;
+  top: -10px;
+  @include responsive('medium') {
+    top: 0;
+  }
+}

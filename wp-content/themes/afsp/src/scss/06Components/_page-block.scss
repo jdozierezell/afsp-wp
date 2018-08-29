@@ -1,0 +1,64 @@
+.block__links {
+  @extend .lost__links;
+}
+
+.block__link {
+  @include columns(12);
+  margin: 2rem 0;
+  color: $color-white;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  font-size: 1.1rem;
+  overflow: hidden;
+  @include responsive('small') {
+    flex: 1 0 columns(4);
+    margin: 2rem 0.5rem;
+  }
+  @include responsive('medium') {
+    flex: 1 0 columns(3);
+    margin: 2rem 0.5rem;
+  }
+  &--federal {
+    background-color: $color-poppy;
+    .block__category {
+      background-color: rgba($color-poppy, 0.8);
+    }
+    &:hover {
+      color: $color-white;
+      text-decoration: underline;
+    }
+  }
+  &--state {
+    background-color: $color-brand-blue;  
+    .block__category {
+      background-color: rgba($color-brand-blue, 0.8);
+    }
+    &:hover {
+      color: $color-white;
+      text-decoration: underline;
+    }
+  }
+  table {
+    width: 101%; // hides the hairline that appears beside the image.
+  }
+}
+
+.block__link-text {
+  position: relative;
+  top: -2px;
+  padding: 0 1.5rem 1rem;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.block__category {
+  position: absolute;
+  left: 0;
+  top: -2.1rem;
+  padding: 0.5rem;
+}
+
+.block__image {
+  background-color: $color-white;
+}

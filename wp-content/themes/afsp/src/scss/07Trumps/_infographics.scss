@@ -1,0 +1,8 @@
+.blog__content .img__infographic {
+  width: 100%;
+  padding: 1%;
+  @include responsive('medium') {
+    width: 50%;
+    display: inline;
+  }
+}

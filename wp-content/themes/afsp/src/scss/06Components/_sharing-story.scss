@@ -1,0 +1,196 @@
+.story-intro,
+.story-actions,
+.story-tips,
+.story-prompts,
+.story-topics {
+  width: 81%;
+  margin: 0 auto 2rem;
+  font-size: $body-copy;
+  @include responsive('large') {
+    width: 100%;
+  }
+}
+
+.story-intro > p,
+.story-topics > p,
+.story-topic > p {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.story-actions {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+  }
+
+.story-action-submit,
+.story-action-blog {
+	width: 100%;
+	@include responsive('medium') {
+		width: 48%
+	}
+}
+
+.story-action-submit {
+	margin-bottom: 2rem;
+	@include responsive('medium') {
+		margin-bottom: 0rem;
+	}
+}
+
+.story-action-submit,
+.story-action-blog {
+  color: $color-white;
+  font-family: $avenir-demi;
+  font-size: $features-header;
+  padding: $features-header;
+  text-decoration: none;
+  text-align: center;
+  background-color: $color-poppy;
+}
+
+.story-tips-header,
+.story-prompts-header,
+.story-tip-info > h2,
+.story-highlight-info > h2,
+.story-topics-header {
+  color: $color-brand-blue;
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 0 auto 1rem;
+  width: 100%;
+  @include responsive('medium') {
+    text-align: left;
+    margin-left: 0;
+    font-size: 2rem;
+  }
+}
+
+.story-prompts-subheader {
+	@extend .story-topics-header;
+	color: $color-brand-dark-gray;
+	@include responsive('medium') {
+		font-size: 1.5rem;
+	}
+}
+
+.story-tips ol {
+  margin: 1rem;
+  padding: 0;
+}
+
+.story-tips li:not(:last-of-type) {
+  padding-bottom: $body-copy;
+}
+
+.story-prompts,
+.story-topics {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 0;
+}
+
+.story-topics {
+	margin-bottom: 2rem;
+}
+
+.story-tip,
+.story-highlight {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.story-highlight {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.story-highlight-image,
+.story-highlight-copy {
+	width: 100%;
+	display: block;
+	margin-bottom: 2rem;
+	font-size: $body-copy;
+	@include responsive('large') {
+		width: 48%;
+	}
+}
+
+.story-highlight-copy {
+	margin-bottom: 0rem;
+}
+
+.story-highlight-copy *:first-child {
+	margin-top: 0rem;
+}
+
+.story-prompt {
+  border: 1px solid $color-brand-dark-gray;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  @include responsive('large') {
+    width: 48%;
+  }
+}
+
+.story-prompt-image {
+	margin-top: 1rem;
+	margin-bottom: $body-copy;
+}
+
+.story-highlight-image {
+  display: block;
+}
+
+.story-topic-wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  position: relative;
+}
+
+.story-topic {
+  width: 100%;
+  position: relative;
+  @include responsive('medium') {
+	flex: 1 0 28%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+  }
+}
+
+.story-topic-header,
+.story-topic-content {
+	position: absolute;
+}
+
+.story-topic-header {
+	width: 100%;
+	padding: 20% 10% 0;
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+.story-topic-content {
+	width: 100%;
+	padding: 10%;
+	top: 30%;
+}
+
+.story-topic:after {
+	content: '';
+	display: block;
+	background-image: url(//afsp.imgix.net/wp-content/uploads/2018/06/calendar.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-bottom: 100%;
+}

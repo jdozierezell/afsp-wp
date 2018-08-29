@@ -1,0 +1,91 @@
+.gallery {
+  margin-bottom: 3rem;
+  @include responsive('medium') {
+    margin-bottom: 0;
+  }
+}
+
+.gallery-cell__full {
+  position: relative;
+  width: 100%;
+  background: $color-brand-light-gray;
+  &:before {
+    content: '';
+    display: block;
+    min-height: initial;
+    padding-top: 100%;
+    @include responsive('medium') {
+      padding-top: 52.34%;
+    }
+  }
+  img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.gallery-cell__carousel {
+  position: relative;
+  width: 40%;
+  @include responsive('medium') {
+    width: 40%;
+    .everyday-heroes__carousel & {
+      width: 20%;
+    }
+  }
+  &:before {
+    content: '';
+    display: block;
+    height: 0;
+    padding-top: 100%;
+  }
+  img {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+}
+
+.gallery--instagram, .gallery--flickr {
+  .gallery-cell__carousel {
+    img {
+      border-radius: 0;
+      width: 95%;
+    }
+  }
+}
+
+.gallery--flickr .gallery-cell__carousel img {
+  height: auto;
+  top: 20%;
+}
+
+.gallery-nav {
+  .gallery-cell {
+    position: relative;
+    display: none;
+    @include responsive('medium') {
+      display: block;
+    }
+    &:before {
+      content: '';
+      display: block;
+      height: 0;
+      padding-top: 100%;
+    }
+    img {
+      position: absolute;
+      top: 5%;
+      left: 5%;
+      width: 90%;
+      height: 90%;
+      box-sizing: border-box;
+    }
+  }
+}

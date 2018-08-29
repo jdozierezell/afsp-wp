@@ -1,0 +1,54 @@
+// social feeds on the chapter pages
+.social-feeds {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  .facebook, .twitter {
+    @include columns(6);
+  }
+  .photo-feed {
+    @include columns(12);
+    border-top: 1px solid $color-brand-dark-gray;
+    // background: linear-gradient(45deg, rgba(136,139,141,0.65) 0%,rgba(136,139,141,0) 90%);
+    margin: 1rem 0;
+  }
+}
+
+// tagboard-like awesomeness
+.social__board {
+  @include columns(10);
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+}
+.social__card {
+  width: 100%;
+  border: 1px solid $color-brand-light-gray;
+  padding: 0.25rem;
+  overflow: hidden;
+  @include responsive('small') {
+    width: 50%;
+  }
+  @include responsive('medium') {
+    width: 25%;
+  }
+}
+.social__photo {
+  position: relative;
+}
+.social__profile {
+  margin-top: 10%;
+}
+.social__profile-image {
+  position: absolute;
+  bottom: -10%;
+  left: 38%;
+  width: 5vw;
+  height: 5vw;
+  overflow: hidden;
+  display: block;
+  border-radius: 50%;
+  border: 0.2rem solid $color-white;
+}

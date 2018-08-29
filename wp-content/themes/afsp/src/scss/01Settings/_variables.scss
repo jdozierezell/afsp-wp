@@ -1,0 +1,72 @@
+// Rebrand Colors
+$color-brand-blue: rgb(57, 109, 255);
+$color-brand-dark-gray: rgb(38, 38, 38);
+$color-brand-light-gray: rgb(234, 234, 234);
+$color-yellow: rgb(255, 206, 8);
+$color-dark-blue: rgb(57, 40, 189);
+$color-poppy: rgb(255, 87, 59);
+$color-green: rgb(42, 216, 145);
+$color-fuschia: rgb(235, 65, 159);
+$color-white: rgb(255, 255, 255);
+$color-brand-blue-light: lighten($color-brand-blue, 5%);
+// Social Colors
+$twitter: #00aced;
+$facebook: #3b5998;
+$googleplus: #dd4b39;
+$pinterest: #cb2027;
+$linkedin: #007bb6;
+$youtube: #bb0000;
+$vimeo: #aad450;
+$tumblr: #32506d;
+$instagram: #517fa4;
+$flickr: #ff0084;
+$dribbble: #ea4c89;
+$quora: #a82400;
+$foursquare: #0072b1;
+$forrst: #5B9A68;
+$vk: #45668e;
+$wordpress: #21759b;
+$stumbleupon: #EB4823;
+$yahoo: #7B0099;
+$blogger: #fb8f3d;
+$soundcloud: #ff3a00;
+// Fonts
+$avenir-regular: 'AvenirNextLTPro-Regular';
+$avenir-italic: 'AvenirNextLTPro-It';
+$avenir-demi: 'AvenirNextLTPro-Demi';
+$avenir-demi-italic: 'AvenirNextLTPro-DemiIt';
+$avenir-bold: 'AvenirNextLTPro-Bold';
+$avenir-bold-italic: 'AvenirNextLTPro-BoldIt';
+$paul-grotesk: 'PaulGroteskSoft-Bold';
+// Font sizes
+$video: 3.0rem;
+$features-title: $video;
+$title: 2.0rem;
+$video-mobile: 1.75rem;
+$features-header: 1.6rem;
+$button: 1.3rem;
+$splash-action: $button;
+$feature-header: $button;
+$feature-body: $button;
+$body-copy: 1.2rem;
+// Section heights
+$splash: 25;
+$splash-vh: $splash+vh;
+$splash-percent: $splash+%;
+$splash-min: $splash+rem;
+$full-splash: 33.33;
+$full-splash-vh: $full-splash+vh;
+$full-splash-percent: $full-splash+%;
+$full-splash-min: $full-splash+rem;
+$full-splash-xl: 40;
+$full-splash-xl-vh: $full-splash-xl * 1.61+vh;
+$full-splash-xl-percent: $full-splash-xl * 1.61+%;
+$full-splash-xl-min: $full-splash-xl+rem;
+// Section widths
+$blog: 550px;
+$landing: 700px;
+// Button Styles
+$rounded: 0.3em;
+// Standard Hero Sizes Just for Reference
+// 1080 x 1080 100%
+// 1920 x 1005 52.34%

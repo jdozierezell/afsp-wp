@@ -1,0 +1,38 @@
+.broken {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.image__404 {
+  @include columns(10);
+  margin: 0 auto;
+  @include responsive('medium') {
+    @include columns(6);
+  }
+}
+
+.broken__body {
+  @include columns(10);
+  margin: 0 auto;
+  @include responsive('medium') {
+    @include columns(6);
+  }
+}
+
+.broken__text, {
+  font-size: $features-header;
+}
+
+.broken__search {
+}
+
+.broken__link {
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+.landing__title--404 {
+  text-align: center;
+}

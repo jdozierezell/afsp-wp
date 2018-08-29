@@ -1,0 +1,32 @@
+.container {
+    display: block;
+    margin: 0 auto;
+    @include responsive('large') {
+        width: 80%;
+        max-width: 960px;
+    }
+    &--relative {
+        position: relative;
+    }
+    &--large {
+        max-width: 1280px;
+    }
+    &--small {
+        max-width: $landing;
+    }
+}
+
+.container__full {
+    display: block;
+    width: 100%;
+    &--relative {
+        position: relative;
+    }
+    &--footer {
+        background-color: $color-dark-blue;
+        border-top: solid 0.33rem $color-brand-blue;
+    }
+    &--alt-footer {
+        background-color: $color-brand-blue;
+    }
+}

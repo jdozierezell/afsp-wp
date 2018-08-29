@@ -1,0 +1,18 @@
+/* ------------------------------------ *\
+    #LINKS
+\* ------------------------------------ */
+
+/**
+ * Links
+ */
+a {
+  color: $color-text-link;
+  text-decoration: none;
+  outline: 0;
+  transition: all $anim-speed-02 $anim-ease;
+
+  &:hover,
+  &:focus {
+    color: $color-text-link-hover;
+  }
+}

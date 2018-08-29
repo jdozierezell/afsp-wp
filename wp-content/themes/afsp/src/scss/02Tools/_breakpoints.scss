@@ -1,0 +1,26 @@
+$breakpoints: (
+  'x-small'   : (min-width: 375px),  // Phone size.
+  'features'  : (min-width: 500px),  // Fixing features layout on small screens.
+  'small'     : (min-width: 667px),  // Phone size.
+  'medium'    : (min-width: 768px),  // Tablet size.
+  'nav'       : (min-width: 960px), // Where the nav breaks.
+  'large'     : (min-width: 1024px), // Laptop and Desktop size.
+  'x-large'   : (min-width: 1280px)  // Really big desktops.
+);
+
+@mixin responsive($break-name) {
+  
+  // If $break-name exists in $breakpoints
+  @if map-has-key($breakpoints, $break-name) {
+    // Print media query based on $break-name
+    @media #{inspect(map-get($breakpoints, $break-name))} {
+      @content;
+    }
+  }
+  
+  // If $break-name doesn't exist in $breakpoints
+  @else {
+    @warn "No value could be retrieved from `#{$break-name}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}

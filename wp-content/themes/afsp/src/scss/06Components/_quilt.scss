@@ -1,0 +1,229 @@
+.quilt__intro {
+  width: columns(10);
+  margin: 1rem auto;
+  @include responsive('medium') {
+    width: columns(11);
+  }
+}
+
+.quilt__gallery .alm-reveal {
+  @extend .quilt__intro;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  .quilt__square {
+    flex: 0 0 auto;
+    width: 50%;
+    @include responsive('medium') {
+      width: 33.3%;
+    }
+    @include responsive('large') {
+      width: 25%;
+    }
+    @include responsive('x-large') {
+      width: 16.6%;
+    }
+    .quilt__link {
+      filter: saturate(0.8);
+      display: block;
+      position: relative;
+      overflow: hidden;
+      &:hover {
+        box-shadow: 2px 2px 6px $color-brand-dark-gray;
+        filter: saturate(1);
+        transition: all 0.2s ease-in-out;
+        .quilt__square-title {
+          opacity: 1;
+          bottom: 0;
+          background: rgba($color-brand-dark-gray, 0.5);
+          color: $color-white;
+          transition: all 0.2s ease-in-out;
+          &:before {
+            width: 100%;
+            transition: all 0.4s ease-in-out;
+          }
+        }
+      }
+      img {
+        display: block;
+      }
+    }
+
+    .quilt__square-title {
+      position: absolute;
+      bottom: -1rem;
+      width: 100%;
+      text-align: center;
+      text-decoration: none;
+      padding: 1rem;
+      opacity: 0;
+      color: $color-white;
+      &:before {
+        width: 0%;
+        height: 2px;
+        margin-bottom: 0.5rem;
+        background: $color-poppy;
+        content: "";
+        display: block;
+      }
+    }
+  }
+}
+
+.quilt__detail {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: $color-white;
+  box-shadow: 0px 0px 10px 5px #111;
+  width: columns(10);
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+  &:after {
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+.mfp-image-holder .mfp-close {
+  color: $color-brand-dark-gray;
+  line-height: 2rem;
+  font-size: 2rem;
+  text-align: right;
+  padding-right: 1.25rem;
+}
+
+img.mfp-img {
+  width: auto;
+  max-width: columns(6);
+}
+
+.mfp-close {
+  color: $color-brand-dark-gray;
+}
+
+.mfp-figure {
+  line-height: normal;
+}
+
+.quilt__detail-body {
+  @include columns(6);
+  position: initial;
+  margin-top: 3em;
+  div {
+    color: $color-brand-dark-gray;
+  }
+}
+
+.quilt__gallery2 {
+  @extend .quilt__intro;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  .quilt__square {
+    flex: 0 0 auto;
+    width: 50%;
+    @include responsive('medium') {
+      width: 33.3%;
+    }
+    @include responsive('large') {
+      width: 25%;
+    }
+    @include responsive('x-large') {
+      width: 16.6%;
+    }
+    .quilt__link {
+      filter: saturate(0.8);
+      display: block;
+      position: relative;
+      overflow: hidden;
+      &:hover {
+        box-shadow: 2px 2px 6px $color-brand-dark-gray;
+        filter: saturate(1);
+        transition: all 0.2s ease-in-out;
+        .quilt__square-title {
+          opacity: 1;
+          bottom: 0;
+          background: rgba($color-brand-dark-gray, 0.5);
+          color: $color-white;
+          transition: all 0.2s ease-in-out;
+          &:before {
+            width: 100%;
+            transition: all 0.4s ease-in-out;
+          }
+        }
+      }
+      img {
+        display: block;
+      }
+    }
+
+    .quilt__square-title {
+      position: absolute;
+      bottom: -1rem;
+      width: 100%;
+      text-align: center;
+      text-decoration: none;
+      padding: 1rem;
+      opacity: 0;
+      color: $color-white;
+      &:before {
+        width: 0%;
+        height: 2px;
+        margin-bottom: 0.5rem;
+        background: $color-poppy;
+        content: "";
+        display: block;
+      }
+    }
+  }
+}
+
+.quilt__navigation {
+  @extend .quilt__intro;
+  height: 2rem;
+  font-family: $avenir-bold;
+  font-size: $button;
+  a {
+    text-decoration: none;
+  }
+  a:first-child {
+    float: left;
+  }
+  a:last-child {
+    float:right;
+  }
+}
+
+.previous-quilt-squares .quilt__gallery2 {
+  width: initial;
+}
+
+.current-quilt-square {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.current-quilt-square img,
+.current-quilt-square-info {
+  width: 100%;
+  flex-grow: 1;
+  padding: 2rem;
+  @include responsive('medium') {
+    width: calc(50% - 2rem);
+  }
+}
+
+.current-quilt-square img {
+  @include responsive('medium') {
+    border-right: 1px solid $color-brand-dark-gray;
+  }
+}

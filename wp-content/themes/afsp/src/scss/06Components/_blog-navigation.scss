@@ -1,0 +1,38 @@
+.nav-links {
+  margin: 1em 0;
+}
+
+.nav-next {
+  display: inline-block;
+  float: right;
+  a {
+    color: $color-poppy;
+    background:{
+      image: url(assets/icons/caret-right.svg);
+      repeat: no-repeat;
+      position: right center;
+      size: 1em;
+    }
+    padding-right: 1em;
+    &:hover {
+      color: darken($color-poppy, 20%);
+    }
+  }
+}
+
+.nav-previous {
+  display: inline-block;
+  a {
+    color: $color-poppy;
+    background:{
+      image: url(assets/icons/caret-left.svg);
+      repeat: no-repeat;
+      position: left center;
+      size: 1em;
+    }
+    padding-left: 1em;
+    &:hover {
+      color: darken($color-poppy, 20%);
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<main class="main">
+  <header class="page-header">
+    <h1>{{ title.titleText }}</h1>
+    <div class="{{ buttonWrapperClass }}">
+      {{> atoms-button }}
+    </div>
+  </header>
+  <ul class="item-list">
+    {{# listItems.eight }}
+      {{> molecules-single-list-item }}
+    {{/ listItems.eight }}
+  </ul>
+</main>

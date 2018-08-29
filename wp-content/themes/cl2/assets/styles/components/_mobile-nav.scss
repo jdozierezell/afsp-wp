@@ -1,0 +1,27 @@
+.mobile-nav {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-bottom: $ms-1;
+}
+
+.mobile-nav .btn {
+  flex-grow: 1;
+  margin: $ms--2;
+  border-radius: $ms--2;
+  text-align: center;
+}
+
+.mobile-nav .btn .fa {
+  vertical-align: text-top;
+  font-size: $ms-1;
+}
+
+@media (min-width: $bp-med) {
+  .mobile-nav {
+    display: none;
+  }
+}

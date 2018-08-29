@@ -1,0 +1,23 @@
+/* ------------------------------------ *\
+    #BODY
+\* ------------------------------------ */
+
+/**
+ * Body base styles
+ */
+body {
+  background: $color-white;
+  color: $color-brand-dark-gray;
+  font-family: $font;
+  font-size: $ms-base;
+  line-height: $ms-2;
+  -webkit-text-size-adjust: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+body * {
+  box-sizing: border-box;
+}

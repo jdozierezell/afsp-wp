@@ -1,0 +1,37 @@
+.acf-field {
+  padding: 1rem 0 !important;
+  label {
+    font-size: 1rem !important;
+  }
+  input, select {
+    font-size: 1rem !important;
+  }
+  .acf-label {
+    label {
+      font-size: $body-copy !important;
+    }
+    p {
+      font-size: 0.8rem !important;
+    }
+  }
+}
+
+.acf-field[data-type="message"] .acf-label label {
+  font-size: $features-header !important;
+}
+
+#acf-receive-documentary .acf-label label {
+  font-size: $body-copy !important;
+}
+
+#acf-additional-info .acf-label label {
+  font-size: 0.8rem !important;
+}
+
+.acf-form-submit {
+  margin-bottom: 1rem;
+}
+
+div[data-name="sd_registration_link"], div[data-name="sd_date_submitted"], div[data-name="sd_custom_date"] {
+  display: none;
+}

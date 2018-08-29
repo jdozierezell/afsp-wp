@@ -1,0 +1,163 @@
+.isosld__video {
+    background-image: url(//afsp.imgix.net/wp-content/uploads/2016/01/iStock_000015882268Large_E.jpg?w=1400);
+}
+
+.isosld__container {
+    background-color: $color-dark-blue;
+    padding-top: 0.01rem;
+    color: $color-white;
+    &--find {
+        background-color: $color-brand-blue;
+        .find-chapter__form,
+        .isosld__container .find-chapter__input {
+            background-color: transparent;
+            padding-top: 0;
+            margin-top: 0;
+        }
+        .find-chapter__form {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.gallery-cell__carousel .isosld__image {
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid $color-white;
+}
+
+.isosld__desc {
+    @include columns(10);
+    margin: 0rem auto 3rem;
+    font-size: $body-copy;
+    @include responsive('medium') {
+        @include columns(8);
+    }
+}
+
+.isosld__tag {
+    text-align: center;
+    font-size: $features-title;
+}
+
+.isosld__header {
+    padding: 1rem;
+    font-size: $features-header;
+    .container__full>&,
+    .container & {
+        font-size: $features-title;
+        text-align: center;
+        margin: 2rem auto -0.5rem;
+    }
+}
+
+.isosld__flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 0 4rem 0 0;
+}
+
+.isosld__nav {
+    width: calc(#{columns(4)} + 4%);
+    height: 100vh;
+    border-left: 1rem solid $color-brand-blue;
+}
+
+.isosld__content {
+    @include columns(8);
+    height: 100vh;
+    overflow: scroll;
+}
+
+.isosld__fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.isosld__noscroll {
+    overflow: hidden;
+}
+
+.isosld__overlay {
+    opacity: 0;
+    display: block;
+    text-align: center;
+    padding: 40% 1vw 0;
+    background-color: rgba($color-brand-blue, 0.8);
+    color: $color-white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    @include responsive('medium') {
+        font-size: 1.25vw;
+    }
+    &:hover {
+        color: $color-white;
+    }
+}
+
+.isosld__stories {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    div {
+        width: 100%;
+        height: 100vw;
+        overflow: hidden;
+        position: relative;
+        @include responsive('medium') {
+            width: calc((64.5vw - 4rem)/4); // based on container width of 8 columns
+            height: calc((64.5vw - 4rem)/4);
+        }
+        &:hover {
+            img {
+                width: 110%;
+                margin-top: -2.5%;
+                margin-left: -2.5%;
+            }
+            .isosld__overlay {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.isosld__image {
+    display: block;
+    width: 104%;
+    max-width: inherit;
+    position: relative;
+    top: -2%;
+    left: -2%;
+    transition: all 0.2s ease-in-out;
+}
+
+.isosld__email {
+    background-color: $color-brand-blue;
+    &::placeholder {
+        color: $color-white;
+    }
+}
+
+.isosld__cta {
+    margin-top: 0;
+}
+
+.isosld__carousel {
+    margin-top: -1.5rem;
+    img {
+        background-color: $color-white;
+    }
+}

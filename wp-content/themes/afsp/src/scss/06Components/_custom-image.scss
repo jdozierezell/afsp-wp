@@ -1,0 +1,150 @@
+#custom-image {
+    background-image: url('https://afsp.imgix.net/wp-content/uploads/2017/04/IMG_3742.jpg?w=1440');
+    background-size: cover;
+    background-position: center;
+    #design-wrapper {
+        padding: 2rem;
+        text-align: center;
+        h1 {
+            margin-bottom: 2rem;
+            font-size: $video;
+            color: $color-white;
+            text-shadow: 2px 2px 4px $color-brand-dark-gray;
+        }
+        .step-number {
+            background-color: $color-white;
+            color: $color-brand-blue;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            font-weight: bold;
+            display: block;
+            margin: 0.5rem auto;
+            line-height: 2rem;
+        }
+    }
+    #imageLoader {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+    }
+    #imageLoader+label,
+    #message,
+    #download {
+        @include columns(10);
+        font-size: 1.25em;
+        font-weight: bold;
+        color: $color-white;
+        background-color: rgba($color-brand-blue, 0.6);
+        display: inline-block;
+        cursor: pointer;
+        margin: 0.5rem auto 1rem;
+        padding: 1rem;
+        text-align: center;
+        border: $color-brand-blue 5px dashed;
+        transition: background-color 0.25s;
+        &:hover {
+            background-color: rgba($color-poppy, 1);
+        }
+        @include responsive('small') {
+            @include columns(6);
+        }
+        @include responsive('nav') {
+            @include columns(4);
+        }
+    }
+    #canvas-wrapper {
+        position: relative;
+        width: 80vw;
+        height: 80vw;
+        margin: 2rem auto;
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80vw;
+            height: 80vw;
+        }
+        @include responsive('small') {
+            width: 60vw;
+            height: 60vw;
+            canvas {
+                width: 60vw;
+                height: 60vw;
+            }
+        }
+        @include responsive('medium') {
+            width: 40vw;
+            height: 40vw;
+            canvas {
+                width: 40vw;
+                height: 40vw;
+            }
+        }
+        @include responsive('x-large') {
+            width: 30vw;
+            height: 30vw;
+            canvas {
+                width: 30vw;
+                height: 30vw;
+            }
+        }
+    }
+    #downloadCanvas {
+        position: absolute;
+        top: -10000px;
+        left: -10000px;
+        width: 400px;
+        height: 400px;
+    }
+    .overlays {
+        clear: both;
+        margin: 2rem auto;
+        background-color: rgba($color-white, 0.6);
+        .container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .message-header {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+            font-size: $title;
+            margin: 1rem 0;
+            background: transparent;
+        }
+    }
+    .overlay {
+        @include columns(6);
+        background-color: $color-brand-light-gray;
+        cursor: pointer;
+        @include responsive('medium') {
+            @include columns(3);
+        }
+    }
+    #overlayCanvas {
+        border: 10px solid $color-white;
+    }
+}
+
+#about,
+#help {
+    color: $color-white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover {
+        text-shadow: 1px 1px 1px $color-brand-dark-gray;
+    }
+}
+
+.help-modal__message {
+    text-align: left;
+}

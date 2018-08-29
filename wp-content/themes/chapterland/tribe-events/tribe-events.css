@@ -1,0 +1,16 @@
+.tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"], 
+.tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"] > a,
+.tribe-events-button.tribe-inactive, 
+.tribe-events-button:hover, 
+#tribe-events .tribe-events-button, 
+.tribe-events-button.tribe-active,
+#tribe-bar-form .tribe-bar-submit input[type=submit] {
+  background-color: rgb(0,98,155);
+}
+.tribe-events-calendar td div[id*="tribe-events-daynum-"],
+#tribe-events .tribe-events-button:hover, 
+.tribe-events-button.tribe-active:hover,
+#tribe-bar-form .tribe-bar-submit input[type=submit]:hover {
+  background-color: rgba(0,98,155,.2);
+  color: #333;
+}

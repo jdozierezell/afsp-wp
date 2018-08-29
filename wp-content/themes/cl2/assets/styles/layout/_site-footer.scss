@@ -1,0 +1,14 @@
+.site-footer {
+  border-top: 1px solid $color-brand-blue;
+  padding: $ms-2 $ms-2 $ms--2;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+  width: 100vw;
+  background-color: rgba($color-white, 0.6);
+}
+
+.site-footer p {
+  margin: 0;
+  padding: 0;
+}

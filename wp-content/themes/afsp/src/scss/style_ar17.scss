@@ -1,0 +1,654 @@
+// Variables
+@import '01Settings/variables';
+@import '02Tools/mixins';
+@import '02Tools/columns';
+@import '02Tools/breakpoints';
+@import '02Tools/fullpage';
+@import '02Tools/openlayers';
+@import '07Trumps/rotate';
+@import '07Trumps/loader';
+
+.ar17-menu {
+  position: fixed;
+  z-index: 998;
+  top: -100vh;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-brand-dark-gray;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  transition: 0.25s ease-in-out;
+}
+
+.ar17-menu.ar17-menu-open {
+  top: 0;
+}
+
+.ar17-menu-item {
+  text-align: left;
+  padding-left: 10vw;
+  width: 100vw;
+}
+
+.ar17-menu-link {
+  color: $color-white;
+  text-decoration: none;
+  font-size: 6vh;
+  padding: 1.5vh;
+  display: inline-block;
+  opacity: 0;
+  position: relative;
+  top: 1rem;
+  transition: 0.5s ease-in-out 0.3s;
+}
+
+.ar17-menu-open .ar17-menu-link {
+  opacity: 1;
+  top: 0;
+}
+
+#ar17-menu-toggle {
+  width: 64px;
+  height: 56px;
+  position: fixed;
+  z-index: 999;
+  top: 32px;
+  right: 32px;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  background: $color-brand-blue;
+  overflow: hidden;
+}
+
+#ar17-menu-toggle span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 1rem;
+  background: $color-white;
+  opacity: 1;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+#ar17-menu-toggle span:nth-child(even) {
+  left: 32px;
+  border-radius: 0 9px 9px 0;
+}
+
+#ar17-menu-toggle span:nth-child(odd) {
+  left: 16px;
+  border-radius: 9px 0 0 9px;
+}
+
+#ar17-menu-toggle span:nth-child(1),
+#ar17-menu-toggle span:nth-child(2) {
+  top: 10px;
+}
+
+#ar17-menu-toggle span:nth-child(3),
+#ar17-menu-toggle span:nth-child(4) {
+  top: 26px;
+}
+
+#ar17-menu-toggle span:nth-child(5),
+#ar17-menu-toggle span:nth-child(6) {
+  top: 42px;
+}
+
+#ar17-menu-toggle.ar17-menu-open span:nth-child(1),
+#ar17-menu-toggle.ar17-menu-open span:nth-child(6) {
+  transform: rotate(45deg);
+}
+
+#ar17-menu-toggle.ar17-menu-open span:nth-child(2),
+#ar17-menu-toggle.ar17-menu-open span:nth-child(5) {
+  transform: rotate(-45deg);
+}
+
+#ar17-menu-toggle.ar17-menu-open span:nth-child(1) {
+  left: 17px;
+  top: 20px;
+  width: 18px;
+}
+
+#ar17-menu-toggle.ar17-menu-open span:nth-child(2) {
+  left: 29px;
+  top: 20px;
+  width: 18px;
+}
+
+#ar17-menu-toggle.ar17-menu-open span:nth-child(3) {
+  left: -50%;
+  opacity: 0;
+}
+
+#ar17-menu-toggle.ar17-menu-open span:nth-child(4) {
+  left: 100%;
+  opacity: 0;
+}
+
+#ar17-menu-toggle.ar17-menu-open span:nth-child(5) {
+  left: 17px;
+  top: 32px;
+  width: 18px;
+}
+
+#ar17-menu-toggle.ar17-menu-open span:nth-child(6) {
+  left: 29px;
+  top: 32px;
+  width: 18px;
+}
+
+.ar17-section {
+  width: 100vw;
+  min-height: 100vh;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  position: relative;
+  @media screen and (min-device-aspect-ratio: 2/1) {
+    min-height: calc(100vw/2);
+  }
+}
+
+.ar17-section h2 {
+  padding: 2rem 2rem 1.6rem;
+  text-align: center;
+  margin: 0 2rem 2rem;
+  font-size: $title;
+  width: calc(100% - 4rem);
+  font-family: $paul-grotesk;
+}
+
+.cover,
+.close {
+  background-size: cover;
+  background-position: top center;
+  background-blend-mode: hard-light;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.cover img,
+.close img {
+  width: columns(6);
+  display: block;
+  margin: 4rem auto 1rem;
+  @include responsive(medium) {
+    width: columns(3);
+  }
+}
+
+.cover h1 {
+  color: white;
+  font-family: $paul-grotesk;
+  font-size: 4rem;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.cover {
+  background-image: linear-gradient(
+      10deg,
+      rgb(57, 109, 255) 20%,
+      rgba(38, 178, 255, 0.1) 70%
+    ),
+    url(//afsp.imgix.net/wp-content/uploads/2017/10/ar17-cover.jpg);
+  align-content: flex-end;
+}
+
+.close {
+  background-image: linear-gradient(
+      10deg,
+      rgb(57, 109, 255) 20%,
+      rgba(38, 178, 255, 0.2) 70%
+    ),
+    url(//afsp.imgix.net/wp-content/uploads/2017/11/DSCF3800.jpg);
+  align-content: flex-end;
+}
+
+.close h2,
+.close h3 {
+  color: white;
+  font-family: $paul-grotesk;
+  font-size: 3rem;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.close h3 {
+  font-size: 2rem;
+}
+
+.social-icon__container--annual {
+  background: transparent;
+}
+
+.bob-slide,
+.project2025-slide {
+  background-image: url(//afsp.imgix.net/wp-content/uploads/2017/10/Video-Slide-Blank.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.bob-slide h2,
+.project2025-slide > h2 {
+  background-color: $color-poppy;
+  color: $color-white;
+}
+
+.bob-slide .bob-slide__content,
+.project2025-slide .project2025-slide__content {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.bob-slide .videoEmbed,
+.project2025-slide .videoEmbed,
+.comms-achievements-slide .videoEmbed {
+  width: calc(90% - 4rem);
+  padding-bottom: 90vh;
+  margin: 2rem auto 0;
+  @include responsive('medium') {
+    width: calc(50% - 4rem);
+    padding-bottom: 50vh;
+  }
+}
+
+.bob-slide .bob-letter,
+.project2025-slide .project2025-statement {
+  width: calc(80% - 4rem);
+  max-width: 1080px;
+  margin: 0.5rem auto;
+  color: $color-white;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  text-align: center;
+}
+
+.bob-slide .bob-letter h3,
+.project2025-slide .project2025-statement h3 {
+  font-size: $features-header;
+  text-align: justify;
+  padding-top: 1rem;
+}
+
+.bob-slide .bob-letter p,
+.project2025-slide .project2025-statement p {
+  width: 100%;
+}
+
+.project2025-slide .project2025-statement p {
+  text-align: left;
+}
+
+.ol-map {
+  padding: 0;
+}
+
+.ol-map .ol-map__events {
+  position: absolute;
+  top: calc(50vh - 1rem);
+  color: $color-brand-dark-gray;
+  z-index: 1;
+  width: 100vw;
+  text-align: center;
+  font-size: $video;
+  font-family: $paul-grotesk;
+  @include responsive(medium) {
+    padding-left: 25vw;
+    padding-right: 25vw;
+    width: 50vw;
+  }
+}
+
+.ol-map img {
+  width: initial;
+}
+
+.ol-map#map-1-wrapper h2 {
+  background-color: $color-green;
+  color: $color-white;
+  position: absolute;
+  z-index: 1;
+  margin-top: 2rem;
+  width: calc(93% - 4rem);
+}
+
+.ol-map#map-2-wrapper h2 {
+  background-color: $color-brand-blue;
+  color: $color-white;
+  position: absolute;
+  z-index: 1;
+  margin-top: 2rem;
+}
+
+.ar17-map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.ar17-map-ak,
+.ar17-map-hi {
+  top: initial;
+  right: initial;
+  width: 180px;
+  height: 180px;
+  border: 3px solid $color-white;
+}
+
+.ar17-map-hi {
+  left: 183px;
+  height: 110px;
+}
+
+.comms-achievements-slide {
+  background-image: url(//afsp.imgix.net/wp-content/uploads/2017/12/Card-2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.comms-achievements-slide h2 {
+  background-color: $color-brand-blue;
+  color: $color-white;
+}
+
+.recognition-slide {
+  background-image: linear-gradient(90deg, #26b2ff, #396dff);
+  height: inherit;
+}
+
+.recognition-slide > h2 {
+  background-color: $color-dark-blue;
+  color: $color-white;
+}
+
+.recognition-section {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100vw;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+
+.recognition-scroll {
+  overflow: scroll;
+}
+
+.recognition-slide .recognition-images {
+  width: columns(6);
+  position: relative;
+}
+
+.recognition-slide .recognition-image {
+  width: initial;
+  max-width: columns(12);
+  height: auto;
+  display: block;
+  position: relative;
+  margin: 0.5rem;
+  border: 0.25rem solid $color-white;
+  border-radius: 4px;
+}
+
+.recognition-slide .recognition-copy {
+  width: columns(6);
+  color: $color-white;
+  font-size: $body-copy;
+}
+
+.recognition-slide .recognition-copy a {
+  color: $color-white;
+  font-family: $avenir-bold;
+}
+
+.get-involved-slide {
+  background-image: url(//afsp.imgix.net/wp-content/uploads/2017/10/Get-Involved.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.get-involved-slide > h2 {
+  background-color: $color-brand-blue;
+  color: $color-white;
+}
+
+.get-involved-slide .help {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  margin: 4rem 2rem 2rem;
+}
+
+.get-involved-slide .help a {
+  flex: 1;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 1rem;
+  display: inline-block;
+  background-color: $color-white;
+  border-radius: 6px;
+  color: $color-brand-dark-gray;
+  font-family: $paul-grotesk;
+  text-align: center;
+  font-size: $body-copy;
+}
+
+.financials-slide {
+  background-image: linear-gradient(90deg, #3928bd, #392880);
+  color: $color-white;
+}
+
+.financials-slide > h2 {
+  background-color: $color-yellow;
+  color: $color-brand-dark-gray;
+}
+
+.financials-slide .financial-highlights {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  margin: 4rem 2rem 2rem;
+}
+
+.financials-slide .financial-highlight {
+  flex: 1;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 1.5rem;
+  display: inline-block;
+  background-color: $color-white;
+  border-radius: 6px;
+  color: $color-brand-dark-gray;
+  font-family: $paul-grotesk;
+  text-align: center;
+  font-size: $body-copy;
+}
+
+.financials-slide .financial-highlight p {
+  margin: 1rem;
+  font-size: $body-copy;
+}
+
+.financials-slide .financials-summary {
+  margin: 2rem;
+}
+
+.council-slide {
+  background-image: url(//afsp.org/wp-content/uploads/2017/11/afsp_lifesaver_blue.png),
+    linear-gradient(45deg, #396dff, #26b2ff);
+  background-repeat: no-repeat;
+  background-position: bottom -150px right -150px, top left;
+  background-size: 50%, cover;
+  height: initial;
+  min-height: 100vh;
+}
+
+.council-slide > h2 {
+  background-color: $color-poppy;
+  color: $color-white;
+}
+
+.council-slide .councils {
+  width: calc(100vw - 4rem);
+  margin-left: 2rem;
+  margin-right: 2rem;
+  color: $color-white;
+}
+
+.council-slide .councils h3 {
+  border-bottom: 2px solid $color-white;
+  margin-bottom: 0.4rem;
+}
+
+.council-slide .councils ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 1rem;
+  column-count: 2;
+  @include responsive('medium') {
+    column-count: 3;
+  }
+}
+
+.council-slide .councils li {
+  padding-bottom: 0.2rem;
+}
+
+.donor-slide {
+  background-image: url(//afsp.org/wp-content/uploads/2017/10/afsp_logo_fuchsia_wash.png),
+    linear-gradient(45deg, #ff7cda, #e12a91);
+  background-repeat: no-repeat;
+  background-position: bottom -150px right -150px, top left;
+  background-size: 50%, cover;
+}
+
+.donor-slide > h2 {
+  background-color: $color-dark-blue;
+  color: $color-white;
+}
+
+.donor-slide .donors {
+  width: calc(100vw - 4rem);
+  margin-left: 2rem;
+  margin-right: 2rem;
+  color: $color-white;
+}
+
+.donor-slide .donors h3 {
+  border-bottom: 2px solid $color-white;
+  margin-bottom: 0.4rem;
+}
+
+.donor-slide .donors ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 1rem;
+  column-count: 3;
+}
+
+.donor-slide .donors li {
+  padding-bottom: 0.2rem;
+}
+
+.ar17-stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+.ar17-stories {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+}
+
+.ar17-stories .story {
+  width: 100vw;
+}
+
+.ar17-stories .left-panel,
+.ar17-stories .right-panel {
+  background-color: rgba($color-white, 0.8);
+  width: 50vw;
+  height: 100vh;
+  transition: all 0.3s ease-in-out;
+  padding: 3rem;
+  overflow: scroll;
+  font-size: $body-copy;
+}
+
+.ar17-stories .left-panel {
+  position: fixed;
+  left: -50vw;
+  border-right: solid 2px $color-white;
+}
+
+.ar17-stories .right-panel {
+  position: fixed;
+  right: -50vw;
+  border-left: solid 2px $color-white;
+}
+
+.ar17-stories .left-panel h3,
+.ar17-stories .right-panel h3 {
+  font-size: 2.5rem;
+  font-family: $paul-grotesk;
+  margin-top: 4rem;
+}
+
+.ar17-stories .left-panel img,
+.ar17-stories .right-panel img {
+  width: 100%;
+  margin: $body-copy auto;
+  border-radius: 10px;
+  display: inherit;
+  border: 4px solid $color-white;
+}
+.ar17-close {
+  color: $color-brand-blue;
+  background-color: $color-white;
+  border-radius: 50%;
+  position: fixed;
+  top: calc(50vh - 1.25rem);
+  left: calc(50vw - 1.25rem);
+  font-size: 3rem;
+  transform-origin: center;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+  line-height: 0.8;
+  cursor: pointer;
+}
+
+.ar17-stories .active-story .left-panel {
+  left: 0;
+}
+
+.ar17-stories .active-story .right-panel {
+  right: 0;
+}
+
+.ar17-stories .active-story .ar17-close {
+  transform: scale(1);
+}

@@ -1,0 +1,81 @@
+.lifesavers-2017 {
+  background-color: #141516;
+  padding: 1rem;
+  h2 {
+  	margin-top: 2rem;
+  }
+  .red {
+	  color: #f05a30;
+	}
+	.white {
+	  color: #ffffff;
+	}
+	.center {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  text-align: center;
+	}
+	.flex {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-bottom: 1rem;
+	}
+	.flex-box {
+		flex: 1 0 auto;
+		width: 100%;
+		@include responsive('small') {
+			width: 50%;
+		}
+		@include responsive('medium') {
+			width: 25%;
+		}
+		img {
+			width: columns(10);
+			display: inline-block;
+			margin: 1rem auto;
+			@include responsive('small') {
+				width: columns(6);
+			}
+			@include responsive('medium') {
+				width: columns(10);
+			}
+		}
+	}
+	.committee .flex-box:first-child {
+		background-color: #2f3539;
+		padding: 2rem;
+		@include responsive('small') {
+			width: 100%;
+		}
+		@include responsive('medium') {
+			width: 100%;
+		}
+	}
+	.button {
+	  display: block;
+	  max-width: 400px;
+	  margin: 2rem auto 0;
+	  text-align: center;
+	  border-radius: 0;
+	}
+	.about {
+		width: columns(10);
+		margin: 0 auto;
+	}
+	.committee {
+		width: columns(10);
+		margin: 0 auto;
+		@include responsive('medium') {
+			width: columns(8);
+		}
+		.flex-box {
+			flex: 0 0 auto;
+			@include responsive('medium') {
+				width: 40%;
+			}
+		}
+	}
+}

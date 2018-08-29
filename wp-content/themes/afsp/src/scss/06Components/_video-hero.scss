@@ -1,0 +1,82 @@
+.video-hero {
+    background: {
+        color: $color-brand-dark-gray;
+    }
+    box-shadow: inset 0 10px 0 $color-poppy;
+    width: 100%;
+    height: calc(100vh - 311px);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 0;
+    @include responsive('small') {
+        height: calc(100vh - 281px);
+    }
+    @include responsive('nav') {
+        height: calc(100vh - 206px);
+        margin-bottom: 0;
+    }
+    @include responsive('x-large') {
+        height: calc(100vh - 206px);
+    }
+}
+
+.video-hero__video {
+    display: none;
+    @include responsive(medium) {
+        @include video;
+    }
+    @media (orientation: portrait) {
+        height: 100%;
+        width: auto;
+    }
+}
+
+.video-hero__image {
+    @include video;
+    height: 100%;
+    width: auto;
+    max-width: inherit;
+    @include responsive(medium) {
+        display: none;
+    }
+}
+
+.video-hero__cta {
+    background-color: $color-brand-dark-gray;
+    @include columns(8);
+    min-width: 20rem;
+    max-width: 38rem;
+    padding: 0.8rem;
+    position: relative;
+    text-align: center;
+    color: $color-white;
+}
+
+.video-hero__header {
+    font-size: $video-mobile;
+    @include responsive('medium') {
+      font-size: $video;
+    }
+}
+
+.video-hero__button {
+    @extend .button;
+    background-color: transparent;
+    border: 1px solid $color-white;
+    border-radius: 0;
+    transition: background-color 0.2s ease-in-out;
+    &:hover {
+        background-color: rgba($color-poppy, 0.8);
+    }
+    display: inline-block;
+}
+
+.video-hero+.container .features__image {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}

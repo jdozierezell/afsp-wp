@@ -1,0 +1,39 @@
+.chapter__about {
+  width: columns(10);
+  margin: 0 auto;
+  @include responsive('medium') {
+    width: columns(12);
+  }
+}
+
+.chapter__content h2 {
+	padding-top: 1rem;
+}
+
+.chapter__content .memorial__wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+	@include responsive('medium') {
+		width: 140%;
+		position: relative;
+		left: -20%;
+	}
+	img {
+		width: columns(10);
+		height: columns(10);
+		margin: 0 auto;
+		@include responsive('medium') {
+			width: columns(5);
+			height: columns(5);
+		}
+	}
+	div {
+		width: columns(10);
+		margin: 0 auto;
+		@include responsive('medium') {
+			width: columns(7);
+			margin: inherit;
+		}
+	}
+}

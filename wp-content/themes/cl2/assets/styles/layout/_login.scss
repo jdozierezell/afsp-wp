@@ -1,0 +1,87 @@
+.login-wrapper {
+  min-height: calc(100vh - (166.47px + 88px));
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: $ms-6 0;
+}
+
+.login-box {
+  margin-top: $ms-6;
+  margin-bottom: $ms-6;
+  padding: $ms-2;
+  background-color: rgba($color-white, 0.7);
+  border-radius: $ms-base;
+  box-shadow: 0 2px 8px $color-brand-dark-gray;
+}
+
+.login-box h1 {
+  margin-bottom: $ms-base;
+  text-align: center;
+}
+
+.login-box > div > p {
+  font-family: $font;
+  line-height: $ms-1;
+}
+
+.login-box > div > p:last-child {
+  margin-bottom: $ms-4;
+}
+
+.login-username label, 
+.login-password label {
+  width: 100%;
+}
+
+.login-username input,
+.login-password input {
+  width: 100%;
+  background: transparent;
+  border: 1px solid $color-brand-dark-gray;
+}
+
+.login-username input:focus,
+.login-password input:focus {
+  @extend input[type="text"]:focus;
+}
+
+.login-remember {
+  text-align: center;
+}
+
+.login-submit {
+  width: 100%;
+  text-align: center;
+}
+
+.login-submit input[type="submit"] {
+  @extend .btn;
+  @extend .btn--rounded;
+  @extend .bg-brand-blue;
+  font-size: $ms-1;
+  padding: $ms-1;
+}
+
+.forgot-login {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.forgot-login:hover {
+  color: $color-dark-blue;
+}
+
+@media (min-width: $bp-small-2) {
+  .login-username label, 
+  .login-password label {
+    width: 75px;
+  }
+
+  .login-username input,
+  .login-password input {
+    width: calc(100% - (75px + #{$ms-1}));
+  }
+}

@@ -1,0 +1,28 @@
+@mixin before {
+    &:before {
+        content: '';
+        display: block;
+        min-height: $splash-min;
+        padding-top: $splash-percent;
+    }
+}
+
+@mixin before-full {
+    &:before {
+        content: '';
+        display: block;
+        min-height: $full-splash-min;
+        padding-top: $full-splash-percent;
+    }
+}
+
+@mixin video {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    @include before-full;
+}

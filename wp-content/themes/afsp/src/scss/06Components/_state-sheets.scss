@@ -1,0 +1,33 @@
+.state-sheet {
+    @extend .email;
+}
+
+.state-sheet__cta {
+    @extend .email__cta;
+    @include columns(8);
+}
+
+.state-sheet__button {
+    text-align: right;
+    font-size: 1.2em;
+    a {
+        background: {
+            color: transparent;
+            image: url(assets/icons/circle-right.svg);
+            repeat: no-repeat;
+            position: right 0.5em center;
+            size: 1em;
+        }
+        padding: 0.5em 2.1em 0.5em 0.5em;
+        border: 0;
+        border-radius: 0.5em;
+        transition: all 0.2s ease-in-out;
+        color: $color-white;
+        text-decoration: none;
+        display: inline-block;
+        &:hover {
+            background-color: $color-brand-light-gray;
+            color: $color-brand-blue;
+        }
+    }
+}

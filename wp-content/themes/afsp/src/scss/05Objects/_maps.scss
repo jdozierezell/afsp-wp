@@ -1,0 +1,113 @@
+div.gmw-submit-field-wrapper {
+    @include columns(12);
+    margin: 1rem 0 0;
+    text-align: right;
+    font-size: 1rem;
+    order: 5;
+    @include responsive('medium') {
+        font-size: 1.2rem;
+    }
+    input[type='submit'] {
+        background: {
+            color: transparent;
+            image: url(assets/icons/circle-right.svg);
+            repeat: no-repeat;
+            position: right 0.5em center;
+            size: 1em;
+        }
+        padding: 0.5em 2.1em 0.5em 0.5em;
+        border: 0;
+        border-radius: 0.5em;
+        transition: all 0.2s ease-in-out;
+        @include responsive('medium') {
+            font-size: 1.2rem;
+        }
+        &:hover {
+            background-color: $color-brand-light-gray;
+            color: $color-brand-blue;
+        }
+    }
+}
+
+.gmw-radius-slider-wrapper {
+    width: columns(12);
+    order: 2;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    @include responsive('medium') {
+        font-size: 1rem;
+        order: 3;
+    }
+    label {
+        width: columns(9);
+    }
+    input {
+        width: columns(3);
+    }
+    .gmw-slider-range {
+        margin-top: 1rem;
+    }
+    .ui-slider-horizontal {
+        height: 1px;
+        .ui-slider-handle {
+            top: -0.7rem;
+        }
+        .ui-corner-all {
+            border-radius: 50%;
+        }
+    }
+    .ui-widget-content {
+        border: none;
+    }
+    .gmw-field-label {
+        padding-left: 0.5rem;
+        font-size: 1rem;
+        color: $color-brand-light-gray;
+        &:before {
+            content: "Adjust search radius (";
+        }
+        &:after {
+            content: "): ";
+        }
+    }
+    .gmw-radius-value-field {
+        font-size: 1rem;
+        color: $color-brand-light-gray;
+    }
+}
+
+.gmw-no-results-wrapper {
+    @extend .container;
+    p {
+        background: transparent;
+        border: none;
+        display: inline-block;
+        padding: 0;
+    }
+    div {
+        display: inline-block;
+    }
+}
+
+div.gmw-single-location-wrapper {
+    @include columns(10);
+    height: 81vw;
+    overflow: hidden;
+    margin: 1rem auto;
+    @include responsive('medium') {
+        @include columns(12);
+        margin: 0;
+        height: auto;
+    }
+    .gmw-sl-element {
+        display: none;
+    }
+}
+
+.gmw-map-wrapper {
+    height: 81vw !important;
+    @include responsive('medium') {
+        height: 60vh !important;
+        min-height: 25rem;
+    }
+}

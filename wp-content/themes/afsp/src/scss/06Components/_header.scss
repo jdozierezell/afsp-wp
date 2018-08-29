@@ -1,0 +1,132 @@
+.header {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $color-white;
+    padding: 1rem 0 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    @include responsive('nav') {
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+    }
+}
+
+.header__brand {
+    flex: 0 0 auto;
+    width: 14rem;
+    order: 1;
+    padding-bottom: 0.75em;
+    @include responsive('features') {
+        width: 20rem;
+    }
+    @include responsive('nav') {
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+    a {
+        display: block;
+    }
+}
+
+.header__logo {
+    width: 100%;
+    max-height: 6rem;
+    fill: $color-brand-dark-gray;
+    padding: 0 5%;
+}
+
+.navigation {
+    flex: 0 0 100%;
+    padding: 0;
+    order: 3;
+    max-width: 1120px;
+    @include responsive('nav') {
+        border-top: 0;
+        flex: 0 0 60%;
+        order: 2;
+    }
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: center;
+    @include responsive('nav') {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+}
+
+.nav-list .nav-list__item {
+    display: block;
+    list-style: none;
+    flex-basis: 33.2%;
+    font: {
+        size: 0.9rem;
+        weight: 800;
+    }
+    text: {
+        align: center;
+        transform: uppercase;
+    }
+    border-top: 1px solid $color-brand-dark-gray;
+    border-right: 1px solid $color-brand-dark-gray;
+    &:nth-of-type(n+4) {
+        border-bottom: 1px solid $color-brand-dark-gray;
+    }
+    &:nth-of-type(3n) {
+        border-right: 0;
+    }
+    @include responsive('nav') {
+        font-size: 1em;
+        flex-basis: inherit;
+        border-top: 0;
+        border-right: 0;
+        &:nth-of-type(n+4) {
+            border-bottom: 0;
+        }
+    }
+    a {
+        display: block;
+        color: $color-brand-dark-gray;
+        text-decoration: none;
+        line-height: 4;
+        font-size: 0.8em;
+        @include responsive('nav') {
+            font-size: 1em;
+        }
+        &:hover {
+            color: $color-poppy;
+        }
+    }
+}
+
+.ootd {
+    @include columns(12);
+    background-color: $color-dark-blue;
+    border-bottom: solid 0.33rem $color-brand-blue;
+    text: {
+        align: right;
+        transform: uppercase;
+    }
+    font: {
+        size: 1.1em;
+        weight: 800;
+    }
+    margin: 0;
+    a {
+        display: inline-block;
+        color: $color-white;
+        padding: 0.25em 0.5em 0.25em 0.25em;
+        &:hover {
+            color: $color-green;
+        }
+    }
+}

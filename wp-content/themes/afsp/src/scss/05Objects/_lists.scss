@@ -1,0 +1,60 @@
+.ordered--round {
+	counter-reset:li; /* Initiate a counter */
+	margin-left:0; /* Remove the default left margin */
+	padding-left:0; /* Remove the default left padding */
+	> li {
+		position:relative; /* Create a positioning context */
+		margin:0 0 1rem 2rem; /* Give each list item a left margin to make room for the numbers */
+		padding: 1rem 2rem; /* Add some spacing around the content */
+		list-style:none; /* Disable the normal item numbering */
+		&:before {
+			content:counter(li); /* Use the counter as content */
+			counter-increment:li; /* Increment the counter by 1 */
+			/* Position and style the number */
+			position:absolute;
+			top:-2px;
+			left:-2em;
+			box-sizing:border-box;
+			width: 2.75em;
+		  height: 2.75em;
+			padding:1rem;
+			border-top:2px solid #666;
+			color:#fff;
+			background:$color-brand-blue;
+		  border-radius: 50%;
+			font-size: $button;
+			font-weight:bold;
+			text-align:center;
+		}
+	}
+	li ol, li ul {
+		margin-top:6px;
+	}
+	li:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.unordered li {
+	margin-bottom: 0.5rem;
+}
+
+.unordered--nobull {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.unordered--2col {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.unordered--2col li {
+	width: 100%;
+	@include responsive( 'medium' ) {
+		@include columns(6);
+	}
+}

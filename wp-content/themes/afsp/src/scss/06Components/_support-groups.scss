@@ -1,0 +1,10 @@
+.disclaimer, .support__details {
+  @include columns(10);
+  margin: 0 auto;
+  @include responsive('medium') {
+    @include columns(12);
+  }
+  & > div {
+  	margin-top: 1em;
+  }
+}

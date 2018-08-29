@@ -1,0 +1,10 @@
+{
+  "title": {
+    "titleText": "About AFSP",
+    "titleClass": "col-12"
+  },
+  "btn": {
+    "text": "Add to Favorites",
+    "class": "bg-poppy"
+  }
+}

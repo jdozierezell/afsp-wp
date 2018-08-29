@@ -1,0 +1,69 @@
+button,
+.btn {
+  font-size: $ms-base;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn--rounded {
+  border-radius: $ms--2;
+  padding: $ms--1;
+}
+
+.btn__icon {
+  padding: $ms-1 $ms-4;
+}
+
+.btn.bg-brand-blue,
+.btn.bg-brand-dark-gray,
+.btn.bg-dark-blue,
+.btn.bg-poppy,
+.btn.bg-green,
+.btn.bg-fuschia {
+  color: $color-white;
+}
+
+.btn.bg-brand-light-gray,
+.btn.bg-yellow,
+.btn.bg-white {
+  color: $color-brand-dark-gray;
+}
+
+@media (hover) {
+  .btn.bg-brand-blue:hover {
+    background-color: darken($color-brand-blue, 10);
+  }
+
+  .btn.bg-brand-dark-gray:hover {
+    background-color: darken($color-brand-dark-gray, 10);
+  }
+
+  .btn.bg-brand-light-gray:hover {
+    background-color: darken($color-brand-light-gray, 10);
+  }
+
+  .btn.bg-yellow:hover {
+    background-color: darken($color-yellow, 10);
+  }
+
+  .btn.bg-dark-blue:hover {
+    background-color: darken($color-dark-blue, 10);
+  }
+
+  .btn.bg-poppy:hover {
+    background-color: darken($color-poppy, 10);
+  }
+
+  .btn.bg-green:hover {
+    background-color: darken($color-green, 10);
+  }
+
+  .btn.bg-fuschia:hover {
+    background-color: darken($color-fuschia, 10);
+  }
+
+  .btn.bg-white:hover {
+    background-color: darken($color-white, 10);
+  }
+}

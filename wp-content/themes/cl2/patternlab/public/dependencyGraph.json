@@ -1,0 +1,431 @@
+{
+  "version": 1,
+  "timestamp": 1507033031294,
+  "graph": {
+    "options": {
+      "directed": true,
+      "multigraph": false,
+      "compound": false
+    },
+    "nodes": [
+      {
+        "v": "00-atoms/00-global/00-primary-colors.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/00-global/01-secondary-colors.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/01-text/headings.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/01-text/paragraphs.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-single-item-single-item/03-templates-single-item-single-item.html",
+          "lineagePattern": "templates-single-item"
+        }
+      },
+      {
+        "v": "00-atoms/02-buttons/button.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-single-item-single-item/03-templates-single-item-single-item.html",
+          "lineagePattern": "templates-single-item"
+        }
+      },
+      {
+        "v": "00-atoms/02-buttons/icon-button.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-site-header/02-organisms-site-header.html",
+          "lineagePattern": "organisms-site-header"
+        }
+      },
+      {
+        "v": "00-atoms/02-buttons/icon-only-button.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-molecules-sidebar-nav-buttons/01-molecules-sidebar-nav-buttons.html",
+          "lineagePattern": "molecules-sidebar-nav-buttons"
+        }
+      },
+      {
+        "v": "00-atoms/03-images/full-page-image.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-login-login/03-templates-login-login.html",
+          "lineagePattern": "templates-login"
+        }
+      },
+      {
+        "v": "00-atoms/03-images/image.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-single-item-single-item/03-templates-single-item-single-item.html",
+          "lineagePattern": "templates-single-item"
+        }
+      },
+      {
+        "v": "00-atoms/04-inputs/text-input-with-label.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/04-inputs/text-input.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-molecules-search-bar/01-molecules-search-bar.html",
+          "lineagePattern": "molecules-search-bar"
+        }
+      },
+      {
+        "v": "01-molecules/login.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-login-login/03-templates-login-login.html",
+          "lineagePattern": "templates-login"
+        }
+      },
+      {
+        "v": "01-molecules/search-bar.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-site-header/02-organisms-site-header.html",
+          "lineagePattern": "organisms-site-header"
+        }
+      },
+      {
+        "v": "01-molecules/sidebar-nav-buttons.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-sidebar-nav/02-organisms-sidebar-nav.html",
+          "lineagePattern": "organisms-sidebar-nav"
+        }
+      },
+      {
+        "v": "01-molecules/single-list-item.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-multi-content-multi-content/03-templates-multi-content-multi-content.html",
+          "lineagePattern": "templates-multi-content"
+        }
+      },
+      {
+        "v": "01-molecules/site-logo.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-site-header/02-organisms-site-header.html",
+          "lineagePattern": "organisms-site-header"
+        }
+      },
+      {
+        "v": "02-organisms/sidebar-nav.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-single-item-single-item/04-pages-single-item-single-item.html",
+          "lineagePattern": "pages-single-item"
+        }
+      },
+      {
+        "v": "02-organisms/site-footer.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-single-item-single-item/04-pages-single-item-single-item.html",
+          "lineagePattern": "pages-single-item"
+        }
+      },
+      {
+        "v": "02-organisms/site-header.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-single-item-single-item/04-pages-single-item-single-item.html",
+          "lineagePattern": "pages-single-item"
+        }
+      },
+      {
+        "v": "03-templates/items-list/items-list.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-items-list-items-list/04-pages-items-list-items-list.html",
+          "lineagePattern": "pages-items-list"
+        }
+      },
+      {
+        "v": "03-templates/items-search/items-search.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-items-search-items-search/04-pages-items-search-items-search.html",
+          "lineagePattern": "pages-items-search"
+        }
+      },
+      {
+        "v": "03-templates/login/login.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-login-login/04-pages-login-login.html",
+          "lineagePattern": "pages-login"
+        }
+      },
+      {
+        "v": "03-templates/multi-content/multi-content.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-multi-content-multi-content/04-pages-multi-content-multi-content.html",
+          "lineagePattern": "pages-multi-content"
+        }
+      },
+      {
+        "v": "03-templates/single-item/single-item.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-single-item-single-item/04-pages-single-item-single-item.html",
+          "lineagePattern": "pages-single-item"
+        }
+      },
+      {
+        "v": "04-pages/items-list/items-list.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/items-search/items-search.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/login/login.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/multi-content/multi-content.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/single-item/single-item.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "/Users/AFSP/IDrive-Sync/Valet/cl2/web/app/themes/cl2/patternlab/source/_meta/_00-head.mustache",
+        "value": {
+          "compileState": null
+        }
+      },
+      {
+        "v": "/Users/AFSP/IDrive-Sync/Valet/cl2/web/app/themes/cl2/patternlab/source/_meta/_01-foot.mustache",
+        "value": {
+          "compileState": null
+        }
+      }
+    ],
+    "edges": [
+      {
+        "v": "00-atoms/03-images/full-page-image.mustache",
+        "w": "00-atoms/03-images/image.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/search-bar.mustache",
+        "w": "00-atoms/04-inputs/text-input.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/sidebar-nav-buttons.mustache",
+        "w": "00-atoms/02-buttons/icon-only-button.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/single-list-item.mustache",
+        "w": "00-atoms/03-images/image.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/sidebar-nav.mustache",
+        "w": "01-molecules/sidebar-nav-buttons.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/site-header.mustache",
+        "w": "01-molecules/site-logo.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/site-header.mustache",
+        "w": "00-atoms/02-buttons/icon-button.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/site-header.mustache",
+        "w": "01-molecules/search-bar.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/items-list/items-list.mustache",
+        "w": "00-atoms/02-buttons/button.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/items-list/items-list.mustache",
+        "w": "01-molecules/single-list-item.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/items-search/items-search.mustache",
+        "w": "01-molecules/single-list-item.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/login/login.mustache",
+        "w": "00-atoms/03-images/full-page-image.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/login/login.mustache",
+        "w": "01-molecules/login.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/multi-content/multi-content.mustache",
+        "w": "00-atoms/02-buttons/button.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/multi-content/multi-content.mustache",
+        "w": "00-atoms/01-text/paragraphs.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/multi-content/multi-content.mustache",
+        "w": "01-molecules/single-list-item.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/single-item/single-item.mustache",
+        "w": "00-atoms/02-buttons/button.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/single-item/single-item.mustache",
+        "w": "00-atoms/03-images/image.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/single-item/single-item.mustache",
+        "w": "00-atoms/01-text/paragraphs.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/items-list/items-list.mustache",
+        "w": "02-organisms/site-header.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/items-list/items-list.mustache",
+        "w": "02-organisms/sidebar-nav.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/items-list/items-list.mustache",
+        "w": "03-templates/items-list/items-list.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/items-list/items-list.mustache",
+        "w": "02-organisms/site-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/items-search/items-search.mustache",
+        "w": "02-organisms/site-header.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/items-search/items-search.mustache",
+        "w": "02-organisms/sidebar-nav.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/items-search/items-search.mustache",
+        "w": "03-templates/items-search/items-search.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/items-search/items-search.mustache",
+        "w": "02-organisms/site-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/login/login.mustache",
+        "w": "02-organisms/site-header.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/login/login.mustache",
+        "w": "03-templates/login/login.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/login/login.mustache",
+        "w": "02-organisms/site-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/multi-content/multi-content.mustache",
+        "w": "02-organisms/site-header.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/multi-content/multi-content.mustache",
+        "w": "02-organisms/sidebar-nav.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/multi-content/multi-content.mustache",
+        "w": "03-templates/multi-content/multi-content.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/multi-content/multi-content.mustache",
+        "w": "02-organisms/site-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/single-item/single-item.mustache",
+        "w": "02-organisms/site-header.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/single-item/single-item.mustache",
+        "w": "02-organisms/sidebar-nav.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/single-item/single-item.mustache",
+        "w": "03-templates/single-item/single-item.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/single-item/single-item.mustache",
+        "w": "02-organisms/site-footer.mustache",
+        "value": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "1": {
+    "btn": {
+      "text": "Download"
+    }
+  },
+  "2": {
+    "btn": {
+      "text": "Add to Favorites",
+      "class": "bg-poppy"
+    }
+  }
+}

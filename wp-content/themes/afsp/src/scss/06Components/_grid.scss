@@ -1,0 +1,118 @@
+#program-anchor {
+    margin-top: 2em;
+}
+
+.grid {
+    width: columns(11);
+    margin: 1em auto;
+}
+
+.grid__item {
+    display: inline-block;
+    width: 84%;
+    margin: 8%;
+    min-height: 15rem;
+    font-size: 1em;
+    text-decoration: none;
+    color: $color-brand-dark-gray;
+    border-left: 0.5em solid $color-poppy;
+    padding: 0.5rem;
+    box-shadow: 2px 2px 5px $color-brand-dark-gray;
+    transition: all 0.1s ease-in-out;
+    position: relative;
+    background-color: $color-brand-light-gray;
+    &:hover {
+        color: $color-white;
+        background-color: $color-brand-dark-gray;
+        box-shadow: 4px 4px 10px $color-brand-dark-gray;
+    }
+    p {
+        margin-top: 0;
+        &:first-of-type {
+            font-family: $avenir-bold;
+        }
+    }
+    @include responsive('small') {
+        width: 42%;
+        margin: 4%;
+    }
+    @include responsive('medium') {
+        width: 29%;
+        margin: 2%;
+    }
+    @include responsive('large') {
+        width: 23%;
+        margin: 1%;
+    }
+}
+
+.filters {
+    background-color: $color-brand-blue;
+    padding: 1em;
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+.facet {
+    @include columns(12);
+    padding: 0.75em 0;
+    display: flex;
+    flex-flow: row wrap;
+    @include responsive('medium') {
+        @include columns(4);
+        margin: 0 auto;
+        padding: 0;
+    }
+    label {
+        color: $color-white;
+        font-weight: 800;
+    }
+    &:not(.facet--programs) .grid__select {
+        display: block;
+        margin-top: 0.25em;
+        width: 100%;
+    }
+    &--programs {
+        @include columns(12);
+        .grid__select {
+            flex-grow: 1;
+            margin-left: 1rem;
+        }
+    }
+}
+
+.grid__area {
+    text-align: center;
+    display: inline-block;
+    padding: 0.4rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: $color-white;
+    border-radius: 50%;
+    color: $color-brand-dark-gray;
+    font-weight: 800;
+    position: absolute;
+    bottom: 1rem;
+    &:nth-of-type(1) {
+        left: 0.5rem;
+    }
+    &:nth-of-type(2) {
+        left: 3rem;
+    }
+    &:nth-of-type(3) {
+        left: 5.5rem;
+    }
+    &:nth-of-type(4) {
+        left: 9rem;
+    }
+    &:nth-of-type(5) {
+        left: 10rem;
+    }
+    &:nth-of-type(6) {
+        left: 12.5rem;
+    }
+}

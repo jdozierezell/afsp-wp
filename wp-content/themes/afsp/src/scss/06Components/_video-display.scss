@@ -1,0 +1,19 @@
+.video-display__title {
+    @extend .highlight-pages__title;
+}
+
+.video-display {
+    @extend .highlight-pages;
+    &--wrapper {
+        @extend .highlight-pages--wrapper;
+        &-2 {
+            @extend .highlight-pages--wrapper-2;
+        }
+        &-3 {
+            @extend .highlight-pages--wrapper-3;
+        }
+        &-4 {
+            @extend .highlight-pages--wrapper-4;
+        }
+    }
+}

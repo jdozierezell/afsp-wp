@@ -1,0 +1,19 @@
+.bio__intro {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bio__image, .bio__info {
+  @include columns(10);
+  margin: 1rem auto;
+  @include responsive('medium') {
+    margin: 1rem 0;
+    @include columns(6);
+  }
+}
+
+.bio__title {
+  margin-top: 1rem;
+}

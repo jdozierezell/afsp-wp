@@ -1,0 +1,32 @@
+.site-search {
+  border: 1px solid $color-brand-light-gray;
+  border-radius: $ms--3;
+  position: relative;
+  overflow: hidden;
+}
+
+.site-search input {
+  border: none;
+  border-right: 1px solid $color-brand-light-gray;
+  border-radius: 0;
+  width: calc(100% - #{$ms-5});
+}
+
+.site-search button {
+  position: absolute;
+  width: $ms-5;
+  line-height: $ms-5;
+  text-align: center;
+  cursor: pointer;
+  background-color: $color-white;
+  border-radius: 0;
+  color: $color-brand-blue;
+  margin: 0;
+  padding: 0;
+}
+
+.site-search button:focus {
+  background-color: $color-brand-blue;
+  color: $color-white;
+  outline: 0;
+}

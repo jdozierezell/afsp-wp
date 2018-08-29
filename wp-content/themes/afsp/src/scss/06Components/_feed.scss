@@ -1,0 +1,150 @@
+.feed {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.feed__wrap {
+    @extend .feed;
+    @include columns(12);
+}
+
+.feed__item {
+    display: block;
+    position: relative;
+    margin: 1em 0 2em;
+    @include columns(12);
+    @include responsive('medium') {
+        @include columns(6);
+    }
+    &--full {
+        @include responsive('medium') {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+            @include responsive('medium') {
+                @include columns(12);
+            }
+        }
+    }
+    &--ad {
+        @include responsive('medium') {
+            @include columns(12);
+        }
+    }
+}
+
+.feed__image {
+    @include columns(12);
+    width: 100%;
+    .feed__item--full & {
+        @include columns(6);
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.feed__quote {
+    display: none;
+    @include responsive('medium') {
+        display: block;
+        color: $color-brand-dark-gray;
+        font: {
+            size: $title;
+            weight: 400;
+        }
+        quotes: "\201C""\201D""\2018""\2019";
+        &:before {
+            content: open-quote;
+        }
+        &:after {
+            content: close-quote;
+        }
+    }
+}
+
+.feed__title {
+    display: inline-block;
+    margin: 2.5em 0 1em;
+    font: {
+        weight: 800;
+        size: $button;
+        family: $paul-grotesk;
+    }
+    color: $color-brand-dark-gray;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    &:hover,
+    .feed__image:hover~.feed__body & {
+        color: $color-poppy;
+    }
+    @include responsive('medium') {
+        font-size: 1em;
+    }
+}
+
+.feed__body {
+    width: columns(10);
+    padding-bottom: 1em;
+    margin: 0 auto 1em;
+    @include responsive('medium') {
+        width: auto;
+        margin: 0 0 1em 0;
+    }
+    &--third {
+        padding-bottom: 0;
+    }
+    @include responsive('medium') {
+        margin: 0 0 1em 10%;
+        .feed__item--standard:nth-of-type(even) & {
+            margin: 0 10% 1em 0;
+        }
+    }
+    p {
+        color: $color-brand-dark-gray;
+        margin: -0.5em 0 0.5em;
+        padding: 0;
+        font-size: 1em;
+    }
+    span {
+        text-transform: uppercase;
+        font-size: 0.7em;
+    }
+    .feed__item--full & {
+        @include responsive('medium') {
+            @include columns(6);
+            margin: 0;
+            p {
+                display: none;
+            }
+        }
+    }
+}
+
+.feed__rule {
+    border-top: 1px solid $color-brand-blue;
+    position: absolute;
+    bottom: 1em;
+    margin: 0 9% 1em;
+    width: columns(10);
+    @include responsive('medium') {
+        width: 90%;
+        margin: 0 0 1em 10%;
+        bottom: 0;
+        .feed__item--standard:nth-of-type(even) & {
+            margin: 0 10% 1em 0;
+        }
+    }
+    .feed__item--full & {
+        width: 100%;
+        margin: 0 0 1em 0;
+        position: initial;
+        @include responsive('medium') {
+            width: 90%;
+            margin: 1em 10% 1em 0;
+        }
+    }
+}

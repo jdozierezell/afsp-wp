@@ -1,0 +1,14 @@
+<li class="list-item">
+  <a href="#">
+    {{> atoms-image }}
+    <div class="list-item__info">
+      {{# nested }}
+        <i class="fa fa-folder"></i>
+      {{/ nested }}
+      <p class="list-item__title">{{ itemTitle }}</p>
+      {{# favorite }}
+        <i class="fa fa-heart"></i>
+      {{/ favorite }}
+    </div>
+  </a>
+</li>

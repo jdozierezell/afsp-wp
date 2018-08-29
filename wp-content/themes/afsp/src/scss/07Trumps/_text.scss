@@ -1,0 +1,29 @@
+.blog__content p, .event__description p {
+  clear: both;
+}
+
+.blog__content h2, .chapter__content h2, .event__description h2 {
+  clear: both;
+}
+
+.blog__content h3, .chapter__content h3, .event__description h3 {
+  clear: both;
+}
+
+.blog__content h4, .chapter__content h4, .event__description h4 {
+  clear: both;
+}
+
+.blog__content .header {
+  padding: 0rem;
+  margin: 0 0 -1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+strong.super {
+	color: $color-brand-blue;
+	font-size: 1.2em;
+	padding: 0.25rem;
+}
