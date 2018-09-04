@@ -116,6 +116,9 @@ get_template_part( 'template-parts/title' );
 .ajde_evcal_calendar .calendar_header {
 	display: none !important;
 }
+.evcal_month_line {
+	display: none !important;
+}
 @media (min-width: 667px) {
 	.nspw18-header {
 		min-height: calc(100vh - 310px);
