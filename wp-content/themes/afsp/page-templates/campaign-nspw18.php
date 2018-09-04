@@ -59,6 +59,10 @@ get_template_part( 'template-parts/title' );
 	flex: 0 0 100px !important;
 	text-align: center;
 }
+.nspw-introduction {
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+}
 .nspw18-h2 {
 	background-color: #2ad891;
 	padding: 1rem;
@@ -168,7 +172,7 @@ get_template_part( 'template-parts/title' );
 	</div>
 </section>
 <?php if (get_field('nspw_introduction' ) ) : ?>
-	<section class="container" aria-label="nspw introduction">
+	<section class="container nspw-introduction" aria-label="nspw introduction">
 		<?php echo wp_kses( get_field( 'nspw_introduction' ), $GLOBALS['allowed_html'] ); ?> 
 	</section>
 <?php endif; ?>
