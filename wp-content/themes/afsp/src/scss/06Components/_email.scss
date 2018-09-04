@@ -1,4 +1,5 @@
-.email {
+.email, 
+.ctct-inline-form {
     background-color: $color-dark-blue;
     color: $color-white;
     display: flex;
@@ -7,6 +8,52 @@
     align-items: center;
     margin: 2em 0;
     padding: 1em;
+}
+
+.ctct-inline-form {
+    @extend .container;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ctct-form-defaults {
+    background: transparent !important;
+    padding: 0 !important;
+}
+
+.ctct-form-header,
+.ctct-gdpr-text,
+.ctct-form-footer-link,
+.ctct-form-footer-privacy-link {
+    color: $color-white !important;
+    font-family: $avenir-regular !important;
+}
+
+.ctct-form-header {
+    text-align: center !important;
+}
+
+.ctct-form-button {
+    color: $color-white !important;
+    font-size: $button !important;
+    text-decoration: none !important;
+    background-color: $color-dark-blue !important;
+    // background-image: url(assets/icons/circle-right.png) !important;
+    // background-repeat: no-repeat !important;
+    // background-position: right 1rem center !important;
+    // background-size: 0.8rem !important;
+    padding: 1rem !important;
+    border: none !important;
+    &:hover {
+        color: $color-white !important;
+        background-color: $color-brand-blue !important;
+    }
+}
+
+.ctct-form-label,
+.ctct-form-footer,
+.ctct-form-text {
+    display: none !important;
 }
 
 .email__cta {

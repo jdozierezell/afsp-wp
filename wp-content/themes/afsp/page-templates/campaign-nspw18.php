@@ -23,11 +23,11 @@ get_template_part( 'template-parts/title' );
 .nspw18-header > div {
 	width: 100%;
 }
-.nspw18-header h1, .nspw18-header p {
+.nspw18-header h1, .nspw18-header h2, .nspw18-header p {
 	flex: 1 0 100%;
 	color: white;
 }
-.nspw18-header h1 {
+.nspw18-header h1, .nspw18-header h2 {
 	text-transform: uppercase;
 	font-size: 3rem;
 	font-family: 'PaulGroteskSoft-Bold';
@@ -167,6 +167,11 @@ get_template_part( 'template-parts/title' );
 		</div>
 	</div>
 </section>
+<?php if (get_field('nspw_introduction' ) ) : ?>
+	<section class="container" aria-label="nspw introduction">
+		<?php echo wp_kses( get_field( 'nspw_introduction' ), $GLOBALS['allowed_html'] ); ?> 
+	</section>
+<?php endif; ?>
 <section class="container__full" aria-label="event calendar">
 	<h2 class="nspw18-h2">Here's what's happening in September</h2>
 	<?php

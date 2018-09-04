@@ -81,7 +81,7 @@
       <option id="tennessee" data-url="https://www.surveymonkey.com/results/SM-9D3FCS7ML/" data-division="Southern">Tennessee</option>
       <option id="utah" data-url="https://www.surveymonkey.com/results/SM-87T3QR7ML/" data-division="Western">Utah</option>
       <option id="vermont" data-url="https://www.surveymonkey.com/results/SM-QRJFWR7ML/" data-division="Eastern">Vermont</option>
-      <option id="virginia" data-url="https://www.surveymonkey.com/results/SM-TC75SR7ML/" data-division="Eastern">Virginia</option>
+      <option id="virginia" data-url="https://www.surveymonkey.com/results/SM-TC75SR7ML/" data-division="East Central">Virginia</option>
       <option id="washington" data-url="https://www.surveymonkey.com/results/SM-2ZWLTR7ML/" data-division="Western">Washington</option>
       <option id="west-virginia" data-url="https://www.surveymonkey.com/results/SM-PHC3TR7ML/" data-division="East Central">West Virginia</option>
       <option id="western-massachusetts" data-url="https://www.surveymonkey.com/results/SM-TPQG5D7ML/" data-division="Eastern">Western Massachusetts</option>
