@@ -179,7 +179,7 @@ get_template_part( 'template-parts/title' );
 <section class="container__full" aria-label="event calendar">
 	<h2 class="nspw18-h2">Here's what's happening in September</h2>
 	<?php
-		echo do_shortcode( '[add_eventon_fc load_fullmonth="yes" fixed_month="9" fixed_year="2018" nexttogrid="no" ]' );
+		echo do_shortcode( '[add_eventon_fc load_fullmonth="yes" fixed_month="9" fixed_year="2018" nexttogrid="yes" ]' );
 	?>
 </section>
 <?php if ( have_rows( 'nspw_activities' ) ) : ?>
