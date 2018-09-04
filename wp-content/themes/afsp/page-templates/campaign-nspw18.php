@@ -60,8 +60,8 @@ get_template_part( 'template-parts/title' );
 	text-align: center;
 }
 .nspw-introduction {
-	font-size: 1.5rem;
-	line-height: 2.5rem;
+	font-size: 1.25rem;
+	line-height: 1.4em;
 }
 .nspw18-h2 {
 	background-color: #2ad891;
