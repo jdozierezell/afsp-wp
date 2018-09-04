@@ -2,7 +2,7 @@
   <?php get_template_part('templates/page', 'header'); ?>
   <div class="entry-content">
     <p><strong><a href="https://www.surveymonkey.com/r/9FCY2J7" target="_blank" rel="noopener">Click here to enter your progress into the PPC Checklist</a>.</strong>
-    <strong><a href="hhttp://cl2.afsp.dev.cc/wp-content/uploads/sites/13/2018/01/Chapter-PPC-Checklist-FINAL.pdf">Click here to download a blank copy of the Chapter PPC Checklist.</a></strong></p>
+    <strong><a href="http://chapterland.org/wp-content/uploads/sites/13/2018/01/Chapter-PPC-Checklist-FINAL.pdf">Click here to download a blank copy of the Chapter PPC Checklist.</a></strong></p>
 
 <!-- 2017 Links -->
 
