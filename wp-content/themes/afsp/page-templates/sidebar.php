@@ -58,7 +58,7 @@
         <div>
         
         <?php if(!get_sub_field('c_link_to_pages')) :
-          echo apply_filters('the_content', get_sub_field('c_content_section'));
+          echo get_sub_field('c_content_section');
         else :
           if(have_rows('c_page_links')) : while(have_rows('c_page_links')) : the_row();
               $post_object = get_sub_field('c_page');
