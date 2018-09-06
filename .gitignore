@@ -9,6 +9,7 @@ Thumbs.db
 # afsp specific
 wp-content/plugins/
 wp-content/themes/afsp/node_modules/
+wp-content/themes/afsp/imports/
 wp-content/themes/cl2/bower_components/
 wp-content/themes/cl2/node_modules/
 wp-content/themes/cl2/patternlab/node_modules/
