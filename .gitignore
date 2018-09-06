@@ -6,7 +6,7 @@
 *.swp
 Thumbs.db
 
-# afsp specific ignore
+# afsp specific
 wp-content/plugins/
 wp-content/themes/afsp/node_modules/
 wp-content/themes/afsp/imports/
@@ -17,7 +17,7 @@ wp-content/themes/twentyfifteen/
 wp-content/themes/twentysixteen/
 wp-content/themes/twentyseventeen/
 
-# wordpress specific ignore
+# wordpress specific
 wp-config.php
 wp-content/uploads/
 wp-content/blogs.dir/
@@ -28,7 +28,7 @@ wp-content/wp-cache-config.php
 wp-content/cache/*
 wp-content/cache/supercache/*
 
-# wpengine specific ignore
+# wpengine specific
 .smushit-status
 .gitattributes
 _wpeprivate*
