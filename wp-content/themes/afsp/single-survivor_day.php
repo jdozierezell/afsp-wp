@@ -108,7 +108,7 @@ if ( have_posts() ) :
 				</p>
 				<?php
 				if ( get_field( 'sd_additional_event' ) ) :
-					wp_kses( get_field( 'sd_additional_event' ), $GLOBALS['allowed_html'] );
+					echo wp_kses( get_field( 'sd_additional_event' ), $GLOBALS['allowed_html'] );
 				endif;
 				if ( get_field( 'sd_registration_link' ) ) :
 				?>
