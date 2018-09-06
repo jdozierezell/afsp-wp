@@ -145,7 +145,7 @@ get_template_part( 'template-parts/title' );
 }
 @media (min-width: 1024px) {
 	.nspw18-link {
-		flex: 1 0 24vw;
+		flex: 1 0 33vw;
 	}
 }
 </style>
