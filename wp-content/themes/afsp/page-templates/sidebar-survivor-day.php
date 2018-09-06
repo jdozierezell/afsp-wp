@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Sidebar Navigation
+ * Template Name: Sidebar Survivor Day
  *
  * @package afsp
  */
