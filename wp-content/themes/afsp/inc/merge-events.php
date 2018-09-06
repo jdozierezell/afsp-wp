@@ -145,7 +145,7 @@ function afsp_merge_events() {
           $sd_date_year = $sd_date->format('Y');
           $sd_date = mktime(0,0,0,date('m',$sd_date_month),date('d',$sd_date_day),date('Y',$sd_date_year));
         else :
-          $sd_date = date('Y-m-d', mktime(0,0,0,11,18,2017));
+          $sd_date = date('Y-m-d', mktime(0,0,0,11,17,2018));
         endif;
 
         $start_time = '00:00:00-0500';
