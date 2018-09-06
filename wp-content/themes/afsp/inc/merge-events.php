@@ -128,7 +128,7 @@ function afsp_merge_events() {
 
         if(is_array($chapters)) :
           foreach ($chapters as $chapter) :
-            $chapter = 'AFSP ' . $chapter; // need to add AFSP because it isn't in the field dropdown
+            $chapter = 'AFSP ' . $chapter; // need to add AFSP because it isn't in the field dropdown.
             $chapter_codes[] = chapter_name_to_code($chapter);
           endforeach;
         else :
