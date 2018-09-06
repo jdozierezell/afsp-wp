@@ -97,11 +97,9 @@ if ( have_posts() ) :
 						$state = $event_country;
 					endif;
 					echo esc_html( get_field( 'sd_event_location' ) );
-					echo 'null' !== get_field( 'sd_event_location' ) ? '<br />' : '';
-					echo esc_html( get_field( 'sd_event_address_1' ) );
-					echo 'null' !== get_field( 'sd_event_address_1' ) ? '<br />' : '';
-					echo esc_html( get_field( 'sd_event_address_2' ) );
-					echo 'null' !== get_field( 'sd_event_address_2' ) ? '<br />' : '';
+					echo get_field( 'sd_event_location' ) ? '<br />' : '';
+					echo get_field( 'sd_event_address_1' ) ? esc_html( get_field( 'sd_event_address_1' ) ) . '<br />' : '';
+					echo get_field( 'sd_event_address_2' ) ? esc_html( get_field( 'sd_event_address_2' ) ) . '<br />' : '';
 					$address_csz  = get_field( 'sd_event_city' ) ? get_field( 'sd_event_city' ) . ', ' : '';
 					$address_csz .= $state ? $state . '&nbsp;&nbsp;' : '';
 					$address_csz .= get_field( 'sd_event_zip_code' ) ? get_field( 'sd_event_zip_code' ) : '';
@@ -109,7 +107,7 @@ if ( have_posts() ) :
 					?>
 				</p>
 				<?php
-				if ( '' !== get_field( 'sd_additional_event' ) ) :
+				if ( get_field( 'sd_additional_event' ) ) :
 					wp_kses( get_field( 'sd_additional_event' ), $GLOBALS['allowed_html'] );
 				endif;
 				if ( get_field( 'sd_registration_link' ) ) :
