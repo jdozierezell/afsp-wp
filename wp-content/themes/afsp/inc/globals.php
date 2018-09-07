@@ -44,11 +44,11 @@ $GLOBALS['allowed_html'] = array(
 		'type'           => array(),
 	),
 	'img'	 => array(
-		'alt'			 => array(),
-		'class'			 => array(),
-		'height'		 => array(),
-		'src'			 => array(),
-		'width'			 => array(),
+		'alt'	 => array(),
+		'class'	 => array(),
+		'height' => array(),
+		'src'	 => array(),
+		'width'	 => array(),
 	),
 	'label'  => array(
 		'class' => array(),
@@ -63,7 +63,9 @@ $GLOBALS['allowed_html'] = array(
 	),
 	'strong' => array(),
 	'table'  => array(),
-	'td'     => array(),
+	'td'     => array(
+		'style' => array(),
+	),
 	'tr'     => array(),
 	'ul'     => array(),
 );
