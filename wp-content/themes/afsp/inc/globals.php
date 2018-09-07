@@ -65,6 +65,7 @@ $GLOBALS['allowed_html'] = array(
 	'table'  => array(),
 	'td'     => array(
 		'style' => array(),
+		'width' => array(),
 	),
 	'tr'     => array(),
 	'ul'     => array(),
