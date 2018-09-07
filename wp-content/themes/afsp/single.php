@@ -82,7 +82,7 @@ get_template_part( 'template-parts/title' );
 				<div class="blog__content">
 					<?php the_field( 'b_body' ); ?>
 					<p>------</p>
-					<p>Like what you're reading? <a href="#" id="roundup">Sign up for AFSP's monthly Blog Email</a>, where you'll find blog highlights from the previous month, creative writing exercises, and assignments for upcoming topics.</p>
+					<p>Like what you're reading? Go to our <a href="https://afsp.org/stories2connect">Sharing Your Stories</a> page, where you'll find resources for sharing your own story, including story ideas, blog submission guidelines, tips for sharing your story safely and creative exercises to help you get started, and assignments for upcoming topics.</p>
 					<p>Write a blog post for AFSP! <a href="https://afsp.org/forms/lifesavers-blog-submission-guidelines/">Click here</a> for our Submission Guidelines.</p>
 					<div class="modal__overlay" id="modal-overlay"></div>
 					<div class="modal" id="modal">
