@@ -186,7 +186,7 @@ function gmw_states_dropdown( $gmw ) {
            	and trim(coalesce(country_name, '')) <>''
 			   ORDER BY `country_name`");
 	?>
-	<!--- create the states select box -->
+	<!-- create the states select box -->
 	<div class="find-chapter__dropdown">
 		<label for="gmw_state">Or search by</label>
 		<select id="state" class="gmw-state-dropdown" name="gmw_state">

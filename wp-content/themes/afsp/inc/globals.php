@@ -44,7 +44,10 @@ $GLOBALS['allowed_html'] = array(
 		'type'           => array(),
 	),
 	'img'	 => array(
-		'src'			 => array(),
+		'alt'			 => array(),
+		'class'			 => array(),
+		'height'		 => array(),
+		'width'			 => array(),
 	),
 	'label'  => array(
 		'class' => array(),
