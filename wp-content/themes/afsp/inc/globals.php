@@ -43,7 +43,9 @@ $GLOBALS['allowed_html'] = array(
 		'spellcheck'     => array(),
 		'type'           => array(),
 	),
-	'img'	 => array(),
+	'img'	 => array(
+		'src'			 => array(),
+	),
 	'label'  => array(
 		'class' => array(),
 		'for'   => array(),
