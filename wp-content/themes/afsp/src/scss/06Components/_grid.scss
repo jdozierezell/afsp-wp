@@ -51,15 +51,15 @@
     width: 84%;
     margin: 8%;
     @include responsive('small') {
-        width: 42%;
+        width: 41%;
         margin: 4%;
     }
     @include responsive('medium') {
-        width: 29%;
+        width: 28%;
         margin: 2%;
     }
     @include responsive('large') {
-        width: 23%;
+        width: 22%;
         margin: 1%;
     }
 }

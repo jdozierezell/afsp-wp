@@ -8,14 +8,32 @@
 get_header(); 
 get_template_part( 'template-parts/title' );
 if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>		
+        <div class="filters">
+            <div class="container">
+                <div class="facet">
+                    <label for="type">Grant Type</label>		    
+                    <select class="grid__select" data-filter-group="type" id="type" name="<?php echo $type['key']; ?>">
+                        <option value="*">Show All</option>
+                        <?php foreach($type['choices'] as $key => $value) { ?>
+                            <option value=".<?php echo $key; ?>"><?php echo $value; ?></option>
+                        <?php } ?>
+                    </select>
+                </div>
+            </div>
+        </div>
         <section class="container" style="text-align: center; font-weight: bold;"><?php the_content(); ?></section>
         <section class="grid">
-            <?php if ( have_rows( 'vg_videos' ) ) : while ( have_rows( 'vg_videos' ) ) : the_row(); ?>
-                <div class="grid__item--video">
-                    <div class="videoEmbed">
-                        <iframe src="https://www.youtube.com/embed/H44tfaLvp8I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <?php 
+            if ( have_rows( 'vg_videos' ) ) : while ( have_rows( 'vg_videos' ) ) : the_row(); 
+                    if ( get_sub_field( 'vg_video_source' ) === 'youtube' ) :
+                    elseif ( get_sub_field( 'vg_video_source' ) === 'vimeo' ) :
+                    endif;
+                    ?>
+                    <div class="grid__item--video">
+                        <div class="videoEmbed">
+                            <iframe src="https://www.youtube.com/embed/H44tfaLvp8I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
                     </div>
-                </div>
             <?php
                 endwhile;
             endif;

@@ -110,10 +110,10 @@ if ( have_posts() ) :
 				if ( get_field( 'sd_additional_event' ) ) :
 					echo wp_kses( get_field( 'sd_additional_event' ), $GLOBALS['allowed_html'] );
 				endif;
-				if ( get_field( 'sd_registration_link' ) ) :
+				// if ( get_field( 'sd_registration_link' ) ) :
 				?>
-					<a class="features__button" href="<?php the_field( 'sd_registration_link' ); ?>" target="_blank">Register today</a>
-				<?php endif; ?>
+					<a class="features__button" href="https://www.surveymonkey.com/r/99JL2FB" target="_blank">Register today</a>
+				<?php // endif; ?>
 				<p>Not all events can accommodate teen or child attendees. Please use the contact information on the right to find out more.</p>
 			</div>
 			<div class="event__description">
