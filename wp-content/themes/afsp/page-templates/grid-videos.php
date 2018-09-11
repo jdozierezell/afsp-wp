@@ -5,83 +5,69 @@
  * @package afsp
  */
 
-				get_header(); 
-				get_template_part('template-parts/title');
-				$id = get_the_ID();
-				if(have_posts()) : while(have_posts()) : the_post(); ?>
+get_header(); 
+get_template_part('template-parts/title');
+$id = get_the_ID();
+if(have_posts()) : while(have_posts()) : the_post(); ?>			
+        <div class="filters">
+            <div class="container">
+                <?php 
+                $type = get_field_object('field_560ea1b7b18db');
+                if ( $type ) :
+                ?>
+                    <div class="facet">
+                        <label for="type">Grant Type</label>		    
+                        <select class="grid__select" data-filter-group="type" id="type" name="<?php echo $type['key']; ?>">
+                            <option value="*">Show All</option>
+                            <?php foreach($type['choices'] as $key => $value) { ?>
+                                <option value=".<?php echo $key; ?>"><?php echo $value; ?></option>
+                            <?php } ?>
+                        </select>
+                    </div>		
+                <?php
+                endif; 
+                $area = get_field_object('field_560edfac797ec');
+                if ( $area ) :
+                ?>
+                    <div class="facet">
+                        <label for="area">Research Area(s)</label>		    
+                        <select class="grid__select" data-filter-group="area" id="area" name="<?php echo $area['key']; ?>[]" multiple>
+                            <option value="*">Show All</option>
+                            <?php foreach($area['choices'] as $key => $value) { ?>
+                                <option value=".<?php echo $key; ?>"><?php echo $value; ?></option>
+                            <?php } ?>
+                        </select>
+                    </div>
 				
-	<div class="filters">
-	  <div class="container">
-	  
-				<?php $type = get_field_object('field_560ea1b7b18db');
-				    if($type) : ?>
-		
-		<div class="facet">
-  		<label for="type">Grant Type</label>		    
-    	<select class="grid__select" data-filter-group="type" id="type" name="<?php echo $type['key']; ?>">
-    	  <option value="*">Show All</option>
-	  
-	      <?php foreach($type['choices'] as $key => $value) { ?>
-	        
-        <option value=".<?php echo $key; ?>"><?php echo $value; ?></option>
-	        
-	      <?php } ?>
-	  
-	    </select>
-		</div>		
-		
-				<?php endif; 
-				    $area = get_field_object('field_560edfac797ec');
-				    if($area) : ?>
-		
-		<div class="facet">
-  		<label for="area">Research Area(s)</label>		    
-    	<select class="grid__select" data-filter-group="area" id="area" name="<?php echo $area['key']; ?>[]" multiple>
-    	  <option value="*">Show All</option>
-	  
-	      <?php foreach($area['choices'] as $key => $value) { ?>
-	        
-        <option value=".<?php echo $key; ?>"><?php echo $value; ?></option>
-	        
-	      <?php } ?>
-	  
-	    </select>
-    </div>
-				
-				<?php endif; 
-				    $year = get_field_object('field_560e804dde723');
-				    if($year) : ?>
-		
-		<div class="facet">
-  		<label for="year">Year Granted</label>		    
-    	<select class="grid__select" data-filter-group="year" id="year" name="<?php echo $year['key']; ?>">
-    	  <option value="*">Show All</option>
-	  
-	      <?php foreach($year['choices'] as $key => $value) { ?>
-	        
-        <option value=".<?php echo $key; ?>"><?php echo $value; ?></option>
-	        
-	      <?php } ?>
-	  
-	    </select>
-    </div>
-				
+                <?php
+                endif; 
+                $year = get_field_object('field_560e804dde723');
+                if($year) :
+                ?>
+                    <div class="facet">
+                        <label for="year">Year Granted</label>		    
+                        <select class="grid__select" data-filter-group="year" id="year" name="<?php echo $year['key']; ?>">
+                            <option value="*">Show All</option>
+                            <?php foreach($year['choices'] as $key => $value) { ?>
+                                <option value=".<?php echo $key; ?>"><?php echo $value; ?></option>
+                            <?php } ?>
+                        </select>
+                    </div>
 				<?php endif; ?>
-				
-	  </div>
-	</div>
-<section class="container" style="text-align: center; font-weight: bold;"><?php the_content(); ?></section>
-<section class="grid">
-    <?php 
-    if ( have_rows( 'vg_videos' ) ) : while ( have_rows( 'vg_videos' ) ) : the_row; ?>
-        <div class="videoEmbed">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/H44tfaLvp8I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
         </div>
-    <?php
-        endwhile;
-    endif;
-    ?>
-</section>   	
+        <section class="container" style="text-align: center; font-weight: bold;"><?php the_content(); ?></section>
+        <section class="grid">
+            <?php if ( have_rows( 'vg_videos' ) ) : while ( have_rows( 'vg_videos' ) ) : the_row; ?>
+                <div class="videoEmbed">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/H44tfaLvp8I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            <?php
+                endwhile;
+            endif;
+            ?>
+        </section>   
+	
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/isotope.pkgd.min.js"></script>
 
 <script>
