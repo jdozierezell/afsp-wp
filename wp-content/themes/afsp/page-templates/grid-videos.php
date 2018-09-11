@@ -7,7 +7,6 @@
 
 get_header(); 
 get_template_part('template-parts/title');
-$id = get_the_ID();
 if(have_posts()) : while(have_posts()) : the_post(); ?>			
         <div class="filters">
             <div class="container">
@@ -127,17 +126,10 @@ if(have_posts()) : while(have_posts()) : the_post(); ?>
     }
     return value;
   }  
-
-  // function oldConcat(obj) {
-  //   for ( var prop in obj ) {
-  //       value += obj[ prop ];
-  //   }
-  //   return value;
-  // }
-  
-
 </script>
 
-				<?php get_footer(); ?>
-				
-				
+<?php
+    endwhile;
+endif;
+get_footer();
+?>
