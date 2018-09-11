@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Video Grid
+ * Template Name: Videos Grid
  *
  * @package afsp
  */
