@@ -46,6 +46,25 @@
     }
 }
 
+.grid__item--video {
+    @extend .videoEmbed;
+    display: inline-block;
+    width: 84%;
+    margin: 8%;
+    @include responsive('small') {
+        width: 42%;
+        margin: 4%;
+    }
+    @include responsive('medium') {
+        width: 29%;
+        margin: 2%;
+    }
+    @include responsive('large') {
+        width: 23%;
+        margin: 1%;
+    }
+}
+
 .filters {
     background-color: $color-brand-blue;
     padding: 1em;
