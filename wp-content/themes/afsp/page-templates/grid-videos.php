@@ -72,74 +72,15 @@
 	</div>
 <section class="container" style="text-align: center; font-weight: bold;"><?php the_content(); ?></section>
 <section class="grid">
-  
-				<?php // WP_Query arguments
-        $args = array (
-        	'post_parent'            => $id,
-        	'post_type'              => array('page'),
-          'posts_per_page'         => -1
-        );
-        // The Query
-        $grid = new WP_Query( $args );
-        // The Loop
-        if($grid->have_posts()) : while($grid->have_posts()) : $grid->the_post(); 
-        if(have_rows('g_grantees')) : while(have_rows('g_grantees' && $grantee == '')) : the_row(); // make sure grantee hasn't already been established for grants with multiple grantees
-            $grantee = get_sub_field('g_grantee'); 
-          endwhile;
-        endif; 
-        $title = get_the_title(); 
-        $title = shorten_with_ellipsis($title, 70); 
-        $type_field = get_field_object('g_type');
-        $type = $type_field['choices'][get_field('g_type')];
-        $type_data = get_field('g_type');
-        $area_data = get_field('g_research_area');
-        $year_data = get_field('g_year'); ?>
-        
-  <a class="grid__item <?php echo $type_data . ' ' . implode(' ', $area_data) . ' ' . $year_data; ?>" data-year="<?php echo $year_data; ?>" data-type="<?php echo $type_data; ?>" href="<?php the_permalink(); ?>">
-          <p><?php echo $title; ?></p>
-          <p><?php echo $grantee; ?></p>
-          <p><?php echo $type; ?></p>
-        
-        <?php $research_areas = get_field('g_research_area');
-        foreach($research_areas as $area) {
-          switch ($area) {
-            case 'neurobiological' :
-              $res_area = 'N';
-              $res_tip = 'How do brain structure and neurochemical function contribute to suicide?';
-              break;
-            case 'genetic' :
-              $res_area = 'G';
-              $res_tip = 'What genetic pathways are associated with suicide risk, and can we develop biological interventions and treatments?';
-              break;
-            case 'psychosocial' :
-              $res_area = 'P';
-              $res_tip = 'What are the risk factors and warning signs for suicide?';
-              break;
-            case 'treatment' :
-              $res_area = 'T';
-              $res_tip = 'What treatments &mdash; like therapies and medications &mdash; are effective at reducing suicide?';
-              break;
-            case 'community' :
-              $res_area = 'C';
-              $res_tip = 'What universal prevention programs &mdash; like hotlines, gatekeeper training, and community-based programs &mdash; are the most effective?';
-              break;
-            case 'loss' :
-              $res_area = 'L';
-              $res_tip = 'What is the impact of suicide loss, and what helps the healing process?';
-              break;
-          }
-          echo '<span class="grid__area hint--bottom" data-hint="' . $res_tip . '">' . $res_area . '</span>';
-        }?>
-        
-  </a>     		
-        
-        <?php	$grantee = ''; // reset grantee to blank for next card
-          endwhile;
-        endif;
-        // Restore original Post Data
-        wp_reset_postdata(); ?>
-        
-
+    <?php 
+    if ( have_rows( 'vg_videos' ) ) : while ( have_rows( 'vg_videos' ) ) : the_row; ?>
+        <div class="videoEmbed">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/H44tfaLvp8I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    <?php
+        endwhile;
+    endif;
+    ?>
 </section>   
 
 				<?php endwhile;
