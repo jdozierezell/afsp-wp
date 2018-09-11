@@ -47,7 +47,6 @@
 }
 
 .grid__item--video {
-    @extend .videoEmbed;
     display: inline-block;
     width: 84%;
     margin: 8%;

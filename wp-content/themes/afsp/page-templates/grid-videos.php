@@ -12,7 +12,9 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <section class="grid">
             <?php if ( have_rows( 'vg_videos' ) ) : while ( have_rows( 'vg_videos' ) ) : the_row(); ?>
                 <div class="grid__item--video">
-                    <iframe src="https://www.youtube.com/embed/H44tfaLvp8I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <div class="videoEmbed">
+                        <iframe src="https://www.youtube.com/embed/H44tfaLvp8I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
                 </div>
             <?php
                 endwhile;
