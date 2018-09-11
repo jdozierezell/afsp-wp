@@ -81,11 +81,7 @@
         endwhile;
     endif;
     ?>
-</section>   
-
-				<?php endwhile;
-				endif; ?>
-				
+</section>   	
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/isotope.pkgd.min.js"></script>
 
 <script>
