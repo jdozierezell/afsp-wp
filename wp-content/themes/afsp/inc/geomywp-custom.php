@@ -52,7 +52,7 @@ function save_acf_gmw( $post_id ) {
 		$city     = $acf['field_5707c4ddb1d3d'];
 		// TBD is screwing things up, so...
 		if ( $acf['field_5707c4d6b1d3b'] && 'TBD' !== $acf['field_5707c4d6b1d3b'] && ' ' !== $acf['field_5707c4d6b1d3b'] && '' !== $acf['field_5707c4d6b1d3b'] ) :
-			// $street_address = $acf['field_5707c4d6b1d3b'];
+			$street_address = $acf['field_5707c4d6b1d3b'];
 		endif;
 		$zipcode = $acf['field_5707c4e9b1d40'];
 	endif;
