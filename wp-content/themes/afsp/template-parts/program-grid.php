@@ -20,7 +20,7 @@
 		        // The Loop
 		        if($programs->have_posts()) : while($programs->have_posts()) : $programs->the_post();  ?>
 
-		<a class="program__item <?php echo implode(' ', get_field('pf_program_category')); ?>" href="<?php the_permalink(); ?>">
+		<a class="program__item" href="<?php the_permalink(); ?>">
 			<table>
 				<tr>
 					<td>

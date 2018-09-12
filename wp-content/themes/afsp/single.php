@@ -25,7 +25,7 @@ get_template_part( 'template-parts/title' );
 								<?php
 								if ( null !== get_field( 'b_date' ) ) :
 									$date = DateTime::createFromFormat( 'Y-m-d', get_field( 'b_date' ) );
-									echo esc_html( $date->format( 'F j, Y' ) );
+									echo $date->format( 'F j, Y' );
 								endif;
 								?>
 							</span> | 
