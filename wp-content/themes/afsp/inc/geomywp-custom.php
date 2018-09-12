@@ -20,6 +20,7 @@ add_action( 'acf/save_post', 'save_acf_gmw' );
  * @return null
  */
 function save_acf_gmw( $post_id ) {
+	echo '<h1>Function fired!!!!</h1>';
 	$post_type = get_post_type();
 	$title     = get_the_title();
 	// phpcs:disable
@@ -60,7 +61,7 @@ function save_acf_gmw( $post_id ) {
 		$state = $province;
 	endif;
 	// include the file with the geocode function.
-	include_once GMW_PT_PATH . '/includes/gmw-posts-locator-functions.php';
+	include_once( GMW_PT_PATH . '/includes/gmw-posts-locator-functions.php' );
 	$location = array(
 		'city'    => $city,
 		'state'   => $state,
