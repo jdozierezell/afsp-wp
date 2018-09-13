@@ -49,9 +49,9 @@ if ( have_posts() ) :
 		<section class="isosld-splash container">
 			<?php
 			if ( isset( $street_address ) ) :
-				echo apply_filters( 'the_content', '[gmw_single_location address_fields="street, city, state" map_width="100%" map_height="450px" ul_marker=0 distance=0 info_window=0]' );
+				echo do_shortcode( '[gmw_single_location address_fields="street, city, state" map_width="100%" map_height="450px" ul_marker=0 distance=0 info_window=0]' );
 			else :
-				echo apply_filters( 'the_content', '[gmw_single_location address_fields="city, state" map_width="100%" map_height="450px" ul_marker=0 distance=0 info_window=0]' );
+				echo do_shortcode( '[gmw_single_location address_fields="city, state" map_width="100%" map_height="450px" ul_marker=0 distance=0 info_window=0]' );
 			endif;
 			?>
 			<h1 class="landing__title container"><?php the_title(); ?></h1>
@@ -273,7 +273,7 @@ if ( have_posts() ) :
 				endif;
 				if ( '' !== get_field( 'sd_additional_information' ) ) :
 					echo '<h4>Additional Information</h4>';
-					echo esc_html( get_field( 'sd_additional_information' ) );
+					wp_kses( get_field( 'sd_additional_information' ), $GLOBALS['allowed_html'] );
 				endif;
 				?>
 			</div>
