@@ -273,7 +273,7 @@ if ( have_posts() ) :
 				endif;
 				if ( '' !== get_field( 'sd_additional_information' ) ) :
 					echo '<h4>Additional Information</h4>';
-					wp_kses( get_field( 'sd_additional_information' ), $GLOBALS['allowed_html'] );
+					echo wp_kses( get_field( 'sd_additional_information' ), $GLOBALS['allowed_html'] );
 				endif;
 				?>
 			</div>
