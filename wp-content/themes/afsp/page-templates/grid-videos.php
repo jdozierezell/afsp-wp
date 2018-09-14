@@ -25,24 +25,25 @@ if ( $topic ) :
             </div>
         </div>
     </div>
-    <section class="container" style="text-align: center; font-weight: bold;"><?php the_content(); ?></section>
-    <section class="grid">
-        <?php 
-        if ( have_rows( 'vg_videos' ) ) : while ( have_rows( 'vg_videos' ) ) : the_row(); 
-                if ( get_sub_field( 'vg_video_source' ) === 'youtube' ) :
-                elseif ( get_sub_field( 'vg_video_source' ) === 'vimeo' ) :
-                endif;
-                ?>
-                <div class="grid__item--video">
-                    <div class="videoEmbed">
-                        <iframe src="https://www.youtube.com/embed/H44tfaLvp8I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
+<?php endif; ?>
+<section class="container" style="text-align: center; font-weight: bold;"><?php the_content(); ?></section>
+<section class="grid">
+    <?php 
+    if ( have_rows( 'vg_videos' ) ) : while ( have_rows( 'vg_videos' ) ) : the_row(); 
+            if ( get_sub_field( 'vg_video_source' ) === 'youtube' ) :
+            elseif ( get_sub_field( 'vg_video_source' ) === 'vimeo' ) :
+            endif;
+            ?>
+            <div class="grid__item--video">
+                <div class="videoEmbed">
+                    <iframe src="https://www.youtube.com/embed/H44tfaLvp8I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
-        <?php
-            endwhile;
-        endif;
-        ?>
-    </section>   
+            </div>
+    <?php
+        endwhile;
+    endif;
+    ?>
+</section>   
 	
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/isotope.pkgd.min.js"></script>
 
