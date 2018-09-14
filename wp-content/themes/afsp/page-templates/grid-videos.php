@@ -9,8 +9,18 @@ get_header();
 get_template_part( 'template-parts/title' );
 if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <?php echo "<pre>";
-var_dump(get_sub_field('vg_video_tags'));
+var_dump(get_field_object('field_5b97b49979b7c'));
 echo "</pre>"; ?>
+
+
+<?php if(have_rows('vg_videos')) : while(have_rows('vg_videos')) : the_row();
+echo "<pre>";
+var_dump(get_field_object('field_5b97b49979b7c'));
+echo "</pre>"; 
+endwhile;
+endif; ?>
+
+
         <div class="filters">
             <div class="container">
                 <div class="facet">
