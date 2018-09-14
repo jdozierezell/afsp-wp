@@ -33,19 +33,26 @@ if ( $topic ) :
             if ( get_sub_field( 'vg_video_source' ) === 'youtube' ) :
             elseif ( get_sub_field( 'vg_video_source' ) === 'vimeo' ) :
             endif;
+            var_dump(get_sub_field('vg_video_tags'))
             ?>
-            <div class="grid__item--video">
+            <div class="grid__item--video <?php  ?>">
                 <div class="videoEmbed">
                     <iframe src="https://www.youtube.com/embed/H44tfaLvp8I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
-    <?php
+        <?php
         endwhile;
     endif;
     ?>
 </section>   
 	
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/isotope.pkgd.min.js"></script>
+
+<script>
+    jQuery(document).ready(function($) {
+
+    })
+</script>
 
 <?php
     endwhile;
