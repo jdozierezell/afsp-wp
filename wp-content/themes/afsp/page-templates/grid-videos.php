@@ -39,6 +39,7 @@ if ( $topic ) :
                 foreach( $tags as $tag ) {
                     $class_tags .= ' ' . $tag;
                 }
+            endif;
             ?>
             <div class="grid__item--video<?php echo $class_tags; ?>">
                 <div class="videoEmbed">
