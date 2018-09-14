@@ -61,6 +61,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                 var $this = jQuery(this)
                 var filterGroup = $this.attr('data-filter-group')
                 filters[filterGroup] = $this.val()
+                console.log(filters[filterGroup])
                 $grid.isotope({filter: filters})
             })
         </script>
