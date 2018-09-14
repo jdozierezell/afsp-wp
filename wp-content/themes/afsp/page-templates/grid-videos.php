@@ -57,8 +57,8 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                 itemSelector: 'grid__item--video',
                 layoutMode: 'fitRows'
             })
-            console.log(jQuery('.filters'))
-            jQuery('.filters').on('change', '.grid_select', function() {
+            console.log(jQuery('.grid_select'))
+            jQuery('.grid_select').on('change', function() {
                 var $this = jQuery(this)
                 var filterGroup = $this.attr('data-filter-group')
                 filters[filterGroup] = $this.val()
