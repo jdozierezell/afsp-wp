@@ -7,7 +7,10 @@
 
 get_header(); 
 get_template_part( 'template-parts/title' );
-if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>		
+if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php echo "<pre>";
+var_dump(get_sub_field('vg_video_tags'));
+echo "</pre>"; ?>
         <div class="filters">
             <div class="container">
                 <div class="facet">
