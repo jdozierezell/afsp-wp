@@ -18,7 +18,7 @@ if ( $topic ) :
                 <label for="type">Video Topic</label>		    
                 <select class="grid__select" data-filter-group="topic" id="topic" name="<?php echo $topic['key']; ?>">
                     <option value="*">Show All</option>
-                    <?php foreach($topic['choices'] as $key => $value) { ?>
+                    <?php foreach( $topic['choices'] as $key => $value ) { ?>
                         <option value=".<?php echo $key; ?>"><?php echo $value; ?></option>
                     <?php } ?>
                 </select>
@@ -33,9 +33,14 @@ if ( $topic ) :
             if ( get_sub_field( 'vg_video_source' ) === 'youtube' ) :
             elseif ( get_sub_field( 'vg_video_source' ) === 'vimeo' ) :
             endif;
-            var_dump(get_sub_field('vg_video_tags'))
+            $tags = get_sub_field( 'vg_video_tags' );
+            $class_tags = '';
+            if ( $tags ) :
+                foreach( $tags as $tag ) {
+                    $class_tags .= ' ' . $tag;
+                }
             ?>
-            <div class="grid__item--video <?php  ?>">
+            <div class="grid__item--video<?php echo $class_tags; ?>">
                 <div class="videoEmbed">
                     <iframe src="https://www.youtube.com/embed/H44tfaLvp8I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
