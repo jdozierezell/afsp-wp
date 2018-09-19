@@ -25,7 +25,7 @@
 
 				get_template_part('template-parts/splash-container'); 
 
-				get_template_part('template-parts/chapter-email-old'); // chapter email signup ?>
+				get_template_part('template-parts/chapter-email'); // chapter email signup ?>
 
 <section class="chapter__features container">
 		
