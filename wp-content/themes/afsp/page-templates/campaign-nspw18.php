@@ -152,14 +152,14 @@ get_template_part( 'template-parts/title' );
 <section class="container__full nspw18-header" aria-label="countdown clock">
 	<div>
 		<?php echo wp_kses( get_field( 'nspw_title_display' ), $GLOBALS['allowed_html'] ); ?>
-		<div class="nspw18-countdown__wrapper">
+		<!-- <div class="nspw18-countdown__wrapper">
 			<div class="nspw18-countdown__labels">
 				<p>Days</p>
 				<p>Hours</p>
 				<p>Minutes</p>
 			</div>
 			<div class="nspw18-countdown" id="countdown"></div>
-			<script src="<?php echo esc_url( get_template_directory_uri() . '/js/flipclock.min.js' ); ?>" type="text/javascript"></script>
+			<script src="<?php // echo esc_url( get_template_directory_uri() . '/js/flipclock.min.js' ); ?>" type="text/javascript"></script>
 			<script>
 				var date = new Date("September 9, 2018 00:00:00");
 				var now = new Date();
@@ -171,7 +171,7 @@ get_template_part( 'template-parts/title' );
 					autoStart: true,
 				})
 			</script>
-		</div>
+		</div> -->
 	</div>
 </section>
 <?php if (get_field('nspw_introduction' ) ) : ?>
