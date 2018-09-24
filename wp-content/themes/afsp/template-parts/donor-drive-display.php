@@ -77,9 +77,9 @@ endif;
 			<p>
 				<?php
 				echo date( 'F jS', $earliest_date );
-				if ( [] !== $city || [] !== $state ) :
-					echo '&nbsp;&nbsp;|&nbsp;&nbsp;' . esc_html( $city ) . ', ' . esc_html( $state );
-				endif;
+				// if ( [] !== $city || [] !== $state ) :
+				// 	echo '&nbsp;&nbsp;|&nbsp;&nbsp;' . esc_html( $city ) . ', ' . esc_html( $state );
+				// endif;
 				?>
 			</p>
 		</a>
