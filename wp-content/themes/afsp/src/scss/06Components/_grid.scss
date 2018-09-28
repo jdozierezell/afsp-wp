@@ -58,10 +58,6 @@
         width: 28%;
         margin: 2%;
     }
-    @include responsive('large') {
-        width: 22%;
-        margin: 1%;
-    }
 }
 
 .filters {
