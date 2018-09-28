@@ -16,7 +16,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
             if ( $featured_speaker ) :
             ?>
                 <div class="facet">
-                    <label for="featured_speaker">Featured featured_speaker</label>		    
+                    <label for="featured_speaker">Featured Speaker</label>		    
                     <select class="grid__select" data-filter-group="featured_speaker" id="featured_speaker" name="<?php echo $featured_speaker['key']; ?>">
                         <option value="*">Show All</option>
                         <?php foreach($featured_speaker['choices'] as $key => $value) { ?>
