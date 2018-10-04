@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Elementor
+ * Template Name: Elementor AFSP
  *
  * @package afsp
  */
@@ -10,7 +10,6 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main container" role="main">
-  		<h1 class="landing__title"><?php the_title(); ?></h1>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
