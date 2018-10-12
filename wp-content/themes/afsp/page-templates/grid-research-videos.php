@@ -10,7 +10,7 @@ get_template_part( 'template-parts/title' );
 if ( have_posts() ) : while ( have_posts() ) : the_post();
 get_template_part('template-parts/splash-container-full');
 ?>  
-    <section class="container"><?php the_content(); ?></section>
+    <section class="container" style="font-size: 1.3rem;"><?php the_content(); ?></section>
     <div class="filters">
         <div class="container">
             <?php
