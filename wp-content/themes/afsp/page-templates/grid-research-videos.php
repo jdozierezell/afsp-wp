@@ -8,11 +8,11 @@
 get_header(); 
 get_template_part( 'template-parts/title' );
 if ( have_posts() ) : while ( have_posts() ) : the_post();
-get_template_part('template-parts/splash-container');
+get_template_part('template-parts/splash-container-full');
 ?>  
-    <section class="container" style="text-align: center; font-weight: bold;"><?php the_content(); ?></section>
-    <!-- <div class="filters"> -->
-        <div class="container filters">
+    <section class="grid" style="text-align: center; font-weight: bold;"><?php the_content(); ?></section>
+    <div class="filters">
+        <div class="grid filters">
             <?php
             $featured_speaker = get_field_object( 'field_5ba36247e8f19' );
             if ( $featured_speaker ) :
@@ -56,7 +56,7 @@ get_template_part('template-parts/splash-container');
                 </div>
             <?php endif; ?>
         </div>
-    <!-- </div>    -->
+    </div>   
     <section class="grid">
         <?php 
         if ( have_rows( 'vg_videos' ) ) : while ( have_rows( 'vg_videos' ) ) : the_row(); 
