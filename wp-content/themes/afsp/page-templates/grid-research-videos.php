@@ -12,7 +12,7 @@ get_template_part('template-parts/splash-container-full');
 ?>  
     <section class="grid" style="text-align: center; font-weight: bold;"><?php the_content(); ?></section>
     <div class="filters">
-        <div class="grid filters">
+        <div class="container">
             <?php
             $featured_speaker = get_field_object( 'field_5ba36247e8f19' );
             if ( $featured_speaker ) :
