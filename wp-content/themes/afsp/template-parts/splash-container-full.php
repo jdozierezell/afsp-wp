@@ -40,7 +40,7 @@
 				the_row();
 				?>
 					<div class="gallery-cell gallery-cell__full">
-						<?php afsp_imgix( 'splash__image', true, 'si_one', '100vw', 1532, 768, 768, 768 ); ?>
+						<?php afsp_imgix( 'splash__image', true, 'si_one', '100vw', 1532, 500, 768, 768 ); ?>
 					</div>    
 			<?php endwhile; ?>
 				</div>
@@ -57,7 +57,7 @@
 			<a href="<?php echo esc_url( $image_link ); ?>" target="_blank">
 		<?php
 		endif;
-		afsp_imgix( 'splash__image', false, 'si', '100vw', 1532, 768, 768, 768 );
+		afsp_imgix( 'splash__image', false, 'si', '100vw', 1532, 500, 768, 768 );
 	endif;
 	if ( 'no' !== get_field( 'si_featured_image' ) && isset( $image_link ) ) :
 	?>
