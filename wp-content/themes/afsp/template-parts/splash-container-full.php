@@ -63,5 +63,7 @@
 	?>
 			</a>
 	<?php endif; ?>
-	<h1 class="landing__title"><?php the_title(); ?></h1>
+	<div class="container">
+        <h1 class="landing__title"><?php the_title(); ?></h1>
+    </div>
 </section>
