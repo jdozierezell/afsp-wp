@@ -118,7 +118,7 @@ if ( have_posts() ) :
 			</div>
 			<div class="event__description">
 				<?php if ( '' !== get_field( 'sd_custom_date' ) ) : ?>
-					<p><em>Note: This Survivor Day event will be held on <strong><?php echo esc_html( get_field( 'sd_custom_date' ) ); ?></strong> instead of Nov. 18, 2017.</em></p>
+					<p><em>Note: This Survivor Day event will be held on <strong><?php echo esc_html( get_field( 'sd_custom_date' ) ); ?></strong> instead of Nov. 17, 2018.</em></p>
 				<?php endif; ?>
 				<p>Survivor Day is the one day a year when people affected by suicide loss gather around the world at events in their local communities to find comfort and gain understanding as they share stories of healing and hope. <a href="<?php get_home_url(); ?>/survivorday" target="_blank">Discover more about Survivor Day.</a></p>
 				<?php
