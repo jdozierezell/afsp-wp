@@ -23,8 +23,8 @@ get_template_part( 'template-parts/title' );
 						<h3 class="blog__meta">
 							<span class="posted-on">
 								<?php
-								if ( null !== get_field( 'b_date' ) ) :
 									echo get_field( 'b_date' );
+								if ( null !== get_field( 'b_date' ) ) :
 									// $date = DateTime::createFromFormat( 'Y-m-d', get_field( 'b_date' ) );
 									// echo $date->format( 'F j, Y' );
 								endif;
