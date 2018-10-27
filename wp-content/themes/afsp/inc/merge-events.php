@@ -140,10 +140,10 @@ function afsp_merge_events() {
         if(get_field('sd_custom_date') != '') :
           $sd_date = get_field('sd_custom_date', false, false);
           $sd_date = new DateTime($sd_date);
-          $sd_date_month = $sd_date->format('m');
-          $sd_date_day = $sd_date->format('d');
-          $sd_date_year = $sd_date->format('Y');
-          $sd_date = mktime(0,0,0,date('m',$sd_date_month),date('d',$sd_date_day),date('Y',$sd_date_year));
+          // $sd_date_month = $sd_date->format('m');
+          // $sd_date_day = $sd_date->format('d');
+          // $sd_date_year = $sd_date->format('Y');
+          // $sd_date = mktime(0,0,0,date('m',$sd_date_month),date('d',$sd_date_day),date('Y',$sd_date_year));
         else :
           $sd_date = date('Y-m-d', mktime(0,0,0,11,17,2018));
         endif;
