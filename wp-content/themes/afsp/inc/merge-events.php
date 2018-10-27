@@ -140,6 +140,7 @@ function afsp_merge_events() {
         if(get_field('sd_custom_date') != '') :
           $sd_date = get_field('sd_custom_date', false, false);
           $sd_date = DateTime::createFromFormat('Ymd', $sd_date);
+          $sd_date = $sd_date->format('Y-m-d');
           // $sd_date = new DateTime($sd_date);
           // $sd_date_month = $sd_date->format('m');
           // $sd_date_day = $sd_date->format('d');
