@@ -134,8 +134,10 @@ function gmw_country_state_filter( $clauses, $gmw ) {
 		endif;
 	elseif ( isset( $get['gmw_state'] ) ) :
 		if ( '' !== $get['gmw_state'] ) :
+			$clean_state = $get['gmw_state'];
+			$clean_state = str_replace( '%20', '', $clean_state );
 			// filter the WHERE clause to look for locations with based on their state.
-			$clauses['where'] .= $wpdb->prepare( ' AND gmw_locations.region_name = %s', $get['gmw_state'] );
+			$clauses['where'] .= $wpdb->prepare( ' AND gmw_locations.region_name = %s', $clean_state );
 		endif;
 	endif;
 	$clauses['groupby'] = "$wpdb->posts.ID";
