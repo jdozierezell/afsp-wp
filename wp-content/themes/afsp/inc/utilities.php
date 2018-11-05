@@ -923,7 +923,7 @@ function chapter_name_to_code( $chapter ) {
 			$chapter_code = 'TXSC';
 			break;
 		case 'AFSP Southeast Florida':
-			$chapter_code = 'FLSA';
+			$chapter_code = 'FLSE';
 			break;
 		case 'AFSP Southeast Minnesota':
 			$chapter_code = 'MNSE';
