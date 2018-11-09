@@ -56,7 +56,6 @@ function afsp_merge_events() {
   $rowid = 0;
 
   foreach($array['result']['row'] as $row) {
-    $row['customfieldcode1'] = '';
     if($row['recordid'] > $rowid) {
       $rowid = $row['recordid'];
     }
@@ -174,9 +173,9 @@ function afsp_merge_events() {
 
     endwhile;
 
-// echo '<pre>';
-// var_dump($array['result']['row']);
-// echo '</pre>';
+echo '<pre>';
+var_dump($array['result']['row']);
+echo '</pre>';
 
   endif;
 
