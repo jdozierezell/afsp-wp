@@ -59,6 +59,7 @@ function afsp_merge_events() {
     if($row['recordid'] > $rowid) {
       $rowid = $row['recordid'];
     }
+    $row['customfieldcode1'] = str_replace( ' ', '', $row['customfieldcode1'] );
   }
 
   // WP_Query arguments
