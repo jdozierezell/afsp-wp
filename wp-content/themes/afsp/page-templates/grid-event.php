@@ -65,7 +65,7 @@ usort( $previous_array['result']['row'], 'sort_previous_events' );
 		$record_id     = $data['recordid'];
 		$program_code  = $data['programcode'];
 		$chapter_codes = $data['customfieldcode1']; // variable for the chapter codes
-		// $chapter_codes = str_replace( ' ', '', $chapter_codes );
+		$chapter_codes = str_replace( ' ', '', $chapter_codes );
 		echo "<script>console.log('$chapter_codes')</script>";
 		if ( is_array( $chapter_codes ) ) : // check to see if this event is an event from our site, and thus an array
 			if ( in_array( $chapter_code, $chapter_codes ) ) : // check to see if this event is sponsored by this chapter
