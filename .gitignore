@@ -5,6 +5,8 @@
 *.bak
 *.swp
 Thumbs.db
+*.vscode
+.vscode
 
 # afsp specific
 wp-content/plugins/

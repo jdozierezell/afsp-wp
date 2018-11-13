@@ -21,14 +21,14 @@ get_template_part( 'template-parts/title' );
 					<div class="blog__masthead">
 						<?php the_title( '<h1 class="blog__title">', '</h1>' ); ?>
 						<h3 class="blog__meta">
-							<span class="posted-on">
+							<!-- <span class="posted-on">
 								<?php
-								if ( null !== get_field( 'b_date' ) ) :
-									$date = DateTime::createFromFormat( 'Y-m-d', get_field( 'b_date' ) );
-									echo $date->format( 'F j, Y' );
-								endif;
+								// if ( null !== get_field( 'b_date' ) ) :
+								// 	$date = DateTime::createFromFormat( 'Y-m-d', get_field( 'b_date' ) );
+								// 	echo $date->format( 'F j, Y' );
+								// endif;
 								?>
-							</span> | 
+							</span> |  -->
 							<span class="byline">
 								<?php
 								$term = get_field( 'b_author' );
