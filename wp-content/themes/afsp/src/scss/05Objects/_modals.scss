@@ -72,7 +72,7 @@
         width: 70vh;
         height: 70vh;
     }
-    &>div {
+    & > div {
         background-color: rgba($color-brand-dark-gray, 0.4);
         width: 100%;
         position: absolute;
@@ -155,6 +155,11 @@
         width: 70vh;
         height: 70vh;
     }
+}
+
+.modal--givingTuesday2018 {
+    @extend .modal--givingTuesday;
+    background-image: url(http://afsp.imgix.net/wp-content/uploads/2018/11/13876_AFSP_Giving_Tuesday_2018_ModalSquare.png?w=1080);
 }
 
 .modal--30years {

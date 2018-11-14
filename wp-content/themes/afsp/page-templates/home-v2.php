@@ -308,11 +308,11 @@
 				$date = $today->format('Y-m-d');
 				$day_of_week = $today->format('N');
 				$this_week = $today->format('W');
-				$givingTuesday = new DateTime('2017-11-28');
+				$givingTuesday = new DateTime('2018-11-27');
 				$givingTuesday = $givingTuesday->format('Y-m-d');
 
 				if($date == $givingTuesday) : // is it Giving Tuesday?
-					require(locate_template('template-parts/modals/modal-giving-tuesday-2017.php'));
+					require(locate_template('template-parts/modals/modal-giving-tuesday-2018.php'));
 				elseif($day_of_week == '3') : // is it wednesday?
 					// require(locate_template('template-parts/modals/weekly-modals-wednesday.php'));
 				endif; ?>
