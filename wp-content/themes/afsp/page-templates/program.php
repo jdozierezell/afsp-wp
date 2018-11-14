@@ -125,6 +125,10 @@
   		
   		  <?php endif;
   		  endif; ?>
+  		  
+        </div>
+      </div>
+    </section>
   				
 				<?php endwhile;
 				endif; ?>
