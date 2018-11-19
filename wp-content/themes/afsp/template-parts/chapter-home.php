@@ -187,7 +187,7 @@
 				<?php if(get_field('sn_facebook') != '') : ?>
 				
 		<div class="facebook">
-			<div class="fb-page" data-href="https://www.facebook.com/<?php echo get_field('sn_facebook'); ?>" data-width="500" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/<?php echo get_field('sn_facebook'); ?>"><a href="https://www.facebook.com/<?php echo get_field('sn_facebook'); ?>">American Foundation for Suicide Prevention</a></blockquote></div></div>
+			<div class="fb-page" data-href="https://www.facebook.com/<?php echo get_field('sn_facebook'); ?>" data-width="500" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-tabs="timeline"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/<?php echo get_field('sn_facebook'); ?>"><a href="https://www.facebook.com/<?php echo get_field('sn_facebook'); ?>">American Foundation for Suicide Prevention</a></blockquote></div></div>
 		</div>
 				
 				<?php endif;
