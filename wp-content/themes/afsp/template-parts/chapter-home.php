@@ -178,7 +178,7 @@
 	</div>
 		
 				<?php endif;
-				if(get_field('sn_facebook') || get_field('sn_twitter') || get_field('sn_instagram') || get_field('sn_flickr')) : ?>
+				if(get_field('sn_facebook')) : ?>
 	
 	<hr>
 	<h3 class="landing__header">Connect with us</h3>				
