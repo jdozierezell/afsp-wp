@@ -102,6 +102,33 @@
   				endif; ?>
   				
 </div>  				
+<?php if(get_field('c_cta_header')) : ?>
+
+<section class="features features--full-background">
+	<div class="features__cta">
+	  <div class="container container--flex">
+  		<h2 class="features__header"><?php the_field('c_cta_header'); ?></h2>
+  		<div class="features__body"><?php the_field('c_cta_body'); ?></div>
+  		  
+  		  <?php if(get_field('c_cta_button')) :
+          if(get_field('c_link_type') == 'internal') :
+        	  $link = get_field('c_cta_page_link');
+          elseif(get_field('c_link_type') == 'email') :
+            $link = 'mailto:' . get_field('c_cta_email_link');
+          else :
+            $link = get_field('c_cta_external_link');
+          endif;?>
+          
+		  <div class="features__button-wrapper">
+  		  <a class="features__button" href="<?php echo $link ?>"><?php the_field('c_cta_button'); ?></a>
+		  </div>
+  		
+  		  <?php endif;
+  		  endif; ?>
+  		  
+        </div>
+      </div>
+    </section>
   				
 				<?php endwhile;
 				endif; ?>

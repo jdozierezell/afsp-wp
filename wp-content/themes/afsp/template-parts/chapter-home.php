@@ -14,7 +14,7 @@
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=197494263639513";
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=197494263639513&autoLogAppEvents=1";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri() . '/js/as-nav-for.js'; ?>"></script>
@@ -187,7 +187,7 @@
 				<?php if(get_field('sn_facebook') != '') : ?>
 				
 		<div class="facebook">
-			<div class="fb-page" data-href="https://www.facebook.com/<?php echo get_field('sn_facebook'); ?>" data-width="500" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/<?php echo get_field('sn_facebook'); ?>"><a href="https://www.facebook.com/<?php echo get_field('sn_facebook'); ?>">American Foundation for Suicide Prevention</a></blockquote></div></div>
+			<div class="fb-page" data-href="https://www.facebook.com/<?php echo get_field('sn_facebook'); ?>" data-width="500" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-tabs="timeline"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/<?php echo get_field('sn_facebook'); ?>"><a href="https://www.facebook.com/<?php echo get_field('sn_facebook'); ?>">American Foundation for Suicide Prevention</a></blockquote></div></div>
 		</div>
 				
 				<?php endif;
