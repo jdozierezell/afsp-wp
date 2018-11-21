@@ -63,9 +63,9 @@ $event_id = get_the_ID();
 				<?php the_content(); ?>
 				<p>Department: <?php the_field('department'); ?></p> <!-- Add Department listing -->
 				<p>Distribution List: <?php the_field('distribution_list'); ?></p> <!-- Add Distribution listing -->
-				<?php $number = get_field('number_of_subscribers'); // create number variable
-					$number = number_format($number, 0, '.', ',') // format large numbers ?>
-				<p># of Subscribers: <?php echo $number; ?></p> <!-- Add # of emails being sent -->
+				<?php // $number = get_field('number_of_subscribers'); // create number variable
+					// $number = number_format($number, 0, '.', ',') // format large numbers ?>
+				<!-- <p># of Subscribers: <?php // echo $number; ?></p> --> <!-- Add # of emails being sent -->
 			</div>
 			<!-- .tribe-events-single-event-description -->
 			<?php do_action( 'tribe_events_single_event_after_the_content' ) ?>
