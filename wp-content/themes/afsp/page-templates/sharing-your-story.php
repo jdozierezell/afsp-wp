@@ -76,6 +76,7 @@ if ( get_field( 'sys_story_tips' ) ) :
 					endwhile;
 				endif;
 				?>
+				<h4><a href="previous-creative-prompts">Click here to see previously shared Creative Prompts.</a></h4>
 			</section>
 			<?php if ( have_rows( 'sys_topics_on_the_horizon' ) ) : ?>
 				<section class="story-topics">
