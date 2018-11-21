@@ -21,7 +21,7 @@ if ( have_posts() ) :
 			<?php
 			if ( get_field( 'support_group_website' ) || get_field( 'hosting_sponsoring_organization_website') ) : ?>
 				<div class="support__details">
-					<h3>Website</h3>
+					<h3>Website(s)</h3>
 					<?php 
 					$group_website = '';
 					$sponsor_website = '';
