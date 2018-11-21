@@ -19,16 +19,27 @@ if ( have_posts() ) :
 				<p><strong>Please follow up with the listed contact to ensure their group is still active and confirm both meeting times and location.</strong></p>
 			</div>
 			<?php
-			if ( get_field( 'support_group_website' ) ) :
-				$group_website = '';
-				if ( false === strpos( get_field( 'support_group_website' ), 'http://' ) || strpos( get_field( 'support_group_website' ), 'https://' ) ) :
-					$group_website .= 'http://';
-				endif;
-				$group_website .= get_field( 'support_group_website' );
-				?>
+			if ( get_field( 'support_group_website' ) || get_field( 'hosting_sponsoring_organization_website') ) : ?>
 				<div class="support__details">
 					<h3>Website</h3>
-					<p><a href="<?php echo esc_url( $group_website ); ?>"><?php the_field( 'support_group_website' ); ?></a></p>
+					<?php 
+					$group_website = '';
+					$sponsor_website = '';
+					if ( get_field( 'support_group_website' ) ) :
+						if ( false === strpos( get_field( 'support_group_website' ), 'http://' ) || strpos( get_field( 'support_group_website' ), 'https://' ) ) :
+							$group_website .= 'http://';
+						endif;
+						$group_website .= get_field( 'support_group_website' ); ?>
+						<p><a href="<?php echo esc_url( $group_website ); ?>"><?php the_field( 'support_group_website' ); ?></a></p>
+					<?php
+					endif;
+					if ( get_field( 'hosting_sponsoring_organization_website' ) ) :
+						if ( false === strpos( get_field( 'hosting_sponsoring_organization_website' ), 'http://' ) || strpos( get_field( 'hosting_sponsoring_organization_website' ), 'https://' ) ) :
+							$sponsor_website .= 'http://';
+						endif;
+						$sponsor_website .= get_field( 'hosting_sponsoring_organization_website' ); ?>
+						<p><a href="<?php echo esc_url( $sponsor_website ); ?>"><?php the_field( 'hosting_sponsoring_organization_website' ); ?></a></p>
+					<?php endif; ?>
 				</div>
 			<?php endif; ?>
 			<div class="support__details">
