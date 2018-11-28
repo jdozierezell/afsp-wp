@@ -932,7 +932,7 @@ function chapter_name_to_code( $chapter ) {
 			$chapter_code = 'TXGH';
 			break;
 		case 'AFSP Southwest Florida':
-			$chapter_code = 'FLSW';
+			$chapter_code = 'FLSA';
 			break;
 		case 'AFSP Tampa Bay':
 			$chapter_code = 'FLTB';
