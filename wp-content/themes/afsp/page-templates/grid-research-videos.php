@@ -85,7 +85,7 @@ get_template_part('template-parts/splash-container-full');
                     <div class="videoEmbed">
                         <iframe src="<?php echo $video_url; ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
-                    <h3><?php echo get_field( 'vg_video_title' ); ?></h3>
+                    <h3><?php echo get_sub_field( 'vg_video_title' ); ?></h3>
                 </div>
             <?php
             endwhile;
