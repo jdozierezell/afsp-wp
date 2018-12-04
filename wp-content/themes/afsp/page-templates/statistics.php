@@ -11,7 +11,7 @@ get_template_part( 'template-parts/title' ); ?>
 	<h1 id="page-title" class="landing__title"><?php the_title(); ?></h1>
 </div>
 <section class="container" aria-label="disclaimer">
-	<p class="stats__intro">While this data is the most accurate we have, we estimate the numbers to be higher. Stigma surrounding suicide leads to underreporting, and data collection methods critical to suicide prevention need to be improved. <a href="<?php echo esc_url( site_url() ); ?>/our-work/advocacy/become-an-advocate/">Learn how you can become an advocate.</a></p>
+	<p class="stats__intro">The Centers for Disease Control have recently released a summary of 2017 fatal injury data. Unfortunately, the summary does not include all of the information that is available on this page. In an effort to provide the most up-to-date information, AFSP has updated this page where possible with the 2017 data. As further data are released, we will continue to update this page with the most current data. While this data is the most accurate we have, we estimate the numbers to be higher. Stigma surrounding suicide leads to underreporting, and data collection methods critical to suicide prevention need to be improved. <a href="<?php echo esc_url( site_url() ); ?>/our-work/advocacy/become-an-advocate/">Learn how you can become an advocate.</a></p>
 </section>
 <div class="container">
 <section class="counter__circles" aria-label="circle statistics">
@@ -22,29 +22,29 @@ get_template_part( 'template-parts/title' ); ?>
 	</div>
 	<div class="counter">
 		<div class="counterText">
-			Each year<br><span id="suiDeaths"></span><br>Americans die by suicide
+			In 2017<br><span id="suiDeaths"></span><br>Americans died by suicide
 		</div>
 	</div>
 	<div class="counter">
 		<div class="counterText">
-			For every suicide<br><span id="suiAttempts"></span><br>attempt
+			In 2017 there were an estimated<br><span id="suiAttempts"></span>&nbsp; Million<br>suicide attempts
 		</div>
 	</div>
 	<div class="counter">
 		<div class="counterText">
-			Suicide costs the US<br>$ <span id="suiCost"></span>&nbsp; Billion<br>annually
+			Suicide and self-injury cost the US<br>$ <span id="suiCost"></span>&nbsp; Billion<br>annually
 		</div>
 	</div>
 </section>
 <section class="key-facts key-facts--us" aria-label="state facts">
 	<h2>Additional Facts About Suicide in the US</h2> 
 	<ul class="key-facts__list">
-		<li>The annual age-adjusted suicide rate is <span class="bold">13.42 per 100,000</span> individuals.</li>
-		<li>Men die by suicide <span class="bold">3.53x</span> more often than women.</li>
-		<li>On average, there are <span class="bold">123</span> suicides per day.</li>
-		<li>White males accounted for <span class="bold">7 of 10</span> suicides in 2016.</li>
-		<li>Firearms account for <span class="bold">51%</span> of all suicides in 2016.</li>
+		<li>The 2017 age-adjusted suicide rate is <span class="bold">14.0 per 100,000</span> individuals.</li>
 		<li>The rate of suicide is <span class="bold">highest in middle age</span> &mdash; white men in particular.</li>
+		<li>In 2017, men died by suicide <span class="bold">3.54x</span> more often than women.</li>
+		<li>On average, there are <span class="bold">129</span> suicides per day.</li>
+		<li>White males accounted for <span class="bold">7 of 10</span> suicides in 2016.</li>
+		<li>Firearms accounted for <span class="bold">51%</span> of all suicides in 2016.</li>
 	</ul>
 </section>
 <section class="key-facts key-facts--state" aira-label="state statistics">
@@ -124,8 +124,8 @@ jQuery(document).ready(function($) {
 		separator: ','
 	}
 	var suiCause = new CountUp('suiCause', 0, 10, 0, 1, suiOptions).start();
-	var suiDeaths = new CountUp('suiDeaths', 0, 44965, 0, 1, suiOptions).start();
-	var suiAttempts = new CountUp('suiAttempts', 0, 25, 0, 1, suiOptions).start();
+	var suiDeaths = new CountUp('suiDeaths', 0, 47173, 0, 1, suiOptions).start();
+	var suiAttempts = new CountUp('suiAttempts', 0, 1.3, 0, 1, suiOptions).start();
 	var suiCost = new CountUp('suiCost', 0, 69, 0, 1, suiOptions).start(); 
 	// width and height of svg
 	var w = parseInt(d3.select('#map').style('width')),
