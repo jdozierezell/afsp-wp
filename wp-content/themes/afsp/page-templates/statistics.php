@@ -27,7 +27,7 @@ get_template_part( 'template-parts/title' ); ?>
 	</div>
 	<div class="counter">
 		<div class="counterText">
-			In 2017 there were an estimated<br><span id="suiAttempts"></span>&nbsp; Million<br>suicide attempts
+			In 2017 there were an estimated<br><span id="suiAttempts"></span><br>suicide attempts
 		</div>
 	</div>
 	<div class="counter">
@@ -125,7 +125,7 @@ jQuery(document).ready(function($) {
 	}
 	var suiCause = new CountUp('suiCause', 0, 10, 0, 1, suiOptions).start();
 	var suiDeaths = new CountUp('suiDeaths', 0, 47173, 0, 1, suiOptions).start();
-	var suiAttempts = new CountUp('suiAttempts', 0, 1.3, 0, 1, suiOptions).start();
+	var suiAttempts = new CountUp('suiAttempts', 0, 1300000, 0, 1, suiOptions).start();
 	var suiCost = new CountUp('suiCost', 0, 69, 0, 1, suiOptions).start(); 
 	// width and height of svg
 	var w = parseInt(d3.select('#map').style('width')),
