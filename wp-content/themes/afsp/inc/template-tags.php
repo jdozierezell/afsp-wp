@@ -24,12 +24,12 @@ if ( ! function_exists( 'afsp_posted_on' ) ) :
 		);
 		$posted_on   = sprintf(
 			// translators: %s: $time_string.
-			esc_html_x( '$1%s', 'post date', 'afsp' ),
+			esc_html_x( '%s', 'post date', 'afsp' ),
 			$time_string
 		);
 		$byline = sprintf(
 			// translators: %s: get_the_author.
-			esc_html_x( '| by $1%s', 'post author', 'afsp' ),
+			esc_html_x( '| by %s', 'post author', 'afsp' ),
 			esc_html( get_the_author() )
 		);
 		echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
