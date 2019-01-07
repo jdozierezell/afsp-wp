@@ -18,6 +18,7 @@ get_template_part('template-parts/title'); ?>
 	<div id="primary" class="">
 		<section class="container">	
 			<h1 class="landing__title"><?php single_post_title(); ?></h1>
+            <p>Interested in writing a blog post for AFSP? <a href="https://afsp.org/stories2connect">Click here to find out how.</a></p>
 		</section>
 		<main id="main" class="feed container container--large" role="main">
 
