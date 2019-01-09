@@ -3,9 +3,11 @@
  * Template Name: Campaign - Annual Report 2018
  *
  * @package afsp
- */ ?>
+ */ 
 
-<!doctype html>
+wp_head(); ?>
+
+<!-- <!doctype html> -->
 <html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js">
 
   <head>
