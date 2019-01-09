@@ -61,7 +61,7 @@ wp_head(); ?>
     })();
 
     </script>
-<link href="css/app.css?6a13328d83519ba7cfdf" rel="stylesheet"></head>
+<link href="<?php echo get_template_directory_uri(); ?>/page-templates/css/app.css?6a13328d83519ba7cfdf" rel="stylesheet"></head>
 
   <body class="no-js">
     <!--[if IE]>
@@ -145,7 +145,7 @@ wp_head(); ?>
 
 
     <!-- CONTENT -->
-    <section class="module module-type-content lazy" data-src="images/bg-we-are-all-connected.svg" id="section-1">
+    <section class="module module-type-content lazy" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-we-are-all-connected.svg" id="section-1">
       <div class="row">
         <div class="small-12 medium-5 column">
           <span class="headline blue">We Are All Connected</span>
@@ -176,7 +176,7 @@ wp_head(); ?>
         </div>
         <div class="small-12 medium-6 column">
 
-          <div class="image-circle communities" data-src="images/bg-communities.jpg"></div>
+          <div class="image-circle communities" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-communities.jpg"></div>
 
 
           <div class="spacer" data-space-small="50" data-space-medium="0" data-space-large="0"></div>
@@ -218,7 +218,7 @@ wp_head(); ?>
               <!-- Chapter box -->
               <div class="chapter-box">
                 <figure>
-                  <img src="images/chapter-utah.jpg" alt="Utah Chapter">
+                  <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/chapter-utah.jpg" alt="Utah Chapter">
                   <figcaption>
                     Overall Chapter of the Year
                     <span>Utah Chapter</span>
@@ -230,7 +230,7 @@ wp_head(); ?>
               <!-- Chapter box -->
               <div class="chapter-box">
                 <figure>
-                  <img src="images/chapter-boston.jpg" alt="Greater Boston Chapter">
+                  <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/chapter-boston.jpg" alt="Greater Boston Chapter">
                   <figcaption>
                     Chapter of the Year - Large Market
                     <span>Greater Boston Chapter</span>
@@ -242,7 +242,7 @@ wp_head(); ?>
               <!-- Chapter box -->
               <div class="chapter-box">
                 <figure>
-                  <img src="images/chapter-los-angeles.jpg" alt="Los Angeles Chapter">
+                  <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/chapter-los-angeles.jpg" alt="Los Angeles Chapter">
                   <figcaption>
                     Chapter of the Year - Large Market
                     <span>Los Angeles Chapter</span>
@@ -254,7 +254,7 @@ wp_head(); ?>
               <!-- Chapter box -->
               <div class="chapter-box">
                 <figure>
-                  <img src="images/chapter-illinois.jpg" alt="Illinois Chapter">
+                  <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/chapter-illinois.jpg" alt="Illinois Chapter">
                   <figcaption>
                     Chapter of the Year - Large Market
                     <span>Illinois Chapter</span>
@@ -266,7 +266,7 @@ wp_head(); ?>
               <!-- Chapter box -->
               <div class="chapter-box">
                 <figure>
-                  <img src="images/chapter-indiana.jpg" alt="Indiana Chapter">
+                  <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/chapter-indiana.jpg" alt="Indiana Chapter">
                   <figcaption>
                     Chapter of the Year - Mid-Size Market
                     <span>Indiana Chapter</span>
@@ -279,7 +279,7 @@ wp_head(); ?>
               <!-- Chapter box -->
               <div class="chapter-box">
                 <figure>
-                  <img src="images/chapter-kentucky.jpg" alt="Kentucky Chapter">
+                  <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/chapter-kentucky.jpg" alt="Kentucky Chapter">
                   <figcaption>
                     Chapter of the Year - Mid-Size Market
                     <span>Kentucky Chapter</span>
@@ -292,7 +292,7 @@ wp_head(); ?>
               <!-- Chapter box -->
               <div class="chapter-box">
                 <figure>
-                  <img src="images/chapter-north-carolina.jpg" alt="North Carolina Chapter">
+                  <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/chapter-north-carolina.jpg" alt="North Carolina Chapter">
                   <figcaption>
                     Chapter of the Year - Mid-Size Market
                     <span>North Carolina Chapter</span>
@@ -305,7 +305,7 @@ wp_head(); ?>
               <!-- Chapter box -->
               <div class="chapter-box">
                 <figure>
-                  <img src="images/chapter-arkansas.jpg" alt="Arkansas Chapter">
+                  <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/chapter-arkansas.jpg" alt="Arkansas Chapter">
                   <figcaption>
                     Chapter of the Year - Small Market
                     <span>Arkansas Chapter</span>
@@ -318,7 +318,7 @@ wp_head(); ?>
               <!-- Chapter box -->
               <div class="chapter-box">
                 <figure>
-                  <img src="images/chapter-montana.jpg" alt="Montana Chapter">
+                  <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/chapter-montana.jpg" alt="Montana Chapter">
                   <figcaption>
                     Chapter of the Year - Small Market
                     <span>Montana Chapter</span>
@@ -331,7 +331,7 @@ wp_head(); ?>
               <!-- Chapter box -->
               <div class="chapter-box last">
                 <figure>
-                  <img src="images/chapter-south-carolina.jpg" alt="South Carolina Chapter">
+                  <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/chapter-south-carolina.jpg" alt="South Carolina Chapter">
                   <figcaption>
                     Chapter of the Year - Small Market
                     <span>South Carolina Chapter</span>
@@ -357,11 +357,11 @@ wp_head(); ?>
 
 
     <!-- CONTENT -->
-    <section class="module module-type-content lazy bg-contain hide-bg-on-mobile" data-src="images/bg-lighting-the-way.svg">
+    <section class="module module-type-content lazy bg-contain hide-bg-on-mobile" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-lighting-the-way.svg">
       <div class="row">
         <div class="small-12 medium-6 column">
 
-          <div class="image-circle lighting-the-way" data-src="images/bg-lighting-the-way.jpg"></div>
+          <div class="image-circle lighting-the-way" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-lighting-the-way.jpg"></div>
 
           <div class="spacer" data-space-small="50" data-space-medium="0" data-space-large="0"></div>
 
@@ -444,7 +444,7 @@ wp_head(); ?>
         </div>
         <div class="small-12 medium-6 column">
 
-          <div class="image-circle funding" data-src="images/bg-funding.jpg"></div>
+          <div class="image-circle funding" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-funding.jpg"></div>
 
 
           <div class="spacer" data-space-small="50" data-space-medium="0" data-space-large="0"></div>
@@ -495,7 +495,7 @@ wp_head(); ?>
         </div>
         <div class="small-12 medium-5 column">
 
-          <img src="images/noddle-pink-shape.svg" alt="Decorative noddle image" class="noddle-pink">
+          <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/noddle-pink-shape.svg" alt="Decorative noddle image" class="noddle-pink">
 
           <p class="small">Thanks to our donors, this year we invested in 26 new research grants, totaling $5.3 million, including two Focus Grants totaling over $2.7 million. </p>
 
@@ -514,7 +514,7 @@ wp_head(); ?>
       <div class="row collapse expanded">
         <div class="small-12 columns">
 
-          <img src="images/noddle-darkblue-shape.svg" alt="Decorative noddle image" class="noddle-darkblue">
+          <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/noddle-darkblue-shape.svg" alt="Decorative noddle image" class="noddle-darkblue">
 
         </div>
       </div>
@@ -555,7 +555,7 @@ wp_head(); ?>
           <div class="spacer" data-space-small="80" data-space-medium="80" data-space-large="100"></div>
 
           <div class="yellow-circle-behind">
-            <img data-src="images/img-learning-about-suicide.png" alt="Learning more about Suicide" class="img-shadow">
+            <img data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/img-learning-about-suicide.png" alt="Learning more about Suicide" class="img-shadow">
           </div>
 
 
@@ -586,7 +586,7 @@ wp_head(); ?>
         </div>
         <div class="small-12 medium-6 column">
 
-          <div class="image-circle education-connection-support" data-src="images/bg-education-connection-support.jpg"></div>
+          <div class="image-circle education-connection-support" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-education-connection-support.jpg"></div>
 
 
           <div class="spacer" data-space-small="50" data-space-medium="0" data-space-large="0"></div>
@@ -655,9 +655,9 @@ wp_head(); ?>
       <div class="row collapse expanded">
         <div class="small-12 columns relative">
 
-          <img src="images/semi-circle-darkblue.svg" alt="Decorative semo-circle" class="semi-circle-darkblue">
+          <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/semi-circle-darkblue.svg" alt="Decorative semo-circle" class="semi-circle-darkblue">
           <div class="spacer" data-space-small="220" data-space-medium="220" data-space-large="250"></div>
-          <img src="images/noddle-pink-shape-2.svg" alt="Decorative noddle" class="noddle-pink-2">
+          <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/noddle-pink-shape-2.svg" alt="Decorative noddle" class="noddle-pink-2">
 
         </div>
       </div>
@@ -667,7 +667,7 @@ wp_head(); ?>
       <div class="row">
         <div class="small-12 medium-6 column">
 
-          <div class="image-circle reaching-people" data-src="images/bg-reaching-people.jpg"></div>
+          <div class="image-circle reaching-people" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-reaching-people.jpg"></div>
 
           <div class="spacer" data-space-small="50" data-space-medium="0" data-space-large="0"></div>
 
@@ -687,7 +687,7 @@ wp_head(); ?>
       <div class="row collapse expanded">
         <div class="small-12 column relative">
 
-          <img src="images/noddle-yellow-shape.svg" alt="Decorative noddle image" class="noddle-yellow">
+          <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/noddle-yellow-shape.svg" alt="Decorative noddle image" class="noddle-yellow">
           <div class="spacer" data-space-small="135" data-space-medium="180" data-space-large="230"></div>
 
         </div>
@@ -697,7 +697,7 @@ wp_head(); ?>
       <div class="row">
         <div class="small-12 medium-5 medium-push-7 column">
 
-          <div class="image-circle connecting-people" data-src="images/bg-connecting-people.jpg"></div>
+          <div class="image-circle connecting-people" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-connecting-people.jpg"></div>
 
           <div class="spacer" data-space-small="50" data-space-medium="0" data-space-large="0"></div>
 
@@ -726,7 +726,7 @@ wp_head(); ?>
       <div class="row">
         <div class="small-12 medium-5 column">
 
-          <div class="image-circle connecting-people-2" data-src="images/bg-connecting-people-2.jpg"></div>
+          <div class="image-circle connecting-people-2" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-connecting-people-2.jpg"></div>
 
           <div class="spacer" data-space-small="50" data-space-medium="0" data-space-large="0"></div>
 
@@ -773,7 +773,7 @@ wp_head(); ?>
       <div class="row">
         <div class="small-12 medium-5 medium-push-7 column">
 
-          <div class="image-circle support-understanding" data-src="images/bg-support-understanding.jpg"></div>
+          <div class="image-circle support-understanding" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-support-understanding.jpg"></div>
 
           <div class="spacer" data-space-small="50" data-space-medium="0" data-space-large="0"></div>
 
@@ -792,9 +792,9 @@ wp_head(); ?>
       <div class="row collapse expanded">
         <div class="small-12 column relative">
 
-          <img src="images/noddle-darkblue-shape-2.svg" alt="Decorative noddle image" class="noddle-darkblue-2">
+          <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/noddle-darkblue-shape-2.svg" alt="Decorative noddle image" class="noddle-darkblue-2">
           <div class="spacer" data-space-small="240" data-space-medium="240" data-space-large="345"></div>
-          <img src="images/semi-circle-red.svg" alt="Decorative semi-circle image" class="semi-circle-red">
+          <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/semi-circle-red.svg" alt="Decorative semi-circle image" class="semi-circle-red">
 
         </div>
       </div>
@@ -856,7 +856,7 @@ wp_head(); ?>
     <!-- CONTENT -->
     <section class="module module-type-content blue-gradient" id="section-5">
 
-      <img src="images/noddle-white-shape.svg" alt="Decorative noddle image" class="noddle-white">
+      <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/noddle-white-shape.svg" alt="Decorative noddle image" class="noddle-white">
 
       <div class="row">
         <div class="small-12 column text-center">
@@ -865,7 +865,7 @@ wp_head(); ?>
         </div>
         <div class="small-12 medium-6 column">
 
-          <div class="image-circle smarter-laws" data-src="images/bg-smarter-laws.jpg"></div>
+          <div class="image-circle smarter-laws" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-smarter-laws.jpg"></div>
 
           <div class="spacer" data-space-small="50" data-space-medium="0" data-space-large="0"></div>
 
@@ -890,7 +890,7 @@ wp_head(); ?>
       <div class="row">
         <div class="small-12 medium-5 medium-push-7 column">
 
-          <div class="image-circle state-capitol-days" data-src="images/bg-state-capitol-days.jpg"></div>
+          <div class="image-circle state-capitol-days" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-state-capitol-days.jpg"></div>
 
           <div class="spacer" data-space-small="130" data-space-medium="0" data-space-large="0"></div>
 
@@ -911,9 +911,9 @@ wp_head(); ?>
       <div class="row collapse expanded">
         <div class="small-12 columns relative">
 
-          <img src="images/semi-circle-darkblue.svg" alt="Decorative semo-circle" class="semi-circle-darkblue">
+          <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/semi-circle-darkblue.svg" alt="Decorative semo-circle" class="semi-circle-darkblue">
           <div class="spacer" data-space-small="220" data-space-medium="220" data-space-large="250"></div>
-          <img src="images/noddle-pink-shape-2.svg" alt="Decorative noddle" class="noddle-pink-2">
+          <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/noddle-pink-shape-2.svg" alt="Decorative noddle" class="noddle-pink-2">
 
         </div>
       </div>
@@ -921,7 +921,7 @@ wp_head(); ?>
       <div class="row">
         <div class="small-12 medium-5 column">
 
-          <div class="image-circle annual-advocacy-forum" data-src="images/bg-annual-advocacy-forum.jpg"></div>
+          <div class="image-circle annual-advocacy-forum" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-annual-advocacy-forum.jpg"></div>
 
           <div class="spacer" data-space-small="40" data-space-medium="0" data-space-large="0"></div>
 
@@ -979,7 +979,7 @@ wp_head(); ?>
               <!-- Allies box -->
               <div class="allies-box">
                 <figure>
-                  <img src="images/allies-grace-napolitano.jpg" alt="Rep. Grace Napolitano (D-CA-32)">
+                  <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/allies-grace-napolitano.jpg" alt="Rep. Grace Napolitano (D-CA-32)">
                   <figcaption>
                     Federal Awards Lifetime Achievement Award
                     <span>Rep. Grace Napolitano (D-CA-32)</span>
@@ -991,7 +991,7 @@ wp_head(); ?>
               <!-- Allies box -->
               <div class="allies-box">
                 <figure>
-                  <img src="images/allies-orrin-hatch.jpg" alt="en. Orrin Hatch (R-UT)">
+                  <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/allies-orrin-hatch.jpg" alt="en. Orrin Hatch (R-UT)">
                   <figcaption>
                     Congressional Awards
                     <span>Sen. Orrin Hatch (R-UT)</span>
@@ -1003,7 +1003,7 @@ wp_head(); ?>
               <!-- Allies box -->
               <div class="allies-box">
                 <figure>
-                  <img src="images/allies-don-beyer.jpg" alt="Rep. Don Beyer (D-VA-08)">
+                  <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/allies-don-beyer.jpg" alt="Rep. Don Beyer (D-VA-08)">
                   <figcaption>
                     Congressional Awards
                     <span>Rep. Don Beyer (D-VA-08)</span>
@@ -1015,7 +1015,7 @@ wp_head(); ?>
               <!-- Allies box -->
               <div class="allies-box">
                 <figure>
-                  <img src="images/allies-diana-deGette.jpg" alt="Rep. Diana DeGette (D-CO-01)">
+                  <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/allies-diana-deGette.jpg" alt="Rep. Diana DeGette (D-CO-01)">
                   <figcaption>
                     Congressional Awards
                     <span>Rep. Diana DeGette (D-CO-01)</span>
@@ -1027,7 +1027,7 @@ wp_head(); ?>
               <!-- Allies box -->
               <div class="allies-box">
                 <figure>
-                  <img src="images/allies-chris-stewart.jpg" alt="Rep. Chris Stewart (R-UT-02)">
+                  <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/allies-chris-stewart.jpg" alt="Rep. Chris Stewart (R-UT-02)">
                   <figcaption>
                     Congressional Awards
                     <span>Rep. Chris Stewart (R-UT-02)</span>
@@ -1039,7 +1039,7 @@ wp_head(); ?>
               <!-- Allies box -->
               <div class="allies-box">
                 <figure>
-                  <img src="images/allies-linda-newell.jpg" alt="Colorado Senator Linda Newell">
+                  <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/allies-linda-newell.jpg" alt="Colorado Senator Linda Newell">
                   <figcaption>
                     State Awards
                     <span>Colorado Senator Linda Newell</span>
@@ -1051,7 +1051,7 @@ wp_head(); ?>
               <!-- Allies box -->
               <div class="allies-box">
                 <figure>
-                  <img src="images/allies-tom-torlakson.jpg" alt="California State Superintendent of Public Instruction Tom Torlakson">
+                  <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/allies-tom-torlakson.jpg" alt="California State Superintendent of Public Instruction Tom Torlakson">
                   <figcaption>
                     State Awards
                     <span>California State Superintendent of Public Instruction Tom Torlakson</span>
@@ -1063,7 +1063,7 @@ wp_head(); ?>
               <!-- Allies box -->
               <div class="allies-box">
                 <figure>
-                  <img src="images/allies-allysa-dittmar.jpg" alt="Communications and Policy Manager for Maryland, Gov. Larry Hogan, Allysa Dittmar">
+                  <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/allies-allysa-dittmar.jpg" alt="Communications and Policy Manager for Maryland, Gov. Larry Hogan, Allysa Dittmar">
                   <figcaption>
                     State Awards
                     <span>Communications and Policy Manager for Maryland, Gov. Larry Hogan, Allysa Dittmar</span>
@@ -1075,7 +1075,7 @@ wp_head(); ?>
               <!-- Allies box -->
               <div class="allies-box">
                 <figure>
-                  <img src="images/allies-susan-marine.jpg" alt="Susan Marine">
+                  <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/allies-susan-marine.jpg" alt="Susan Marine">
                   <figcaption>
                     Sandy Martin Grassroots Awards Field Advocates of the Year
                     <span>Susan Marine — Colorado</span>
@@ -1087,7 +1087,7 @@ wp_head(); ?>
               <!-- Allies box -->
               <div class="allies-box">
                 <figure>
-                  <img src="images/allies-hollis-hackman.jpg" alt="Dr. Hollis Hackman">
+                  <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/allies-hollis-hackman.jpg" alt="Dr. Hollis Hackman">
                   <figcaption>
                     Sandy Martin Grassroots Awards Field Advocates of the Year
                     <span>Dr. Hollis Hackman — Wyoming</span>
@@ -1099,7 +1099,7 @@ wp_head(); ?>
               <!-- Allies box -->
               <div class="allies-box last">
                 <figure>
-                  <img src="images/allies-mary-and-vic-ojakian.jpg" alt="Mary and Vic Ojakian — California">
+                  <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/allies-mary-and-vic-ojakian.jpg" alt="Mary and Vic Ojakian — California">
                   <figcaption>
                     Sandy Martin Grassroots Awards Field Advocates of the Year
                     <span>Mary and Vic Ojakian — California</span>
@@ -1137,7 +1137,7 @@ wp_head(); ?>
         </div>
         <div class="small-12 medium-6 column">
 
-          <div class="image-circle saving-lives" data-src="images/bg-saving-lives.jpg"></div>
+          <div class="image-circle saving-lives" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-saving-lives.jpg"></div>
 
 
           <div class="spacer" data-space-small="50" data-space-medium="0" data-space-large="0"></div>
@@ -1155,7 +1155,7 @@ wp_head(); ?>
         </div>
       </div>
 
-      <img src="images/noddle-white-shape.svg" alt="Decorative noddle image" class="noddle-white-2">
+      <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/noddle-white-shape.svg" alt="Decorative noddle image" class="noddle-white-2">
     </section>
     <!-- //CONTENT -->
 
@@ -1168,7 +1168,7 @@ wp_head(); ?>
       <div class="row">
         <div class="small-12 medium-5 medium-push-7 column">
 
-          <div class="image-circle protecting-remembering" data-src="images/bg-protecting-remembering.jpg"></div>
+          <div class="image-circle protecting-remembering" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-protecting-remembering.jpg"></div>
 
           <div class="spacer" data-space-small="50" data-space-medium="0" data-space-large="0"></div>
 
@@ -1200,7 +1200,7 @@ wp_head(); ?>
       <div class="row">
         <div class="small-12 medium-5 column">
 
-          <div class="image-circle protecting-remembering-2" data-src="images/bg-protecting-remembering-2.jpg"></div>
+          <div class="image-circle protecting-remembering-2" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-protecting-remembering-2.jpg"></div>
 
           <div class="spacer" data-space-small="50" data-space-medium="0" data-space-large="0"></div>
 
@@ -1235,9 +1235,9 @@ wp_head(); ?>
       <div class="row collapse expanded">
         <div class="small-12 column relative">
 
-          <img src="images/noddle-darkblue-shape.svg" alt="Decorative noddle image" class="noddle-darkblue-3">
+          <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/noddle-darkblue-shape.svg" alt="Decorative noddle image" class="noddle-darkblue-3">
           <div class="spacer" data-space-small="130" data-space-medium="130" data-space-large="130"></div>
-          <img src="images/semi-circle-red.svg" alt="Decorative semi-circle image" class="semi-circle-red">
+          <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/semi-circle-red.svg" alt="Decorative semi-circle image" class="semi-circle-red">
 
         </div>
       </div>
@@ -1280,7 +1280,7 @@ wp_head(); ?>
         </div>
         <div class="small-12 medium-6 column">
 
-          <div class="image-circle seizing-awkward" data-src="images/bg-seizing-awkward.jpg"></div>
+          <div class="image-circle seizing-awkward" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-seizing-awkward.jpg"></div>
 
 
           <div class="spacer" data-space-small="50" data-space-medium="0" data-space-large="0"></div>
@@ -1309,7 +1309,7 @@ wp_head(); ?>
       <div class="row">
         <div class="small-12 medium-5 medium-push-7 column">
 
-          <div class="image-circle real-combo" data-src="images/bg-real-combo.jpg"></div>
+          <div class="image-circle real-combo" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-real-combo.jpg"></div>
 
           <div class="spacer" data-space-small="50" data-space-medium="0" data-space-large="0"></div>
 
@@ -1360,7 +1360,7 @@ wp_head(); ?>
       <div class="row">
         <div class="small-12 medium-5 column">
 
-          <div class="image-circle real-combo-2" data-src="images/bg-real-combo-2.jpg"></div>
+          <div class="image-circle real-combo-2" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-real-combo-2.jpg"></div>
 
           <div class="spacer" data-space-small="50" data-space-medium="0" data-space-large="0"></div>
 
@@ -1394,14 +1394,14 @@ wp_head(); ?>
                   <span class="highlighted-description">This past June, within a single week, our nation reacted to the loss of celebrities Kate Spade and Anthony Bourdain, followed by the release of a CDC report confirming suicide has increased 28 percent since 1999.</span>
                 </div>
                 <div class="small-12 medium-6 column text-center">
-                  <img data-src="images/img-increasing-awareness.jpg" alt="Increasing Awareness" class="increasing-awareness img-shadow">
+                  <img data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/img-increasing-awareness.jpg" alt="Increasing Awareness" class="increasing-awareness img-shadow">
                 </div>
               </div>
             </div>
             <!-- //Slide -->
 
             <!-- Slide -->
-            <div class="slide show-bg-on-xxlarge" data-src="images/bg-increasing-awareness-slide-2.svg">
+            <div class="slide show-bg-on-xxlarge" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-increasing-awareness-slide-2.svg">
               <div class="row vertical-alignment patch_max_width">
                 <div class="small-12 column">
                   <span class="highlighted-description">AFSP led the charge in responding to an unprecedented number of media inquiries, conducting over 50 interviews from our national office, sharing safe reporting guidelines, appearing on numerous TV programs, and using this moment in time as an opportunity to guide the conversation and spread awareness, hope and education.</span>
@@ -1411,13 +1411,13 @@ wp_head(); ?>
             <!-- //Slide -->
 
             <!-- Slide -->
-            <div class="slide show-bg-on-xxlarge" data-src="images/bg-increasing-awareness-slide-3.svg">
+            <div class="slide show-bg-on-xxlarge" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-increasing-awareness-slide-3.svg">
               <div class="row vertical-alignment patch_max_width">
                 <div class="small-12 column">
 
                   <div class="row collapse">
                     <div class="small-12 large-6 column">
-                      <div class="image-circle anderson-cooper" data-src="images/bg-anderson-cooper.jpg"></div>
+                      <div class="image-circle anderson-cooper" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-anderson-cooper.jpg"></div>
                       <div class="spacer" data-space-small="40" data-space-medium="40" data-space-large="0"></div>
                     </div>
                     <div class="small-12 large-6 column">
@@ -1431,7 +1431,7 @@ wp_head(); ?>
             <!-- //Slide -->
 
             <!-- Slide -->
-            <div class="slide show-bg-on-xxlarge" data-src="images/bg-increasing-awareness-slide-4.svg">
+            <div class="slide show-bg-on-xxlarge" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-increasing-awareness-slide-4.svg">
               <div class="row vertical-alignment patch_max_width">
                 <div class="small-12 medium-6 column">
                   <span class="highlighted-description">Senior Vice President of Public Policy John Madigan appeared in a C-SPAN report, commenting on the CDC report, rising suicide rates, and the importance of our work advocating for smarter mental health and suicide prevention legislation.</span>
@@ -1445,7 +1445,7 @@ wp_head(); ?>
 
 
             <!-- Slide -->
-            <div class="slide show-bg-on-xxlarge" data-src="images/bg-increasing-awareness-slide-5.svg">
+            <div class="slide show-bg-on-xxlarge" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-increasing-awareness-slide-5.svg">
               <div class="row vertical-alignment patch_max_width">
                 <div class="small-12 column">
 
@@ -1491,7 +1491,7 @@ wp_head(); ?>
       <div class="row expanded collapse">
         <div class="small-12 column">
 
-          <img src="images/noddle-darkblue-shape-3.svg" alt="" class="noddle-darkblue-4">
+          <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/noddle-darkblue-shape-3.svg" alt="" class="noddle-darkblue-4">
 
         </div>
       </div>
@@ -1501,7 +1501,7 @@ wp_head(); ?>
       <div class="row">
         <div class="small-12 medium-5 column">
 
-          <div class="image-circle loves-find-ways" data-src="images/bg-loves-find-way.jpg"></div>
+          <div class="image-circle loves-find-ways" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-loves-find-way.jpg"></div>
 
           <div class="spacer" data-space-small="50" data-space-medium="0" data-space-large="0"></div>
 
@@ -1552,10 +1552,10 @@ wp_head(); ?>
 
 
             <!-- Slide -->
-            <div class="slide show-bg-on-xxlarge" data-src="images/bg-september-slide-2.svg">
+            <div class="slide show-bg-on-xxlarge" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-september-slide-2.svg">
               <div class="row vertical-alignment patch_max_width-2">
                 <div class="small-12 medium-6 medium-push-6 column">
-                  <img data-src="images/img-the-power-of-connection.png" alt="The Power of Connection" class="img-poster float-right">
+                  <img data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/img-the-power-of-connection.png" alt="The Power of Connection" class="img-poster float-right">
                   <div class="spacer" data-space-small="40" data-space-medium="0" data-space-large="0"></div>
                 </div>
                 <div class="small-12 medium-6 medium-pull-6 column">
@@ -1570,10 +1570,10 @@ wp_head(); ?>
 
 
             <!-- Slide -->
-            <div class="slide show-bg-on-xxlarge" data-src="images/bg-september-slide-3.svg">
+            <div class="slide show-bg-on-xxlarge" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-september-slide-3.svg">
               <div class="row vertical-alignment patch_max_width-2">
                 <div class="small-12 medium-6 column">
-                  <img data-src="images/img-americans-suicide.png" alt="94% of Americans think suicide is preventable" class="img-poster float-left">
+                  <img data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/img-americans-suicide.png" alt="94% of Americans think suicide is preventable" class="img-poster float-left">
                   <div class="spacer" data-space-small="40" data-space-medium="0" data-space-large="0"></div>
                 </div>
                 <div class="small-12 medium-6 column">
@@ -1586,10 +1586,10 @@ wp_head(); ?>
 
 
             <!-- Slide -->
-            <div class="slide show-bg-on-xxlarge" data-src="images/bg-september-slide-4.svg">
+            <div class="slide show-bg-on-xxlarge" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-september-slide-4.svg">
               <div class="row vertical-alignment patch_max_width-2">
                 <div class="small-12 medium-6 medium-push-6 column">
-                  <img data-src="images/img-world-suicide-prevention-day.png" alt="World Suicide Prevention Day - September 10" class="img-poster float-right">
+                  <img data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/img-world-suicide-prevention-day.png" alt="World Suicide Prevention Day - September 10" class="img-poster float-right">
                   <div class="spacer" data-space-small="40" data-space-medium="0" data-space-large="0"></div>
                 </div>
                 <div class="small-12 medium-6 medium-pull-6 column">
@@ -1627,7 +1627,7 @@ wp_head(); ?>
       <div class="row">
         <div class="small-12 medium-6 column">
 
-          <div class="image-circle power-of-song" data-src="images/bg-power-of-song.png"></div>
+          <div class="image-circle power-of-song" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-power-of-song.png"></div>
           <div class="spacer" data-space-small="50" data-space-medium="0" data-space-large="0"></div>
 
         </div>
@@ -1643,7 +1643,7 @@ wp_head(); ?>
       <div class="row expanded collapse">
         <div class="small-12 column">
 
-          <img src="images/noddle-red-shape.svg" alt="" class="noddle-red">
+          <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/noddle-red-shape.svg" alt="" class="noddle-red">
 
         </div>
       </div>
@@ -1672,8 +1672,8 @@ wp_head(); ?>
       <div class="row expanded collapse">
         <div class="small-12 column relative">
 
-          <img src="images/semi-circle-green.svg" alt="" class="semi-circle-green">
-          <img src="images/noddle-pink-shape.svg" alt="" class="noddle-pink-3">
+          <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/semi-circle-green.svg" alt="" class="semi-circle-green">
+          <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/noddle-pink-shape.svg" alt="" class="noddle-pink-3">
 
         </div>
       </div>
@@ -1689,7 +1689,7 @@ wp_head(); ?>
               <div class="row vertical-alignment patch_max_width">
                 <div class="small-12 medium-5 column">
 
-                  <div class="image-circle special-nigth" data-src="images/bg-special-nigth.jpg"></div>
+                  <div class="image-circle special-nigth" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-special-nigth.jpg"></div>
                   <div class="spacer" data-space-small="50" data-space-medium="0" data-space-large="0"></div>
 
                 </div>
@@ -1723,7 +1723,7 @@ wp_head(); ?>
               <div class="row vertical-alignment patch_max_width">
                 <div class="small-12 medium-6 medium-push-6 column">
 
-                  <div class="image-circle years-honorees" data-src="images/bg-years-honorees.jpg"></div>
+                  <div class="image-circle years-honorees" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/bg-years-honorees.jpg"></div>
                   <div class="spacer" data-space-small="50" data-space-medium="0" data-space-large="0"></div>
 
                 </div>
@@ -1764,62 +1764,62 @@ wp_head(); ?>
 
           <ul class="spotlight-list">
             <li>
-              <a class="read-full-letter" data-toggle="spotlightStory-thomas"><i class="lazy avatar" data-src="images/spotlight-thomas.jpg"></i> Spotlight Story: <i class="blue-circle-arrow"></i></a>
+              <a class="read-full-letter" data-toggle="spotlightStory-thomas"><i class="lazy avatar" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/spotlight-thomas.jpg"></i> Spotlight Story: <i class="blue-circle-arrow"></i></a>
               <p><small><strong>Solomon Thomas:</strong><br>
               Tough Guys Talk About It</small></p>
             </li>
             <li>
-              <a class="read-full-letter" data-toggle="spotlightStory-kennedy"><i class="lazy avatar" data-src="images/spotlight-kennedy.jpg"></i> Spotlight Story: <i class="blue-circle-arrow"></i></a>
+              <a class="read-full-letter" data-toggle="spotlightStory-kennedy"><i class="lazy avatar" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/spotlight-kennedy.jpg"></i> Spotlight Story: <i class="blue-circle-arrow"></i></a>
               <p><small><strong>Elie Kennedy:</strong><br>
               Awareness Through Art</small></p>
             </li>
             <li>
-              <a class="read-full-letter" data-toggle="spotlightStory-standley"><i class="lazy avatar" data-src="images/spotlight-standley.jpg"></i> Spotlight Story: <i class="blue-circle-arrow"></i></a>
+              <a class="read-full-letter" data-toggle="spotlightStory-standley"><i class="lazy avatar" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/spotlight-standley.jpg"></i> Spotlight Story: <i class="blue-circle-arrow"></i></a>
               <p><small><strong>Corbin J. Standley:</strong><br>
               Research + Advocacy</small></p>
             </li>
             <li>
-              <a class="read-full-letter" data-toggle="spotlightStory-meacham"><i class="lazy avatar" data-src="images/spotlight-meacham.jpg"></i> Spotlight Story: <i class="blue-circle-arrow"></i></a>
+              <a class="read-full-letter" data-toggle="spotlightStory-meacham"><i class="lazy avatar" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/spotlight-meacham.jpg"></i> Spotlight Story: <i class="blue-circle-arrow"></i></a>
               <p><small><strong>Mary Meacham:</strong><br>
               Bringing Education to Arkansas</small></p>
             </li>
             <li>
-              <a class="read-full-letter" data-toggle="spotlightStory-hunt"><i class="lazy avatar" data-src="images/spotlight-hunt.jpg"></i> Spotlight Story: <i class="blue-circle-arrow"></i></a>
+              <a class="read-full-letter" data-toggle="spotlightStory-hunt"><i class="lazy avatar" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/spotlight-hunt.jpg"></i> Spotlight Story: <i class="blue-circle-arrow"></i></a>
               <p><small><strong>Jacky Hunt: </strong><br>
               Connecting Students to Support</small></p>
             </li>
             <li>
-              <a class="read-full-letter" data-toggle="spotlightStory-randall"><i class="lazy avatar" data-src="images/spotlight-randall.jpg"></i> Spotlight Story: <i class="blue-circle-arrow"></i></a>
+              <a class="read-full-letter" data-toggle="spotlightStory-randall"><i class="lazy avatar" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/spotlight-randall.jpg"></i> Spotlight Story: <i class="blue-circle-arrow"></i></a>
               <p><small><strong>Bubba Randall:</strong><br>
               “For You, I Will”</small></p>
             </li>
             <li>
-              <a class="read-full-letter" data-toggle="spotlightStory-menendez"><i class="lazy avatar" data-src="images/spotlight-menendez.jpg"></i> Spotlight Story: <i class="blue-circle-arrow"></i></a>
+              <a class="read-full-letter" data-toggle="spotlightStory-menendez"><i class="lazy avatar" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/spotlight-menendez.jpg"></i> Spotlight Story: <i class="blue-circle-arrow"></i></a>
               <p><small><strong>Ellen Menendez:</strong><br>
               From Mother to Daughter</small></p>
             </li>
             <li>
-              <a class="read-full-letter" data-toggle="spotlightStory-jines"><i class="lazy avatar" data-src="images/spotlight-jines.jpg"></i> Spotlight Story: <i class="blue-circle-arrow"></i></a>
+              <a class="read-full-letter" data-toggle="spotlightStory-jines"><i class="lazy avatar" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/spotlight-jines.jpg"></i> Spotlight Story: <i class="blue-circle-arrow"></i></a>
               <p><small><strong>Hannah Jines:</strong><br>
               Finding Her Voice For Her Father</small></p>
             </li>
             <li>
-              <a class="read-full-letter" data-toggle="spotlightStory-flanagan"><i class="lazy avatar" data-src="images/spotlight-flanagan.jpg"></i> Spotlight Story: <i class="blue-circle-arrow"></i></a>
+              <a class="read-full-letter" data-toggle="spotlightStory-flanagan"><i class="lazy avatar" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/spotlight-flanagan.jpg"></i> Spotlight Story: <i class="blue-circle-arrow"></i></a>
               <p><small><strong>Rev. Dr. Robert D. Flanagan:</strong><br>
               Bringing Prevention to the Church</small></p>
             </li>
             <li>
-              <a class="read-full-letter" data-toggle="spotlightStory-fehrmann"><i class="lazy avatar" data-src="images/spotlight-fehrmann.jpg"></i> Spotlight Story: <i class="blue-circle-arrow"></i></a>
+              <a class="read-full-letter" data-toggle="spotlightStory-fehrmann"><i class="lazy avatar" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/spotlight-fehrmann.jpg"></i> Spotlight Story: <i class="blue-circle-arrow"></i></a>
               <p><small><strong>Linda Fehrmann:</strong><br>
               Transforming Loss into Action</small></p>
             </li>
             <li>
-              <a class="read-full-letter" data-toggle="spotlightStory-reuss"><i class="lazy avatar" data-src="images/spotlight-reuss.jpg"></i> Spotlight Story: <i class="blue-circle-arrow"></i></a>
+              <a class="read-full-letter" data-toggle="spotlightStory-reuss"><i class="lazy avatar" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/spotlight-reuss.jpg"></i> Spotlight Story: <i class="blue-circle-arrow"></i></a>
               <p><small><strong>Greg Reuss:</strong><br>
               Educating Gun Owners About <br>Firearms Safety</small></p>
             </li>
             <li>
-              <a class="read-full-letter" data-toggle="spotlightStory-walker"><i class="lazy avatar" data-src="images/spotlight-walker.jpg"></i> Spotlight Story: <i class="blue-circle-arrow"></i></a>
+              <a class="read-full-letter" data-toggle="spotlightStory-walker"><i class="lazy avatar" data-src="<?php echo get_template_directory_uri(); ?>/page-templates/images/spotlight-walker.jpg"></i> Spotlight Story: <i class="blue-circle-arrow"></i></a>
               <p><small><strong>Ali Walker:</strong><br>
               An AFSP Love Story</small></p>
             </li>
@@ -1835,7 +1835,7 @@ wp_head(); ?>
     <!-- CONTENT -->
     <section class="module module-type-content blue-gradient extra-decorative" id="section-9">
 
-      <img src="images/noddle-green-shape.svg" alt="Decorative noddle image" class="noddle-green">
+      <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/noddle-green-shape.svg" alt="Decorative noddle image" class="noddle-green">
 
       <div class="row">
         <div class="small-12 medium-4 column">
@@ -2383,7 +2383,7 @@ wp_head(); ?>
 
                   </div>
                   <div class="small-12 medium-5 column">
-                    <img src="images/graph-costs.png" alt="" width="478">
+                    <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/graph-costs.png" alt="" width="478">
                   </div>
                 </div>
                 <div class="row hide-for-large">
@@ -2526,10 +2526,10 @@ wp_head(); ?>
           <div class="small-12 large-6 column">
 
             <div class="founder-box">
-              <img src="images/photo-robert-gebbia.jpg" alt="Robert Gebbia" class="founder-image">
+              <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/photo-robert-gebbia.jpg" alt="Robert Gebbia" class="founder-image">
               <div class="founder-content">
                 <div class="signature">
-                  <img src="images/signature-gebbia.png" alt="Robert Gebbia">
+                  <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/signature-gebbia.png" alt="Robert Gebbia">
                 </div>
                 <span class="name">Robert Gebbia</span>
                 <span class="position">Chief Executive Officer</span>
@@ -2542,10 +2542,10 @@ wp_head(); ?>
             <div class="spacer" data-space-small="80" data-space-medium="50" data-space-large="0"></div>
 
             <div class="founder-box">
-              <img src="images/photo-steve-siple.jpg" alt="Steve Siple" class="founder-image">
+              <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/photo-steve-siple.jpg" alt="Steve Siple" class="founder-image">
               <div class="founder-content">
                 <div class="signature">
-                  <img src="images/signature-siple.png" alt="Steve Siple">
+                  <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/signature-siple.png" alt="Steve Siple">
                 </div>
                 <span class="name">Steve Siple</span>
                 <span class="position">Chair, Board of Directors</span>
@@ -2575,10 +2575,10 @@ wp_head(); ?>
       <div class="small-11 large-5 column">
 
         <div class="founder-box show-for-large">
-          <img src="images/photo-haas-gretchen.jpg" alt="Gretchen Haas, Ph.D." class="founder-image">
+          <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/photo-haas-gretchen.jpg" alt="Gretchen Haas, Ph.D." class="founder-image">
           <div class="founder-content mobile-half">
             <div class="signature">
-              <img src="images/signature-hass.png" alt="Gretchen Haas, Ph.D.">
+              <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/signature-hass.png" alt="Gretchen Haas, Ph.D.">
             </div>
             <span class="name">Gretchen Haas, Ph.D.</span>
             <span class="position">AFSP Treasurer,<br>Board of Directors</span>
@@ -2606,10 +2606,10 @@ wp_head(); ?>
 
         <div class="founder-box">
           <div class="spacer" data-space-small="50" data-space-medium="50" data-space-large="0"></div>
-          <img src="images/photo-haas-gretchen.jpg" alt="Gretchen Haas, Ph.D." class="founder-image">
+          <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/photo-haas-gretchen.jpg" alt="Gretchen Haas, Ph.D." class="founder-image">
           <div class="founder-content mobile-half">
             <div class="signature">
-              <img src="images/signature-hass.png" alt="Gretchen Haas, Ph.D.">
+              <img src="<?php echo get_template_directory_uri(); ?>/page-templates/images/signature-hass.png" alt="Gretchen Haas, Ph.D.">
             </div>
             <span class="name">Gretchen Haas, Ph.D.</span>
             <span class="position">AFSP Treasurer,<br>Board of Directors</span>
