@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1441px" height="800px" viewBox="0 0 1441 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Increasing-Awareness-carousel-0">
+            <rect fill="#FFFFFF" x="0" y="0" width="1440" height="800"></rect>
+            <g id="Group-72" transform="translate(1.000000, 0.000000)">
+                <polygon id="Fill-1-Copy-22" fill="#FFFFFF" points="0 800 1440 800 1440 0 0 0"></polygon>
+                <path d="M1374,527 C1374,408.257299 1277.74095,312 1159,312 C1040.25905,312 944,408.257299 944,527 C944,645.740948 1040.25905,742 1159,742 C1277.74095,742 1374,645.740948 1374,527 Z" id="Fill-3-Copy-6" fill="#2AD891"></path>
+                <path d="M53.1887634,631.728624 C73.0296245,660.145987 97.7427365,684.085033 126.641584,702.880211 C156.576655,722.349537 189.689903,735.41052 225.059765,741.699221 L236.188763,678.05066 C183.125012,668.615459 136.861201,639.01386 105.920723,594.699221 L53.1887634,631.728624 Z" id="Fill-5" fill="#3928BD" transform="translate(144.688763, 668.199221) scale(-1, 1) rotate(13.000000) translate(-144.688763, -668.199221) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
