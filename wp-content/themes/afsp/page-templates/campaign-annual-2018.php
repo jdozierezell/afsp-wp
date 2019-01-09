@@ -8562,5 +8562,5 @@ wp_head(); ?>
     }(window, document));
     </script>
 
-  <script type="text/javascript" src="js/app.js?6a13328d83519ba7cfdf"></script></body>
+  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/page-templates/js/app.js?6a13328d83519ba7cfdf"></script></body>
 </html>
