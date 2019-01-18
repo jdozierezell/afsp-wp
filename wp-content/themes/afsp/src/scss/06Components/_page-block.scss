@@ -11,11 +11,11 @@
   transition: all 0.2s ease-in-out;
   font-size: 1.1rem;
   overflow: hidden;
-  @include responsive('small') {
+  @include responsive("small") {
     flex: 1 0 columns(4);
     margin: 2rem 0.5rem;
   }
-  @include responsive('medium') {
+  @include responsive("medium") {
     flex: 1 0 columns(3);
     margin: 2rem 0.5rem;
   }
@@ -30,9 +30,19 @@
     }
   }
   &--state {
-    background-color: $color-brand-blue;  
+    background-color: $color-brand-blue;
     .block__category {
       background-color: rgba($color-brand-blue, 0.8);
+    }
+    &:hover {
+      color: $color-white;
+      text-decoration: underline;
+    }
+  }
+  &--federal_state {
+    background-color: $color-brand-dark-gray;
+    .block__category {
+      background-color: rgba($color-brand-dark-gray, 0.8);
     }
     &:hover {
       color: $color-white;
