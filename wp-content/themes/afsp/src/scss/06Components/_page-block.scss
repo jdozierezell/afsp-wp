@@ -16,7 +16,7 @@
     margin: 2rem 0.5rem;
   }
   @include responsive("medium") {
-    flex: 1 0 columns(3);
+    flex: 1 0 columns(4);
     margin: 2rem 0.5rem;
   }
   &--federal {

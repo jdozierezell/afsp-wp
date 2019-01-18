@@ -28,6 +28,8 @@
               $category_text = 'Federal Priority';
             elseif($category === 'state') :
               $category_text = 'State Priority';
+              elseif($category === 'federal_state') :
+                $category_text = 'Federal and State Priorities';
             endif;
             if($page) :
               $post = $page;
