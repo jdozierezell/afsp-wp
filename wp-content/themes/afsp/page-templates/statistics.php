@@ -39,7 +39,7 @@ get_template_part( 'template-parts/title' ); ?>
 <section class="key-facts key-facts--us" aria-label="state facts">
 	<h2>Additional Facts About Suicide in the US</h2> 
 	<ul class="key-facts__list">
-		<li>The age-adjusted suicide rate in 2107 was <span class="bold">14.0 per 100,000</span> individuals.</li>
+		<li>The age-adjusted suicide rate in 2017 was <span class="bold">14.0 per 100,000</span> individuals.</li>
 		<li>The rate of suicide is <span class="bold">highest in middle-age</span> white men in particular.</li>
 		<li>In 2017, men died by suicide <span class="bold">3.54x</span> more often than women.</li>
 		<li>On average, there are <span class="bold">129</span> suicides per day.</li>
