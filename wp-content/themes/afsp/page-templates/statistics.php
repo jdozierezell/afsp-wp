@@ -11,7 +11,7 @@ get_template_part( 'template-parts/title' ); ?>
 	<h1 id="page-title" class="landing__title"><?php the_title(); ?></h1>
 </div>
 <section class="container" aria-label="disclaimer">
-	<p class="stats__intro">The Centers for Disease Control have recently released a summary of 2017 fatal injury data. Unfortunately, the summary does not include all of the information that is available on this page. In an effort to provide the most up-to-date information, AFSP has updated this page where possible with the 2017 data. As further data are released, we will continue to update this page with the most current data. While this data is the most accurate we have, we estimate the numbers to be higher. Stigma surrounding suicide leads to underreporting, and data collection methods critical to suicide prevention need to be improved. <a href="<?php echo esc_url( site_url() ); ?>/our-work/advocacy/become-an-advocate/">Learn how you can become an advocate.</a></p>
+	<p class="stats__intro">While this data is the most accurate we have, we estimate the numbers to be higher. Stigma surrounding suicide leads to underreporting, and data collection methods critical to suicide prevention need to be improved. <a href="<?php echo esc_url( site_url() ); ?>/our-work/advocacy/become-an-advocate/">Learn how you can become an advocate.</a></p>
 </section>
 <div class="container">
 <section class="counter__circles" aria-label="circle statistics">
@@ -32,7 +32,7 @@ get_template_part( 'template-parts/title' ); ?>
 	</div>
 	<div class="counter">
 		<div class="counterText">
-			Suicide and self-injury cost the US<br>$ <span id="suiCost"></span>&nbsp; Billion<br>annually
+			Suicide and self-injury cost the US<br>$ <span id="suiCost"></span>&nbsp; Billion<br>in 2015
 		</div>
 	</div>
 </section>
@@ -40,11 +40,11 @@ get_template_part( 'template-parts/title' ); ?>
 	<h2>Additional Facts About Suicide in the US</h2> 
 	<ul class="key-facts__list">
 		<li>The 2017 age-adjusted suicide rate is <span class="bold">14.0 per 100,000</span> individuals.</li>
-		<li>The rate of suicide is <span class="bold">highest in middle age</span> &mdash; white men in particular.</li>
+		<li>The rate of suicide is <span class="bold">highest in middle-age</span> white men in particular.</li>
 		<li>In 2017, men died by suicide <span class="bold">3.54x</span> more often than women.</li>
 		<li>On average, there are <span class="bold">129</span> suicides per day.</li>
-		<li>White males accounted for <span class="bold">7 of 10</span> suicides in 2016.</li>
-		<li>Firearms accounted for <span class="bold">51%</span> of all suicides in 2016.</li>
+		<li>White males accounted for <span class="bold">7 of 10</span> suicide deaths in 2017.</li>
+		<li>Firearms accounted for <span class="bold">50.57%</span> of all suicides in 2017.</li>
 	</ul>
 </section>
 <section class="key-facts key-facts--state" aira-label="state statistics">
@@ -82,20 +82,20 @@ get_template_part( 'template-parts/title' ); ?>
 <section class="key-facts" aria-label="key suicide statistics">
 	<div class="age-facts">
 		<h2>Suicide Rates by Age</h2>
-		<p>In 2016, the highest suicide rate (19.72) was among adults between 45 and 54 years of age. The second highest rate (18.98) occurred in those 85 years or older. Younger groups have had consistently lower suicide rates than middle-aged and older adults. In 2016, adolescents and young adults aged 15 to 24 had a suicide rate of 13.15.</p>
+		<p>In 2017, the highest suicide rate (20.2) was among adults between 45 and 54 years of age. The second highest rate (20.1) occurred in those 85 years or older. Younger groups have had consistently lower suicide rates than middle-aged and older adults. In 2017, adolescents and young adults aged 15 to 24 had a suicide rate of 14.46.</p>
 		<iframe src="https://s3.amazonaws.com/AFSPNationalContent/highcharts/suicideRatesByAge.html" style="width:600px; max-width: 100%; height:325px; display: block; margin: 0 auto;" title="Suicide Rates by Age"></iframe>
 	</div>
 	<br />
 	<div class="race-facts">
 		<h2>Suicide Rates by Race/Ethnicity</h2>
-		<p>In 2016, the highest U.S. suicide rate (15.17) was among Whites and the second highest rate (13.37) was among American Indians and Alaska Natives (Figure 5). Much lower and roughly similar rates were found among Asians and Pacific Islanders (6.62), and Black or African Americans (6.03).</p>
-		<p>Note that the CDC records Hispanic origin separately from the primary racial or ethnic groups of White, Black, American Indian or Alaskan Native, and Asian or Pacific Islander, since individuals in all of these groups may also be Hispanic.</p>
+		<p>In 2017, the highest U.S. suicide rate (15.85) was among Whites and the second highest rate (13.42) was among American Indians and Alaska Natives (Figure 5). Much lower and roughly similar rates were found among Black or African Americans (6.61) and Asians and Pacific Islanders (6.59).</p>
+		<p>Note that the CDC records Hispanic origin separately from the primary racial or ethnic groups of White, Black, American Indian or Alaskan Native, and Asian or Pacific Islander, since individuals in all of all groups may also be Hispanic.</p>
 		<iframe src="https://s3.amazonaws.com/AFSPNationalContent/highcharts/suicideRatesByEthnicity.html" style="width:600px; max-width: 100%; height:325px; display: block; margin: 0 auto;" title="Suicide Rates by Ethnicity"></iframe>
 	</div>
 	<br />
 	<div class="method-facts">
 		<h2>Suicide Methods</h2>
-		<p>In 2016, firearms were the most common method of death by suicide, accounting for a little more than half (51.01%) of all suicide deaths. The next most common methods were suffocation (including hangings) at 25.89% and poisoning at 14.90%.</p>
+		<p>In 2017, firearms were the most common method of death by suicide, accounting for a little more than half (50.57%) of all suicide deaths. The next most common methods were suffocation (including hangings) at 27.72% and poisoning at 13.89%.</p>
 		<iframe src="https://s3.amazonaws.com/AFSPNationalContent/highcharts/suicideMethods.html" style="width:600px; max-width: 100%; height:325px; display: block; margin: 0 auto;" title="Suicide Methods"></iframe>
 	</div>
 </section>
@@ -103,14 +103,14 @@ get_template_part( 'template-parts/title' ); ?>
 	<h2>Suicide Attempts</h2>
 	<p>No complete count is kept of suicide attempts in the U.S.; however, each year the CDC gathers data from hospitals on non-fatal injuries from self-harm as well as survey data.</p>
 	<p>In 2015, 505,507 people visited a hospital for injuries due to self-harm. This number suggests that for every reported suicide death, approximately 11.4 people visit a hospital for self-harm related injuries. However, because of the way these data are collected, we are not able to distinguish intentional suicide attempts from non-intentional self-harm behaviors.</p>
-	<p>Based on the 2016 National Survey of Drug Use and Mental Health it is estimated that 0.5 percent of the adults aged 18 or older made at least one suicide attempt.	This translates to approximately 1.3 million adults. Adult females reported a suicide attempt 1.2 times as often as males. Further breakdown by gender and race are not available.</p>
-	<p>Based on the 2015 Youth Risk Behaviors Survey, 8.6 percent of youth in grades 9-12 reported that they had made at least one suicide attempt in the past 12 months.	Girls attempted twice as often as boys (11.6% vs. 5.5%) and teens of Hispanic origin reported the highest rate of attempt (11.3%), especially Hispanic females (15.1%) when compared with white students (6.8%) and White females (9.8%). Approximately 2.8 percent reported making a suicide attempt that required treatment by a doctor or nurse.	For those requiring treatment, rates were highest for Hispanic students with black males (4.0%) and Hispanic males (2.9%) having higher rates than white male (0.9%) students.</p>
+	<p>Based on the 2017 National Survey of Drug Use and Mental Health it is estimated that 0.6 percent of the adults aged 18 or older made at least one suicide attempt.	This translates to approximately 1.4 million adults. Adult females reported a suicide attempt 1.4 times as often as males. Further breakdown by gender and race are not available.</p>
+	<p>Based on the 2017 Youth Risk Behaviors Survey, 7.4 percent of youth in grades 9-12 reported that they had made at least one suicide attempt in the past 12 months.	Girls attempted almost twice as often as boys (9.3% vs. 5.1%) and teens identifying as Black reported the highest rate of attempt (9.8%), especially Black females (12.5%) when compared with White students (6.1%) and White females (7.3%). Approximately 2.4 percent reported making a suicide attempt that required treatment by a doctor or nurse.	For those requiring treatment, rates were highest for students identifying as Black (3.4%), with Black females (4.0%) and Hispanic females (3.8%) having higher rates than white female (0.9%) students.</p>
 	<p>When it comes to suicide and suicide attempts there are rate differences depending on demographic characteristics such as age, gender, ethnicity and race.	 Nonetheless, suicide occurs in all demographic groups.</p>
 </section>		
 <section class="stats_citation" aria-label="statistics citation">
 	<br>
 	<hr>
-	<p><small><em>AFSP's latest data on suicide are taken from the Centers for Disease Control and Prevention (CDC) Data & Statistics Fatal Injury Report for 2016. Suicide rates listed are Age-Adjusted Rates.</em></small></p>
+	<p><small><em>AFSP's latest data on suicide are taken from the Centers for Disease Control and Prevention (CDC) Data & Statistics Fatal Injury Report for 2017. Suicide rates listed are Age-Adjusted Rates.</em></small></p>
 </section>
 </div>	
 <script>
@@ -138,7 +138,7 @@ jQuery(document).ready(function($) {
 *
 **********/
 	// import csv and make magic with it
-	d3.csv('<?php echo esc_url( get_template_directory_uri() ); ?>/stats/suicide-state-2016.csv', function(data) {
+	d3.csv('<?php echo esc_url( get_template_directory_uri() ); ?>/stats/suicide-state-2017.csv', function(data) {
 		// start working with the json file
 		d3.json('<?php echo esc_url( get_template_directory_uri() ); ?>/stats/usgeo.json', function(json) {
 			for(var i = 0; i < data.length; i++) {
