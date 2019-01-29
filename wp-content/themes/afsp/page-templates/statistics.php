@@ -22,29 +22,29 @@ get_template_part( 'template-parts/title' ); ?>
 	</div>
 	<div class="counter">
 		<div class="counterText">
-			In 2017<br><span id="suiDeaths"></span><br>Americans died by suicide
+			In 2017,<br><span id="suiDeaths"></span><br>Americans died by suicide
 		</div>
 	</div>
 	<div class="counter">
 		<div class="counterText">
-			In 2017 there were an estimated<br><span id="suiAttempts"></span><br>suicide attempts
+			In 2017, there were an estimated<br><span id="suiAttempts"></span><br>suicide attempts
 		</div>
 	</div>
 	<div class="counter">
 		<div class="counterText">
-			Suicide and self-injury cost the US<br>$ <span id="suiCost"></span>&nbsp; Billion<br>in 2015
+			In 2015, suicide and self-injury cost the US<br>$ <span id="suiCost"></span>&nbsp; Billion
 		</div>
 	</div>
 </section>
 <section class="key-facts key-facts--us" aria-label="state facts">
 	<h2>Additional Facts About Suicide in the US</h2> 
 	<ul class="key-facts__list">
-		<li>The 2017 age-adjusted suicide rate is <span class="bold">14.0 per 100,000</span> individuals.</li>
+		<li>The age-adjusted suicide rate in 2107 was <span class="bold">14.0 per 100,000</span> individuals.</li>
 		<li>The rate of suicide is <span class="bold">highest in middle-age</span> white men in particular.</li>
 		<li>In 2017, men died by suicide <span class="bold">3.54x</span> more often than women.</li>
 		<li>On average, there are <span class="bold">129</span> suicides per day.</li>
-		<li>White males accounted for <span class="bold">7 of 10</span> suicide deaths in 2017.</li>
-		<li>Firearms accounted for <span class="bold">50.57%</span> of all suicides in 2017.</li>
+		<li>White males accounted for <span class="bold">77.97%</span>  of suicide deaths in 2017.</li>
+		<li>In 2017, firearms accounted for <span class="bold">50.57%</span> of all suicide deaths.</li>
 	</ul>
 </section>
 <section class="key-facts key-facts--state" aira-label="state statistics">
@@ -88,8 +88,8 @@ get_template_part( 'template-parts/title' ); ?>
 	<br />
 	<div class="race-facts">
 		<h2>Suicide Rates by Race/Ethnicity</h2>
-		<p>In 2017, the highest U.S. suicide rate (15.85) was among Whites and the second highest rate (13.42) was among American Indians and Alaska Natives (Figure 5). Much lower and roughly similar rates were found among Black or African Americans (6.61) and Asians and Pacific Islanders (6.59).</p>
-		<p>Note that the CDC records Hispanic origin separately from the primary racial or ethnic groups of White, Black, American Indian or Alaskan Native, and Asian or Pacific Islander, since individuals in all of all groups may also be Hispanic.</p>
+		<p>In 2017, the highest U.S. age-adjusted suicide rate was among Whites (15.85) and the second highest rate was among American Indians and Alaska Natives (13.42). Much lower and roughly similar rates were found among Black or African Americans (6.61) and Asians and Pacific Islanders (6.59).</p>
+		<p>Note that the Center for Disease Control and Prevention (CDC) records Hispanic origin separately from the primary racial or ethnic groups of White, Black, American Indian or Alaskan Native, and Asian or Pacific Islander, since individuals in all groups may also be Hispanic.</p>
 		<iframe src="https://s3.amazonaws.com/AFSPNationalContent/highcharts/suicideRatesByEthnicity.html" style="width:600px; max-width: 100%; height:325px; display: block; margin: 0 auto;" title="Suicide Rates by Ethnicity"></iframe>
 	</div>
 	<br />
@@ -101,11 +101,11 @@ get_template_part( 'template-parts/title' ); ?>
 </section>
 <section class="attempt-facts" aria-label="suicide attempt facts">
 	<h2>Suicide Attempts</h2>
-	<p>No complete count is kept of suicide attempts in the U.S.; however, each year the CDC gathers data from hospitals on non-fatal injuries from self-harm as well as survey data.</p>
-	<p>In 2015, 505,507 people visited a hospital for injuries due to self-harm. This number suggests that for every reported suicide death, approximately 11.4 people visit a hospital for self-harm related injuries. However, because of the way these data are collected, we are not able to distinguish intentional suicide attempts from non-intentional self-harm behaviors.</p>
-	<p>Based on the 2017 National Survey of Drug Use and Mental Health it is estimated that 0.6 percent of the adults aged 18 or older made at least one suicide attempt.	This translates to approximately 1.4 million adults. Adult females reported a suicide attempt 1.4 times as often as males. Further breakdown by gender and race are not available.</p>
-	<p>Based on the 2017 Youth Risk Behaviors Survey, 7.4 percent of youth in grades 9-12 reported that they had made at least one suicide attempt in the past 12 months.	Girls attempted almost twice as often as boys (9.3% vs. 5.1%) and teens identifying as Black reported the highest rate of attempt (9.8%), especially Black females (12.5%) when compared with White students (6.1%) and White females (7.3%). Approximately 2.4 percent reported making a suicide attempt that required treatment by a doctor or nurse.	For those requiring treatment, rates were highest for students identifying as Black (3.4%), with Black females (4.0%) and Hispanic females (3.8%) having higher rates than white female (0.9%) students.</p>
-	<p>When it comes to suicide and suicide attempts there are rate differences depending on demographic characteristics such as age, gender, ethnicity and race.	 Nonetheless, suicide occurs in all demographic groups.</p>
+	<p>When it comes to suicide and suicide attempts there are rate differences depending on demographic characteristics such as age, gender, ethnicity and race. Nonetheless, suicide occurs in all demographic groups.</p>
+	<p>In the U.S., no complete count of suicide attempt data are available. The CDC gathers data from hospitals on non-fatal injuries from self-harm as well as survey data.</p>
+	<p>In 2015, (the most recent year for which data are available), approximately 575,000 people visited a hospital for injuries due to self-harm.</p>
+	<p>Based on the 2017 National Survey of Drug Use and Mental Health it is estimated that 0.6 percent of the adults aged 18 or older made at least one suicide attempt.  This translates to approximately 1.4 million adults. Adult females reported a suicide attempt 1.4 times as often as males. Further breakdown by gender and race are not available.</p>
+	<p>Based on the 2017 Youth Risk Behaviors Survey, 7.4 percent of youth in grades 9-12 reported that they had made at least one suicide attempt in the past 12 months. Female students attempted almost twice as often as male students (9.3% vs. 5.1%). Black students reported the highest rate of attempt (9.8%) with white students at 6.1 percent. Approximately 2.4 percent of all students reported making a suicide attempt that required treatment by a doctor or nurse.  For those requiring treatment, rates were highest for Black students (3.4%).</p>
 </section>		
 <section class="stats_citation" aria-label="statistics citation">
 	<br>
@@ -125,7 +125,7 @@ jQuery(document).ready(function($) {
 	}
 	var suiCause = new CountUp('suiCause', 0, 10, 0, 1, suiOptions).start();
 	var suiDeaths = new CountUp('suiDeaths', 0, 47173, 0, 1, suiOptions).start();
-	var suiAttempts = new CountUp('suiAttempts', 0, 1300000, 0, 1, suiOptions).start();
+	var suiAttempts = new CountUp('suiAttempts', 0, 1400000, 0, 1, suiOptions).start();
 	var suiCost = new CountUp('suiCost', 0, 69, 0, 1, suiOptions).start(); 
 	// width and height of svg
 	var w = parseInt(d3.select('#map').style('width')),
