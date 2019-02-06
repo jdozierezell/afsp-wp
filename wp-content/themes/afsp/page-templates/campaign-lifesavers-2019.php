@@ -16,9 +16,9 @@
   
 </section>
 				
-<!-- <div class="container lifesavers-2018">		
+<div class="container lifesavers-2018">		
 				
-  <h2 class="green center">WEDNESDAY, MAY 16, 2018</h2>
+  <!-- <h2 class="green center">WEDNESDAY, MAY 16, 2018</h2>
   <p class="white center">The Appel Room, Jazz at Lincoln Center's Frederick P. Rose Hall<br />
                           Broadway at 60th Street, New York, NY 10019</p>
   <div class="flex">
@@ -105,8 +105,8 @@
     <p><strong>Oskar and Laurie Eustis</strong> have been leaders of the artistic community in New York and across the country for more than 25 years. Oskar has served as the Artistic Director of The Public Theater since 2005. During his tenure at The Public he has produced such acclaimed pieces of theater as the revival of Hair; Fun Home by Lisa Kron and Jeannie Tesori; Hamlet starring Oscar Isaac; Here Lies Love by David Byrne and Alex Timbers; Father Comes Home From The Wars by Suzan-Lori Parks; and Lin-Manuel Miranda’s Hamilton. Laurie Eustis, during her time in Los Angeles, worked at Rogers and Cowan Public Relations and as a casting director at Embassy Television. She also served as a producer at Mark Taper Forum, where she championed their annual New Play Festival, among other projects. Here in New York, in addition to her work as a poet, she has served as Director of Development at both Lapham’s Quarterly and The Paris Review. Tragically, Oskar and Laurie lost their 16-year-old son Jack to suicide in 2014. Since then, Oskar and Laurie have been outspoken about their loss, finding and noting parallels in their work and drawing on the power of art to raise awareness and grapple with the complex grief caused by suicide.</p><br />
     <p><strong>Michael Wasserman</strong> is the CEO of Tiltify, the first crowdfunding platform designed specifically for charity livestreams. Having worked in the philanthropic industry for almost a decade, Michael has worked with dozens of top charities honing online and offline strategies, helping to raise tens of millions in donations. A lifelong entrepreneur as well as a bit of a tech geek and gamer, Michael co-founded Tiltify in 2013, seeing an emerging market in livestream fundraising, especially in the booming game stream market. Michael lost his brother to suicide, and has been instrumental in bringing AFSP to the streaming community through Tiltify, and the streaming platform Twitch. AFSP has since raised over half $1 million dollars on the Tiltify platform. Michael continues to use his platform to spread education and raise awareness for suicide prevention.</p><br />
     <p><strong>Dr. Cheryl King</strong> is a professor in the Departments of Psychiatry and Psychology at the University of Michigan and has focused her career on suicidal ideation and behavior among teens and young adults. <br /><br />Under her leadership, the Youth and Young Adult Depression and Suicide Prevention Research Program focuses on the development and improvement of evidence-based screening tools, risk assessment strategies, and psychosocial interventions for suicidal adolescents and young adults. She currently leads a large-scale National Institute of Mental Health-funded study that will develop and validate a personalized and adaptive youth suicide risk screening tool for use in medical emergency departments. Dr. King also currently leads two intervention studies, one of which examines the efficacy of eBridge, an online personalized suicide risk screening tool with optional online counseling for college students; the other examines a mentorship intervention for youth, ages 12 to 15, who are at risk for suicidal behavior due to experiences with bullying perpetration and victimization. Dr. King serves on AFSP’s Scientific Advisory Board, and has mentored AFSP Young Investigators. AFSP has funded Dr. King’s research, as well as those she has mentored, helping to expand our understanding of youth suicide prevention.</p>
-  </div>
-</div>  				 -->
+  </div> -->
+</div>  				 
   				
 				<?php endwhile;
 				endif; ?>

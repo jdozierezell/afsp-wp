@@ -1,0 +1,22 @@
+.lifesavers-2019 {
+  @extend .lifesavers-2017;
+  background-color: $color-brand-dark-gray;
+  padding-bottom: 2rem;
+  .features__button {
+    background-color: $color-dark-blue;
+    color: $color-white;
+  }
+  .green {
+    color: $color-green;
+  }
+  .committee .flex-box:first-child {
+    background-color: inherit;
+    padding: inherit;
+    @include responsive("small") {
+      width: inherit;
+    }
+    @include responsive("medium") {
+      width: 40%;
+    }
+  }
+}
