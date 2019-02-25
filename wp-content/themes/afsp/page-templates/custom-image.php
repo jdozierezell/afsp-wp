@@ -100,8 +100,8 @@
 <div id="download-modal-overlay" class="modal__overlay"></div>
 <div id="download-modal" class="modal sharable__modal">
 	<h2 class="modal__title">Choose your network</h2>
-	<p style="font-size: 1.1rem">Click on Facebook or Twitter to post the image to your social feed. 
-																If you would like to post your image to Instagram or to a friend's Facebook or Twitter feed, please choose the Download option.</p>
+	<p style="font-size: 1.1rem">Click on Twitter to post the image to your social feed. 
+																If you would like to post your image to Facebook or Instagram, please choose the Download option.</p>
 	<!-- <span class="modal__button" id="facebook">Facebook</span> -->
 	<span class="modal__button" id="twitter">Twitter</span>
 	<a class="modal__button" id="instagram">Download</a>
