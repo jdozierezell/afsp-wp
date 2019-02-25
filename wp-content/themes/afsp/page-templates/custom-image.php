@@ -54,7 +54,6 @@
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
 </script>
-<script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/oauth.min.js"></script>
 
 <div id="custom-image">
 	<div id="design-wrapper">
@@ -114,7 +113,7 @@
 																A new window will open in your browser so that you can view the post in your feed. 
 																Depending on Facebook's traffic, this can take a second or two. 
 																Please do not click twice on the button as that will cause Facebook to post twice.</p>
-	<textarea id="facebook-message" rows="5" cols="5"><?php the_field('ci_social'); ?></textarea>
+	<textarea id="facebook-message" rows="5" cols="5"><?php // the_field('ci_social'); ?></textarea>
 	<span class="modal__button" id="facebook-back">Back</span>
 	<span class="modal__button" id="facebook-post">Post to Facebook</span>
 </div> -->
