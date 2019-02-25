@@ -36,23 +36,25 @@
 
 				?>
 
-<script type="text/javascript">
-	window.fbAsyncInit = function(){
-		FB.init({
-			appId 	: '1771779836370199',
-			xfbml 	: true,
-			version : 'v2.7', 
-		});
-	};
-	(function(d,s,id){
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if(d.getElementById(id)){return;}
-		js = d.createElement(s);
-		js.id = id;
-		js.src = '//connect.facebook.net/en_US/sdk.js';
-		fjs.parentNode.insertBefore(js,fjs);
-	}(document,'script','facebook-jssdk'));
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+    appId      : '1771779836370199',
+    xfbml      : true,
+    version    : 'v3.1'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
 </script>
+<script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/oauth.min.js"></script>
 
 <div id="custom-image">
 	<div id="design-wrapper">
@@ -101,11 +103,11 @@
 	<h2 class="modal__title">Choose your network</h2>
 	<p style="font-size: 1.1rem">Click on Facebook or Twitter to post the image to your social feed. 
 																If you would like to post your image to Instagram or to a friend's Facebook or Twitter feed, please choose the Download option.</p>
-	<span class="modal__button" id="facebook">Facebook</span>
+	<!-- <span class="modal__button" id="facebook">Facebook</span> -->
 	<span class="modal__button" id="twitter">Twitter</span>
 	<a class="modal__button" id="instagram">Download</a>
 </div>
-<div id="facebook-modal" class="modal sharable__modal">
+<!-- <div id="facebook-modal" class="modal sharable__modal">
 	<h2 class="modal__title">Customize your message and send to Facebook</h2>
 	<p style="font-size: 1.1rem">You may customize your message below by editing the text provided. 
 																Please note that clicking "Post to Facebook" will directly post the image to your social feed. 
@@ -115,7 +117,7 @@
 	<textarea id="facebook-message" rows="5" cols="5"><?php the_field('ci_social'); ?></textarea>
 	<span class="modal__button" id="facebook-back">Back</span>
 	<span class="modal__button" id="facebook-post">Post to Facebook</span>
-</div>
+</div> -->
 <div id="twitter-modal" class="modal sharable__modal">
 	<h2 class="modal__title">Customize your tweet and send to Twitter</h2>
 	<p style="font-size: 1.1rem">You may customize your tweet below by editing the text provided. 
@@ -198,10 +200,10 @@
 		$('#help').on('click', function() {
 			$('#help-modal-overlay, #help-modal').css('display','block')
 		})
-		$('#facebook').on('click', function() {
-			$('#download-modal').css('display','none')
-			$('#facebook-modal').css('display','block')
-		})
+		// $('#facebook').on('click', function() {
+		// 	$('#download-modal').css('display','none')
+		// 	$('#facebook-modal').css('display','block')
+		// })
 		$('#twitter').on('click', function() {
 			$('#download-modal').css('display','none')
 			$('#twitter-modal').css('display','block')
