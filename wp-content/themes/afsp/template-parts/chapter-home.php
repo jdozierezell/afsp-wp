@@ -322,9 +322,10 @@
 				}
 				
 				if(get_field('sn_instagram_or_flickr') == 'Instagram' && get_field('sn_instagram')) :
-					$photo = get_field('sn_instagram');
-					// afsp_instagram_embed($photo);
-					echo do_shortcode( '[instagram-feed id="' . $photo . '"]' );
+          $photo = get_field('sn_instagram');
+          $access = get_field('sn_instagram_access_token');
+					afsp_instagram_embed($photo);
+					echo do_shortcode( '[instagram-feed accesstoken="' . $access . '" id="' . $photo . '"]' );
 				elseif(get_field('sn_instagram_or_flickr') == 'Flickr' && get_field('sn_flickr')) :
 				 	$photo = get_field('sn_flickr');
 					afsp_flickr_embed($photo); 
