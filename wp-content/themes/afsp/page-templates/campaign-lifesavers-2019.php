@@ -59,7 +59,7 @@
   <div class="program-feature__button">
     <a class="button features__button" href="https://afsp.donordrive.com/index.cfm?fuseaction=donorDrive.event&eventID=5918">Purchase Tickets</a>
   </div>
-  <!-- <h2 class="blue center">ABOUT THE GALA</h2>
+  <h2 class="blue center">ABOUT THE GALA</h2>
   <div class="about white">
     <p>Each year, the American Foundation for Suicide Prevention holds the Lifesaver’s Gala, at which we honor individuals and organizations that have made a substantial contribution to suicide prevention. From scientists, to public policy advocates, to loss and attempt survivors and others, Gala honorees have gone above and beyond in drawing attention to the cause, elevating public discourse around mental health and suicide, and successfully creating real change within our society as a means to ending this leading cause of death.</p>
     <p>In addition to raising much-needed funds for AFSP’s leading initiatives in the areas of research, education, advocacy and support for those affected by suicide, the Gala is an opportunity for our supporters to come together and recognize the past year’s accomplishments. Our distinguished guests share inspiring and informative stories about how suicide has affected them, and their valiant and passionate efforts to fight it.</p>
