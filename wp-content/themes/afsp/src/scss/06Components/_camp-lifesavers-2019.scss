@@ -2,12 +2,15 @@
   @extend .lifesavers-2017;
   background-color: $color-brand-dark-gray;
   padding-bottom: 2rem;
+  @include responsive("medium") {
+    width: 20%;
+  }
   .features__button {
     background-color: $color-dark-blue;
     color: $color-white;
   }
-  .green {
-    color: $color-green;
+  .blue {
+    color: $color-brand-blue;
   }
   .committee .flex-box:first-child {
     background-color: inherit;
