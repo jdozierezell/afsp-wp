@@ -250,9 +250,6 @@ function chapter_to_base_url( $chapters ) {
 		case 'AFSP Central New York':
 			$chapter_url_base = 'central-new-york';
 			break;
-		case 'AFSP Central Pennsylvania':
-			$chapter_url_base = 'central-pennsylvania';
-			break;
 		case 'AFSP Central Texas':
 			$chapter_url_base = 'central-texas';
 			break;
@@ -271,6 +268,9 @@ function chapter_to_base_url( $chapters ) {
 		case 'AFSP Eastern Missouri':
 			$chapter_url_base = 'eastern-missouri';
 			break;
+    case 'AFSP Eastern Pennsylvania':
+      $chapter_url_base = 'eastern-pennsylvania';
+      break;
 		case 'AFSP Florida Panhandle':
 			$chapter_url_base = 'florida-panhandle';
 			break;
@@ -283,9 +283,6 @@ function chapter_to_base_url( $chapters ) {
 		case 'AFSP Greater Kansas':
 			$chapter_url_base = 'greater-kansas';
 			break;
-		case 'AFSP Greater Lehigh Valley Pennsylvania':
-			$chapter_url_base = 'greater-lehigh-valley-pennsylvania';
-			break;
 		case 'AFSP Greater Los Angeles':
 			$chapter_url_base = 'greater-los-angeles';
 			break;
@@ -294,9 +291,6 @@ function chapter_to_base_url( $chapters ) {
 			break;
 		case 'AFSP Greater Minnesota':
 			$chapter_url_base = 'greater-minnesota';
-			break;
-		case 'AFSP Greater Northeast Pennsylvania':
-			$chapter_url_base = 'greater-northeast-pennsylvania';
 			break;
 		case 'AFSP Greater Philadelphia':
 			$chapter_url_base = 'greater-philadelphia';
@@ -409,9 +403,6 @@ function chapter_to_base_url( $chapters ) {
 		case 'AFSP South Central New York':
 			$chapter_url_base = 'south-central-new-york';
 			break;
-		case 'AFSP South Central Pennsylvania':
-			$chapter_url_base = 'south-central-pennsylvania';
-			break;
 		case 'AFSP South Dakota':
 			$chapter_url_base = 'south-dakota';
 			break;
@@ -500,9 +491,6 @@ function chapter_term_to_name( $term ) {
 		case 'afsp-central-new-york':
 			$chapter = 'AFSP Central New York';
 			break;
-		case 'afsp-central-pennsylvania':
-			$chapter = 'AFSP Central Pennsylvania';
-			break;
 		case 'afsp-central-texas':
 			$chapter = 'AFSP Central Texas';
 			break;
@@ -521,6 +509,9 @@ function chapter_term_to_name( $term ) {
 		case 'afsp-eastern-missouri':
 			$chapter = 'AFSP Eastern Missouri';
 			break;
+    case 'afsp-eastern-pennsylvania':
+      $chapter = 'AFSP Eastern Pennsylvania';
+      break;
 		case 'afsp-florida-panhandle':
 			$chapter = 'AFSP Florida Panhandle';
 			break;
@@ -539,9 +530,6 @@ function chapter_term_to_name( $term ) {
 		case 'afsp-greater-kansas':
 			$chapter = 'AFSP Greater Kansas';
 			break;
-		case 'afsp-greater-lehigh-valley-pennsylvania':
-			$chapter = 'AFSP Greater Lehigh Valley Pennsylvania';
-			break;
 		case 'afsp-greater-los-angeles':
 			$chapter = 'AFSP Greater Los Angeles';
 			break;
@@ -550,9 +538,6 @@ function chapter_term_to_name( $term ) {
 			break;
 		case 'afsp-greater-minnesota':
 			$chapter = 'AFSP Greater Minnesota';
-			break;
-		case 'afsp-greater-northeast-pennsylvania':
-			$chapter = 'AFSP Greater Northeast Pennsylvania';
 			break;
 		case 'afsp-greater-philadelphia':
 			$chapter = 'AFSP Greater Philadelphia';
@@ -664,9 +649,6 @@ function chapter_term_to_name( $term ) {
 			break;
 		case 'afsp-south-central-new-york':
 			$chapter = 'AFSP South Central New York';
-			break;
-		case 'afsp-south-central-pennsylvania':
-			$chapter = 'AFSP South Central Pennsylvania';
 			break;
 		case 'afsp-south-dakota':
 			$chapter = 'AFSP South Dakota';
