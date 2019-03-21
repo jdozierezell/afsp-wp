@@ -24,7 +24,7 @@
   <div class="flex">
     <div class="flex-box">
       <h2 class="blue center">HOSTED BY</h2>
-      <img src="http://afsp.imgix.net/wp-content/uploads/2018/03/Gideon-Glick-Headshot.jpg?crop=faces&fit=crop&w=600&h=600">
+      <img src="http://afsp.imgix.net/wp-content/uploads/2019/03/Boye-1.jpg?crop=faces&fit=crop&w=600&h=600">
       <p class="white center">Alex Boy&eacute;, Singer, Songwriter</p>
     </div>
     <div class="flex-box">
