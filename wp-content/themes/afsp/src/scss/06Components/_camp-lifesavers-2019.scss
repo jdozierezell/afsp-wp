@@ -2,6 +2,11 @@
   @extend .lifesavers-2017;
   background-color: $color-brand-dark-gray;
   padding-bottom: 2rem;
+  .flex-box {
+    @include responsive("medium") {
+      width: 20%;
+    }
+  }
   .features__button {
     background-color: $color-dark-blue;
     color: $color-white;
@@ -18,10 +23,5 @@
     @include responsive("medium") {
       width: 40%;
     }
-  }
-}
-.lifesavers-2019 .flex_box {
-  @include responsive("medium") {
-    width: 20%;
   }
 }
