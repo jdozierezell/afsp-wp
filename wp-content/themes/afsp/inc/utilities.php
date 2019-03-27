@@ -267,7 +267,7 @@ function chapter_to_base_url( $chapters ) {
 			break;
 		case 'AFSP Eastern Missouri':
 			$chapter_url_base = 'eastern-missouri';
-			break;
+			break; 
     case 'AFSP Eastern Pennsylvania':
       $chapter_url_base = 'eastern-pennsylvania';
       break;
