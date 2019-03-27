@@ -18,7 +18,7 @@
 				
 <div class="container lifesavers-2019">		
 				
-  <h2 class="blue center">WEDNESDAY, MAY 7, 2019</h2>
+  <h2 class="blue center">TUESDAY, MAY 7, 2019</h2>
   <p class="white center">The Appel Room, Jazz at Lincoln Center's Frederick P. Rose Hall<br />
                           Broadway at 60th Street, New York, NY 10019</p>
   <div class="flex">
