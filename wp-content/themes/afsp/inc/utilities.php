@@ -736,9 +736,6 @@ function chapter_name_to_code( $chapter ) {
 		case 'AFSP Central New York':
 			$chapter_code = 'NYCNY';
 			break;
-		case 'AFSP Central Pennsylvania':
-			$chapter_code = 'PACE';
-			break;
 		case 'AFSP Central Texas':
 			$chapter_code = 'TXCEN';
 			break;
@@ -757,6 +754,9 @@ function chapter_name_to_code( $chapter ) {
 		case 'AFSP Eastern Missouri':
 			$chapter_code = 'MO';
 			break;
+    case 'AFSP Eastern Pennsylvania':
+      $chapter_code = 'PAET';
+      break;
 		case 'AFSP Florida Panhandle':
 			$chapter_code = 'FLPA';
 			break;
@@ -769,9 +769,6 @@ function chapter_name_to_code( $chapter ) {
 		case 'AFSP Greater Kansas':
 			$chapter_code = 'KS';
 			break;
-		case 'AFSP Greater Lehigh Valley Pennsylvania':
-			$chapter_code = 'PALV';
-			break;
 		case 'AFSP Greater Los Angeles':
 			$chapter_code = 'CALA';
 			break;
@@ -780,9 +777,6 @@ function chapter_name_to_code( $chapter ) {
 			break;
 		case 'AFSP Greater Minnesota':
 			$chapter_code = 'MN';
-			break;
-		case 'AFSP Greater Northeast Pennsylvania':
-			$chapter_code = 'PANE';
 			break;
 		case 'AFSP Greater Philadelphia':
 			$chapter_code = 'PAPHI';
@@ -895,9 +889,6 @@ function chapter_name_to_code( $chapter ) {
 		case 'AFSP South Central New York':
 			$chapter_code = 'SCNY';
 			break;
-		case 'AFSP South Central Pennsylvania':
-			$chapter_code = 'SCPA';
-			break;
 		case 'AFSP South Dakota':
 			$chapter_code = 'SD';
 			break;
@@ -986,9 +977,6 @@ function afsp_chapter_breadcrumbs( $chapter_code ) {
 		case 'NYCNY':
 			$chapter = 'AFSP Central New York';
 			break;
-		case 'PACE':
-			$chapter = 'AFSP Central Pennsylvania';
-			break;
 		case 'TXCEN':
 			$chapter = 'AFSP Central Texas';
 			break;
@@ -1007,6 +995,9 @@ function afsp_chapter_breadcrumbs( $chapter_code ) {
 		case 'MO':
 			$chapter = 'AFSP Eastern Missouri';
 			break;
+    case 'PAET':
+      $chapter = 'AFSP Eastern Pennsylvania';
+      break;
 		case 'FLPA':
 			$chapter = 'AFSP Florida Panhandle';
 			break;
@@ -1019,9 +1010,6 @@ function afsp_chapter_breadcrumbs( $chapter_code ) {
 		case 'KS':
 			$chapter = 'AFSP Greater Kansas';
 			break;
-		case 'PALV':
-			$chapter = 'AFSP Greater Lehigh Valley Pennsylvania';
-			break;
 		case 'CALA':
 			$chapter = 'AFSP Greater Los Angeles';
 			break;
@@ -1030,9 +1018,6 @@ function afsp_chapter_breadcrumbs( $chapter_code ) {
 			break;
 		case 'MN':
 			$chapter = 'AFSP Greater Minnesota';
-			break;
-		case 'PANE':
-			$chapter = 'AFSP Greater Northeast Pennsylvania';
 			break;
 		case 'PAPHI':
 			$chapter = 'AFSP Greater Philadelphia';
@@ -1141,9 +1126,6 @@ function afsp_chapter_breadcrumbs( $chapter_code ) {
 			break;
 		case 'SCNY':
 			$chapter = 'AFSP South Central New York ';
-			break;
-		case 'SCPA':
-			$chapter = 'AFSP South Central Pennsylvania';
 			break;
 		case 'SC':
 			$chapter = 'AFSP South Carolina';
