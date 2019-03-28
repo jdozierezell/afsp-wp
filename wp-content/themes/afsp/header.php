@@ -26,7 +26,7 @@
 	$type = get_post_type();
 	if ( is_front_page() ) :
 	?>
-		<p class="ootd"><a class="home__link" href="//afsp.org/our-work/chapters/">Find&nbsp;a&nbsp;Chapter&nbsp;&gt; </a><a class="home__link" href="https://afsp.org/walks">Join&nbsp;Out&nbsp;of&nbsp;the&nbsp;Darkness&nbsp;Walks&nbsp;&gt; </a></p>
+		<p class="ootd"><a class="home__link" href="//afsp.org/our-work/chapters/">Find&nbsp;a&nbsp;Chapter&nbsp;&gt; </a><a class="home__link" href="https://afsp.donordrive.com/index.cfm?fuseaction=cms.page&id=1370">Join&nbsp;Out&nbsp;of&nbsp;the&nbsp;Darkness&nbsp;Walks&nbsp;&gt; </a></p>
 	<?php
 	elseif ( 'chapter' === $type && 0 === $post->post_parent ) :
 		$state      = get_field( 'caf_fact_sheet_state' );
