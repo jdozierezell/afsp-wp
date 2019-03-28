@@ -24,7 +24,6 @@ if(curl_errno($ch))
     echo 'error:' . curl_error($ch);
 } else {
     echo 'success';
-    echo $data;
 }
 
 // include 'merge-events.php';

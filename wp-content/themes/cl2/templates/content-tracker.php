@@ -16,7 +16,7 @@
             To view a chapter report, begin by choosing one of the options below.
         </p>
         <!-- 2018 Links -->
-        <h3 style="background-color: #396dff; color: #fff; padding-left: 1rem">2018</h3>
+        <h3 style="background-color: #396dff; color: #fff; padding-left: 1rem">nbsp:</h3>
         <h4>Choose Your Chapter</h4>
         <?php $survey = 'https://www.surveymonkey.com/results/'; ?>
         <select name="chapter_select_18" id="chapter_select_18" data-selected="no">
@@ -83,13 +83,18 @@
             </option>
             <option id="delaware"
             data-url="<?php echo esc_url($survey); ?>SM-VQDPXR6H8/"
-            data-division="Northeasterns">
+            data-division="Northeastern">
                 Delaware
             </option>
             <option id="eastern-missouri"
             data-url="<?php echo esc_url($survey); ?>SM-8NS85F6H8/"
             data-division="Central">
                 Eastern Missouri
+            </option>
+            <option id="eastern-pennsylvania"
+            data-url="<?php echo esc_url($survey); ?>SM-PQPDN99NV/"
+            data-division="Eastcentral">
+                Eastern Pennsylvania
             </option>
             <option id="florida-panhandle"
             data-url="<?php echo esc_url($survey); ?>SM-H6C3KT6H8/"
