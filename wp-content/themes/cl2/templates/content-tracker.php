@@ -16,7 +16,7 @@
             To view a chapter report, begin by choosing one of the options below.
         </p>
         <!-- 2018 Links -->
-        <h3 style="background-color: #396dff; color: #fff; padding-left: 1rem">&nbsp:</h3>
+        <h3 style="background-color: #396dff; color: #fff; padding-left: 1rem">&nbsp;</h3>
         <h4>Choose Your Chapter</h4>
         <?php $survey = 'https://www.surveymonkey.com/results/'; ?>
         <select name="chapter_select_18" id="chapter_select_18" data-selected="no">
