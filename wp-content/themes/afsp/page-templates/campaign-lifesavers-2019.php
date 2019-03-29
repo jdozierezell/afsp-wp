@@ -30,7 +30,7 @@
     <div class="flex-box">
       <h2 class="blue center">GALA CHAIR</h2>
       <img src="http://afsp.imgix.net/wp-content/uploads/2019/03/husseini.jpg?crop=faces&fit=crop&w=600&h=600">
-      <p class="white center">Husseini Manji, M.D., Global Therapeutic Head, Neuroscience, Jaßnssen Research and Development, LLC</p>
+      <p class="white center">Husseini Manji, M.D., Global Therapeutic Head, Neuroscience, Janssen Research and Development, LLC</p>
     </div>
   </div>
   <h2 class="blue center">HONORING</h2>
