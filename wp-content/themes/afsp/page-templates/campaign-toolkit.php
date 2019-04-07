@@ -8,7 +8,7 @@
 get_header();
 if(have_posts()) : while(have_posts()) : the_post() ?>
 <style>
-body {
+.background {
   background: linear-gradient(hsl(224, 100%, 61%), hsl(224, 100%, 30%));
   margin: 0;
   font-family: avenirnextltpro-regular, helvetica, arial, sans-serif;
@@ -178,92 +178,94 @@ body {
   
 }
 </style>
-<div class="full-width"></div>
-<div id="grid">
-  <div class="grid-description">Lorem ipsum</div>
-  <div class="grid-item">
-    <picture>
-      <source media="(max-width: 1440px)" srcset="//via.placeholder.com/350x120">
-      <img src="//via.placeholder.com/350">
-    </picture>
-  </div>
-  <div class="grid-children">
-    <div class="grid-description">Lorem ipsum 1</div>
+<div class="background">
+  <div class="full-width"></div>
+  <div id="grid">
+    <div class="grid-description">Lorem ipsum</div>
     <div class="grid-item">
-      <img class="grid-image" src="//via.placeholder.com/350" />
-      <div class="grid-overlay">
-        <p class="grid-item-description">Lorem item</p>
-        <button class="grid-button">Download &amp; Share</button>
-      </div>
+      <picture>
+        <source media="(max-width: 1440px)" srcset="//via.placeholder.com/350x120">
+        <img src="//via.placeholder.com/350">
+      </picture>
     </div>
-    <div class="grid-item"><img srset="//via.placeholder.com/350x120 120w, //via.placeholder.com/350 350w" sizes="(max-width: 1400px) 120w, 350w" src="//via.placeholder.com/350" /></div>
-    <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-    <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-  </div>
-  <div class="grid-item">
-    <picture>
-      <source media="(max-width: 1440px)" srcset="//via.placeholder.com/350x120">
-      <img src="//via.placeholder.com/350">
-    </picture>
-  </div>
-  <div class="grid-children">
-    <div class="grid-description">Lorem ipsum 2</div>
-    <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-    <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-    <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-    <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-  </div>
-  <div class="grid-item">
-    <picture>
-      <source media="(max-width: 1440px)" srcset="//via.placeholder.com/350x120">
-      <img src="//via.placeholder.com/350">
-    </picture>
-  </div>
-  <div class="grid-children">
-    <div class="grid-description">Lorem ipsum 3</div>
-    <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-    <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-    <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-    <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-  </div>
-  <div class="grid-item">
-    <picture>
-      <source media="(max-width: 1440px)" srcset="//via.placeholder.com/350x120">
-      <img src="//via.placeholder.com/350">
-    </picture>
-  </div>
-  <div class="grid-children">
-    <div class="grid-description">Lorem ipsum 4</div>
-    <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-    <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-    <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-    <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-  </div>
-  <div class="grid-item">
-    <picture>
-      <source media="(max-width: 1440px)" srcset="//via.placeholder.com/350x120">
-      <img src="//via.placeholder.com/350">
-    </picture>
-  </div>
-  <div class="grid-children">
-    <div class="grid-description">Lorem ipsum 5</div>
-    <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-    <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-    <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-    <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-  </div>
-  <div class="grid-item">
-    <picture>
-      <source media="(max-width: 1440px)" srcset="//via.placeholder.com/350x120">
-      <img src="//via.placeholder.com/350">
-    </picture>
-  </div>
-  <div class="grid-children">
-    <div class="grid-description">Lorem ipsum 6</div>
-    <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-    <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-    <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-    <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
+    <div class="grid-children">
+      <div class="grid-description">Lorem ipsum 1</div>
+      <div class="grid-item">
+        <img class="grid-image" src="//via.placeholder.com/350" />
+        <div class="grid-overlay">
+          <p class="grid-item-description">Lorem item</p>
+          <button class="grid-button">Download &amp; Share</button>
+        </div>
+      </div>
+      <div class="grid-item"><img srset="//via.placeholder.com/350x120 120w, //via.placeholder.com/350 350w" sizes="(max-width: 1400px) 120w, 350w" src="//via.placeholder.com/350" /></div>
+      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
+      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
+    </div>
+    <div class="grid-item">
+      <picture>
+        <source media="(max-width: 1440px)" srcset="//via.placeholder.com/350x120">
+        <img src="//via.placeholder.com/350">
+      </picture>
+    </div>
+    <div class="grid-children">
+      <div class="grid-description">Lorem ipsum 2</div>
+      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
+      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
+      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
+      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
+    </div>
+    <div class="grid-item">
+      <picture>
+        <source media="(max-width: 1440px)" srcset="//via.placeholder.com/350x120">
+        <img src="//via.placeholder.com/350">
+      </picture>
+    </div>
+    <div class="grid-children">
+      <div class="grid-description">Lorem ipsum 3</div>
+      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
+      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
+      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
+      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
+    </div>
+    <div class="grid-item">
+      <picture>
+        <source media="(max-width: 1440px)" srcset="//via.placeholder.com/350x120">
+        <img src="//via.placeholder.com/350">
+      </picture>
+    </div>
+    <div class="grid-children">
+      <div class="grid-description">Lorem ipsum 4</div>
+      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
+      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
+      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
+      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
+    </div>
+    <div class="grid-item">
+      <picture>
+        <source media="(max-width: 1440px)" srcset="//via.placeholder.com/350x120">
+        <img src="//via.placeholder.com/350">
+      </picture>
+    </div>
+    <div class="grid-children">
+      <div class="grid-description">Lorem ipsum 5</div>
+      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
+      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
+      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
+      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
+    </div>
+    <div class="grid-item">
+      <picture>
+        <source media="(max-width: 1440px)" srcset="//via.placeholder.com/350x120">
+        <img src="//via.placeholder.com/350">
+      </picture>
+    </div>
+    <div class="grid-children">
+      <div class="grid-description">Lorem ipsum 6</div>
+      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
+      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
+      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
+      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
+    </div>
   </div>
 </div>
 
