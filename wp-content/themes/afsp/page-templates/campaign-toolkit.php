@@ -12,6 +12,7 @@ if(have_posts()) : while(have_posts()) : the_post() ?>
   background: linear-gradient(hsl(224, 100%, 61%), hsl(224, 100%, 30%));
   margin: 0;
   font-family: avenirnextltpro-regular, helvetica, arial, sans-serif;
+  padding-bottom: 1px;
 }
 
 .full-width {
