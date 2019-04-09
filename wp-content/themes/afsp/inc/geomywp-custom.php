@@ -61,10 +61,15 @@ function save_acf_gmw( $post_id ) {
 		$state = $province;
 	endif;
 	// include the file with the geocode function.
-  include_once( GMW_PT_PATH . '/includes/gmw-posts-locator-functions.php' );
-	$location = $city . ', ' . $state . ' ' . $zipcode . ' ' . $country;
+	include_once( GMW_PT_PATH . '/includes/gmw-posts-locator-functions.php' );
+	$location = array(
+		'city'    => $city,
+		'state'   => $state,
+		'zipcode' => $zipcode,
+		'country' => $country,
+	);
 	if ( $street_address ) :
-		$location = $street_address . ', ' . $location;
+		$location['street'] = $street_address;
 	endif;
 	// $location = wp_json_encode( $location );
 	// the function.
