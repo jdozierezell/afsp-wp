@@ -24,12 +24,13 @@ if ( have_posts() ) :
 			$video_url = 'https://vimeo.com/album/5269921/embed';
 		endif;
 		?>
-		<section class="splash container">
+		<!-- <section class="splash container">
 			<div class="videoEmbed">
-				<iframe src=<?php echo esc_url( $video_url ); ?> frameborder="0" allowfullscreen></iframe>
+				<iframe src=<?php // echo esc_url( $video_url ); ?> frameborder="0" allowfullscreen></iframe>
 			</div>
-			<h1 class="landing__title"><?php the_title(); ?></h1>
-		</section>
+			<h1 class="landing__title"><?php // the_title(); ?></h1>
+		</section> -->
+    <?php get_template_part('template-parts/splash-container'); ?>
 		<section class="forum__feed17">
 			<section class="container forum__teaser">
 			<?php
@@ -113,25 +114,25 @@ if ( have_posts() ) :
 			</div>
 		</section>
 		<script>
-			jQuery(document).ready(function($) {
-				var date = new Date("June 12, 2017 08:00:00");
-				var now = new Date();
-				var diff = (date.getTime()/1000) - (now.getTime()/1000);
-				var countdown = $('.countdown').FlipClock(diff, {
-					clockFace: 'DailyCounter',
-					countdown: true,
-					showSeconds: false,
-					autoStart: true,
+			// jQuery(document).ready(function($) {
+			// 	var date = new Date("June 12, 2017 08:00:00");
+			// 	var now = new Date();
+			// 	var diff = (date.getTime()/1000) - (now.getTime()/1000);
+			// 	var countdown = $('.countdown').FlipClock(diff, {
+			// 		clockFace: 'DailyCounter',
+			// 		countdown: true,
+			// 		showSeconds: false,
+			// 		autoStart: true,
 
-				});
-				var $social_grid = $('.social__board').isotope({
-					itemSelector: '.social__card',
-					layoutMode: 'masonry'
-				});
-				$social_grid.imagesLoaded().progress(function(){
-					$grid.isotope('layout');
-				});
-			});
+			// 	});
+			// 	var $social_grid = $('.social__board').isotope({
+			// 		itemSelector: '.social__card',
+			// 		layoutMode: 'masonry'
+			// 	});
+			// 	$social_grid.imagesLoaded().progress(function(){
+			// 		$grid.isotope('layout');
+			// 	});
+			// });
 		</script>
 <?php
 	endwhile;
