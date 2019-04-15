@@ -50,7 +50,6 @@ if(have_posts()) : while(have_posts()) : the_post();
 .grid-item {
   box-sizing: border-box;
   width: 100%;
-  height: 120px;
   border: 10px solid #fff;
   box-shadow: 10px 10px 0;
   background: #fff;
@@ -60,7 +59,6 @@ if(have_posts()) : while(have_posts()) : the_post();
 
 .grid-item img {
   width: 100%;
-  height: 100%;
 }
 
 .grid-children {
@@ -135,10 +133,6 @@ if(have_posts()) : while(have_posts()) : the_post();
   .grid-description {
     grid-column: 1 / span 3;
   }
-  
-  .grid-item {
-    height: 100%;
-  }
 
   .grid-item:nth-of-type(-n+6) {
     grid-row: 2;
@@ -212,7 +206,7 @@ if(have_posts()) : while(have_posts()) : the_post();
         <img class="grid-image" src="<?php echo $child_image['url']; ?>" />
         <div class="grid-overlay">
           <p class="grid-item-description"><?php the_sub_field( 't_grid_child_description' ); ?></p>
-          <a class="grid-button" href="<?php the_sub_field( 't_link' ) ?>"><?php the_sub_field( 't_grid_child_cta' ) ?></a>
+          <a class="grid-button" href="<?php the_sub_field( 't_link' ) ?>" target="_blank"><?php the_sub_field( 't_grid_child_cta' ) ?></a>
         </div>
       </div>
     <?php endwhile;
@@ -252,6 +246,13 @@ for ( let i = 0; i < items.length; i++ ) {
       if ( event.target.classList.contains( 'grid-image' ) ) {
         const sibling = event.target.nextSibling.nextSibling
         sibling.classList.add ( 'active' )
+        const eventParent = sibling.parentNode
+        const eventParentSiblings = eventParent.parentNode.children
+        for (let i = 0; i < eventParentSiblings.length; i++) {
+          if ( eventParentSiblings[i] != eventParent && eventParentSiblings[i].children[1].classList.contains( 'active' ) ) {
+            eventParentSiblings[i].children[1].classList.remove( 'active' )
+          }
+        }
       } else if ( event.target.classList.contains( 'grid-overlay' ) ) {
         event.target.classList.remove( 'active' )
       }
