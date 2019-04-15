@@ -20,6 +20,8 @@ if(have_posts()) : while(have_posts()) : the_post() ?>
   background-color: #cacaca;
   background-image: url('//via.placeholder.com/1200x375');
   background-size: contain;
+  background-repeat: none;
+  background-position: center center;
 }
 
 #grid {
