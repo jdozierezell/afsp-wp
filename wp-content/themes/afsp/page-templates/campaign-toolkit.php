@@ -228,7 +228,7 @@ if(have_posts()) : while(have_posts()) : the_post();
         if ( get_row_layout() === 't_grid_without_children_modal' ) : ?>
 
     <?php endif; // end modal layout
-      endwhile;
+      endwhile; 
     endif; // end all layouts
     ?>
   </div>
