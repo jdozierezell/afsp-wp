@@ -68,7 +68,6 @@ if(have_posts()) : while(have_posts()) : the_post();
   animation-name: slidein;
   animation-duration: 1s;
   margin-bottom: 4em;
-  grid-template-columns: repeat(4, 1fr);
 }
 
 .grid-children .grid-item {
@@ -201,11 +200,13 @@ if(have_posts()) : while(have_posts()) : the_post();
     <div class="page-description"><?php the_field( 't_page_description' ); ?></div>
     <?php if ( have_rows( 't_grid_section' ) ) : while ( have_rows( 't_grid_section' ) ) : the_row();
         $image = get_sub_field( 't_grid_image' );
-        $image_temp_url = str_replace('afsp.org','afsp.imgix.net',$image['url']);
+        $image_temp = $image['url'];
+        $image_temp_url = str_replace('afsp.org','afsp.imgix.net', $image_temp);
         $image_url = $image_temp_url . '?w=700&h=700&fit=fill&fill=blur';
         $image_mobile = get_sub_field( 't_grid_image_mobile' );
-        $image_mobile_temp_url = str_replace('afsp.org','afsp.imgix.net',$image_mobile['url']);
-        $image_url = $image_mobile_temp_url . '?w=700&h=240&fit=fill&fill=blur';
+        $image_mobile_temp = $image_mobile['url'];
+        $image_mobile_temp_url = str_replace('afsp.org','afsp.imgix.net', $image_mobile_temp);
+        $image_mobile_url = $image_mobile_temp_url . '?w=700&h=240&fit=fill&fill=blur';
         if ( get_row_layout() === 't_grid_with_children' ) :
     ?>
     <div class="grid-item grid-item-with-children">
