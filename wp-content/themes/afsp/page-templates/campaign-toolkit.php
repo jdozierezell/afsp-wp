@@ -197,7 +197,6 @@ if(have_posts()) : while(have_posts()) : the_post();
         $image = get_sub_field( 't_grid_image' );
         $image_mobile = get_sub_field( 't_grid_image_mobile' );
         if ( get_row_layout() === 't_grid_with_children' ) :
-          $child_image = get_sub_field( 't_grid_child_image' );
     ?>
     <div class="grid-item">
       <picture>
@@ -206,6 +205,9 @@ if(have_posts()) : while(have_posts()) : the_post();
       </picture>
     </div>
     <div class="grid-children">
+    <?php if ( have_rows( 't_grid_children' ) ) : while ( have_rows( 't_grid_children' ) ) : the_row();
+        $child_image = get_sub_field( 't_grid_child_image' );
+    ?>
       <div class="grid-item">
         <img class="grid-image" src="<?php echo $child_image['url']; ?>" />
         <div class="grid-overlay">
@@ -213,10 +215,12 @@ if(have_posts()) : while(have_posts()) : the_post();
           <a class="grid-button" href="<?php the_sub_field( 't_link' ) ?>"><?php the_sub_field( 't_grid_child_cta' ) ?></a>
         </div>
       </div>
+    <?php endwhile;
+        endif; ?>
     </div>
-        <?php endif;
-          endwhile;
-        endif;
+    <?php endif;
+      endwhile;
+    endif;
     ?>
   </div>
 </div>
