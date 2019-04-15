@@ -42,6 +42,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 .grid-description, 
 .page-description {
   grid-row: 1;
+  grid-column: span 3;
   color: #fff;
   font-size: 1.5em;
   padding: 1em 0;
@@ -67,6 +68,7 @@ if(have_posts()) : while(have_posts()) : the_post();
   animation-name: slidein;
   animation-duration: 1s;
   margin-bottom: 4em;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .grid-children .grid-item {
@@ -115,11 +117,11 @@ if(have_posts()) : while(have_posts()) : the_post();
 }
 
 .calendar-modal {
-  position: absolute;
-  top: 3rem;
-  bottom: 3rem;
-  left: 3rem;
-  right: 3rem;
+  position: fixed;
+  top: 2rem;
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
   background: rgba(50, 50, 50, 0.8);
   display: none;
 }
@@ -199,21 +201,27 @@ if(have_posts()) : while(have_posts()) : the_post();
     <div class="page-description"><?php the_field( 't_page_description' ); ?></div>
     <?php if ( have_rows( 't_grid_section' ) ) : while ( have_rows( 't_grid_section' ) ) : the_row();
         $image = get_sub_field( 't_grid_image' );
+        $image_temp_url = str_replace('afsp.org','afsp.imgix.net',$image['url']);
+        $image_url = $image_temp_url . '?w=700&h=700&fit=fill&fill=blur';
         $image_mobile = get_sub_field( 't_grid_image_mobile' );
+        $image_mobile_temp_url = str_replace('afsp.org','afsp.imgix.net',$image_mobile['url']);
+        $image_url = $image_mobile_temp_url . '?w=700&h=240&fit=fill&fill=blur';
         if ( get_row_layout() === 't_grid_with_children' ) :
     ?>
     <div class="grid-item grid-item-with-children">
       <picture>
-        <source media="(max-width: 1440px)" srcset="<?php echo $image_mobile['url']; ?>">
-        <img src="<?php echo $image['url']; ?>">
+        <source media="(max-width: 1440px)" srcset="<?php echo $image_mobile_url; ?>">
+        <img src="<?php echo $image_url; ?>">
       </picture>
     </div>
     <div class="grid-children">
     <?php if ( have_rows( 't_grid_children' ) ) : while ( have_rows( 't_grid_children' ) ) : the_row();
         $child_image = get_sub_field( 't_grid_child_image' );
+        $child_image_temp_url = str_replace('afsp.org','afsp.imgix.net',$child_image['url']);
+        $child_image_url = $child_image_temp_url . '?w=700&h=700&fit=fill&fill=blur';
     ?>
       <div class="grid-item">
-        <img class="grid-image" src="<?php echo $child_image['url']; ?>" />
+        <img class="grid-image" src="<?php echo $child_image_url; ?>" />
         <div class="grid-overlay">
           <p class="grid-item-description"><?php the_sub_field( 't_grid_child_description' ); ?></p>
           <a class="grid-button" href="<?php the_sub_field( 't_link' ) ?>" target="_blank"><?php the_sub_field( 't_grid_child_cta' ) ?></a>
