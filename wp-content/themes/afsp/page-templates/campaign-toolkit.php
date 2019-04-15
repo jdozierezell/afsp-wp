@@ -224,9 +224,16 @@ if(have_posts()) : while(have_posts()) : the_post();
         </picture>
       </a>
     </div>
-        <?php endif; // end link layout
+    <?php endif; // end link layout
         if ( get_row_layout() === 't_grid_without_children_modal' ) : ?>
-
+    <div class="grid-item grid-item-without-children-modal">
+      <a href="#">
+        <picture>
+          <source media="(max-width: 1440px)" srcset="<?php echo $image_mobile['url']; ?>">
+          <img src="<?php echo $image['url']; ?>">
+        </picture>
+      </a>
+    </div>
     <?php endif; // end modal layout
       endwhile; 
     endif; // end all layouts
