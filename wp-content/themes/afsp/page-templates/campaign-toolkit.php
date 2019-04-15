@@ -6,7 +6,12 @@
  */
 
 get_header();
-if(have_posts()) : while(have_posts()) : the_post() ?>
+if(have_posts()) : while(have_posts()) : the_post(); 
+    $image = get_field( 't_hero_image_full' );
+    if ( !empty( $image ) ) {
+      $image_url = $image['url'];
+    }
+?>
 <style>
 .background {
   background: linear-gradient(hsl(224, 100%, 61%), hsl(224, 100%, 30%));
@@ -18,10 +23,18 @@ if(have_posts()) : while(have_posts()) : the_post() ?>
 .full-width {
   height: 375px;
   background-color: #cacaca;
-  background-image: url('//via.placeholder.com/1200x375');
+  background-image: url('<?php echo $image_url; ?>');
   background-size: contain;
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-position: center center;
+}
+
+.page-description {
+  color: #fff;
+  font-size: 1.5em;
+  padding: 1em;
+  max-width: 1100px;
+  margin: auto;
 }
 
 #grid {
@@ -65,8 +78,8 @@ if(have_posts()) : while(have_posts()) : the_post() ?>
   margin-bottom: 4em;
 }
 
-.grid-children .grid-description {
-  grid-row: 1;
+.grid-children .grid-item {
+  height: 100%;
 }
 
 .grid-overlay {
@@ -185,8 +198,13 @@ if(have_posts()) : while(have_posts()) : the_post() ?>
 </style>
 <div class="background">
   <div class="full-width"></div>
+  <div class="page-description"><?php the_field( 't_page_description' ); ?></div>
   <div id="grid">
-    <div class="grid-description">Lorem ipsum</div>
+    <?php if ( have_rows( 't_grid_section' ) ) : while ( have_rows( 't_grid_section' ) ) : the_row();
+        $image = get_sub_field( 't_grid_image' );
+        $image_mobile = get_sub_field( 't_grid_image_mobile' );
+        if ( get_row_layout() === 't_grid_with_children' ) :
+    ?>
     <div class="grid-item">
       <picture>
         <source media="(max-width: 1440px)" srcset="//via.placeholder.com/350x120">
@@ -194,7 +212,6 @@ if(have_posts()) : while(have_posts()) : the_post() ?>
       </picture>
     </div>
     <div class="grid-children">
-      <div class="grid-description">Lorem ipsum 1</div>
       <div class="grid-item">
         <img class="grid-image" src="//via.placeholder.com/350" />
         <div class="grid-overlay">
@@ -206,71 +223,10 @@ if(have_posts()) : while(have_posts()) : the_post() ?>
       <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
       <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
     </div>
-    <div class="grid-item">
-      <picture>
-        <source media="(max-width: 1440px)" srcset="//via.placeholder.com/350x120">
-        <img src="//via.placeholder.com/350">
-      </picture>
-    </div>
-    <div class="grid-children">
-      <div class="grid-description">Lorem ipsum 2</div>
-      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-    </div>
-    <div class="grid-item">
-      <picture>
-        <source media="(max-width: 1440px)" srcset="//via.placeholder.com/350x120">
-        <img src="//via.placeholder.com/350">
-      </picture>
-    </div>
-    <div class="grid-children">
-      <div class="grid-description">Lorem ipsum 3</div>
-      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-    </div>
-    <div class="grid-item">
-      <picture>
-        <source media="(max-width: 1440px)" srcset="//via.placeholder.com/350x120">
-        <img src="//via.placeholder.com/350">
-      </picture>
-    </div>
-    <div class="grid-children">
-      <div class="grid-description">Lorem ipsum 4</div>
-      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-    </div>
-    <div class="grid-item">
-      <picture>
-        <source media="(max-width: 1440px)" srcset="//via.placeholder.com/350x120">
-        <img src="//via.placeholder.com/350">
-      </picture>
-    </div>
-    <div class="grid-children">
-      <div class="grid-description">Lorem ipsum 5</div>
-      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-    </div>
-    <div class="grid-item">
-      <picture>
-        <source media="(max-width: 1440px)" srcset="//via.placeholder.com/350x120">
-        <img src="//via.placeholder.com/350">
-      </picture>
-    </div>
-    <div class="grid-children">
-      <div class="grid-description">Lorem ipsum 6</div>
-      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-    </div>
+        <?php endif;
+          endwhile;
+        endif;
+    ?>
   </div>
 </div>
 
