@@ -213,6 +213,18 @@ if(have_posts()) : while(have_posts()) : the_post();
         endif; ?>
     </div>
     <?php endif;
+        if ( get_row_layout() === 't_grid_without_children_link' ) :
+    ?>
+    <div class="grid-item">
+      <a href="<?php the_sub_field( 't_link' ); ?>" target="_blank">
+        <picture>
+          <source media="(max-width: 1440px)" srcset="<?php echo $image_mobile['url']; ?>">
+          <img src="<?php echo $image['url']; ?>">
+        </picture>
+      </a>
+    </div>
+    <?php     
+        endif;
       endwhile;
     endif;
     ?>
