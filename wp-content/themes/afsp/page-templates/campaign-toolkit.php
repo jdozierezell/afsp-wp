@@ -192,7 +192,7 @@ if(have_posts()) : while(have_posts()) : the_post();
         $image_mobile = get_sub_field( 't_grid_image_mobile' );
         if ( get_row_layout() === 't_grid_with_children' ) :
     ?>
-    <div class="grid-item">
+    <div class="grid-item grid-item-with-children">
       <picture>
         <source media="(max-width: 1440px)" srcset="<?php echo $image_mobile['url']; ?>">
         <img src="<?php echo $image['url']; ?>">
@@ -210,12 +210,13 @@ if(have_posts()) : while(have_posts()) : the_post();
         </div>
       </div>
     <?php endwhile;
-        endif; ?>
+        endif; // end children repeater
+    ?>
     </div>
-    <?php endif;
+    <?php endif; // end children layout
         if ( get_row_layout() === 't_grid_without_children_link' ) :
     ?>
-    <div class="grid-item">
+    <div class="grid-item grid-item-without-children-link">
       <a href="<?php the_sub_field( 't_link' ); ?>" target="_blank">
         <picture>
           <source media="(max-width: 1440px)" srcset="<?php echo $image_mobile['url']; ?>">
@@ -223,10 +224,17 @@ if(have_posts()) : while(have_posts()) : the_post();
         </picture>
       </a>
     </div>
-    <?php     
-        endif;
+    <?php endif; // end link layout
+        if ( get_row_layout() === 't_grid_without_children_modal' ) : ?>
+    <div class="grid-item grid-item-without-children-modal">
+      <picture>
+        <source media="(max-width: 1440px)" srcset="<?php echo $image_mobile['url']; ?>">
+        <img src="<?php echo $image['url']; ?>">
+      </picture>
+    </div>
+    <?php endif; // end modal layout
       endwhile;
-    endif;
+    endif; // end all layouts
     ?>
   </div>
 </div>
@@ -275,5 +283,5 @@ grid.style.gridGap = '6px 25px';
 </script>
 
 <?php endwhile;
-endif;
+endif; // end loop
 get_footer(); ?>
