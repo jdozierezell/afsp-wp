@@ -17,7 +17,9 @@ if(have_posts()) : while(have_posts()) : the_post() ?>
 
 .full-width {
   height: 375px;
-  background: #cacaca;
+  background-color: #cacaca;
+  background-image: url('//via.placeholder.com/1200x375');
+  background-size: contain;
 }
 
 #grid {
@@ -180,9 +182,7 @@ if(have_posts()) : while(have_posts()) : the_post() ?>
 }
 </style>
 <div class="background">
-  <div class="full-width">
-      <img src="//via.placeholder.com/1200x375">
-  </div>
+  <div class="full-width"></div>
   <div id="grid">
     <div class="grid-description">Lorem ipsum</div>
     <div class="grid-item">
