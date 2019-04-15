@@ -22,19 +22,11 @@ if(have_posts()) : while(have_posts()) : the_post();
 
 .full-width {
   height: 375px;
-  background-color: #cacaca;
+  background-color: #eaeaea;
   background-image: url('<?php echo $image_url; ?>');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-}
-
-.page-description {
-  color: #fff;
-  font-size: 1.5em;
-  padding: 1em;
-  max-width: 1100px;
-  margin: auto;
 }
 
 #grid {
@@ -47,7 +39,8 @@ if(have_posts()) : while(have_posts()) : the_post();
   margin-bottom: 24px;
 }
 
-.grid-description {
+.grid-description, 
+.page-description {
   grid-row: 1;
   color: #fff;
   font-size: 1.5em;
@@ -198,12 +191,13 @@ if(have_posts()) : while(have_posts()) : the_post();
 </style>
 <div class="background">
   <div class="full-width"></div>
-  <div class="page-description"><?php the_field( 't_page_description' ); ?></div>
   <div id="grid">
+    <div class="page-description"><?php the_field( 't_page_description' ); ?></div>
     <?php if ( have_rows( 't_grid_section' ) ) : while ( have_rows( 't_grid_section' ) ) : the_row();
         $image = get_sub_field( 't_grid_image' );
         $image_mobile = get_sub_field( 't_grid_image_mobile' );
         if ( get_row_layout() === 't_grid_with_children' ) :
+          $child_image = get_sub_field( 't_grid_child_image' );
     ?>
     <div class="grid-item">
       <picture>
@@ -213,15 +207,12 @@ if(have_posts()) : while(have_posts()) : the_post();
     </div>
     <div class="grid-children">
       <div class="grid-item">
-        <img class="grid-image" src="//via.placeholder.com/350" />
+        <img class="grid-image" src="<?php echo $child_image['url']; ?>" />
         <div class="grid-overlay">
-          <p class="grid-item-description">Lorem item</p>
-          <button class="grid-button">Download &amp; Share</button>
+          <p class="grid-item-description"><?php the_sub_field( 't_grid_child_description' ); ?></p>
+          <a class="grid-button" href="<?php the_sub_field( 't_link' ) ?>"><?php the_sub_field( 't_grid_child_cta' ) ?></a>
         </div>
       </div>
-      <div class="grid-item"><img srset="//via.placeholder.com/350x120 120w, //via.placeholder.com/350 350w" sizes="(max-width: 1400px) 120w, 350w" src="//via.placeholder.com/350" /></div>
-      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
-      <div class="grid-item"><img src="//via.placeholder.com/350" /></div>
     </div>
         <?php endif;
           endwhile;
