@@ -207,8 +207,8 @@ if(have_posts()) : while(have_posts()) : the_post();
     ?>
     <div class="grid-item">
       <picture>
-        <source media="(max-width: 1440px)" srcset="//via.placeholder.com/350x120">
-        <img src="//via.placeholder.com/350">
+        <source media="(max-width: 1440px)" srcset="<?php echo $image_mobile; ?>">
+        <img src="<?php echo $image; ?>">
       </picture>
     </div>
     <div class="grid-children">
