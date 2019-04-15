@@ -120,7 +120,8 @@ if(have_posts()) : while(have_posts()) : the_post();
   bottom: 3rem;
   left: 3rem;
   right: 3rem;
-  background: rgba(50, 50, 50, 0.8)
+  background: rgba(50, 50, 50, 0.8);
+  display: none;
 }
 
 @keyframes slidein {
@@ -299,7 +300,7 @@ for ( let i = 0; i < childItems.length; i++ ) {
 calendar.addEventListener( 'click', event => {
   calendarModal.style.display = 'block'
 })
-calendarModalClose.addEventListener( 'click' event => {
+calendarModalClose.addEventListener( 'click', event => {
   calendarModal.style.display = 'none'                 
 } )
 grid.style.gridGap = '6px 25px';
