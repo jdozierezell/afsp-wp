@@ -23,7 +23,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 .full-width {
   height: 375px;
   background-color: #eaeaea;
-  background-image: url('<?php echo $image_url; ?>');
+  background-image: url('https://afsp.org/wp-content/uploads/2019/04/RealConvo.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -56,6 +56,7 @@ if(have_posts()) : while(have_posts()) : the_post();
   background: #fff;
   position: relative;
   cursor: pointer;
+  grid-column: span 1;
 }
 
 .grid-item img {
@@ -145,17 +146,13 @@ if(have_posts()) : while(have_posts()) : the_post();
     grid-column: 1 / span 3;
   }
 
-  .grid-item:nth-of-type(-n+6) {
-    grid-row: 2;
-  }
-
   .grid-item:nth-child(n+7) {
     grid-row: 6;
   }
 
   .grid-children {
     grid-template-columns: repeat(4, 1fr);
-    grid-column: 1 / span 3;
+    grid-column: span 3;
   }
 
   .grid-children:nth-of-type(3) {
