@@ -243,14 +243,14 @@ if(have_posts()) : while(have_posts()) : the_post();
 
 <script>
 let children = document.getElementsByClassName( 'grid-children' )
-let items = document.getElementsByClassName( 'grid-item' )
+let childItems = document.getElementsByClassName( 'grid-item-with-children' )
 const grid = document.getElementById( 'grid' )
 for ( let i = 0; i < children.length; i++ ) {
   children[i].classList.add( 'grid-hide' )
 }
-for ( let i = 0; i < items.length; i++ ) {
-  if ( !items[i].parentNode.classList.contains('grid-children') ) {
-    items[i].addEventListener( 'click', event => {
+for ( let i = 0; i < childItems.length; i++ ) {
+  if ( !childItems[i].parentNode.classList.contains('grid-children') ) {
+    childItems[i].addEventListener( 'click', event => {
       const sibling = event.target.parentNode.parentNode.nextSibling.nextSibling
       if ( !sibling.classList.contains( 'grid-hide' ) ) {
         sibling.classList.add( 'grid-hide' )
@@ -264,7 +264,7 @@ for ( let i = 0; i < items.length; i++ ) {
       }
     } )
   } else {
-    items[i].addEventListener( 'click', event => {
+    childItems[i].addEventListener( 'click', event => {
       if ( event.target.classList.contains( 'grid-image' ) ) {
         const sibling = event.target.nextSibling.nextSibling
         sibling.classList.add ( 'active' )
