@@ -241,7 +241,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 
 <script>
 let children = document.getElementsByClassName( 'grid-children' )
-let items = document.getElementsByClassName( 'grid-item' )
+let items = document.getElementsByClassName( 'grid-item-with-children' )
 const grid = document.getElementById( 'grid' )
 for ( let i = 0; i < children.length; i++ ) {
   children[i].classList.add( 'grid-hide' )
