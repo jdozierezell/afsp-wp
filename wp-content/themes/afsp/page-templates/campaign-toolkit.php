@@ -185,8 +185,8 @@ if(have_posts()) : while(have_posts()) : the_post() ?>
     <div class="grid-description">Lorem ipsum</div>
     <div class="grid-item">
       <picture>
-        <source media="(max-width: 1440px)" srcset="//via.placeholder.com/350x120">
-        <img src="//via.placeholder.com/350">
+        <source media="(max-width: 1440px)" srcset="//via.placeholder.com/350">
+        <img src="//via.placeholder.com/1200x350">
       </picture>
     </div>
     <div class="grid-children">
