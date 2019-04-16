@@ -43,7 +43,7 @@ get_template_part( 'template-parts/title' ); ?>
 		<li>The rate of suicide is <span class="bold">highest in middle-age</span> white men in particular.</li>
 		<li>In 2017, men died by suicide <span class="bold">3.54x</span> more often than women.</li>
 		<li>On average, there are <span class="bold">129</span> suicides per day.</li>
-		<li>White males accounted for <span class="bold">77.97%</span>  of suicide deaths in 2017.</li>
+		<li>White males accounted for <span class="bold">69.67%</span>  of suicide deaths in 2017.</li>
 		<li>In 2017, firearms accounted for <span class="bold">50.57%</span> of all suicide deaths.</li>
 	</ul>
 </section>

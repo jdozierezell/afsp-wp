@@ -126,6 +126,7 @@ if(have_posts()) : while(have_posts()) : the_post();
   right: 0;
   background: rgba(50, 50, 50, 0.8);
   display: none;
+  padding 2rem;
 }
 
 .modal__close {
@@ -133,12 +134,12 @@ if(have_posts()) : while(have_posts()) : the_post();
 }
 
 .ajde_evcal_calendar {
-    position: absolute;
+    position: absolute !important;
     left: 2rem;
     right: 2rem;
     top: 50%;
     transform: translateY(-50%);
-    width: auto !important;
+    width: calc(100% - 4rem) !important;
 }
 
 .evcal_month_line {
@@ -222,7 +223,7 @@ if(have_posts()) : while(have_posts()) : the_post();
     bottom: 4rem;
     left: 4rem;
     right: 4rem;
-    padding: 2rem;
+    padding: 4rem;
   }
 
 }
