@@ -1,15 +1,26 @@
+.chapter__content img {
+  width: inherit;
+  height: auto;
+  margin-top: 0;
+}
+
 @include responsive('medium') {
-  .blog__content img, .chapter__content img, .event__description img {
+  .blog__content img,
+  .event__description img {
     width: inherit;
     height: auto;
     margin-top: 0;
   }
-  
-  .blog__content img.size-thumbnail, .chapter__content img.size-thumbnail, .event__description img.size-thumbnail {
+
+  .blog__content img.size-thumbnail,
+  .chapter__content img.size-thumbnail,
+  .event__description img.size-thumbnail {
     width: 150px;
   }
-  
-  .blog__content img.size-medium, .chapter__content img.size-medium, .event__description img.size-medium {
+
+  .blog__content img.size-medium,
+  .chapter__content img.size-medium,
+  .event__description img.size-medium {
     width: 300px;
   }
 }
