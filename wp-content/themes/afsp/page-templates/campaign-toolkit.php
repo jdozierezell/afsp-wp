@@ -56,7 +56,6 @@ if(have_posts()) : while(have_posts()) : the_post();
   background: #fff;
   position: relative;
   cursor: pointer;
-  grid-column: span 1;
 }
 
 .grid-item img {
@@ -136,14 +135,10 @@ if(have_posts()) : while(have_posts()) : the_post();
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 768px) {
 
   #grid {
     grid-template-columns: repeat(3, 1fr);
-  }
-  
-  .grid-description {
-    grid-column: 1 / span 3;
   }
 
   .grid-item:nth-child(n+7) {
@@ -153,21 +148,22 @@ if(have_posts()) : while(have_posts()) : the_post();
   .grid-children {
     grid-template-columns: repeat(4, 1fr);
     grid-column: span 3;
+    grid-gap: 20px;
   }
 
   .grid-children:nth-of-type(3) {
     grid-row: 3;
-    margin: 1px auto -1px;
+    margin: 16px auto -1px;
   }
 
   .grid-children:nth-of-type(5) {
     grid-row: 4;
-    margin: -5px auto 5px;
+    margin: 10px auto 5px;
   }
 
   .grid-children:nth-of-type(7) {
     grid-row: 5;
-    margin: -11px auto 11px;
+    margin: 4px auto 11px;
   }
 
   .grid-children:nth-of-type(9) {
@@ -184,11 +180,22 @@ if(have_posts()) : while(have_posts()) : the_post();
     grid-row: 9;
     margin: -11px auto 11px;
   }
-
-  .grid-children .grid-description {
-    grid-column: 1 / span 4;
+  
+  .grid-children .grid-item:nth-of-type(-n+4) {
+    grid-row: 1;
   }
   
+  .grid-children .grid-item:nth-of-type(n+5):nth-of-type(-n+8) {
+    grid-row: 2;
+  }
+  
+  .grid-children .grid-item:nth-of-type(n+9):nth-of-type(-n+12) {
+    grid-row: 3;
+  }
+  
+  .grid-children .grid-item:nth-of-type(n+13):nth-of-type(-n+16) {
+    grid-row: 4;
+  }
 }
 </style>
 <div class="background">
