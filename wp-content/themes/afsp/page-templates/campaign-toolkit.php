@@ -88,14 +88,14 @@ if(have_posts()) : while(have_posts()) : the_post();
 
 .grid-item-description {
   position: absolute;
-  top: 10px;
+  top: 0px;
   width: 80%;
   left: 10%;
 }
 
 .grid-button {
   position: absolute;
-  bottom: 10px;
+  bottom: 16px;
   width: 80%;
   left: 10%;
   background: #396dff;
@@ -103,6 +103,9 @@ if(have_posts()) : while(have_posts()) : the_post();
   padding: 1em;
   color: white;
   cursor: pointer;
+  text-decoration: none;
+  font-family: "AvenirNextLTPro-Demi";
+  text-align: center;
 }
 
 /* Dynamic classes and animations */
@@ -123,6 +126,10 @@ if(have_posts()) : while(have_posts()) : the_post();
   right: 2rem;
   background: rgba(50, 50, 50, 0.8);
   display: none;
+}
+
+.modal__close {
+  fill: #ffffff;
 }
 
 @keyframes slidein {
@@ -215,7 +222,7 @@ if(have_posts()) : while(have_posts()) : the_post();
     ?>
     <div class="grid-item grid-item-with-children">
       <picture>
-        <source media="(max-width: 1440px)" srcset="<?php echo $image_mobile_url; ?>">
+        <source media="(max-width: 768px)" srcset="<?php echo $image_mobile_url; ?>">
         <img src="<?php echo $image_url; ?>">
       </picture>
     </div>
@@ -228,7 +235,7 @@ if(have_posts()) : while(have_posts()) : the_post();
       <div class="grid-item">
         <img class="grid-image" src="<?php echo $child_image_url; ?>" />
         <div class="grid-overlay">
-          <p class="grid-item-description"><?php the_sub_field( 't_grid_child_description' ); ?></p>
+          <div class="grid-item-description"><?php the_sub_field( 't_grid_child_description' ); ?></div>
           <a class="grid-button" href="<?php the_sub_field( 't_link' ) ?>" target="_blank"><?php the_sub_field( 't_grid_child_cta' ) ?></a>
         </div>
       </div>
@@ -293,7 +300,7 @@ for ( let i = 0; i < childItems.length; i++ ) {
       }
     } )
   } else {
-    childItems[i].addEventListener( 'click', event => {
+    childItems[i].addEventListener( 'mouseover', event => {
       if ( event.target.classList.contains( 'grid-image' ) ) {
         const sibling = event.target.nextSibling.nextSibling
         sibling.classList.add ( 'active' )
@@ -304,8 +311,6 @@ for ( let i = 0; i < childItems.length; i++ ) {
             eventParentSiblings[i].children[1].classList.remove( 'active' )
           }
         }
-      } else if ( event.target.classList.contains( 'grid-overlay' ) ) {
-        event.target.classList.remove( 'active' )
       }
     } )
   }
@@ -316,7 +321,7 @@ calendar.addEventListener( 'click', event => {
 calendarModalClose.addEventListener( 'click', event => {
   calendarModal.style.display = 'none'                 
 } )
-grid.style.gridGap = '6px 25px';
+grid.style.gridGap = '6px 25px'
 </script>
 
 <?php endwhile;
