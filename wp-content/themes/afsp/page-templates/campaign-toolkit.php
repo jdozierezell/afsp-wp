@@ -21,7 +21,7 @@ var $buoop = {
   api:2019.04,
   reminder: 0,
   reminderClosed: 1,
-  text: 'This page includes functionality that requires a modern browser. Please update your browser for the best experience. <a{up_but}>update</a> or <a{ignore_but}>ignore</a>'
+  text: 'This page includes functionality that requires a modern browser. Please update your browser for the best experience. <br /><a{up_but}>Update browser</a> or <a{ignore_but}>Ignore</a>'
 }
 function $buo_f(){ 
  var e = document.createElement("script"); 
