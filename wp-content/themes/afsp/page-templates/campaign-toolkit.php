@@ -21,13 +21,13 @@ var $buoop = {
   api:2019.04,
   reminder: 0,
   reminderClosed: 1,
-  text: 'This page includes functionality that requires a modern browser. Please update your browser for the best experience.'
-}; 
+  text: 'This page includes functionality that requires a modern browser. Please update your browser for the best experience. &lt;a{up_but}&gt;update&lt;/a&gt; or &lt;a{ignore_but}&gt;ignore&lt;/a&gt;'
+}
 function $buo_f(){ 
  var e = document.createElement("script"); 
  e.src = "//browser-update.org/update.min.js"; 
  document.body.appendChild(e);
-};
+}
 try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
 catch(e){window.attachEvent("onload", $buo_f)}
 </script>
