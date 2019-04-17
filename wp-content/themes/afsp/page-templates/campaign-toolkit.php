@@ -137,11 +137,15 @@ catch(e){window.attachEvent("onload", $buo_f)}
   background: #396dff;
   border: none;
   padding: 1em;
-  color: white;
+  color: #ffffff;
   cursor: pointer;
   text-decoration: none;
   font-family: "AvenirNextLTPro-Demi";
   text-align: center;
+}
+
+.grid-button:hover {
+  color: #ffffff;
 }
 
 /* Dynamic classes and animations */
