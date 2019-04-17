@@ -418,25 +418,26 @@ catch(e){window.attachEvent("onload", $buo_f)}
 </div>
 
 <script>
-const children = document.getElementsByClassName( 'grid-children' )
-const childItems = document.getElementsByClassName( 'grid-item' )
-const gridItemModalButtons = document.getElementsByClassName( 'grid-button-modal' )
-const calendar = document.getElementById( 'calendar' )
-const calendarModal = document.getElementById( 'calendar-modal' )
-const modalClose = document.getElementsByClassName( 'modal__close' )
-const grid = document.getElementById( 'grid' )
+var children = document.getElementsByClassName( 'grid-children' )
+var childItems = document.getElementsByClassName( 'grid-item' )
+var gridItemModals = document.getElementsByClassName( 'grid-item-modal' )
+var gridItemModalButtons = document.getElementsByClassName( 'grid-button-modal' )
+var calendar = document.getElementById( 'calendar' )
+var calendarModal = document.getElementById( 'calendar-modal' )
+var modalClose = document.getElementsByClassName( 'modal__close' )
+var grid = document.getElementById( 'grid' )
 
-for ( let i = 0; i < children.length; i++ ) {
+for ( var i = 0; i < children.length; i++ ) {
   children[i].classList.add( 'grid-hide' )
 }
-for ( let i = 0; i < childItems.length; i++ ) {
+for ( var i = 0; i < childItems.length; i++ ) {
   if ( !childItems[i].parentNode.classList.contains('grid-children') ) {
-    childItems[i].addEventListener( 'click', event => {
-      const sibling = event.target.parentNode.parentNode.nextSibling.nextSibling
+    childItems[i].addEventListener( 'click', function (event) {
+      var sibling = event.target.parentNode.parentNode.nextSibling.nextSibling
       if ( !sibling.classList.contains( 'grid-hide' ) ) {
         sibling.classList.add( 'grid-hide' )
       } else {
-        for ( let i = 0; i < children.length; i++ ) {
+        for ( var i = 0; i < children.length; i++ ) {
           if ( !children[i].classList.contains( 'grid-hide' ) ) {
             children[i].classList.add( 'grid-hide' )
           }
@@ -445,13 +446,13 @@ for ( let i = 0; i < childItems.length; i++ ) {
       }
     } )
   } else {
-    childItems[i].addEventListener( 'mouseover', event => {
+    childItems[i].addEventListener( 'mouseover', function (event) {
       if ( event.target.classList.contains( 'grid-image' ) ) {
-        const sibling = event.target.nextSibling.nextSibling
+        var sibling = event.target.nextSibling.nextSibling
         sibling.classList.add ( 'active' )
-        const eventParent = sibling.parentNode
-        const eventParentSiblings = eventParent.parentNode.children
-        for (let i = 0; i < eventParentSiblings.length; i++) {
+        var eventParent = sibling.parentNode
+        var eventParentSiblings = eventParent.parentNode.children
+        for ( var i = 0; i < eventParentSiblings.length; i++ ) {
           if ( eventParentSiblings[i] != eventParent && eventParentSiblings[i].children[1].classList.contains( 'active' ) ) {
             eventParentSiblings[i].children[1].classList.remove( 'active' )
           }
@@ -461,23 +462,24 @@ for ( let i = 0; i < childItems.length; i++ ) {
   }
 } 
 
-for ( let i = 0; i < gridItemModalButtons.length; i++ ) {
-  gridItemModalButtons[i].addEventListener( 'click', event => {
+for ( var i = 0; i < gridItemModalButtons.length; i++ ) {
+  gridItemModalButtons[i].addEventListener( 'click', function (event) {
     event.target.parentNode.nextSibling.nextSibling.style.display = 'block'
   } )
 }
 
-calendar.addEventListener( 'click', event => {
+calendar.addEventListener( 'click', function (event) {
   calendarModal.style.display = 'block'
 })
 
-for( let i = 0; i < modalClose.length; i++ ) {
-  console.log(modalClose[i].parentNode.parentNode)
-  modalClose[i].addEventListener( 'click', event => {
-    modalClose[i].parentNode.parentNode.style.display = 'none'                 
+for ( var i = 0; i < modalClose.length; i++ ) {
+  modalClose[i].addEventListener( 'click', function (event) {
+    for ( var i = 0; i < gridItemModals.length; i++ ) {
+      gridItemModals[i].style.display = 'none' 
+    }
   } )
 }
-grid.style.gridGap = '6px 25px';
+grid.style.gridGap = '6px 25px'
 </script>
 
 <?php endwhile;
