@@ -176,7 +176,7 @@ if(have_posts()) : while(have_posts()) : the_post();
   }
   
   .grid-item-description {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .grid-item:nth-child(n+7) {
@@ -297,10 +297,14 @@ if(have_posts()) : while(have_posts()) : the_post();
     ?>
       <div class="grid-item">
         <img class="grid-image" src="<?php echo $child_image_url; ?>" />
+    <?php if ( get_sub_field( 't_has_modal' ) === 'Yes' ) : ?>
+        <div class="grid-item-modal"></div>
+    <?php elseif ( get_sub_field( 't_has_modal' ) === 'No' ) : ?>
         <div class="grid-overlay">
           <div class="grid-item-description"><?php the_sub_field( 't_grid_child_description' ); ?></div>
           <a class="grid-button" href="<?php the_sub_field( 't_link' ) ?>" target="_blank"><?php the_sub_field( 't_grid_child_cta' ) ?></a>
         </div>
+    <?php endif; ?>
       </div>
     <?php endwhile;
         endif; // end children repeater
