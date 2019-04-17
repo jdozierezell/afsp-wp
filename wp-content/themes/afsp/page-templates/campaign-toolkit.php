@@ -12,6 +12,16 @@ if(have_posts()) : while(have_posts()) : the_post();
       $image_url = $image['url'];
     }
 ?>
+<script> 
+var $buoop = {required:{e:-2,f:-3,o:-3,s:-1,c:-3},insecure:true,api:2019.04 }; 
+function $buo_f(){ 
+ var e = document.createElement("script"); 
+ e.src = "//browser-update.org/update.min.js"; 
+ document.body.appendChild(e);
+};
+try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+catch(e){window.attachEvent("onload", $buo_f)}
+</script>
 <style>
 .background {
   background: -webkit-gradient(linear, left top, left bottom, from(hsl(224, 100%, 61%)), to(hsl(224, 100%, 30%)));
