@@ -134,7 +134,7 @@ if(have_posts()) : while(have_posts()) : the_post();
   right: 0;
   background: rgba(50, 50, 50, 0.8);
   display: none;
-  padding 2rem;
+  padding: 2rem;
   z-index: 100;
 }
 
