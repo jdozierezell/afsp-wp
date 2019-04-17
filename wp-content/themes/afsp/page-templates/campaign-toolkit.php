@@ -56,6 +56,7 @@ if(have_posts()) : while(have_posts()) : the_post();
   background: #fff;
   position: relative;
   cursor: pointer;
+  grid-column: span 3;
 }
 
 .grid-item img {
@@ -67,7 +68,9 @@ if(have_posts()) : while(have_posts()) : the_post();
   grid-gap: 0 25px;
   animation-name: slidein;
   animation-duration: 1s;
-  margin-bottom: 4em;
+  margin: 20px 0;
+  grid-column: span 3;
+  grid-gap: 20px;
 }
 
 .grid-children .grid-item {
@@ -91,6 +94,7 @@ if(have_posts()) : while(have_posts()) : the_post();
   top: 0px;
   width: 80%;
   left: 10%;
+  font-size: 24px;
 }
 
 .grid-button {
@@ -111,7 +115,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 /* Dynamic classes and animations */
 
 .grid-hide {
-  display:none;
+  display: none;
 }
 
 .active {
@@ -143,7 +147,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 }
 
 .evcal_month_line {
-  display:none;
+  display: none;
 }
 
 @keyframes slidein {
@@ -161,13 +165,25 @@ if(have_posts()) : while(have_posts()) : the_post();
   #grid {
     grid-template-columns: repeat(3, 1fr);
   }
+  
+  .grid-desription,
+  .page-description {
+    grid-column: span 3;
+  }
+  
+  .grid-item {
+    grid-column: span 1;
+  }
+  
+  .grid-item-description {
+    font-size: 24px;
+  }
 
   .grid-item:nth-child(n+7) {
     grid-row: 6;
   }
 
   .grid-children {
-    grid-template-columns: repeat(4, 1fr);
     grid-column: span 3;
     grid-gap: 20px;
   }
@@ -202,19 +218,23 @@ if(have_posts()) : while(have_posts()) : the_post();
     margin: -11px auto 11px;
   }
   
-  .grid-children .grid-item:nth-of-type(-n+4) {
+  .grid-children .grid-item:nth-of-type(-n+3) {
     grid-row: 1;
   }
   
-  .grid-children .grid-item:nth-of-type(n+5):nth-of-type(-n+8) {
+  .grid-children .grid-item:nth-of-type(n+4):nth-of-type(-n+6) {
     grid-row: 2;
   }
   
-  .grid-children .grid-item:nth-of-type(n+9):nth-of-type(-n+12) {
+  .grid-children .grid-item:nth-of-type(n+7):nth-of-type(-n+9) {
     grid-row: 3;
   }
   
-  .grid-children .grid-item:nth-of-type(n+13):nth-of-type(-n+16) {
+  .grid-children .grid-item:nth-of-type(n+10):nth-of-type(-n+12) {
+    grid-row: 4;
+  }
+  
+  .grid-children .grid-item:nth-of-type(n+13):nth-of-type(-n+15) {
     grid-row: 4;
   }
 
@@ -224,6 +244,26 @@ if(have_posts()) : while(have_posts()) : the_post();
     left: 4rem;
     right: 4rem;
     padding: 4rem;
+  }
+
+}
+
+@media screen and (min-width: 1100px) {
+  
+  .grid-children .grid-item:nth-of-type(-n+4) {
+    grid-row: 1 !important;
+  }
+  
+  .grid-children .grid-item:nth-of-type(n+5):nth-of-type(-n+8) {
+    grid-row: 2 !important;
+  }
+  
+  .grid-children .grid-item:nth-of-type(n+9):nth-of-type(-n+12) {
+    grid-row: 3 !important;
+  }
+  
+  .grid-children .grid-item:nth-of-type(n+13):nth-of-type(-n+16) {
+    grid-row: 4 !important;
   }
 
 }
@@ -272,7 +312,7 @@ if(have_posts()) : while(have_posts()) : the_post();
     <div class="grid-item grid-item-without-children-link">
       <a href="<?php the_sub_field( 't_link' ); ?>" target="_blank">
         <picture>
-          <source media="(max-width: 1440px)" srcset="<?php echo $image_mobile['url']; ?>">
+          <source media="(max-width: 768px)" srcset="<?php echo $image_mobile['url']; ?>">
           <img src="<?php echo $image['url']; ?>">
         </picture>
       </a>
@@ -282,7 +322,7 @@ if(have_posts()) : while(have_posts()) : the_post();
     <div id="calendar" class="grid-item grid-item-without-children-modal">
       <div>
         <picture>
-          <source media="(max-width: 1440px)" srcset="<?php echo $image_mobile['url']; ?>">
+          <source media="(max-width: 768px)" srcset="<?php echo $image_mobile['url']; ?>">
           <img src="<?php echo $image['url']; ?>">
         </picture>
       </div>
