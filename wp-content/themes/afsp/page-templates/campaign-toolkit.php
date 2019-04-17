@@ -122,7 +122,11 @@ if(have_posts()) : while(have_posts()) : the_post();
   bottom: 0;
 }
 
-.calendar-modal {
+.modal__close {
+  fill: #ffffff;
+}
+
+.grid-item-modal {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -131,12 +135,10 @@ if(have_posts()) : while(have_posts()) : the_post();
   background: rgba(50, 50, 50, 0.8);
   display: none;
   padding 2rem;
+  z-index: 100;
 }
 
-.modal__close {
-  fill: #ffffff;
-}
-
+.grid-modal-content,
 .ajde_evcal_calendar {
     position: absolute !important;
     left: 2rem;
@@ -144,6 +146,11 @@ if(have_posts()) : while(have_posts()) : the_post();
     top: 50%;
     transform: translateY(-50%);
     width: calc(100% - 4rem) !important;
+}
+
+.grid-modal-content {
+  color: #ffffff;
+  font-size: 24px;
 }
 
 .evcal_month_line {
@@ -238,7 +245,7 @@ if(have_posts()) : while(have_posts()) : the_post();
     grid-row: 4;
   }
 
-  .calendar-modal {
+  .grid-item-modal {
     top: 4rem;
     bottom: 4rem;
     left: 4rem;
@@ -298,7 +305,14 @@ if(have_posts()) : while(have_posts()) : the_post();
       <div class="grid-item">
         <img class="grid-image" src="<?php echo $child_image_url; ?>" />
     <?php if ( get_sub_field( 't_has_modal' ) === 'Yes' ) : ?>
-        <div class="grid-item-modal"></div>
+        <div class="grid-overlay">
+          <div class="grid-item-description"><?php the_sub_field( 't_grid_child_description' ); ?></div>
+          <a class="grid-button" href="<?php the_sub_field( 't_link' ) ?>" target="_blank"><?php the_sub_field( 't_grid_child_cta' ) ?></a>
+        </div>
+        <div class="grid-item-modal">
+          <div><svg class="modal__close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 99.082 100" enable-background="new 0 0 99.082 100" xml:space="preserve"><g><g><path d="M49.54,0C22.198-0.019,0.027,22.375,0,49.973C0.027,77.618,22.198,100.01,49.54,100    c27.352,0.01,49.521-22.382,49.542-50.027C99.062,22.375,76.892-0.019,49.54,0z M49.54,88.477    c-21.037,0-38.095-17.225-38.077-38.504C11.442,28.741,28.503,11.51,49.54,11.521c21.047-0.01,38.107,17.221,38.131,38.452    C87.647,71.252,70.587,88.477,49.54,88.477z"></path></g><polygon points="71.57,37.466 62.073,27.97 49.54,40.504 37.006,27.97 27.509,37.466 40.047,50.007 27.509,62.534 37.006,72.03    49.54,59.496 62.073,72.03 71.57,62.534 59.036,50.007  "></polygon></g></svg></div>
+          <div class="grid-modal-content"><?php the_sub_field( 't_modal_content' ); ?></div>
+        </div>
     <?php elseif ( get_sub_field( 't_has_modal' ) === 'No' ) : ?>
         <div class="grid-overlay">
           <div class="grid-item-description"><?php the_sub_field( 't_grid_child_description' ); ?></div>
@@ -336,16 +350,17 @@ if(have_posts()) : while(have_posts()) : the_post();
     endif; // end all layouts
     ?>
   </div>
-  <div id="calendar-modal" class="calendar-modal">
+  <div id="calendar-modal" class="grid-item-modal">
     <div><svg id="modal-close" class="modal__close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 99.082 100" enable-background="new 0 0 99.082 100" xml:space="preserve"><g><g><path d="M49.54,0C22.198-0.019,0.027,22.375,0,49.973C0.027,77.618,22.198,100.01,49.54,100    c27.352,0.01,49.521-22.382,49.542-50.027C99.062,22.375,76.892-0.019,49.54,0z M49.54,88.477    c-21.037,0-38.095-17.225-38.077-38.504C11.442,28.741,28.503,11.51,49.54,11.521c21.047-0.01,38.107,17.221,38.131,38.452    C87.647,71.252,70.587,88.477,49.54,88.477z"></path></g><polygon points="71.57,37.466 62.073,27.97 49.54,40.504 37.006,27.97 27.509,37.466 40.047,50.007 27.509,62.534 37.006,72.03    49.54,59.496 62.073,72.03 71.57,62.534 59.036,50.007  "></polygon></g></svg></div><?php echo do_shortcode( '[add_eventon_list fixed_month="5" fixed_year="2019" ux_val="0" event_type="9723" accord="yes" ]' ); ?></div> <!-- calendar modal -->
 </div>
 
 <script>
 const children = document.getElementsByClassName( 'grid-children' )
 const childItems = document.getElementsByClassName( 'grid-item' )
+const gridItemModalButtons = document.getElementsByClassName( 'grid-button-modal' )
 const calendar = document.getElementById( 'calendar' )
 const calendarModal = document.getElementById( 'calendar-modal' )
-const calendarModalClose = document.getElementById( 'modal-close' )
+const modalClose = document.getElementsByClassName( 'modal__close' )
 const grid = document.getElementById( 'grid' )
 
 for ( let i = 0; i < children.length; i++ ) {
@@ -382,13 +397,24 @@ for ( let i = 0; i < childItems.length; i++ ) {
     } )
   }
 } 
+
+for ( let i = 0; i < gridItemModalButtons.length; i++ ) {
+  gridItemModalButtons[i].addEventListener( 'click', event => {
+    event.target.parentNode.nextSibling.nextSibling.style.display = 'block'
+  } )
+}
+
 calendar.addEventListener( 'click', event => {
   calendarModal.style.display = 'block'
 })
-calendarModalClose.addEventListener( 'click', event => {
-  calendarModal.style.display = 'none'                 
-} )
-grid.style.gridGap = '6px 25px'
+
+for( let i = 0; i < modalClose.length; i++ ) {
+  console.log(modalClose[i].parentNode.parentNode)
+  modalClose[i].addEventListener( 'click', event => {
+    modalClose[i].parentNode.parentNode.style.display = 'none'                 
+  } )
+}
+grid.style.gridGap = '6px 25px';
 </script>
 
 <?php endwhile;
