@@ -13,7 +13,16 @@ if(have_posts()) : while(have_posts()) : the_post();
     }
 ?>
 <script> 
-var $buoop = {required:{e:-2,f:-3,o:-3,s:-1,c:-3},insecure:true,api:2019.04 }; 
+var $buoop = {
+  required:{
+    e:-2,f:-3,o:-3,s:-1,c:-3
+  },
+  insecure:true,
+  api:2019.04,
+  reminder: 0,
+  reminderClosed: 1,
+  text: 'This page includes functionality that requires a modern browser. Please update your browser for the best experience.'
+}; 
 function $buo_f(){ 
  var e = document.createElement("script"); 
  e.src = "//browser-update.org/update.min.js"; 
