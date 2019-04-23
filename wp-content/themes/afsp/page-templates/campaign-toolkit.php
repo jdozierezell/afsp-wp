@@ -307,6 +307,21 @@ catch(e){window.attachEvent("onload", $buo_f)}
     -ms-grid-row: 4;
     grid-row: 4;
   }
+  
+  .grid-children .grid-item:nth-of-type(n+16):nth-of-type(-n+18) {
+    -ms-grid-row: 5;
+    grid-row: 5;
+  }
+  
+  .grid-children .grid-item:nth-of-type(n+19):nth-of-type(-n+21) {
+    -ms-grid-row: 6;
+    grid-row: 6;
+  }
+  
+  .grid-children .grid-item:nth-of-type(n+22):nth-of-type(-n+24) {
+    -ms-grid-row: 7;
+    grid-row: 7;
+  }
 
   .grid-item-modal {
     top: 4rem;
@@ -338,6 +353,16 @@ catch(e){window.attachEvent("onload", $buo_f)}
   .grid-children .grid-item:nth-of-type(n+13):nth-of-type(-n+16) {
     -ms-grid-row: 4 !important;
     grid-row: 4 !important;
+  }
+  
+  .grid-children .grid-item:nth-of-type(n+17):nth-of-type(-n+20) {
+    -ms-grid-row: 5 !important;
+    grid-row: 5 !important;
+  }
+  
+  .grid-children .grid-item:nth-of-type(n+21):nth-of-type(-n+24) {
+    -ms-grid-row: 6 !important;
+    grid-row: 6 !important;
   }
 
 }
