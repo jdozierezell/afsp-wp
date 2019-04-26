@@ -9,6 +9,7 @@ Thumbs.db
 .vscode
 
 # afsp specific
+.installedExtras
 wp-content/plugins/
 wp-content/themes/afsp/node_modules/
 wp-content/themes/afsp/imports/

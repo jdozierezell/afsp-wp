@@ -73,16 +73,9 @@
     height: 70vh;
   }
   & > div {
-    background-color: rgba($color-brand-dark-gray, 0.4);
     width: 100%;
     position: absolute;
     bottom: 0;
-    @media (orientation: portrait) {
-      height: calc(70vw - 43vw);
-    }
-    @media (orientation: landscape) {
-      height: calc(70vh - 43vh);
-    }
   }
   h2 {
     color: $color-yellow;
@@ -94,15 +87,18 @@
     }
   }
   button {
-    background-color: $color-yellow;
+    background-color: $color-brand-blue;
     border: 0;
-    font-size: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
     @include responsive('medium') {
-      font-size: $button;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+      font-size: 2rem;
+      padding: 1rem 1.5rem;
+      bottom: 2.5rem;
+      left: 2.5rem;
     }
   }
   ul {
