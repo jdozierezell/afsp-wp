@@ -12,12 +12,12 @@
 					$wednesdayModal = 'campusWalks';
 					$link = 'http://afsp.donordrive.com/index.cfm?fuseaction=donorDrive.eventList&eventGroupID=9AA19459-C880-0E26-61312B15147B2E0A&state=';
 					$buttonText = 'Find a Walk in Your State';
-					$buttonClass = 'dropdown-button';
+					$buttonClass = 'regular-button';
 				else :
 					$wednesdayModal = 'communityWalks';
-					$link = 'http://afsp.donordrive.com/index.cfm?fuseaction=donorDrive.eventList&eventType=P,T&eventGroupID=9AA117B3-F522-BB6D-359D1AA2D75A7958&state='; 
+					$link = 'http://afsp.donordrive.com/index.cfm?fuseaction=donorDrive.eventList&eventType=P,T&eventGroupID=9AA117B3-F522-BB6D-359D1AA2D75A7958'; 
 					$buttonText = 'Find a Walk in Your State';
-					$buttonClass = 'dropdown-button';
+					$buttonClass = 'regular-button';
 				endif; ?>
 
 <div class="modal modal--<?php echo $wednesdayModal; ?>">
@@ -25,59 +25,6 @@
 	<div>
 		<h2>Today is Walk Wednesday!</h2>
 		<button id="<?php echo $buttonClass; ?>" class="button"><?php echo $buttonText; ?></button>
-		<ul id="state_dropdown">
-			<li data-state="AL">Alabama</li>
-			<li data-state="AK">Alaska</li>
-			<li data-state="AZ">Arizona</li>
-			<li data-state="AR">Arkansas</li>
-			<li data-state="CA">California</li>
-			<li data-state="CO">Colorado</li>
-			<li data-state="CT">Connecticut</li>
-			<li data-state="DE">Delaware</li>
-			<li data-state="DC">District Of Columbia</li>
-			<li data-state="FL">Florida</li>
-			<li data-state="GA">Georgia</li>
-			<li data-state="HI">Hawaii</li>
-			<li data-state="ID">Idaho</li>
-			<li data-state="IL">Illinois</li>
-			<li data-state="IN">Indiana</li>
-			<li data-state="IA">Iowa</li>
-			<li data-state="KS">Kansas</li>
-			<li data-state="KY">Kentucky</li>
-			<li data-state="LA">Louisiana</li>
-			<li data-state="ME">Maine</li>
-			<li data-state="MD">Maryland</li>
-			<li data-state="MA">Massachusetts</li>
-			<li data-state="MI">Michigan</li>
-			<li data-state="MN">Minnesota</li>
-			<li data-state="MS">Mississippi</li>
-			<li data-state="MO">Missouri</li>
-			<li data-state="MT">Montana</li>
-			<li data-state="NE">Nebraska</li>
-			<li data-state="NV">Nevada</li>
-			<li data-state="NH">New Hampshire</li>
-			<li data-state="NJ">New Jersey</li>
-			<li data-state="NM">New Mexico</li>
-			<li data-state="NY">New York</li>
-			<li data-state="NC">North Carolina</li>
-			<li data-state="ND">North Dakota</li>
-			<li data-state="OH">Ohio</li>
-			<li data-state="OK">Oklahoma</li>
-			<li data-state="OR">Oregon</li>
-			<li data-state="PA">Pennsylvania</li>
-			<li data-state="RI">Rhode Island</li>
-			<li data-state="SC">South Carolina</li>
-			<li data-state="SD">South Dakota</li>
-			<li data-state="TN">Tennessee</li>
-			<li data-state="TX">Texas</li>
-			<li data-state="UT">Utah</li>
-			<li data-state="VT">Vermont</li>
-			<li data-state="VA">Virginia</li>
-			<li data-state="WA">Washington</li>
-			<li data-state="WV">West Virginia</li>
-			<li data-state="WI">Wisconsin</li>
-			<li data-state="WY">Wyoming</li>
-		</ul>
 	</div>
 </div>
 
