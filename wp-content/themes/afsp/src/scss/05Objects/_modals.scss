@@ -60,7 +60,7 @@
 }
 
 .modal--communityWalks {
-  background-image: url(http://afsp.imgix.net/wp-content/uploads/2019/04/13897_AFSP_CommunityWalks_2019_Instagram_m1.png?w=768);
+  background-image: url(http://afsp.imgix.net/wp-content/uploads/2019/04/13897_AFSP_CommunityWalks_2019_Instagram_m1-2.png?w=768);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0;
@@ -90,13 +90,13 @@
     background-color: $color-brand-blue;
     border: 0;
     font-size: 1.5rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 3rem 0.5rem 1rem;
     position: absolute;
     bottom: 1.5rem;
     left: 1.5rem;
     @include responsive('medium') {
       font-size: 2rem;
-      padding: 1rem 1.5rem;
+      padding: 1rem 3rem 1rem 1rem;
       bottom: 2.5rem;
       left: 2.5rem;
     }
