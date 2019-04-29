@@ -314,7 +314,7 @@
 				if($date == $givingTuesday) : // is it Giving Tuesday?
 					require(locate_template('template-parts/modals/modal-giving-tuesday-2018.php'));
 				elseif($day_of_week == '3') : // is it wednesday?
-					// require(locate_template('template-parts/modals/weekly-modals-wednesday.php'));
+					require(locate_template('template-parts/modals/weekly-modals-wednesday.php'));
 				endif; ?>
 
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/svg4everybody.min.js"></script>
