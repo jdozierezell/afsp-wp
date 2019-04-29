@@ -7,11 +7,11 @@
 					$link = 'http://www.theovernight.org/index.cfm?fuseaction=cms.page&id=1022&referrer=WalkWednesday';
 					$buttonText = 'Register Today';
 					$buttonClass = 'regular-button';
-				elseif($today <= $campusDrop && $this_week % 2 == 1) :
-					$wednesdayModal = 'campusWalks';
-					$link = 'http://afsp.donordrive.com/index.cfm?fuseaction=donorDrive.eventList&eventGroupID=9AA19459-C880-0E26-61312B15147B2E0A&state=';
-					$buttonText = 'Find Your Walk';
-					$buttonClass = 'regular-button';
+				// elseif($today <= $campusDrop && $this_week % 2 == 1) :
+				// 	$wednesdayModal = 'campusWalks';
+				// 	$link = 'http://afsp.donordrive.com/index.cfm?fuseaction=donorDrive.eventList&eventGroupID=9AA19459-C880-0E26-61312B15147B2E0A&state=';
+				// 	$buttonText = 'Find Your Walk';
+				// 	$buttonClass = 'regular-button';
 				else :
 					$wednesdayModal = 'communityWalks';
 					$link = 'http://afsp.donordrive.com/index.cfm?fuseaction=donorDrive.eventList&eventType=P,T&eventGroupID=9AA117B3-F522-BB6D-359D1AA2D75A7958'; 
