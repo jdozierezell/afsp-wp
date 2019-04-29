@@ -1,22 +1,21 @@
 <div class="modal__overlay"></div>
 
-				<?php $overnightDrop = new DateTime('2017-06-17');
-				$campusDrop = new DateTime('2017-06-17');
+				<?php $overnightDrop = new DateTime('2019-06-19');
 				
 				if($today <= $overnightDrop && $this_week % 2 == 0) :
 					$wednesdayModal = 'overnightWalk';
 					$link = 'http://www.theovernight.org/index.cfm?fuseaction=cms.page&id=1022&referrer=WalkWednesday';
-					$buttonText = 'Register for The Overnight';
+					$buttonText = 'Register Today';
 					$buttonClass = 'regular-button';
 				elseif($today <= $campusDrop && $this_week % 2 == 1) :
 					$wednesdayModal = 'campusWalks';
 					$link = 'http://afsp.donordrive.com/index.cfm?fuseaction=donorDrive.eventList&eventGroupID=9AA19459-C880-0E26-61312B15147B2E0A&state=';
-					$buttonText = 'Find a Walk in Your State';
+					$buttonText = 'Find Your Walk';
 					$buttonClass = 'regular-button';
 				else :
 					$wednesdayModal = 'communityWalks';
 					$link = 'http://afsp.donordrive.com/index.cfm?fuseaction=donorDrive.eventList&eventType=P,T&eventGroupID=9AA117B3-F522-BB6D-359D1AA2D75A7958'; 
-					$buttonText = 'Find a Walk in Your State';
+					$buttonText = 'Find Your Walk';
 					$buttonClass = 'regular-button';
 				endif; ?>
 
