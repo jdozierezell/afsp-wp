@@ -49,8 +49,12 @@ get_template_part( 'template-parts/title' );
 						?>
 					</div>
 					<?php
-					if ( true === get_field( 'b_video' ) ) :
-						$video = get_field( 'b_youtube' ) . '?rel=0&amp;showinfo=0';
+          if ( true === get_field( 'b_video' ) ) :
+            if ( get_field( 'b_youtube_playlist' ) == 'Yes' ) {
+              $video = get_field( 'b_youtube' );
+            } else {
+              $video = get_field( 'b_youtube' ) . '?rel=0&amp;showinfo=0';
+            }
 						?>
 						<div class="videoEmbed">
 							<iframe width="853" height="480" src="<?php echo esc_attr( $video ); ?>" frameborder="0" allowfullscreen></iframe>
