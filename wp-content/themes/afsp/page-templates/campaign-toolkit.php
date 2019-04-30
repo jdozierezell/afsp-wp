@@ -324,13 +324,13 @@ catch(e){window.attachEvent("onload", $buo_f)}
   }
   
   .grid-children .grid-item:nth-of-type(n+25):nth-of-type(-n+27) {
-    -ms-grid-row: 7;
-    grid-row: 7;
+    -ms-grid-row: 8;
+    grid-row: 8;
   }
   
   .grid-children .grid-item:nth-of-type(n+28):nth-of-type(-n+30) {
-    -ms-grid-row: 7;
-    grid-row: 7;
+    -ms-grid-row: 9;
+    grid-row: 9;
   }
 
   .grid-item-modal {
@@ -376,13 +376,13 @@ catch(e){window.attachEvent("onload", $buo_f)}
   }
   
   .grid-children .grid-item:nth-of-type(n+25):nth-of-type(-n+28) {
-    -ms-grid-row: 6 !important;
-    grid-row: 6 !important;
+    -ms-grid-row: 7 !important;
+    grid-row: 7 !important;
   }
   
   .grid-children .grid-item:nth-of-type(n+29):nth-of-type(-n+32) {
-    -ms-grid-row: 6 !important;
-    grid-row: 6 !important;
+    -ms-grid-row: 8 !important;
+    grid-row: 8 !important;
   }
 
 }
