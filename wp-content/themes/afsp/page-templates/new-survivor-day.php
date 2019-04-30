@@ -69,7 +69,7 @@ function notify_survivor_day() {
 	$headers        .= 'MIME-Version: 1.0\r\n';
 	$headers        .= 'Content-Type: text/html; charset=ISO-8859-1\r\n';
 	$subject         = 'Your Survivor Day Event Application Has Been Submitted';
-	$body            = 'Thank you, ' . $organizer . '. Your Survivor Day Event Application has been submitted for review. If your application is accepted, we will create a webpage for your event within two weeks. Otherwise we will be in touch as soon as possible. If you have any questions, please contact the Loss & Healing department at survivorday@afsp.org.';
+	$body            = 'Thank you. Your Survivor Day Event Application has been submitted for review. If your application is accepted, we will create a webpage for your event within two weeks. Otherwise we will be in touch as soon as possible. If you have any questions, please contact the Loss & Healing department at survivorday@afsp.org.';
 	wp_mail( $to, $subject, $body, $headers );
 
 }
