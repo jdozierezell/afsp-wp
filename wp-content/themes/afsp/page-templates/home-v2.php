@@ -16,7 +16,15 @@
 
 <section class="video-hero">
 	<div class="video-hero__wrapper">
-		<video class="video-hero__video" src="<?php the_field('vh_video'); ?>" muted autoplay loop></video>
+        <?php
+        if ( get_field( 'vh_display_image' ) == 'Yes' ) {
+            //show image
+        } else {
+            ?>
+            <video class="video-hero__video" src="<?php the_field('vh_video'); ?>" muted autoplay loop></video>
+            <?php
+        }
+        ?>
 		<img class="video-hero__image" src="<?php echo $poster['url'] . '?w=1080&h=1080&crop=faces&fit=crop'; ?>" />
 	</div>
 	<div class="video-hero__cta">
