@@ -17,7 +17,7 @@
 <section class="video-hero">
 	<div class="video-hero__wrapper">
 		<video class="video-hero__video" src="<?php the_field('vh_video'); ?>" muted autoplay loop></video>
-		<img class="video-hero__image" src="<?php echo $poster['url'] . "?w=1080&h=1080&crop=faces&fit=crop"; ?> />
+		<img class="video-hero__image" src="<?php echo $poster['url'] . '?w=1080&h=1080&crop=faces&fit=crop'; ?>" />
 	</div>
 	<div class="video-hero__cta">
 		<h1 class="video-hero__header"><?php the_field('vh_header'); ?></h1>
