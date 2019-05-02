@@ -34,8 +34,8 @@
 
 .video-hero__image {
     @include video;
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
     max-width: inherit;
     @include responsive(medium) {
         display: none;

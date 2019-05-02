@@ -12,12 +12,23 @@
 				if(have_posts()) : while(have_posts()) : the_post();
 					$poster = get_field('vh_poster');
 					$poster = str_replace( '.org', '.imgix.net', $poster );
+                    $poster_desktop = get_field('vh_poster_desktop');
+                    $poster_desktop = str_replace( '.org', '.imgix.net', $poster_desktop );
 				?>
 
 <section class="video-hero">
 	<div class="video-hero__wrapper">
-		<video class="video-hero__video" src="<?php the_field('vh_video'); ?>" muted autoplay loop></video>
-		<img class="video-hero__image" src="<?php echo $poster['url'] . '?w=1080&h=1080&crop=faces&fit=crop'; ?>" />
+        <?php
+        if ( get_field( 'vh_display_image' ) == 'No' ) { ?>
+            <video class="video-hero__video" src="<?php the_field('vh_video'); ?>" muted autoplay loop></video>
+            <?php
+        }
+        ?>
+		<img class="video-hero__image" srcset="<?php echo $poster['url'] . '?w=1080&h=1080&crop=faces&fit=crop'; ?> 1080w,
+             <?php echo $poster['url'] . '?w=2160&h=2160&crop=faces&fit=crop'; ?> 2160w,
+             elva-fairy-800w.jpg 800w" sizes="(max-width: 320px) 280px,
+            (max-width: 480px) 440px,
+            800px"src="<?php echo $poster['url'] . '?w=1080&h=1080&crop=faces&fit=crop'; ?>" />
 	</div>
 	<div class="video-hero__cta">
 		<h1 class="video-hero__header"><?php the_field('vh_header'); ?></h1>
