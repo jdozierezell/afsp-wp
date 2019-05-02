@@ -19,16 +19,17 @@
 <section class="video-hero">
 	<div class="video-hero__wrapper">
         <?php
+        $style = '';
         if ( get_field( 'vh_display_image' ) == 'No' ) { ?>
             <video class="video-hero__video" src="<?php the_field('vh_video'); ?>" muted autoplay loop></video>
             <?php
+        } else {
+            $style = 'display: block !important';
         }
         ?>
-		<img class="video-hero__image" srcset="<?php echo $poster['url'] . '?w=1080&h=1080&crop=faces&fit=crop'; ?> 1080w,
-             <?php echo $poster['url'] . '?w=2160&h=2160&crop=faces&fit=crop'; ?> 2160w,
-             elva-fairy-800w.jpg 800w" sizes="(max-width: 320px) 280px,
-            (max-width: 480px) 440px,
-            800px"src="<?php echo $poster['url'] . '?w=1080&h=1080&crop=faces&fit=crop'; ?>" />
+		<img class="video-hero__image" style="<?php echo $style; ?>" srcset="<?php echo $poster['url'] . '?w=1080&h=1080&crop=faces&fit=crop'; ?> 1080w,
+             <?php echo $poster['url'] . '?w=2160&h=2160&crop=faces&fit=crop'; ?> 2160w" sizes="(max-width: 1080px) 1080px,
+            2160px" src="<?php echo $poster['url'] . '?w=1080&h=1080&crop=faces&fit=crop'; ?>" />
 	</div>
 	<div class="video-hero__cta">
 		<h1 class="video-hero__header"><?php the_field('vh_header'); ?></h1>
