@@ -77,7 +77,7 @@ if ( have_posts() ) :
 					if ( '' !== get_field( 'sd_custom_date' ) ) :
 						echo esc_html( get_field( 'sd_custom_date' ) );
 					else :
-						echo 'Nov. 17, 2018';
+						echo 'Nov. 23, 2019';
 					endif;
 					?>
 				</h3>
@@ -118,10 +118,10 @@ if ( have_posts() ) :
 			</div>
 			<div class="event__description">
 				<?php if ( '' !== get_field( 'sd_custom_date' ) ) : ?>
-					<p><em>Note: This Survivor Day event will be held on <strong><?php echo esc_html( get_field( 'sd_custom_date' ) ); ?></strong> instead of Nov. 17, 2018.</em></p>
+					<p><em>Note: This Survivor Day event will be held on <strong><?php echo esc_html( get_field( 'sd_custom_date' ) ); ?></strong> instead of November 23, 2019.</em></p>
 				<?php endif; ?>
-				<!-- <p><strong>Online Registration is now closed. If you would like to attend an event please contact the main organizer by email. In addition, a Survivor Day Live program will be streamed on AFSP’s Facebook page at 4:30pm EST on Saturday, November 17th. This will be an online interactive discussion with a screening of our 2018 Documentary, A Daughter’s Journey.</strong></p> -->
-				<p>Survivor Day is the one day a year when people affected by suicide loss gather around the world at events in their local communities to find comfort and gain understanding as they share stories of healing and hope. <a href="<?php get_home_url(); ?>/survivorday" target="_blank">Discover more about Survivor Day.</a></p>
+				<!-- <p><strong>Online Registration is now closed. If you would like to attend an event please contact the main organizer by email. In addition, a Survivor Day Live program will be streamed on AFSP’s Facebook page at 4:30pm EST on Saturday, November 23rd. This will be an online interactive discussion with a screening of our 2019 Documentary, A Daughter’s Journey.</strong></p> -->
+				<p>o	Each year, the American Foundation for Suicide Prevention supports hundreds of large and small Survivor Day events around the world, in which suicide loss survivors come together to find connection, understanding and hope through their shared experience. While each event is unique and offers various programming, all feature an AFSP-produced documentary that offers a message of growth, resilience and connection.</p>
 				<?php
 				$reg_begins = strtotime( '07/01/17' );
 				$time       = strtotime( date( 'm/d/y' ) );
