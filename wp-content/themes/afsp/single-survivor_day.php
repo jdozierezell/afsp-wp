@@ -86,12 +86,13 @@ if ( have_posts() ) :
                 <h4>
                     <?php $times =  esc_html( get_field( 'sd_event_start' ) );
                     if ( get_field( 'sd_event_end' ) ) :
-                        $time .= ' — ' . esc_html( get_field( 'sd_event_end' ) );
-                    endif; ?>
+                        $times .= ' — ' . esc_html( get_field( 'sd_event_end' ) );
+                    endif;
+                    echo $times;
+                    ?>
                 </h4>
                 <?php
                 endif;
-                ?>
                 ?>
 				<p>
 					<?php
