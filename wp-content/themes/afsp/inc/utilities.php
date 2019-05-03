@@ -981,7 +981,7 @@ function afsp_chapter_breadcrumbs( $chapter_code ) {
 			$chapter = 'AFSP Central Texas';
 			break;
 		case 'CACEV':
-			$chapter = 'AFSP Central Valley';
+			$chapter = 'AFSP Central Valley California';
 			break;
 		case 'CO':
 			$chapter = 'AFSP Colorado';
