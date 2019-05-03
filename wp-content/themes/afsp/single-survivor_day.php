@@ -120,7 +120,7 @@ if ( have_posts() ) :
 				endif;
 				// if ( get_field( 'sd_registration_link' ) ) :
 				?>
-					<a class="features__button" href="https://www.surveymonkey.com/r/99JL2FB" target="_blank">Register today</a>
+<!--					<a class="features__button" href="https://www.surveymonkey.com/r/99JL2FB" target="_blank">Register today</a>-->
 				<?php // endif; ?>
 				<p><i>In the interest of creating a safe space for loss survivors, some events are exclusively for survivors of suicide loss. In addition, many events cannot accommodate children and teens.  If you have any questions, please contact the event host directly.</i></p>
 			</div>
