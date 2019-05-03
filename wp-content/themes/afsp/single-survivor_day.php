@@ -117,7 +117,7 @@ if ( have_posts() ) :
 				<p><i>In the interest of creating a safe space for loss survivors, some events are exclusively for survivors of suicide loss. In addition, many events cannot accommodate children and teens.  If you have any questions, please contact the event host directly.</i></p>
 			</div>
 			<div class="event__description">
-				<?php if ( '' !== get_field( 'sd_custom_date' ) ) : ?>
+				<?php if ( '' != get_field( 'sd_custom_date' ) ) : ?>
 					<p><em>Note: This Survivor Day event will be held on <strong><?php echo esc_html( get_field( 'sd_custom_date' ) ); ?></strong> instead of November 23, 2019.</em></p>
 				<?php endif; ?>
 				<!-- <p><strong>Online Registration is now closed. If you would like to attend an event please contact the main organizer by email. In addition, a Survivor Day Live program will be streamed on AFSP’s Facebook page at 4:30pm EST on Saturday, November 23rd. This will be an online interactive discussion with a screening of our 2019 Documentary, A Daughter’s Journey.</strong></p> -->
