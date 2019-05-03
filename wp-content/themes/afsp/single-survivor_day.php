@@ -74,7 +74,7 @@ if ( have_posts() ) :
 				?>
 				<h3>
 					<?php
-					if ( '' !== get_field( 'sd_custom_date' ) ) :
+					if ( '' != get_field( 'sd_custom_date' ) ) :
 						echo esc_html( get_field( 'sd_custom_date' ) );
 					else :
 						echo 'Nov. 23, 2019';
@@ -82,10 +82,17 @@ if ( have_posts() ) :
 					?>
 				</h3>
 				<?php
-				if ( get_field( 'sd_event_start' ) ) :
-					echo '<h4>' . esc_html( get_field( 'sd_event_start' ) ) . ' — ' . esc_html( get_field( 'sd_event_end' ) ) . '</h4>';
-				endif;
-				?>
+				if ( get_field( 'sd_event_start' ) ) : ?>
+                <h4>
+                    <?php $times =  esc_html( get_field( 'sd_event_start' ) );
+                    if ( get_field( 'sd_event_end' ) ) :
+                        $time .= ' — ' . esc_html( get_field( 'sd_event_end' ) );
+                    endif; ?>
+                </h4>
+                <?php
+                endif;
+                ?>
+                ?>
 				<p>
 					<?php
 					$event_country = get_field( 'sd_event_country' );
