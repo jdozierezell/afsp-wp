@@ -225,10 +225,10 @@ var chapters = [{ text: '', value: '' }, {
   value: '/CentralNY',
   logo: 'https://chapterland.imgix.net/wp-content/uploads/sites/13/2018/02/CentralNY.png'
 }, {
-  text: 'Central Pennsylvania',
-  value: '/CentralPA',
-  logo: 'https://chapterland.imgix.net/wp-content/uploads/sites/13/2018/02/CentralPA.png'
-}, {
+//   text: 'Central Pennsylvania',
+//   value: '/CentralPA',
+//   logo: 'https://chapterland.imgix.net/wp-content/uploads/sites/13/2018/02/CentralPA.png'
+// }, {
   text: 'Central Texas',
   value: '/CentralTexas',
   logo: 'https://chapterland.imgix.net/wp-content/uploads/sites/13/2018/02/CentralTexas.png'
@@ -253,6 +253,10 @@ var chapters = [{ text: '', value: '' }, {
   value: '/EasternMissouri',
   logo: 'https://chapterland.imgix.net/wp-content/uploads/sites/13/2018/02/EasternMissouri.png'
 }, {
+  text: 'Eastern Pennsylvania',
+  value: '/EasternPA',
+  logo: 'https://chapterland.imgix.net/wp-content/uploads/sites/13/2019/05/AFSP-Eastern-Pennsylvania-Chapter-White-Logo.png'
+}, {
   text: 'Florida Panhandle',
   value: '/Panhandle',
   logo: 'https://chapterland.imgix.net/wp-content/uploads/sites/13/2018/02/Panhandle.png'
@@ -269,10 +273,10 @@ var chapters = [{ text: '', value: '' }, {
   value: '/GreaterKansas',
   logo: 'https://chapterland.imgix.net/wp-content/uploads/sites/13/2018/02/GreaterKansas.png'
 }, {
-  text: 'Greater Lehigh Valley Pennsylvania',
-  value: '/GreaterLehighValley',
-  logo: 'https://chapterland.imgix.net/wp-content/uploads/sites/13/2018/02/GreaterLehighValley.png'
-}, {
+//   text: 'Greater Lehigh Valley Pennsylvania',
+//   value: '/GreaterLehighValley',
+//   logo: 'https://chapterland.imgix.net/wp-content/uploads/sites/13/2018/02/GreaterLehighValley.png'
+// }, {
   text: 'Greater Los Angeles',
   value: '/LA',
   logo: 'https://chapterland.imgix.net/wp-content/uploads/sites/13/2018/02/LA.png'
@@ -285,10 +289,10 @@ var chapters = [{ text: '', value: '' }, {
   value: '/GreaterMN',
   logo: 'https://chapterland.imgix.net/wp-content/uploads/sites/13/2018/02/GreaterMN.png'
 }, {
-  text: 'Greater Northeast Pennsylvania',
-  value: '/GreaterNEPA',
-  logo: 'https://chapterland.imgix.net/wp-content/uploads/sites/13/2018/02/GreaterNEPA.png'
-}, {
+//   text: 'Greater Northeast Pennsylvania',
+//   value: '/GreaterNEPA',
+//   logo: 'https://chapterland.imgix.net/wp-content/uploads/sites/13/2018/02/GreaterNEPA.png'
+// }, {
   text: 'Greater Philadelphia',
   value: '/Philadelphia',
   logo: 'https://chapterland.imgix.net/wp-content/uploads/sites/13/2018/02/Philadelphia.png'
@@ -349,10 +353,10 @@ var chapters = [{ text: '', value: '' }, {
   value: '/Michigan',
   logo: 'https://chapterland.imgix.net/wp-content/uploads/sites/13/2018/02/Michigan.png'
 }, {
-  text: 'Middle Tennessee',
-  value: '/MiddleTN',
-  logo: 'https://chapterland.imgix.net/wp-content/uploads/sites/13/2018/02/MiddleTN.png'
-}, {
+//   text: 'Middle Tennessee',
+//   value: '/MiddleTN',
+//   logo: 'https://chapterland.imgix.net/wp-content/uploads/sites/13/2018/02/MiddleTN.png'
+// }, {
   text: 'Mississippi',
   value: '/Mississippi',
   logo: 'https://chapterland.imgix.net/wp-content/uploads/sites/13/2018/02/Mississippi.png'
@@ -441,10 +445,10 @@ var chapters = [{ text: '', value: '' }, {
   value: '/SouthCentralNY',
   logo: 'https://chapterland.imgix.net/wp-content/uploads/sites/13/2018/02/SouthCentralNY.png'
 }, {
-  text: 'South Central Pennsylvania',
-  value: '/SouthCentralPA',
-  logo: 'https://chapterland.imgix.net/wp-content/uploads/sites/13/2018/02/SouthCentralPA.png'
-}, {
+//   text: 'South Central Pennsylvania',
+//   value: '/SouthCentralPA',
+//   logo: 'https://chapterland.imgix.net/wp-content/uploads/sites/13/2018/02/SouthCentralPA.png'
+// }, {
   text: 'South Dakota',
   value: '/SouthDakota',
   logo: 'https://chapterland.imgix.net/wp-content/uploads/sites/13/2018/02/SouthDakota.png'

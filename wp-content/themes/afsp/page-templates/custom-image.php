@@ -60,7 +60,7 @@
     $backgroundAFSPUrl = $backgroundImage['url'];
     $backgroundImgixUrl = str_replace( 'afsp.org', 'afsp.imgix.net', $backgroundAFSPUrl );
 ?>
-<div id="custom-image" style="background-image: url( '<?php echo $backgroundImgixUrl; ?>' ); ">
+<div id="custom-image" style="background-image: url( '<?php echo $backgroundImgixUrl; ?>?w=1440' ); ">
 	<div id="design-wrapper">
 		<h1><?php the_title(); ?></h1>
 		<div id="canvas-wrapper"></div>
