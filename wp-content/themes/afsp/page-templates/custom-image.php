@@ -55,7 +55,12 @@
   }(document, 'script', 'facebook-jssdk'));
 </script>
 
-<div id="custom-image">
+<?php
+    $backgroundImage = get_field( 'ci_background_image' );
+    $backgroundAFSPUrl = $backgroundImage['url'];
+    $backgroundImgixUrl = str_replace( 'afsp.org', 'afsp.imgix.net', $backgroundAFSPUrl );
+?>
+<div id="custom-image" style="background-image: url( '<?php echo $backgroundImgixUrl; ?>' ); ">
 	<div id="design-wrapper">
 		<h1><?php the_title(); ?></h1>
 		<div id="canvas-wrapper"></div>
