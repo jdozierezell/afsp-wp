@@ -255,7 +255,7 @@ var chapters = [{ text: '', value: '' }, {
 }, {
   text: 'Eastern Pennsylvania',
   value: '/EasternPA',
-  logo: 'https://chapterland.imgix.net/wp-content/uploads/sites/13/2019/05/AFSP-Eastern-Pennsylvania-Chapter-White-Logo.png'
+  logo: 'https://chapterland.imgix.net/wp-content/uploads/sites/13/2019/05/13544_AFSP_ChapterLogoLockup_Eastern_Pennsylvania.png'
 }, {
   text: 'Florida Panhandle',
   value: '/Panhandle',
