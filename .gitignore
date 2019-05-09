@@ -11,6 +11,7 @@ Thumbs.db
 
 # afsp specific
 .installedExtras
+Custom Material Oceanic.icls
 wp-content/plugins/
 wp-content/themes/afsp/node_modules/
 wp-content/themes/afsp/imports/

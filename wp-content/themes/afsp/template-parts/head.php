@@ -7,8 +7,7 @@
 
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-26x26.png">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
@@ -45,7 +44,7 @@ s.parentNode.insertBefore(t,s)}(window,document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
 
-fbq('init', '2025196814443276'); 
+fbq('init', '2025196814443276');
 
 fbq('track', 'PageView');
 
@@ -53,7 +52,7 @@ fbq('track', 'PageView');
 
 <noscript>
 
-<img height="1" width="1" 
+<img height="1" width="1"
 
 src="https://www.facebook.com/tr?id=2025196814443276&ev=PageView
 
