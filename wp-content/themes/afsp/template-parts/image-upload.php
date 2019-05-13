@@ -1,3 +1,4 @@
+<script src="<?php echo get_template_directory_uri(); ?>/js/load-image.all.min.js"></script>
 <label>Image File:</label><br/>
 <input type="file" id="imageLoader" name="imageLoader"/>
 <div class="canvas">
@@ -38,7 +39,7 @@
 	        }
 	        img.src = event.target.result;
 	    }
-	    reader.readAsDataURL(e.target.files[0]);     
+	    reader.readAsDataURL(e.target.files[0]);
 	}
 
 				<?php if(have_rows('ci_preset')) : while(have_rows('ci_preset')) : the_row();
@@ -73,7 +74,7 @@ function downloadCanvas(link, canvasId, filename) {
     link.download = filename;
 }
 
-/** 
+/**
  * The event handler for the link's onclick event. We give THIS as a
  * parameter (=the link element), ID of the imageCanvas and a filename.
 */
