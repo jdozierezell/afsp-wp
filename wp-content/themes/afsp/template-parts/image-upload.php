@@ -1,4 +1,3 @@
-<script src="<?php echo get_template_directory_uri(); ?>/js/load-image.all.min.js"></script>
 <label>Image File:</label><br/>
 <input type="file" id="imageLoader" name="imageLoader"/>
 <div class="canvas">

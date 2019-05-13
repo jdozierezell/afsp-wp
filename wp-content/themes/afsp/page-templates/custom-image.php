@@ -5,7 +5,7 @@
  * @package afsp
  */
 
-				get_header(); 
+				get_header();
 				get_template_part('template-parts/title');
 
 				// Variables
@@ -16,7 +16,7 @@
 				$comboID		= 'downloadCanvas'; // used in image-download.php
 				$downloadID = 'download'; // used in image-download.php
 				$filename 	= 'volunteer.jpg'; // used in image-download.php
-				
+
 				function image_url ($field, $sub) {
 					if ($sub == 1) {
 						$image = get_sub_field($field);
@@ -54,7 +54,7 @@
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
 </script>
-
+<script src="<?php echo get_template_directory_uri(); ?>/js/load-image.all.min.js"></script>
 <?php
     $backgroundImage = get_field( 'ci_background_image' );
     $backgroundAFSPUrl = $backgroundImage['url'];
@@ -71,7 +71,7 @@
 	</div>
 
 
-	<div style="background-color: rgba(5, 109, 255, 0.8); color: white; font-size: 1.1rem; padding: 1rem;">	
+	<div style="background-color: rgba(5, 109, 255, 0.8); color: white; font-size: 1.1rem; padding: 1rem;">
 		<div class="container">
 			<?php the_field('ci_about'); ?>
 			<?php the_field('ci_help'); ?>
@@ -105,7 +105,7 @@
 <div id="download-modal-overlay" class="modal__overlay"></div>
 <div id="download-modal" class="modal sharable__modal">
 	<h2 class="modal__title">Choose your network</h2>
-	<p style="font-size: 1.1rem">Click on Twitter to post the image to your social feed. 
+	<p style="font-size: 1.1rem">Click on Twitter to post the image to your social feed.
 																If you would like to post your image to Facebook or Instagram, please choose the Download option.</p>
 	<!-- <span class="modal__button" id="facebook">Facebook</span> -->
 	<span class="modal__button" id="twitter">Twitter</span>
@@ -113,10 +113,10 @@
 </div>
 <!-- <div id="facebook-modal" class="modal sharable__modal">
 	<h2 class="modal__title">Customize your message and send to Facebook</h2>
-	<p style="font-size: 1.1rem">You may customize your message below by editing the text provided. 
-																Please note that clicking "Post to Facebook" will directly post the image to your social feed. 
-																A new window will open in your browser so that you can view the post in your feed. 
-																Depending on Facebook's traffic, this can take a second or two. 
+	<p style="font-size: 1.1rem">You may customize your message below by editing the text provided.
+																Please note that clicking "Post to Facebook" will directly post the image to your social feed.
+																A new window will open in your browser so that you can view the post in your feed.
+																Depending on Facebook's traffic, this can take a second or two.
 																Please do not click twice on the button as that will cause Facebook to post twice.</p>
 	<textarea id="facebook-message" rows="5" cols="5"><?php // the_field('ci_social'); ?></textarea>
 	<span class="modal__button" id="facebook-back">Back</span>
@@ -124,9 +124,9 @@
 </div> -->
 <div id="twitter-modal" class="modal sharable__modal">
 	<h2 class="modal__title">Customize your tweet and send to Twitter</h2>
-	<p style="font-size: 1.1rem">You may customize your tweet below by editing the text provided. 
-																Please note that clicking "Post to Twitter" will directly post the image to your social feed. 
-																Tweets are limited to 140 characters. 
+	<p style="font-size: 1.1rem">You may customize your tweet below by editing the text provided.
+																Please note that clicking "Post to Twitter" will directly post the image to your social feed.
+																Tweets are limited to 140 characters.
 																A new window will open in your browser so that you can view the post in your feed.</p>
 	<textarea id="twitter-tweet" rows="5" cols="5" maxlength="140"><?php the_field('ci_social'); ?></textarea>
 	<span class="modal__button" id="twitter-back">Back</span>
@@ -184,7 +184,7 @@
 	drawCanvasImage(byId('<?php echo $underlayID; ?>'), '<?php echo image_url("ci_preset_image", 0); ?>')
 	createCanvas('<?php echo $canvasID; ?>', 1080, 1080)
 	createCanvas('<?php echo $overlayID; ?>', 1080, 1080)
-	
+
 	var gallery = document.querySelectorAll('.overlay')
 	for (var i = 0; i < gallery.length; i += 1) {
 		gallery[i].addEventListener(
@@ -222,11 +222,11 @@
 	})
 
 })()
-</script>	
+</script>
 
-				
+
 				<?php include(locate_template('template-parts/canvas/image-upload.php'));
 				include(locate_template('template-parts/canvas/image-download.php')); ?>
 
-				
+
 				<?php get_footer(); ?>
