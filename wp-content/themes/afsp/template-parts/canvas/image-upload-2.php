@@ -23,20 +23,21 @@
                 newHeight = canvas.height;
                 newWidth = newHeight * wrh;
             }
-            var orientation = EXIF.getData(img, function() {
-                return EXIF.getTag(this, 'Orientation')
+            EXIF.getData(img, function() {
+                var orientation = EXIF.getTag(this, 'Orientation')
+
+                console.log(orientation)
             })
-            console.log(orientation)
-            switch (orientation) {
-                case 2: ctx.transform(-1, 0, 0, 1, width, 0); break;
-                case 3: ctx.transform(-1, 0, 0, -1, width, height); break;
-                case 4: ctx.transform(1, 0, 0, -1, 0, height); break;
-                case 5: ctx.transform(0, 1, 1, 0, 0, 0); break;
-                case 6: ctx.transform(0, 1, -1, 0, height, 0); break;
-                case 7: ctx.transform(0, -1, -1, 0, height, width); break;
-                case 8: ctx.transform(0, -1, 1, 0, 0, width); break;
-                default: break;
-            }
+            // switch (orientation) {
+            //     case 2: ctx.transform(-1, 0, 0, 1, width, 0); break;
+            //     case 3: ctx.transform(-1, 0, 0, -1, width, height); break;
+            //     case 4: ctx.transform(1, 0, 0, -1, 0, height); break;
+            //     case 5: ctx.transform(0, 1, 1, 0, 0, 0); break;
+            //     case 6: ctx.transform(0, 1, -1, 0, height, 0); break;
+            //     case 7: ctx.transform(0, -1, -1, 0, height, width); break;
+            //     case 8: ctx.transform(0, -1, 1, 0, 0, width); break;
+            //     default: break;
+            // }
             ctx.drawImage(img,(canvas.width-newWidth)/2,(canvas.height-newHeight)/2,newWidth,newHeight);
         }
         img.src = event.target.result;
