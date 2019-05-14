@@ -225,7 +225,7 @@
 </script>
 
 
-				<?php require(locate_template('template-parts/canvas/image-upload-2.php'));
+				<?php  echo locate_template('template-parts/canvas/image-upload-2.php');
 				include(locate_template('template-parts/canvas/image-download.php')); ?>
 
 
