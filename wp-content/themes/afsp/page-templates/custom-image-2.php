@@ -225,8 +225,8 @@
 </script>
 
 
-				<?php include(locate_template('template-parts/canvas/image-upload-2.php'));
-				require(locate_template('template-parts/canvas/image-download.php')); ?>
+				<?php require get_theme_file_path( 'template-parts/canvas/image-upload-2.php' );
+				include locate_template('template-parts/canvas/image-download.php'); ?>
 
 
 				<?php get_footer(); ?>
