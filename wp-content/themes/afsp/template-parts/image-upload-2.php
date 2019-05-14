@@ -30,15 +30,17 @@
 	function handleImage(e){
 	    var reader = new FileReader()
 	    reader.onload = function(event){
+	        console.log('reader.onload')
 	        var img = new Image()
 	        img.onload = function(){
+	            console.log('img.onload')
 	            canvas.width = img.width
 	            canvas.height = img.height
-                var orientation = ''
-                EXIF.getData(img, function() {
-                    orientation = EXIF.getTag(this, 'Orientation')
-                })
-                console.log(orientation)
+                // var orientation = ''
+                // EXIF.getData(img, function() {
+                //     orientation = EXIF.getTag(this, 'Orientation')
+                // })
+                // console.log(orientation)
                 // set proper canvas dimensions before transform & export
                 // if (4 < srcOrientation && srcOrientation < 9) {
                 //     canvas.width = height;
