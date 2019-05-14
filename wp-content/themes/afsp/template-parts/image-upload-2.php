@@ -28,13 +28,10 @@
 
 
     function handleImage(e){
-        console.log('handleImage')
         var reader = new FileReader();
         reader.onload = function(event){
-            console.log('reader.onload')
             var img = new Image();
             img.onload = function(){
-                console.log('img.onload')
                 canvas.width = img.width;
                 canvas.height = img.height;
                 ctx.drawImage(img,0,0);
