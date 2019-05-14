@@ -31,11 +31,13 @@
 	    var loadingImage = loadImage(
             e.target.files[0],
             function (img) {
-                var image = new Image();
+                console.log('loadImage')
+                var image = new Image()
                 image.onload = function(){
-                    canvas.width = img.width;
-                    canvas.height = img.height;
-                    ctx.drawImage(img,0,0);
+                    console.log('image.onload')
+                    canvas.width = img.width
+                    canvas.height = img.height
+                    ctx.drawImage(img,0,0)
                 }
             }
         )
