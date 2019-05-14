@@ -225,7 +225,7 @@
 </script>
 
 
-				<?php echo get_theme_file_path( 'template-parts/canvas/image-upload-2.php' );
+				<?php echo get_template_directory() . 'template-parts/canvas/image-upload-2.php';
 				include locate_template('template-parts/canvas/image-download.php'); ?>
 
 
