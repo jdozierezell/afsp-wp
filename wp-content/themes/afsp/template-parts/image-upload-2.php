@@ -28,31 +28,30 @@
 
 
 	function handleImage(e){
-	    console.log('handleImage')
-	    loadImage(
-            e.target.files[0],
-            function (img) {
-                console.log('loadImage')
-                var image = new Image()
-                image.onload = function(){
-                    console.log('image.onload')
-                    canvas.width = img.width
-                    canvas.height = img.height
-                    ctx.drawImage(img,0,0)
-                }
-            }
-        )
-	    // var reader = new FileReader();
-	    // reader.onload = function(event){
-	    //     var img = new Image();
-	    //     img.onload = function(){
-	    //         canvas.width = img.width;
-	    //         canvas.height = img.height;
-	    //         ctx.drawImage(img,0,0);
-	    //     }
-	    //     img.src = event.target.result;
-	    // }
-	    // reader.readAsDataURL(e.target.files[0]);
+	    var reader = new FileReader()
+	    reader.onload = function(event){
+	        var img = new Image()
+	        img.onload = function(){
+	            canvas.width = img.width
+	            canvas.height = img.height
+                var orientation = ''
+                EXIF.getData(img, function() {
+                    orientation = EXIF.getTag(this, 'Orientation')
+                })
+                console.log(orientation)
+                // set proper canvas dimensions before transform & export
+                // if (4 < srcOrientation && srcOrientation < 9) {
+                //     canvas.width = height;
+                //     canvas.height = width;
+                // } else {
+                //     canvas.width = width;
+                //     canvas.height = height;
+                // }
+	            ctx.drawImage(img,0,0)
+	        }
+	        img.src = event.target.result
+	    }
+	    reader.readAsDataURL(e.target.files[0])
 	}
 
 				<?php if(have_rows('ci_preset')) : while(have_rows('ci_preset')) : the_row();
