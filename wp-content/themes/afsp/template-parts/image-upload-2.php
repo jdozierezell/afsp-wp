@@ -28,7 +28,7 @@
 
 
 	function handleImage(e){
-	    var loadingImage = loadImage(
+	    loadImage(
             e.target.files[0],
             function (img) {
                 console.log('loadImage')
