@@ -11,45 +11,37 @@
 
     function handleImage(e){
 
-        var reader = new FileReader();
-        reader.onloadend = function(event){
-            var blob = new Blob([event.target.result])
-            var exif = EXIF.readFromBinaryFile(event.target.result)
-            var orientation = exif.Orientation
-            var img = new Image();
-            img.src = URL.createObjectURL(blog)
-            console.log(event.target.result)
-            console.log(orientation)
-            if (orientation) {
-                // values from https://stackoverflow.com/questions/19463126/how-to-draw-photo-with-correct-orientation-in-canvas-after-capture-photo-by-usin
-                switch (orientation) {
-                    case 8:
-                        ctx.rotate(90*Math.PI/180)
-                        break
-                    case 3:
-                        ctx.rotate(180*Math.PI/180)
-                        break
-                    case 6:
-                        ctx.rotate(-90*Math.PI/180)
-                        break
-                    default:
-                        break
-                }
+        function getExif() {
+            var img = this.files[0]
+            var reader = new FileReader()
+            reader.onload = function(e) {
+                var exif = EXIF.readFromBinaryFile(this.result)
+                console.log(exif)
             }
-            img.onload = function(){
-                var ct = document.getElementById('measure');
-                ct.appendChild(img);
-                var wrh = img.width / img.height;
-                var newWidth = canvas.width;
-                var newHeight = newWidth / wrh;
-                if (newHeight < canvas.height) {
-                    newHeight = canvas.height;
-                    newWidth = newHeight * wrh;
-                }
-                ctx.drawImage(img,(canvas.width-newWidth)/2,(canvas.height-newHeight)/2,newWidth,newHeight);
-            }
+            reader.readAsArrayBuffer(img)
         }
-        reader.readAsDataURL(e.target.files[0]);
+        getExif()
+
+
+
+        // var reader = new FileReader();
+        // reader.onload = function(event){
+        //     var img = new Image();
+        //     img.onload = function(){
+        //         var ct = document.getElementById('measure');
+        //         ct.appendChild(img);
+        //         var wrh = img.width / img.height;
+        //         var newWidth = canvas.width;
+        //         var newHeight = newWidth / wrh;
+        //         if (newHeight < canvas.height) {
+        //             newHeight = canvas.height;
+        //             newWidth = newHeight * wrh;
+        //         }
+        //         ctx.drawImage(img,(canvas.width-newWidth)/2,(canvas.height-newHeight)/2,newWidth,newHeight);
+        //     }
+        //     img.src = event.target.result;
+        // }
+        // reader.readAsDataURL(e.target.files[0]);
     }
 
 </script>
