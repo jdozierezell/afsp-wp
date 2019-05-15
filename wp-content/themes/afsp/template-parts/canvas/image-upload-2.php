@@ -14,7 +14,9 @@
         loadImage(
             e.target.files[0],
             function (img, data) {
-                console.log(EXIF)
+                console.log(EXIF.getData(img, function() {
+
+                }))
                 console.log(data.exif)
             },
             {meta: true}
