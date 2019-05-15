@@ -12,7 +12,7 @@
 	function handleImage(e){
 	    var loadingImage = loadImage(
 	        e.target.files[0],
-            function(img) {
+            function(img, data) {
 	            document.getElementById('measure').appendChild(img)
                 var wrh = img.width / img.height
                 var newWidth = canvas.width;
@@ -21,6 +21,7 @@
                     newHeight = canvas.height;
                     newWidth = newHeight * wrh;
                 }
+                console.log('Exif data: ', data.exif)
                 ctx.drawImage(img,(canvas.width-newWidth)/2,(canvas.height-newHeight)/2,newWidth,newHeight);
             },
             {orientation: 1}
