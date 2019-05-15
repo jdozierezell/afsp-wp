@@ -24,6 +24,7 @@
                 //     newWidth = newHeight * wrh;
                 // }
                 console.log(data)
+                console.log(data.exif['274'])
                 ctx.drawImage(img,(canvas.width-newWidth)/2,(canvas.height-newHeight)/2,newWidth,newHeight);
             },
             {meta: true, orientation: 1}
