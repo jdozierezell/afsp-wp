@@ -18,6 +18,7 @@
             var orientation = exif.Orientation
             var img = new Image();
             img.src = URL.createObjectURL(blog)
+            console.log(event.target.result)
             console.log(orientation)
             if (orientation) {
                 // values from https://stackoverflow.com/questions/19463126/how-to-draw-photo-with-correct-orientation-in-canvas-after-capture-photo-by-usin
