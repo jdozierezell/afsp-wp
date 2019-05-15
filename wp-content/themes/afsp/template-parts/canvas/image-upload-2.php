@@ -13,16 +13,17 @@
 
         loadImage(
             e.target.files[0],
-            function (img) {
+            function (img, data) {
                 var ct = document.getElementById('measure');
                 ct.appendChild(img);
-                var wrh = img.width / img.height;
-                var newWidth = canvas.width;
-                var newHeight = newWidth / wrh;
-                if (newHeight < canvas.height) {
-                    newHeight = canvas.height;
-                    newWidth = newHeight * wrh;
-                }
+                // var wrh = img.width / img.height;
+                // var newWidth = canvas.width;
+                // var newHeight = newWidth / wrh;
+                // if (newHeight < canvas.height) {
+                //     newHeight = canvas.height;
+                //     newWidth = newHeight * wrh;
+                // }
+                console.log(data)
                 ctx.drawImage(img,(canvas.width-newWidth)/2,(canvas.height-newHeight)/2,newWidth,newHeight);
             },
             {orientation: 1}
