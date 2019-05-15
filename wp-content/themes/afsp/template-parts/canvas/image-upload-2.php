@@ -24,7 +24,7 @@
                 newWidth = newHeight * wrh;
             }
             var orientation = EXIF.getData(img, function() {
-                return EXIF.getTag(this, 'Orientation')
+                console.log(getTag(this, 'Orientation'))
             })
             console.log(orientation)
             switch (orientation) {
