@@ -14,6 +14,14 @@
 	        e.target.files[0],
             function(img) {
 	            document.getElementById('measure').appendChild(img)
+                var wrh = img.width / img.height
+                var newWidth = canvas.width;
+                var newHeight = newWidth / wrh;
+                if (newHeight < canvas.height) {
+                    newHeight = canvas.height;
+                    newWidth = newHeight * wrh;
+                }
+                ctx.drawImage(img,(canvas.width-newWidth)/2,(canvas.height-newHeight)/2,newWidth,newHeight);
             }
         )
 	    // var reader = new FileReader();
