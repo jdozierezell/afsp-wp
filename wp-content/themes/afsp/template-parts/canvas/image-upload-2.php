@@ -13,7 +13,7 @@
 	    var loadingImage = loadImage(
 	        e.target.files[0],
             function(img) {
-	            document.body.appendChild(img)
+	            document.getElementById('measure').appendChild(img)
             }
         )
 	    // var reader = new FileReader();
