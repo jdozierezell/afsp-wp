@@ -15,7 +15,8 @@
             e.target.files[0],
             function (img, data) {
                 console.log(data.exif)
-            }
+            },
+            {meta: true}
         )
 
 
@@ -35,8 +36,8 @@
         //         ctx.drawImage(img,(canvas.width-newWidth)/2,(canvas.height-newHeight)/2,newWidth,newHeight);
         //     }
         //     img.src = event.target.result;
-        }
-        reader.readAsDataURL(e.target.files[0]);
+        // }
+        // reader.readAsDataURL(e.target.files[0]);
     }
 
 </script>
