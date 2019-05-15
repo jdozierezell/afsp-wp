@@ -54,8 +54,9 @@
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
 </script>
-<script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/load-image.all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/exif-js/2.1.0/exif.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-load-image/2.12.2/load-image.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-load-image/2.12.2/load-image-orientation.min.js"></script>
 <?php
     $backgroundImage = get_field( 'ci_background_image' );
     $backgroundAFSPUrl = $backgroundImage['url'];
