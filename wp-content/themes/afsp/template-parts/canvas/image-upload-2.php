@@ -14,10 +14,9 @@
         loadImage(
             e.target.files[0],
             function (img, data) {
-                console.log(EXIF.getData(img, function() {
-
-                }))
-                console.log(data.exif)
+                EXIF.getData(img, function() {
+                    console.log(EXIF.getTag(this, 'Orientation'))
+                })
             },
             {meta: true}
         )
