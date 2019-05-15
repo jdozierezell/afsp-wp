@@ -10,24 +10,32 @@
 
 
 	function handleImage(e){
-	    var reader = new FileReader();
-	    reader.onload = function(event){
-        var img = new Image();
-        img.onload = function(){
-        	var ct = document.getElementById('measure');
-        	ct.appendChild(img);
-        	var wrh = img.width / img.height
-            var newWidth = canvas.width;
-            var newHeight = newWidth / wrh;
-            if (newHeight < canvas.height) {
-                newHeight = canvas.height;
-                newWidth = newHeight * wrh;
+	    var loadingImage = loadImage(
+	        e.target.files[0],
+            function(img) {
+	            document.body.appendChild(img)
             }
-            img.prop('src', reader.result)
-            img.src = img.prop('src')
-            EXIF.getData(img, function() {
-                console.log(EXIF.pretty(img))
-            })
+        )
+	    // var reader = new FileReader();
+	    // reader.onload = function(event){
+        // var img = new Image();
+        // img.onload = function(){
+        // 	var ct = document.getElementById('measure');
+        // 	ct.appendChild(img);
+        // 	var wrh = img.width / img.height
+        //     var newWidth = canvas.width;
+        //     var newHeight = newWidth / wrh;
+        //     if (newHeight < canvas.height) {
+        //         newHeight = canvas.height;
+        //         newWidth = newHeight * wrh;
+        //     }
+
+
+            // img.prop('src', reader.result)
+            // img.src = img.prop('src')
+            // EXIF.getData(img, function() {
+            //     console.log(EXIF.pretty(img))
+            // })
 
             // console.log(orientation)
             // switch (orientation) {
@@ -40,11 +48,11 @@
             //     case 8: ctx.transform(0, -1, 1, 0, 0, width); break;
             //     default: break;
             // }
-            ctx.drawImage(img,(canvas.width-newWidth)/2,(canvas.height-newHeight)/2,newWidth,newHeight);
-        }
-        img.src = event.target.result;
-	    }
-	    reader.readAsDataURL(e.target.files[0]);
+        //     ctx.drawImage(img,(canvas.width-newWidth)/2,(canvas.height-newHeight)/2,newWidth,newHeight);
+        // }
+        // img.src = event.target.result;
+	    // }
+	    // reader.readAsDataURL(e.target.files[0]);
 	}
 
 </script>
