@@ -11,16 +11,13 @@
 
     function handleImage(e){
 
-        function getExif() {
-            var img = this.files[0]
-            var reader = new FileReader()
-            reader.onload = function(e) {
-                var exif = EXIF.readFromBinaryFile(this.result)
-                console.log(exif)
-            }
-            reader.readAsArrayBuffer(img)
-        }
-        getExif()
+        loadImage(
+            e.target.files[0],
+            function (img) {
+                document.getElementById('measure').appendChild(img)
+            },
+            {orientation: 1}
+        )
 
 
 
