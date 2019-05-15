@@ -22,7 +22,8 @@
                     newWidth = newHeight * wrh;
                 }
                 ctx.drawImage(img,(canvas.width-newWidth)/2,(canvas.height-newHeight)/2,newWidth,newHeight);
-            }
+            },
+            {orientation: 1}
         )
 	    // var reader = new FileReader();
 	    // reader.onload = function(event){
