@@ -23,10 +23,9 @@
                 newHeight = canvas.height;
                 newWidth = newHeight * wrh;
             }
-            var orientation = EXIF.getData(img, function() {
-                console.log(getTag(this, 'Orientation'))
+            EXIF.getData(img, function() {
+                console.log(EXIF.getTag(this, 'Orientation'))
             })
-            console.log(orientation)
             switch (orientation) {
                 case 2: ctx.transform(-1, 0, 0, 1, width, 0); break;
                 case 3: ctx.transform(-1, 0, 0, -1, width, height); break;
