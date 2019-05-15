@@ -26,7 +26,7 @@
                 console.log(data)
                 ctx.drawImage(img,(canvas.width-newWidth)/2,(canvas.height-newHeight)/2,newWidth,newHeight);
             },
-            {orientation: 1}
+            {meta: true, orientation: 1}
         )
 
 
