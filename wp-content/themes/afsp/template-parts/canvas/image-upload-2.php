@@ -34,8 +34,7 @@
                     newWidth = newHeight * wrh;
                 }
                 if (orientation != 1) {
-                    // ctx.translate(((canvas.width-newWidth)/2) + (0.5 * newWidth), ((canvas.height-newHeight)/2) + (0
-        .5 * newHeight))
+                    // ctx.translate(((canvas.width-newWidth)/2) + (0.5 * newWidth), ((canvas.height-newHeight)/2) + (0.5 * newHeight))
                     switch (orientation) {
                         case 2:
                             ctx.rotate(0.5*Math.PI)
@@ -61,8 +60,7 @@
                             break
                         default: break;
                     }
-                    // ctx.translate(-(((canvas.width-newWidth)/2) + (0.5 * newWidth)), -(((canvas.height-newHeight)/2)
-        + (0.5 * newHeight)))
+                    // ctx.translate(-(((canvas.width-newWidth)/2) + (0.5 * newWidth)), -(((canvas.height-newHeight)/2) + (0.5 * newHeight)))
                 }
                 console.log("NewWidth: ", newWidth)
                 console.log("NewHeight: ", newHeight)
