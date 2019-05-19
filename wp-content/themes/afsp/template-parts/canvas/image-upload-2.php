@@ -23,20 +23,16 @@
                 console.log("Width: ", width)
                 var height = data.originalHeight
                 console.log("Height: ", height)
-                switch (orientation) {
+                // switch (orientation) {
                 //     case 2: ctx.transform(-1, 0, 0, 1, width, 0); break;
                 //     case 3: ctx.transform(-1, 0, 0, -1, width, height); break;
                 //     case 4: ctx.transform(1, 0, 0, -1, 0, height); break;
                 //     case 5: ctx.transform(0, 1, 1, 0, 0, 0); break;
-                    case 6:
-                        // 90° rotate right
-                        ctx.rotate(0.5 * Math.PI)
-                        ctx.translate(0, -height)
-                        break
+                //     case 6: ctx.transform(0, 1, -1, 0, height, 0); break;
                 //     case 7: ctx.transform(0, -1, -1, 0, height, width); break;
                 //     case 8: ctx.transform(0, -1, 1, 0, 0, width); break;
-                    default: break
-                }
+                //     default: break;
+                // }
                 var wrh = img.width / img.height;
                 console.log("WRH: ", wrh)
                 var newWidth = canvas.width;
@@ -51,6 +47,7 @@
                 console.log("NewHeight: ", newHeight)
                 console.log("CanvasWidth: ", canvas.width)
                 console.log("CanvasHeight: ", canvas.height)
+                ctx.rotate(0.5*Math.PI)
                 ctx.drawImage(img,(canvas.width-newWidth)/2,(canvas.height-newHeight)/2,newWidth,newHeight);
             },
             {meta: true, orientation: 1}
