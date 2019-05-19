@@ -47,6 +47,7 @@
                 console.log("NewHeight: ", newHeight)
                 console.log("CanvasWidth: ", canvas.width)
                 console.log("CanvasHeight: ", canvas.height)
+                ctx.translate(width, height)
                 ctx.rotate(0.5*Math.PI)
                 ctx.drawImage(img,(canvas.width-newWidth)/2,(canvas.height-newHeight)/2,newWidth,newHeight);
             },
