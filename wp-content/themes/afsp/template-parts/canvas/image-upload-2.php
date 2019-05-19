@@ -19,6 +19,8 @@
                 console.log(data)
                 var orientation = data.exif['274']
                 console.log(orientation)
+                var width = data.originalWidth
+                var height = data.originalHeight
                 switch (orientation) {
                     case 2: ctx.transform(-1, 0, 0, 1, width, 0); break;
                     case 3: ctx.transform(-1, 0, 0, -1, width, height); break;
@@ -29,14 +31,14 @@
                     case 8: ctx.transform(0, -1, 1, 0, 0, width); break;
                     default: break;
                 }
-                // var wrh = img.width / img.height;
-                // var newWidth = canvas.width;
-                // var newHeight = newWidth / wrh;
-                // if (newHeight < canvas.height) {
-                //     newHeight = canvas.height;
-                //     newWidth = newHeight * wrh;
-                // }
-                // ctx.drawImage(img,(canvas.width-newWidth)/2,(canvas.height-newHeight)/2,newWidth,newHeight);
+                var wrh = width / height;
+                var newWidth = canvas.width;
+                var newHeight = newWidth / wrh;
+                if (newHeight < canvas.height) {
+                    newHeight = canvas.height;
+                    newWidth = newHeight * wrh;
+                }
+                ctx.drawImage(img,(canvas.width-newWidth)/2,(canvas.height-newHeight)/2,newWidth,newHeight);
             },
             {meta: true, orientation: 1}
         )
