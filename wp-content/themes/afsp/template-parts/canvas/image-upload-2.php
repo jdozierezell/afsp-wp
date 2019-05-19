@@ -16,11 +16,13 @@
             function (img, data) {
                 var ct = document.getElementById('measure');
                 ct.appendChild(img);
-                console.log(data)
+                console.log("Data: ", data)
                 var orientation = data.exif['274']
-                console.log(orientation)
+                console.log("Orientation: ", orientation)
                 var width = data.originalWidth
+                console.log("Width: ", width)
                 var height = data.originalHeight
+                console.log("Height: ", height)
                 switch (orientation) {
                     case 2: ctx.transform(-1, 0, 0, 1, width, 0); break;
                     case 3: ctx.transform(-1, 0, 0, -1, width, height); break;
@@ -32,12 +34,19 @@
                     default: break;
                 }
                 var wrh = img.width / img.height;
+                console.log("WRH: ", wrh)
                 var newWidth = canvas.width;
+                console.log("NewWidth: ", newWidth)
                 var newHeight = newWidth / wrh;
+                console.log("NewHeight: ", newHeight)
                 if (newHeight < canvas.height) {
                     newHeight = canvas.height;
                     newWidth = newHeight * wrh;
                 }
+                console.log("NewWidth: ", newWidth)
+                console.log("NewHeight: ", newHeight)
+                console.log("CanvasWidth: ", canvas.width)
+                console.log("CanvasHeight: ", canvas.height)
                 ctx.drawImage(img,(canvas.width-newWidth)/2,(canvas.height-newHeight)/2,newWidth,newHeight);
             },
             {meta: true, orientation: 1}
