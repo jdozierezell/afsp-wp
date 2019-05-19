@@ -37,26 +37,40 @@
                     // ctx.translate(((canvas.width-newWidth)/2) + (0.5 * newWidth), ((canvas.height-newHeight)/2) + (0.5 * newHeight))
                     switch (orientation) {
                         case 2:
-                            ctx.rotate(0.5*Math.PI)
+                            // horizontal flip
+                            ctx.translate(newWidth, 0)
+                            ctx.scale(-1, 1)
                             break
                         case 3:
-                            ctx.rotate(0.5*Math.PI)
+                            // 180° rotate left
+                            ctx.translate(newWidth, newHeight)
+                            ctx.rotate(Math.PI)
                             break
                         case 4:
-                            ctx.rotate(0.5*Math.PI)
+                            // vertical flip
+                            ctx.translate(0, newHeight)
+                            ctx.scale(1, -1)
                             break
                         case 5:
-                            ctx.rotate(0.5*Math.PI)
+                            // vertical flip + 90 rotate right
+                            ctx.rotate(0.5 * Math.PI)
+                            ctx.scale(1, -1)
                             break
                         case 6:
+                            // 90° rotate right
                             ctx.rotate(0.5*Math.PI)
-                            ctx.translate(0, -newHeight)
+                            ctx.translate(-newWidth, -newHeight)
                             break
                         case 7:
-                            ctx.rotate(0.5*Math.PI)
+                            // horizontal flip + 90 rotate right
+                            ctx.rotate(0.5 * Math.PI)
+                            ctx.translate(newWidth, -newHeight)
+                            ctx.scale(-1, 1)
                             break
                         case 8:
-                            ctx.rotate(0.5*Math.PI)
+                            // 90° rotate left
+                            ctx.rotate(-0.5 * Math.PI)
+                            ctx.translate(-newWidth, 0)
                             break
                         default: break;
                     }
