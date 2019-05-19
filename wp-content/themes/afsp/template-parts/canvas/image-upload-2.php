@@ -66,7 +66,7 @@
                             // 90° rotate left
                             ctx.rotate(-0.5 * Math.PI)
                             break
-                        default: break;
+                        default: break
                     }
                     ctx.translate(-(((canvas.width-newWidth)/2) + (0.5 * newWidth)), -(((canvas.height-newHeight)/2) + (0.5 * newHeight)))
                 }

@@ -161,6 +161,8 @@
 .story-topic {
   width: 100%;
   position: relative;
+  padding: 1rem;
+  border: 5px solid #262626;
   @include responsive('medium') {
 	flex: 1 0 28%;
 	margin-left: 2.5%;
@@ -186,11 +188,11 @@
 	top: 30%;
 }
 
-.story-topic:after {
-	content: '';
-	display: block;
-	background-image: url(//afsp.imgix.net/wp-content/uploads/2018/06/calendar.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	padding-bottom: 100%;
-}
+//.story-topic:after {
+//	content: '';
+//	display: block;
+//	background-image: url(//afsp.imgix.net/wp-content/uploads/2018/06/calendar.png);
+//	background-size: cover;
+//	background-repeat: no-repeat;
+//	padding-bottom: 100%;
+//}
