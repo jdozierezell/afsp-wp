@@ -48,7 +48,7 @@
                 console.log("CanvasWidth: ", canvas.width)
                 console.log("CanvasHeight: ", canvas.height)
                 ctx.translate(((canvas.width-newWidth)/2) + (0.5 * newWidth), ((canvas.height-newHeight)/2) + (0.5 * newHeight))
-                ctx.rotate(0.1)
+                ctx.rotate(0.5*Math.PI)
                 ctx.translate(-(((canvas.width-newWidth)/2) + (0.5 * newWidth)), -(((canvas.height-newHeight)/2) + (0.5 * newHeight)))
 
                 ctx.drawImage(img,(canvas.width-newWidth)/2,(canvas.height-newHeight)/2,newWidth,newHeight);
