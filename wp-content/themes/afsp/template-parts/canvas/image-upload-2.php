@@ -34,21 +34,18 @@
                     newWidth = newHeight * wrh;
                 }
                 if (orientation != 1) {
-                    // ctx.translate(((canvas.width-newWidth)/2) + (0.5 * newWidth), ((canvas.height-newHeight)/2) + (0.5 * newHeight))
+                    ctx.translate(((canvas.width-newWidth)/2) + (0.5 * newWidth), ((canvas.height-newHeight)/2) + (0.5 * newHeight))
                     switch (orientation) {
                         case 2:
                             // horizontal flip
-                            ctx.translate(newWidth, 0)
                             ctx.scale(-1, 1)
                             break
                         case 3:
                             // 180° rotate left
-                            ctx.translate(newWidth, newHeight)
                             ctx.rotate(Math.PI)
                             break
                         case 4:
                             // vertical flip
-                            ctx.translate(0, newHeight)
                             ctx.scale(1, -1)
                             break
                         case 5:
@@ -59,22 +56,19 @@
                         case 6:
                             // 90° rotate right
                             ctx.rotate(0.5*Math.PI)
-                            ctx.translate(-newWidth, -newHeight)
                             break
                         case 7:
                             // horizontal flip + 90 rotate right
                             ctx.rotate(0.5 * Math.PI)
-                            ctx.translate(newWidth, -newHeight)
                             ctx.scale(-1, 1)
                             break
                         case 8:
                             // 90° rotate left
                             ctx.rotate(-0.5 * Math.PI)
-                            ctx.translate(-newWidth, 0)
                             break
                         default: break;
                     }
-                    // ctx.translate(-(((canvas.width-newWidth)/2) + (0.5 * newWidth)), -(((canvas.height-newHeight)/2) + (0.5 * newHeight)))
+                    ctx.translate(-(((canvas.width-newWidth)/2) + (0.5 * newWidth)), -(((canvas.height-newHeight)/2) + (0.5 * newHeight)))
                 }
                 console.log("NewWidth: ", newWidth)
                 console.log("NewHeight: ", newHeight)
