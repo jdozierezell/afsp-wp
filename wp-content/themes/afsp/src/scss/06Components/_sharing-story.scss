@@ -162,11 +162,9 @@
   width: 100%;
   position: relative;
   padding: 1rem;
-  border: 5px solid #262626;
+  border: 1px solid #262626;
   @include responsive('medium') {
-	flex: 1 0 28%;
-	margin-left: 2.5%;
-	margin-right: 2.5%;
+	width: 48%;
   }
 }
 
