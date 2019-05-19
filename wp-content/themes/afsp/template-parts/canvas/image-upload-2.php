@@ -31,7 +31,7 @@
                     case 8: ctx.transform(0, -1, 1, 0, 0, width); break;
                     default: break;
                 }
-                var wrh = width / height;
+                var wrh = img.width / img.height;
                 var newWidth = canvas.width;
                 var newHeight = newWidth / wrh;
                 if (newHeight < canvas.height) {
