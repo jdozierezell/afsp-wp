@@ -6,13 +6,13 @@
  */
 
 get_header();
-if(have_posts()) : while(have_posts()) : the_post(); 
+if(have_posts()) : while(have_posts()) : the_post();
     $image = get_field( 't_hero_image_full' );
     if ( !empty( $image ) ) {
       $image_url = $image['url'];
     }
 ?>
-<script> 
+<script>
 var $buoop = {
   required:{
     e:-2,f:-3,o:-3,s:-1,c:-3
@@ -23,9 +23,9 @@ var $buoop = {
   reminderClosed: 1,
   text: 'This page includes functionality that requires a modern browser. Please update your browser for the best experience. <br /><a{up_but}>Update browser</a> or <a{ignore_but}>Ignore</a>'
 }
-function $buo_f(){ 
- var e = document.createElement("script"); 
- e.src = "//browser-update.org/update.min.js"; 
+function $buo_f(){
+ var e = document.createElement("script");
+ e.src = "//browser-update.org/update.min.js";
  document.body.appendChild(e);
 }
 try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
@@ -61,7 +61,7 @@ catch(e){window.attachEvent("onload", $buo_f)}
   margin-bottom: 24px;
 }
 
-.grid-description, 
+.grid-description,
 .page-description {
   -ms-grid-row: 1;
   grid-row: 1;
@@ -220,18 +220,18 @@ catch(e){window.attachEvent("onload", $buo_f)}
     -ms-grid-columns: 1fr 40px 1fr 40px 1fr;
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .grid-desription,
   .page-description {
     -ms-grid-column-span: 3;
     grid-column: span 3;
   }
-  
+
   .grid-item {
     -ms-grid-column-span: 1;
     grid-column: span 1;
   }
-  
+
   .grid-item-description {
     font-size: 18px;
   }
@@ -282,52 +282,52 @@ catch(e){window.attachEvent("onload", $buo_f)}
     grid-row: 9;
     margin: -11px auto 11px;
   }
-  
+
   .grid-children .grid-item:nth-of-type(-n+3) {
     -ms-grid-row: 1;
     grid-row: 1;
   }
-  
+
   .grid-children .grid-item:nth-of-type(n+4):nth-of-type(-n+6) {
     -ms-grid-row: 2;
     grid-row: 2;
   }
-  
+
   .grid-children .grid-item:nth-of-type(n+7):nth-of-type(-n+9) {
     -ms-grid-row: 3;
     grid-row: 3;
   }
-  
+
   .grid-children .grid-item:nth-of-type(n+10):nth-of-type(-n+12) {
     -ms-grid-row: 4;
     grid-row: 4;
   }
-  
+
   .grid-children .grid-item:nth-of-type(n+13):nth-of-type(-n+15) {
     -ms-grid-row: 5;
     grid-row: 5;
   }
-  
+
   .grid-children .grid-item:nth-of-type(n+16):nth-of-type(-n+18) {
     -ms-grid-row: 6;
     grid-row: 6;
   }
-  
+
   .grid-children .grid-item:nth-of-type(n+19):nth-of-type(-n+21) {
     -ms-grid-row: 7;
     grid-row: 7;
   }
-  
+
   .grid-children .grid-item:nth-of-type(n+22):nth-of-type(-n+24) {
     -ms-grid-row: 8;
     grid-row: 8;
   }
-  
+
   .grid-children .grid-item:nth-of-type(n+25):nth-of-type(-n+27) {
     -ms-grid-row: 9;
     grid-row: 9;
   }
-  
+
   .grid-children .grid-item:nth-of-type(n+28):nth-of-type(-n+30) {
     -ms-grid-row: 10;
     grid-row: 10;
@@ -344,42 +344,42 @@ catch(e){window.attachEvent("onload", $buo_f)}
 }
 
 @media screen and (min-width: 1100px) {
-  
+
   .grid-children .grid-item:nth-of-type(-n+4) {
     -ms-grid-row: 1 !important;
     grid-row: 1 !important;
   }
-  
+
   .grid-children .grid-item:nth-of-type(n+5):nth-of-type(-n+8) {
     -ms-grid-row: 2 !important;
     grid-row: 2 !important;
   }
-  
+
   .grid-children .grid-item:nth-of-type(n+9):nth-of-type(-n+12) {
     -ms-grid-row: 3 !important;
     grid-row: 3 !important;
   }
-  
+
   .grid-children .grid-item:nth-of-type(n+13):nth-of-type(-n+16) {
     -ms-grid-row: 4 !important;
     grid-row: 4 !important;
   }
-  
+
   .grid-children .grid-item:nth-of-type(n+17):nth-of-type(-n+20) {
     -ms-grid-row: 5 !important;
     grid-row: 5 !important;
   }
-  
+
   .grid-children .grid-item:nth-of-type(n+21):nth-of-type(-n+24) {
     -ms-grid-row: 6 !important;
     grid-row: 6 !important;
   }
-  
+
   .grid-children .grid-item:nth-of-type(n+25):nth-of-type(-n+28) {
     -ms-grid-row: 7 !important;
     grid-row: 7 !important;
   }
-  
+
   .grid-children .grid-item:nth-of-type(n+29):nth-of-type(-n+32) {
     -ms-grid-row: 8 !important;
     grid-row: 8 !important;
@@ -392,21 +392,25 @@ catch(e){window.attachEvent("onload", $buo_f)}
   <div id="grid">
     <div class="page-description"><?php the_field( 't_page_description' ); ?></div>
     <?php if ( have_rows( 't_grid_section' ) ) : while ( have_rows( 't_grid_section' ) ) : the_row();
-        $image = get_sub_field( 't_grid_image' );
-        $image_temp = $image['url'];
-        $image_temp_url = str_replace('afsp.org','afsp.imgix.net', $image_temp);
-        $image_url = $image_temp_url . '?w=700&h=700&fit=fill&fill=blur';
-        $image_mobile = get_sub_field( 't_grid_image_mobile' );
-        $image_mobile_temp = $image_mobile['url'];
-        $image_mobile_temp_url = str_replace('afsp.org','afsp.imgix.net', $image_mobile_temp);
-        $image_mobile_url = $image_mobile_temp_url . '?w=700&h=240&fit=fill&fill=blur';
+        if ( get_sub_field( 't_grid_use_background_image' ) == 'Yes' && get_sub_field( 't_grid_image' ) ) :
+            $image = get_sub_field( 't_grid_image' );
+            $image_temp = $image['url'];
+            $image_temp_url = str_replace('afsp.org','afsp.imgix.net', $image_temp);
+            $image_url = $image_temp_url . '?w=700&h=700&fit=fill&fill=blur';
+            $image_mobile = get_sub_field( 't_grid_image_mobile' );
+            $image_mobile_temp = $image_mobile['url'];
+            $image_mobile_temp_url = str_replace('afsp.org','afsp.imgix.net', $image_mobile_temp);
+            $image_mobile_url = $image_mobile_temp_url . '?w=700&h=240&fit=fill&fill=blur';
+        endif;
         if ( get_row_layout() === 't_grid_with_children' ) :
     ?>
     <div class="grid-item grid-item-with-children">
-      <picture>
-        <source media="(max-width: 768px)" srcset="<?php echo $image_mobile_url; ?>">
-        <img src="<?php echo $image_url; ?>">
-      </picture>
+      <?php if ( get_sub_field( 't_grid_use_background_image' ) == 'Yes' && get_sub_field( 't_grid_image' ) ) : ?>
+          <picture>
+            <source media="(max-width: 768px)" srcset="<?php echo $image_mobile_url; ?>">
+            <img src="<?php echo $image_url; ?>">
+          </picture>
+      <?php endif; ?>
     </div>
     <div class="grid-children">
     <?php if ( have_rows( 't_grid_children' ) ) : while ( have_rows( 't_grid_children' ) ) : the_row();
@@ -441,24 +445,28 @@ catch(e){window.attachEvent("onload", $buo_f)}
     ?>
     <div class="grid-item grid-item-without-children-link">
       <a href="<?php the_sub_field( 't_link' ); ?>" target="_blank">
-        <picture>
-          <source media="(max-width: 768px)" srcset="<?php echo $image_mobile['url']; ?>">
-          <img src="<?php echo $image['url']; ?>">
-        </picture>
+        <?php if ( get_sub_field( 't_grid_use_background_image' ) == 'Yes' && get_sub_field( 't_grid_image' ) ) : ?>
+            <picture>
+              <source media="(max-width: 768px)" srcset="<?php echo $image_mobile['url']; ?>">
+              <img src="<?php echo $image['url']; ?>">
+            </picture>
+          <?php endif; ?>
       </a>
     </div>
     <?php endif; // end link layout
         if ( get_row_layout() === 't_grid_without_children_modal' ) : ?>
     <div id="calendar" class="grid-item grid-item-without-children-modal">
       <div>
-        <picture>
-          <source media="(max-width: 768px)" srcset="<?php echo $image_mobile['url']; ?>">
-          <img src="<?php echo $image['url']; ?>">
-        </picture>
+        <?php if ( get_sub_field( 't_grid_use_background_image' ) == 'Yes' && get_sub_field( 't_grid_image' ) ) : ?>
+            <picture>
+              <source media="(max-width: 768px)" srcset="<?php echo $image_mobile['url']; ?>">
+              <img src="<?php echo $image['url']; ?>">
+            </picture>
+        <?php endif; ?>
       </div>
     </div>
     <?php endif; // end modal layout
-      endwhile; 
+      endwhile;
     endif; // end all layouts
     ?>
   </div>
@@ -509,7 +517,7 @@ for ( var i = 0; i < childItems.length; i++ ) {
       }
     } )
   }
-} 
+}
 
 for ( var i = 0; i < gridItemModalButtons.length; i++ ) {
   gridItemModalButtons[i].addEventListener( 'click', function (event) {
@@ -524,7 +532,7 @@ calendar.addEventListener( 'click', function (event) {
 for ( var i = 0; i < modalClose.length; i++ ) {
   modalClose[i].addEventListener( 'click', function (event) {
     for ( var i = 0; i < gridItemModals.length; i++ ) {
-      gridItemModals[i].style.display = 'none' 
+      gridItemModals[i].style.display = 'none'
     }
   } )
 }
