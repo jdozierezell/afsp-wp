@@ -392,25 +392,21 @@ catch(e){window.attachEvent("onload", $buo_f)}
   <div id="grid">
     <div class="page-description"><?php the_field( 't_page_description' ); ?></div>
     <?php if ( have_rows( 't_grid_section' ) ) : while ( have_rows( 't_grid_section' ) ) : the_row();
-        if ( get_sub_field( 't_grid_use_background_image' ) == 'Yes' && get_sub_field( 't_grid_image' ) ) :
-            $image = get_sub_field( 't_grid_image' );
-            $image_temp = $image['url'];
-            $image_temp_url = str_replace('afsp.org','afsp.imgix.net', $image_temp);
-            $image_url = $image_temp_url . '?w=700&h=700&fit=fill&fill=blur';
-            $image_mobile = get_sub_field( 't_grid_image_mobile' );
-            $image_mobile_temp = $image_mobile['url'];
-            $image_mobile_temp_url = str_replace('afsp.org','afsp.imgix.net', $image_mobile_temp);
-            $image_mobile_url = $image_mobile_temp_url . '?w=700&h=240&fit=fill&fill=blur';
-        endif;
+        $image = get_sub_field( 't_grid_image' );
+        $image_temp = $image['url'];
+        $image_temp_url = str_replace('afsp.org','afsp.imgix.net', $image_temp);
+        $image_url = $image_temp_url . '?w=700&h=700&fit=fill&fill=blur';
+        $image_mobile = get_sub_field( 't_grid_image_mobile' );
+        $image_mobile_temp = $image_mobile['url'];
+        $image_mobile_temp_url = str_replace('afsp.org','afsp.imgix.net', $image_mobile_temp);
+        $image_mobile_url = $image_mobile_temp_url . '?w=700&h=240&fit=fill&fill=blur';
         if ( get_row_layout() === 't_grid_with_children' ) :
     ?>
     <div class="grid-item grid-item-with-children">
-      <?php if ( get_sub_field( 't_grid_use_background_image' ) == 'Yes' && get_sub_field( 't_grid_image' ) ) : ?>
-          <picture>
-            <source media="(max-width: 768px)" srcset="<?php echo $image_mobile_url; ?>">
-            <img src="<?php echo $image_url; ?>">
-          </picture>
-      <?php endif; ?>
+      <picture>
+        <source media="(max-width: 768px)" srcset="<?php echo $image_mobile_url; ?>">
+        <img src="<?php echo $image_url; ?>">
+      </picture>
     </div>
     <div class="grid-children">
     <?php if ( have_rows( 't_grid_children' ) ) : while ( have_rows( 't_grid_children' ) ) : the_row();
@@ -445,24 +441,20 @@ catch(e){window.attachEvent("onload", $buo_f)}
     ?>
     <div class="grid-item grid-item-without-children-link">
       <a href="<?php the_sub_field( 't_link' ); ?>" target="_blank">
-        <?php if ( get_sub_field( 't_grid_use_background_image' ) == 'Yes' && get_sub_field( 't_grid_image' ) ) : ?>
-            <picture>
-              <source media="(max-width: 768px)" srcset="<?php echo $image_mobile['url']; ?>">
-              <img src="<?php echo $image['url']; ?>">
-            </picture>
-          <?php endif; ?>
+        <picture>
+          <source media="(max-width: 768px)" srcset="<?php echo $image_mobile['url']; ?>">
+          <img src="<?php echo $image['url']; ?>">
+        </picture>
       </a>
     </div>
     <?php endif; // end link layout
         if ( get_row_layout() === 't_grid_without_children_modal' ) : ?>
     <div id="calendar" class="grid-item grid-item-without-children-modal">
       <div>
-        <?php if ( get_sub_field( 't_grid_use_background_image' ) == 'Yes' && get_sub_field( 't_grid_image' ) ) : ?>
-            <picture>
-              <source media="(max-width: 768px)" srcset="<?php echo $image_mobile['url']; ?>">
-              <img src="<?php echo $image['url']; ?>">
-            </picture>
-        <?php endif; ?>
+        <picture>
+          <source media="(max-width: 768px)" srcset="<?php echo $image_mobile['url']; ?>">
+          <img src="<?php echo $image['url']; ?>">
+        </picture>
       </div>
     </div>
     <?php endif; // end modal layout
