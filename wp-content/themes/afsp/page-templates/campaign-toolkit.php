@@ -8,6 +8,7 @@
 get_header();
 if(have_posts()) : while(have_posts()) : the_post();
     $image = get_field( 't_hero_image_full' );
+    $image_url = false;
     if ( !empty( $image ) ) {
       $image_url = $image['url'];
     }
@@ -42,8 +43,8 @@ catch(e){window.attachEvent("onload", $buo_f)}
 
 .full-width {
   height: 375px;
-  background-color: #eaeaea;
-  background-image: url('https://afsp.org/wp-content/uploads/2019/04/RealConvo.png');
+  background-color: #396dff;
+  background-image: url(<?php echo $image_url ? $image_url : ''; ?>);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
