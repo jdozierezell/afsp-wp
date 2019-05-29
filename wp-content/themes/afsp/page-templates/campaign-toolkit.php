@@ -45,7 +45,7 @@ catch(e){window.attachEvent("onload", $buo_f)}
   height: 375px;
   background-color: #396dff;
   background-image: url(<?php echo $image_url ? $image_url : ''; ?>);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
