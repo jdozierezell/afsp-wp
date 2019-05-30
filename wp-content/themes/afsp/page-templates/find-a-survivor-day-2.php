@@ -18,7 +18,7 @@ if ( have_posts() ) :
 		?>
 		<section class="container">
 			<p>New events are being added every day. If you don't find an event near you, please check back.</p>
-			<table class="footable tablepress">
+			<table class="footable tablepress" data-filtering="false">
                 <thead>
                     <tr>
                         <th>Lorem</th>
