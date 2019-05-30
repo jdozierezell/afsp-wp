@@ -667,9 +667,10 @@ FooTable.MyFiltering = FooTable.Filtering.extend({
                                                          this._super();
                                                          //create a dropdown select to append to our searchbox
                                                          var self = this,
-                                                             $form_grp = $("<div/>", { class: "form-group" })
+                                                             $form_grp = jQuery("<div/>", { class: "form-group" })
                                                              // text: is the label for the dropdown select box
-                                                                 .append($("<label/>", { class: "sr-only", text: "UserLabel" }))
+                                                                 .append(jQuery("<label/>", { class: "sr-only", text:
+                                                                         "UserLabel" }))
                                                                  .prependTo(self.$form);
 
                                                          // define $users properties
