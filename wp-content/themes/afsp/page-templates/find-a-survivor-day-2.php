@@ -30,6 +30,10 @@ if ( have_posts() ) :
                     <td>Lorem</td>
                     <td>Ipsum</td>
                 </tr>
+                <tr>
+                    <td>Lorem</td>
+                    <td>Ipsum</td>
+                </tr>
                 </tbody>
             </table>
 		</section>
