@@ -682,7 +682,7 @@ FooTable.MyFiltering = FooTable.Filtering.extend({
 
          // add each value from usernames to the selectbox
          jQuery.each(self.usernames, function(i, curruser) {
-             self.$users.append($("<option/>").text(curruser));
+             self.$users.append(jQuery("<option/>").text(curruser));
          });
      },
 
