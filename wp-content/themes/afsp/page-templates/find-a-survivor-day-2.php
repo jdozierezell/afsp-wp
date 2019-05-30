@@ -17,14 +17,17 @@ if ( have_posts() ) :
 		the_post();
 		?>
         <style>
-            .footable-filter-container {
+            ..form-group.footable-filtering-search {
                 display: none;
+            }
+            .form-control {
+                color: #262626;
             }
         </style>
 		<section class="container">
 			<p>New events are being added every day. If you don't find an event near you, please check back.</p>
             <!-- Table Markup -->
-            <table id="isosld" class="tablepress" data-paging="true" data-filtering="true"
+            <table id="isosld" class="tablepress" data-paging="false" data-filtering="true"
                    data-sorting="true" data-state="true"></table>
         </section>
 		<section class="container">
@@ -670,8 +673,8 @@ FooTable.MyFiltering = FooTable.Filtering.extend({
          var self = this,
              $form_grp = jQuery("<div/>", { class: "form-group" })
              // text: is the label for the dropdown select box
-                 .append(jQuery("<label/>", { class: "sr-only", text:
-                         "UserLabel" }))
+                 .append(jQuery("<label/>", { class: "form-label", text:
+                         "Select Your State" }))
                  .prependTo(self.$form);
 
          // define $users properties
