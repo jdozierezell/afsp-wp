@@ -49,11 +49,10 @@ if ( have_posts() ) :
 		</section>
         <script type="text/javascript" src="https://afsp.org/wp-content/plugins/footable/js/footable.min.js?ver=0.3.1"></script>
         <script>
-            FooTable.Dropdown = FooTable.Filtering.extend({
+            FooTable.MyFiltering = FooTable.Filtering.extend({
                  construct: function(instance){
                      this._super(instance);
-                     this.statusLabels = ['Active','Disabled','Suspended'];
-                     this.statuses = ['Lorem','Lorem','Ipsum'];
+                     this.statuses = ['Active','Disabled','Suspended'];
                      this.def = 'Any Status';
                      this.$status = null;
                  },
@@ -69,8 +68,8 @@ if ( have_posts() ) :
                          .append($('<option/>', {text: self.def}))
                          .appendTo($form_grp);
 
-                     $.each(self.statusLabels, function(i, item){
-                         self.$status.append($('<option/>').text(this.statusLabels[i]).val(this.statuses[i]));
+                     $.each(self.statuses, function(i, status){
+                         self.$status.append($('<option/>').text(status));
                      });
                  },
                  _onStatusDropdownChanged: function(e){
