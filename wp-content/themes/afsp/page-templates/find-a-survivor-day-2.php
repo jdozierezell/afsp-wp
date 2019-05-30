@@ -17,7 +17,8 @@ if ( have_posts() ) :
 		the_post();
 		?>
         <style>
-            ..form-group.footable-filtering-search {
+            .form-group.footable-filtering-search,
+            .footable-filter {
                 display: none;
             }
             .form-control {
@@ -653,7 +654,7 @@ jQuery(function($) {
 // details at http://fooplugins.github.io/FooTable/docs/examples/advanced/filter-dropdown.html
 
 //extend the default (base) filtering component
-// and define varialbes as per our requirement
+// and define variables as per our requirement
 FooTable.MyFiltering = FooTable.Filtering.extend({
      construct: function(instance) {
          this._super(instance);
