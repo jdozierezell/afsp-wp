@@ -18,7 +18,20 @@ if ( have_posts() ) :
 		?>
 		<section class="container">
 			<p>New events are being added every day. If you don't find an event near you, please check back.</p>
-			<?php echo do_shortcode( '[gmw form="9"]' ); ?>
+			<table class="footable tablepress">
+                <thead>
+                    <tr>
+                        <th>Lorem</th>
+                        <th>Ipsum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Lorem</td>
+                    <td>Ipsum</td>
+                </tr>
+                </tbody>
+            </table>
 		</section>
 		<section class="container">
 			<div class="support-group__content">

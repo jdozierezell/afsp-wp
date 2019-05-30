@@ -5,7 +5,6 @@
   "main": "index.php",
   "devDependencies": {
     "autoprefixer": "^5.2.0",
-    "browser-sync": "^2.18.12",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-concat": "^2.6.1",

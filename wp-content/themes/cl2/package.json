@@ -31,7 +31,6 @@
   },
   "devDependencies": {
     "asset-builder": "^1.1.0",
-    "browser-sync": "^2.8.2",
     "concurrently": "^3.5.0",
     "del": "^2.2.2",
     "eslint-plugin-prettier": "^2.4.0",
