@@ -62,7 +62,7 @@ if ( have_posts() ) :
                          $form_grp = $('<div/>', {'class': 'form-group'})
                              .append($('<label/>', {'class': 'sr-only', text: 'Status'}))
                              .prependTo(self.$form);
-
+console.log(self)
                      self.$status = $('<select/>', { 'class': 'form-control' })
                          .on('change', {self: self}, self._onStatusDropdownChanged)
                          .append($('<option/>', {text: self.def}))
