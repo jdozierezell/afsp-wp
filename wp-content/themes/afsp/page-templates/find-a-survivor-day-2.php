@@ -16,6 +16,11 @@ if ( have_posts() ) :
 	while ( have_posts() ) :
 		the_post();
 		?>
+        <style>
+            .footable-filter-container {
+                display: none;
+            }
+        </style>
 		<section class="container">
 			<p>New events are being added every day. If you don't find an event near you, please check back.</p>
 			<table class="tablepress" data-filtering="false">
