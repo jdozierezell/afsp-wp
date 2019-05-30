@@ -42,6 +42,7 @@ if ( have_posts() ) :
 				<?php the_content(); ?>
 			</div>
 		</section>
+        <script type="text/javascript" src="https://afsp.org/wp-content/plugins/footable/js/footable.min.js?ver=0.3.1"></script>
         <script>
             jQuery('.tablepress').footable()
         </script>
