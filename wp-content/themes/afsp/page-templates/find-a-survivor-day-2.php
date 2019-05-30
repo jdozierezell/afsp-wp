@@ -24,7 +24,8 @@ if ( have_posts() ) :
 		<section class="container">
 			<p>New events are being added every day. If you don't find an event near you, please check back.</p>
             <!-- Table Markup -->
-            <table id="showcase-example-1" class="table" data-paging="true" data-filtering="true" data-sorting="true" data-state="true"></table>
+            <table id="isosld" class="tablepress" data-paging="true" data-filtering="true"
+                   data-sorting="true" data-state="true"></table>
         </section>
 		<section class="container">
 			<div class="support-group__content">
@@ -34,7 +35,7 @@ if ( have_posts() ) :
         <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/footable3.1.6.js"></script>
         <script>
 jQuery(function($) {
-    ft = FooTable.init("#showcase-example-1", {
+    ft = FooTable.init("#isosld", {
 
         // if you are working with a static table or are defining
         // the table in html using php etc, then you must define
@@ -651,81 +652,81 @@ jQuery(function($) {
 //extend the default (base) filtering component
 // and define varialbes as per our requirement
 FooTable.MyFiltering = FooTable.Filtering.extend({
-                                                     construct: function(instance) {
-                                                         this._super(instance);
-                                                         // these will appear in the select/dropdown
-                                                         // and results will be filtered to reflect
-                                                         // these values
-                                                         this.usernames = ["Kyger", "Keasler"];
-                                                         // the default label, to clear the filter
-                                                         this.def = "All Users";
-                                                         // place holder for jQuery wrapper
-                                                         // this will be the name of the filter
-                                                         this.$users = null;
-                                                     },
-                                                     $create: function() {
-                                                         this._super();
-                                                         //create a dropdown select to append to our searchbox
-                                                         var self = this,
-                                                             $form_grp = jQuery("<div/>", { class: "form-group" })
-                                                             // text: is the label for the dropdown select box
-                                                                 .append(jQuery("<label/>", { class: "sr-only", text:
-                                                                         "UserLabel" }))
-                                                                 .prependTo(self.$form);
+     construct: function(instance) {
+         this._super(instance);
+         // these will appear in the select/dropdown
+         // and results will be filtered to reflect
+         // these values
+         this.usernames = ["Kyger", "Keasler"];
+         // the default label, to clear the filter
+         this.def = "All Users";
+         // place holder for jQuery wrapper
+         // this will be the name of the filter
+         this.$users = null;
+     },
+     $create: function() {
+         this._super();
+         //create a dropdown select to append to our searchbox
+         var self = this,
+             $form_grp = jQuery("<div/>", { class: "form-group" })
+             // text: is the label for the dropdown select box
+                 .append(jQuery("<label/>", { class: "sr-only", text:
+                         "UserLabel" }))
+                 .prependTo(self.$form);
 
-                                                         // define $users properties
-                                                         self.$users = $("<select/>", { class: "form-control" })
-                                                             .on("change", { self: self }, self._onStatusDropdownChanged)
-                                                             .append($("<option/>", { text: self.def }))
-                                                             .appendTo($form_grp);
+         // define $users properties
+         self.$users = jQuery("<select/>", { class: "form-control" })
+             .on("change", { self: self }, self._onStatusDropdownChanged)
+             .append(jQuery("<option/>", { text: self.def }))
+             .appendTo($form_grp);
 
-                                                         // add each value from usernames to the selectbox
-                                                         $.each(self.usernames, function(i, curruser) {
-                                                             self.$users.append($("<option/>").text(curruser));
-                                                         });
-                                                     },
+         // add each value from usernames to the selectbox
+         $.each(self.usernames, function(i, curruser) {
+             self.$users.append($("<option/>").text(curruser));
+         });
+     },
 
-                                                     // function to be called when selection
-                                                     // is made
-                                                     _onStatusDropdownChanged: function(e) {
-                                                         var self = e.data.self,
-                                                             selected = $(this).val();
-                                                         if (selected !== self.def) {
-                                                             // if selected value is not the default value
-                                                             // then filter instance (users) by the value
-                                                             // selected in the column 'lastName'
-                                                             // note as mentioned above if you are not using
-                                                             // json to define your table you must provide
-                                                             // the data-name value to the column th that
-                                                             // you want to refer below
-                                                             self.addFilter("users", selected, ["lastName"]);
-                                                         } else {
-                                                             // if default value then clear the filter
-                                                             self.removeFilter("users");
-                                                         }
-                                                         self.filter();
-                                                     },
+     // function to be called when selection
+     // is made
+     _onStatusDropdownChanged: function(e) {
+         var self = e.data.self,
+             selected = jQuery(this).val();
+         if (selected !== self.def) {
+             // if selected value is not the default value
+             // then filter instance (users) by the value
+             // selected in the column 'lastName'
+             // note as mentioned above if you are not using
+             // json to define your table you must provide
+             // the data-name value to the column th that
+             // you want to refer below
+             self.addFilter("users", selected, ["lastName"]);
+         } else {
+             // if default value then clear the filter
+             self.removeFilter("users");
+         }
+         self.filter();
+     },
 
 
-                                                     draw: function() {
-                                                         this._super();
+     draw: function() {
+         this._super();
 
-                                                         // this is used to maintain the filter state
-                                                         // across pagination
+         // this is used to maintain the filter state
+         // across pagination
 
-                                                         // check if a filtered instance of users exists
-                                                         var filteredusers = this.find("users");
-                                                         if (filteredusers instanceof FooTable.Filter) {
-                                                             // if yes then set filter of the next page tp
-                                                             // the selected value
-                                                             this.$users.val(filteredusers.query.val());
-                                                         } else {
-                                                             // if not, clear it, that is set it
-                                                             // to default
-                                                             this.$users.val(this.def);
-                                                         }
-                                                     }
-                                                 });
+         // check if a filtered instance of users exists
+         var filteredusers = this.find("users");
+         if (filteredusers instanceof FooTable.Filter) {
+             // if yes then set filter of the next page tp
+             // the selected value
+             this.$users.val(filteredusers.query.val());
+         } else {
+             // if not, clear it, that is set it
+             // to default
+             this.$users.val(this.def);
+         }
+     }
+    });
         </script>
 	<?php
 	endwhile;
