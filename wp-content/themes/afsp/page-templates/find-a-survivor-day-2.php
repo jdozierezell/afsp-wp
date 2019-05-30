@@ -92,11 +92,11 @@ console.log(self)
                      }
                  }
              })
-            jQuery('.tablepress').footable({
-                components: {
-                    filtering:FooTable.MyFiltering
-                }
-            })
+            // jQuery('.tablepress').footable({
+            //     components: {
+            //         filtering:FooTable.MyFiltering
+            //     }
+            // })
         </script>
 	<?php
 	endwhile;
