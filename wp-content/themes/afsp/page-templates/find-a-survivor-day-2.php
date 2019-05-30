@@ -47,7 +47,7 @@ if ( have_posts() ) :
 				<?php the_content(); ?>
 			</div>
 		</section>
-        <script type="text/javascript" src="https://afsp.org/wp-content/plugins/footable/js/footable.min.js?ver=0.3.1"></script>
+        <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/footable.js"></script>
         <script>
             FooTable.MyFiltering = FooTable.Filtering.extend({
                  construct: function(instance){
