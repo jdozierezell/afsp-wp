@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Find a Survivor Day v2
+ * Template Name: Find International Survivors of Suicide Loss Day
  *
  * @package afsp
  */
