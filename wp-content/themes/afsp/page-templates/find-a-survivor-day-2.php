@@ -94,7 +94,7 @@ console.log(self)
              })
             jQuery('.tablepress').footable({
                 components: {
-                    filtering:FooTable.Dropdown
+                    filtering:FooTable.MyFiltering
                 }
             })
         </script>
