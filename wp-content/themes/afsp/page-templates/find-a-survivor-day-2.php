@@ -47,7 +47,7 @@ if ( have_posts() ) :
 				<?php the_content(); ?>
 			</div>
 		</section>
-        <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/footable.js"></script>
+        <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/footable3.1.6.js"></script>
         <script>
             FooTable.MyFiltering = FooTable.Filtering.extend({
                  construct: function(instance){
