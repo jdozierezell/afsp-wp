@@ -23,7 +23,7 @@ if ( have_posts() ) :
         </style>
 		<section class="container">
 			<p>New events are being added every day. If you don't find an event near you, please check back.</p>
-			<table class="tablepress" data-filtering="false">
+			<table class="tablepress">
                 <thead>
                     <tr>
                         <th>Lorem</th>
@@ -49,7 +49,55 @@ if ( have_posts() ) :
 		</section>
         <script type="text/javascript" src="https://afsp.org/wp-content/plugins/footable/js/footable.min.js?ver=0.3.1"></script>
         <script>
-            jQuery('.tablepress').footable()
+            FooTable.Dropdown = FooTable.Filtering.extend({
+                 construct: function(instance){
+                     this._super(instance);
+                     this.statusLabels = ['Active','Disabled','Suspended'];
+                     this.statuses = ['Lorem','Lorem','Ipsum'];
+                     this.def = 'Any Status';
+                     this.$status = null;
+                 },
+                 $create: function(){
+                     this._super();
+                     var self = this,
+                         $form_grp = $('<div/>', {'class': 'form-group'})
+                             .append($('<label/>', {'class': 'sr-only', text: 'Status'}))
+                             .prependTo(self.$form);
+
+                     self.$status = $('<select/>', { 'class': 'form-control' })
+                         .on('change', {self: self}, self._onStatusDropdownChanged)
+                         .append($('<option/>', {text: self.def}))
+                         .appendTo($form_grp);
+
+                     $.each(self.statusLabels, function(i, item){
+                         self.$status.append($('<option/>').text(this.statusLabels[i]).val(this.statuses[i]));
+                     });
+                 },
+                 _onStatusDropdownChanged: function(e){
+                     var self = e.data.self,
+                         selected = $(this).val();
+                     if (selected !== self.def){
+                         self.addFilter('status', selected, ['status']);
+                     } else {
+                         self.removeFilter('status');
+                     }
+                     self.filter();
+                 },
+                 draw: function(){
+                     this._super();
+                     var status = this.find('status');
+                     if (status instanceof FooTable.Filter){
+                         this.$status.val(status.query.val());
+                     } else {
+                         this.$status.val(this.def);
+                     }
+                 }
+             })
+            jQuery('.tablepress').footable({
+                components: {
+                    filtering:FooTable.Dropdown
+                }
+            })
         </script>
 	<?php
 	endwhile;
