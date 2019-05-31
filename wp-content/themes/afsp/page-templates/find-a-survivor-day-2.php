@@ -79,7 +79,7 @@ if ( have_posts() ) :
                         })
                     }
                                       })
-            }
+            })
         </script>
 
 	<?php
