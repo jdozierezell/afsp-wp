@@ -69,16 +69,16 @@ if ( have_posts() ) :
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/>
         <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
         <script>
-            $(document).ready(function() {
-                $('#isosld').DataTable( {
+            jQuery(document).ready(function() {
+                jQuery('#isosld').DataTable( {
                                             initComplete: function () {
                                                 this.api().columns().every( function () {
                                                     var column = this;
-                                                    var select = $('<select><option value=""></option></select>')
-                                                        .appendTo( $(column.header()).empty() )
+                                                    var select = jQuery('<select><option value=""></option></select>')
+                                                        .appendTo( jQuery(column.header()).empty() )
                                                         .on( 'change', function () {
                                                             var val = $.fn.dataTable.util.escapeRegex(
-                                                                $(this).val()
+                                                                jQuery(this).val()
                                                             );
 
                                                             column
