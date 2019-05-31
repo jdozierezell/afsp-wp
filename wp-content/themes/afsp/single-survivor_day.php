@@ -155,19 +155,19 @@ if ( have_posts() ) :
 				<h4><?php echo esc_html( $attendee_contact ); ?></h4>
 				<?php
 				$contacts = array();
-				if ( 'yes' === get_field( 'sd_organizer_publish' ) ) :
-					$contacts[] = array(
-						'name'  => get_field( 'sd_main_organizer_name' ),
-						'email' => get_field( 'sd_main_organizer_email' ),
-						'phone' => get_field( 'sd_main_organizer_phone' ),
-					);
-				elseif ( 'no' === get_field( 'sd_organizer_publish' ) ) :
-					$contacts[] = array(
-						'name'  => get_field( 'sd_contact_name' ),
-						'email' => get_field( 'sd_contact_email' ),
-						'phone' => get_field( 'sd_contact_phone' ),
-					);
-				endif;
+//				if ( 'yes' === get_field( 'sd_organizer_publish' ) ) :
+//					$contacts[] = array(
+//						'name'  => get_field( 'sd_main_organizer_name' ),
+//						'email' => get_field( 'sd_main_organizer_email' ),
+//						'phone' => get_field( 'sd_main_organizer_phone' ),
+//					);
+//				elseif ( 'no' === get_field( 'sd_organizer_publish' ) ) :
+//					$contacts[] = array(
+//						'name'  => get_field( 'sd_contact_name' ),
+//						'email' => get_field( 'sd_contact_email' ),
+//						'phone' => get_field( 'sd_contact_phone' ),
+//					);
+//				endif;
 				if ( have_rows( 'sd_contact_potential' ) ) :
 					while ( have_rows( 'sd_contact_potential' ) ) :
 						the_row();
@@ -223,8 +223,8 @@ if ( have_posts() ) :
 				?>
 				<h4>Food Served</h4>
 				<p><?php the_field( 'sd_food' ); ?></p>
-<!--				<h4>Charge/Donation</h4>-->
-<!--				<p>-->
+				<h4>Charge/Donation</h4>
+				<p>Free
 					<?php
 //					$fee = get_field( 'sd_fee' );
 //					switch ( $fee ) {
@@ -239,7 +239,7 @@ if ( have_posts() ) :
 //							break;
 //					}
 					?>
-<!--				</p>-->
+				</p>
 				<?php
 				$sponsoring_org = get_field( 'sd_sponsoring_organizations' );
 				if ( 'None' !== $sponsoring_org[0] ) :
