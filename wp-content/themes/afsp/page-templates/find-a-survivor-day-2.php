@@ -61,7 +61,7 @@ if ( have_posts() ) :
         <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
         <script>
             jQuery(document).ready(function() {
-                ('#isosld').DataTable({
+                jQuery('#isosld').DataTable({
                     initComplete: function () {
                         this.api().columns().every(function() {
                             var column = this
