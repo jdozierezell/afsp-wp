@@ -71,8 +71,8 @@ if ( have_posts() ) :
                                     var val = jQuery.fn.dataTable.util.excapeRegex(
                                         jQuery(this).val()
                                     )
+                                    column.search(val ? '^' + val + '$' : '', true, false).draw()
                                 })
-                            column.search(val ? '^' + val + '$' : '', true, false).draw()
                             column.data().unique().sort().each(function(d, j) {
                                 select.append('<option value="' + d + '">' + d + '<option>')
                             })
