@@ -65,7 +65,7 @@ if ( have_posts() ) :
                     initComplete: function () {
                         this.api().columns().every(function() {
                             var column = this
-                            var select = jQuery('<select><option value=""></option></select')
+                            var select = jQuery('<select><option value=""></option></select>')
                                 .appendTo(jQuery(column.footer()).empty())
                                 .on('change', function() {
                                     var val = jQuery.fn.dataTable.util.excapeRegex(
