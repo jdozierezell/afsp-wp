@@ -223,23 +223,23 @@ if ( have_posts() ) :
 				?>
 				<h4>Food Served</h4>
 				<p><?php the_field( 'sd_food' ); ?></p>
-				<h4>Charge/Donation</h4>
-				<p>
+<!--				<h4>Charge/Donation</h4>-->
+<!--				<p>-->
 					<?php
-					$fee = get_field( 'sd_fee' );
-					switch ( $fee ) {
-						case 'no':
-							echo 'None';
-							break;
-						case 'donation':
-							echo get_field( 'sd_donation' ) !== '' ? 'Suggested donation: ' . esc_html( get_field( 'sd_donation' ) ) : 'Donations welcome';
-							break;
-						case 'yes':
-							echo 'Registration/attendance fee: ' . esc_html( get_field( 'sd_fee_amount' ) );
-							break;
-					}
+//					$fee = get_field( 'sd_fee' );
+//					switch ( $fee ) {
+//						case 'no':
+//							echo 'None';
+//							break;
+//						case 'donation':
+//							echo get_field( 'sd_donation' ) !== '' ? 'Suggested donation: ' . esc_html( get_field( 'sd_donation' ) ) : 'Donations welcome';
+//							break;
+//						case 'yes':
+//							echo 'Registration/attendance fee: ' . esc_html( get_field( 'sd_fee_amount' ) );
+//							break;
+//					}
 					?>
-				</p>
+<!--				</p>-->
 				<?php
 				$sponsoring_org = get_field( 'sd_sponsoring_organizations' );
 				if ( 'None' !== $sponsoring_org[0] ) :
