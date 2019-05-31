@@ -62,12 +62,12 @@ jQuery(function($) {
                 name: "state",
                 title: "State/Province",
                 type: "text"
-            },,
+            },
             {
                 name: "code",
                 title: "Postal Code",
                 type: "text"
-            }
+            },
             {
                 name: "country",
                 title: "Country",
