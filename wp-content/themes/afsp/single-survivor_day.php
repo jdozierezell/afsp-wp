@@ -54,6 +54,11 @@ if ( have_posts() ) :
 //				echo do_shortcode( '[gmw_single_location address_fields="city, state" map_width="100%" map_height="450px" ul_marker=0 distance=0 info_window=0]' );
 //			endif;
 			?>
+            <picture class="splash__image">
+                <source class="imgix-fluid" media="(min-width: 768px)" srcset="https://afsp.imgix.net/wp-content/uploads/2019/02/ISOSLD-Postcard.jpg?&amp;crop=top&amp;fit=crop&amp;w=1532&amp;h=768 1532w, https://afsp.imgix.net/wp-content/uploads/2019/02/ISOSLD-Postcard.jpg?&amp;crop=top&amp;fit=crop&amp;w=766&amp;h=384 766w, https://afsp.imgix.net/wp-content/uploads/2019/02/ISOSLD-Postcard.jpg?&amp;crop=top&amp;fit=crop&amp;w=510&amp;h=256 510w, https://afsp.imgix.net/wp-content/uploads/2019/02/ISOSLD-Postcard.jpg?&amp;crop=top&amp;fit=crop&amp;w=383&amp;h=192 383w">
+                <source class="imgix-fluid" srcset="https://afsp.imgix.net/wp-content/uploads/2019/02/ISOSLD-Postcard.jpg?&amp;crop=top&amp;fit=crop&amp;w=768&amp;h=768 768w, https://afsp.imgix.net/wp-content/uploads/2019/02/ISOSLD-Postcard.jpg?&amp;crop=top&amp;fit=crop&amp;w=384&amp;h=384 384w, https://afsp.imgix.net/wp-content/uploads/2019/02/ISOSLD-Postcard.jpg?&amp;crop=top&amp;fit=crop&amp;w=256&amp;h=256 256w, https://afsp.imgix.net/wp-content/uploads/2019/02/ISOSLD-Postcard.jpg?&amp;crop=top&amp;fit=crop&amp;w=192&amp;h=192 192w">
+                <img src="https://afsp.imgix.net/wp-content/uploads/2019/02/ISOSLD-Postcard.jpg?&amp;crop=top&amp;fit=crop&amp;w=1532&amp;h=768" class="imgix-fluid" alt="" sizes="100vw">
+            </picture>
 			<h1 class="landing__title container"><?php the_title(); ?></h1>
 		</section>
 		<section class="event__details container">
