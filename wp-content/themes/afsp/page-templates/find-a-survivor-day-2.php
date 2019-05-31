@@ -51,27 +51,42 @@ jQuery(function($) {
             {
                 name: "eventName",
                 title: "Event Name",
-                type: "text"
+                type: "text",
+                style: {
+                    width: "20%"
+                }
             },
             {
                 name: "city",
-                title: "city",
-                type: "text"
+                title: "City",
+                type: "text",
+                style: {
+                    width: "20%"
+                }
             },
             {
                 name: "state",
                 title: "State/Province",
-                type: "text"
+                type: "text",
+                style: {
+                    width: "20%"
+                }
             },
             {
                 name: "code",
                 title: "Postal Code",
-                type: "text"
+                type: "text",
+                style: {
+                    width: "20%"
+                }
             },
             {
                 name: "country",
                 title: "Country",
-                type: "text"
+                type: "text",
+                style: {
+                    width: "20%"
+                }
             }
         ],
         rows: [
