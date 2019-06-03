@@ -28,6 +28,7 @@ if ( have_posts() ) :
 		<section class="container">
 			<p>New events are being added every day. If you don't find an event near you, please check back.</p>
             <!-- Table Markup -->
+            <div id="sdSelect"></div>
             <table id="isosld" class="tablepress">
                 <thead>
                 <tr>
@@ -72,10 +73,10 @@ if ( have_posts() ) :
             jQuery(document).ready(function() {
                 jQuery('#isosld').DataTable( {
                                             initComplete: function () {
-                                                this.api().columns().every( function () {
+                                                this.api().columns(2).every( function () {
                                                     var column = this
                                                     var select = jQuery('<select><option value=""></option></select>')
-                                                        .appendTo( jQuery(column.header()) )
+                                                        .appendTo( jQuery('#sdSelect') )
                                                         .on( 'change', function () {
                                                             var val = $.fn.dataTable.util.escapeRegex(
                                                                 jQuery(this).val()
