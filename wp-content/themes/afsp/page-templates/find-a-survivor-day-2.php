@@ -55,13 +55,19 @@ if ( have_posts() ) :
                 <tbody>
                     <?php global $post;
                         foreach($sd_events as $post) :
-                            setup_postdata($post); ?>
+                            setup_postdata($post);
+                            $title = get_the_title();
+                            $country = get_field( 'sd_event_country' );
+                            $city = get_field( 'sd_event_city' );
+                            $state = get_field( 'sd_event_state' ) != '' ? get_field( 'sd_event_state' ) : '';
+                            $zip = get_field( 'sd_event_zip_code' );
+                        ?>
                     <tr>
-                        <td>Montgomery, Alabama</td>
-                        <td>Montgomery</td>
-                        <td>Alabama</td>
-                        <td>36109</td>
-                        <td>United States of America</td>
+                        <td><?php echo $title; ?></td>
+                        <td><?php echo $city; ?></td>
+                        <td><?php echo $state; ?></td>
+                        <td><?php echo $zip; ?></td>
+                        <td><?php echo $country; ?></td>
                     </tr>
                     <?php endforeach; ?>
                 </tbody>
