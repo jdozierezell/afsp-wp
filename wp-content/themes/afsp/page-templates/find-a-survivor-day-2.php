@@ -97,27 +97,56 @@ if ( have_posts() ) :
 
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/>
         <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
-        <script type="text/javascript" src="https://cdn.datatables.net/plug-ins/1.10.19/api/fnFilterClear.js"></script>
         <script>
-            (function($) {
-                $('#isosld').DataTable( {
+            jQuery(document).ready(function() {
+                // fnFilterClear plugin for datatables
+                jQuery.fn.dataTableExt.oApi.fnFilterClear  = function ( oSettings )
+                {
+                    var i, iLen;
+
+                    /* Remove global filter */
+                    oSettings.oPreviousSearch.sSearch = "";
+
+                    /* Remove the text of the global filter in the input boxes */
+                    if ( typeof oSettings.aanFeatures.f != 'undefined' )
+                    {
+                        var n = oSettings.aanFeatures.f;
+                        for ( i=0, iLen=n.length ; i<iLen ; i++ )
+                        {
+                            jQuery('input', n[i]).val( '' );
+                        }
+                    }
+
+                    /* Remove the search text for the column filters - NOTE - if you have input boxes for these
+                     * filters, these will need to be reset
+                     */
+                    for ( i=0, iLen=oSettings.aoPreSearchCols.length ; i<iLen ; i++ )
+                    {
+                        oSettings.aoPreSearchCols[i].sSearch = "";
+                    }
+
+                    /* Redraw */
+                    oSettings.oApi._fnReDraw( oSettings );
+                }
+                // end fnFilterClear
+                jQuery('#isosld').DataTable( {
                                             initComplete: function () {
                                                 var table = this
                                                 table.api().columns([ 2, 4 ]).every( function () {
                                                     var column = this
-                                                    var select = $('<select><option value=""></option></select>')
+                                                    var select = jQuery('<select><option value=""></option></select>')
                                                         .attr( 'id', `selector-${column[0][0]}` )
-                                                        .appendTo( $(`#sdSelect-${column[0][0]}`) )
+                                                        .appendTo( jQuery(`#sdSelect-${column[0][0]}`) )
                                                         .on( 'change', function () {
                                                             if (column[0][0] == 2) {
-                                                                $("#selector-4").prop('selectedIndex',0)
+                                                                jQuery("#selector-4").prop('selectedIndex',0)
                                                                 table.fnFilterClear()
                                                             } else if (column[0][0] == 4) {
-                                                                $("#selector-2").prop('selectedIndex',0)
+                                                                jQuery("#selector-2").prop('selectedIndex',0)
                                                                 table.fnFilterClear()
                                                             }
-                                                            var val = $.fn.dataTable.util.escapeRegex(
-                                                                $(this).val()
+                                                            var val = jQuery.fn.dataTable.util.escapeRegex(
+                                                                jQuery(this).val()
                                                             )
 
                                                             column
@@ -134,9 +163,9 @@ if ( have_posts() ) :
                     // searching: false,
                     order: [ 3, 'asc' ]
                                         } )
-                $("#selector-4 option:contains('United States of America')").remove()
-                $("#selector-4 option:contains('Canada')").remove()
-            } )(jQuery)
+                jQuery("#selector-4 option:contains('United States of America')").remove()
+                jQuery("#selector-4 option:contains('Canada')").remove()
+            } )
         </script>
 
 	<?php
