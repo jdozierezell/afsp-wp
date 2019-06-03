@@ -99,25 +99,25 @@ if ( have_posts() ) :
         <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
         <script type="text/javascript" src="https://cdn.datatables.net/plug-ins/1.10.19/api/fnFilterClear.js"></script>
         <script>
-            jQuery(document).ready(function() {
-                jQuery('#isosld').DataTable( {
+            $(document).ready(function($) {
+                $('#isosld').DataTable( {
                                             initComplete: function () {
                                                 var table = this
                                                 table.api().columns([ 2, 4 ]).every( function () {
                                                     var column = this
-                                                    var select = jQuery('<select><option value=""></option></select>')
+                                                    var select = $('<select><option value=""></option></select>')
                                                         .attr( 'id', `selector-${column[0][0]}` )
-                                                        .appendTo( jQuery(`#sdSelect-${column[0][0]}`) )
+                                                        .appendTo( $(`#sdSelect-${column[0][0]}`) )
                                                         .on( 'change', function () {
                                                             if (column[0][0] == 2) {
-                                                                jQuery("#selector-4").prop('selectedIndex',0)
+                                                                $("#selector-4").prop('selectedIndex',0)
                                                                 table.fnFilterClear()
                                                             } else if (column[0][0] == 4) {
-                                                                jQuery("#selector-2").prop('selectedIndex',0)
+                                                                $("#selector-2").prop('selectedIndex',0)
                                                                 table.fnFilterClear()
                                                             }
-                                                            var val = jQuery.fn.dataTable.util.escapeRegex(
-                                                                jQuery(this).val()
+                                                            var val = $.fn.dataTable.util.escapeRegex(
+                                                                $(this).val()
                                                             )
 
                                                             column
@@ -134,8 +134,8 @@ if ( have_posts() ) :
                     // searching: false,
                     order: [ 3, 'asc' ]
                                         } )
-                jQuery("#selector-4 option:contains('United States of America')").remove()
-                jQuery("#selector-4 option:contains('Canada')").remove()
+                $("#selector-4 option:contains('United States of America')").remove()
+                $("#selector-4 option:contains('Canada')").remove()
             } )
         </script>
 
