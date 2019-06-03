@@ -99,7 +99,7 @@ if ( have_posts() ) :
         <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
         <script type="text/javascript" src="https://cdn.datatables.net/plug-ins/1.10.19/api/fnFilterClear.js"></script>
         <script>
-            jQuery(document).ready(function($) {
+            (function($) {
                 $('#isosld').DataTable( {
                                             initComplete: function () {
                                                 var table = this
@@ -136,7 +136,7 @@ if ( have_posts() ) :
                                         } )
                 $("#selector-4 option:contains('United States of America')").remove()
                 $("#selector-4 option:contains('Canada')").remove()
-            } )
+            } )(jQuery)
         </script>
 
 	<?php
