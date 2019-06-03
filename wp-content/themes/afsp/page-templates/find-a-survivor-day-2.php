@@ -26,7 +26,8 @@ if ( have_posts() ) :
                 float: left;
                 line-height: 1.5rem;
             }
-            #selector {
+            #selector-2,
+            #selector-4 {
                 display: inline-block;
                 width: 54%;
                 float: right;
@@ -100,12 +101,20 @@ if ( have_posts() ) :
             jQuery(document).ready(function() {
                 jQuery('#isosld').DataTable( {
                                             initComplete: function () {
-                                                this.api().columns([ 2, 4 ]).every( function () {
+                                                var table = this
+                                                table.api().columns([ 2, 4 ]).every( function () {
                                                     var column = this
                                                     var select = jQuery('<select><option value=""></option></select>')
                                                         .attr( 'id', `selector-${column[0][0]}` )
                                                         .appendTo( jQuery(`#sdSelect-${column[0][0]}`) )
                                                         .on( 'change', function () {
+                                                            if (column[0][0] == 2) {
+                                                                jQuery("#selector-4").prop('selectedIndex',0)
+                                                                table.fnFilterClear()
+                                                            } else if (column[0][0] == 4) {
+                                                                jQuery("#selector-2").prop('selectedIndex',0)
+                                                                table.fnFilterClear()
+                                                            }
                                                             var val = jQuery.fn.dataTable.util.escapeRegex(
                                                                 jQuery(this).val()
                                                             )
