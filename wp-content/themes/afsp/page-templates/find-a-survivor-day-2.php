@@ -27,37 +27,48 @@ if ( have_posts() ) :
         </style>
 		<section class="container">
 			<p>New events are being added every day. If you don't find an event near you, please check back.</p>
+            <?php global $wpdb;
+
+            $query = "
+                SELECT *
+                    FROM wp_posts posts
+                    WHERE posts.post_type = 'survivor_day'
+                    AND (posts.post_status = 'publish')
+                ";
+
+            $sd_events = $wpdb->get_results($query, OBJECT);
+
+            // The Loop
+            if ( $sd_events ) :	?>
             <!-- Table Markup -->
             <div id="sdSelect"></div>
             <table id="isosld" class="tablepress">
                 <thead>
-                <tr>
-                    <th>Event Name</th>
-                    <th>City</th>
-                    <th>State/Province</th>
-                    <th>Postal Code</th>
-                    <th>Country</th>
-                </tr>
+                    <tr>
+                        <th>Event Name</th>
+                        <th>City</th>
+                        <th>State/Province</th>
+                        <th>Postal Code</th>
+                        <th>Country</th>
+                    </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>Montgomery, Alabama</td>
-                    <td>Montgomery</td>
-                    <td>Alabama</td>
-                    <td>36109</td>
-                    <td>United States of America</td>
-                </tr>
-                <tr>
-                    <td>Montgomery, Alabama</td>
-                    <td>Montgomery</td>
-                    <td>Alabama</td>
-                    <td>00001</td>
-                    <td>United States of America</td>
-                </tr>
+                    <?php global $post;
+                        foreach($sd_events as $post) :
+                            setup_postdata($post); ?>
+                    <tr>
+                        <td>Montgomery, Alabama</td>
+                        <td>Montgomery</td>
+                        <td>Alabama</td>
+                        <td>36109</td>
+                        <td>United States of America</td>
+                    </tr>
+                    <?php endforeach; ?>
                 </tbody>
                 <tfoot>
                 </tfoot>
             </table>
+            <?php endif; ?>
         </section>
 		<section class="container">
 			<div class="support-group__content">
@@ -78,7 +89,7 @@ if ( have_posts() ) :
                                                     var select = jQuery('<select><option value=""></option></select>')
                                                         .appendTo( jQuery('#sdSelect') )
                                                         .on( 'change', function () {
-                                                            var val = $.fn.dataTable.util.escapeRegex(
+                                                            var val = jQuery.fn.dataTable.util.escapeRegex(
                                                                 jQuery(this).val()
                                                             )
 
