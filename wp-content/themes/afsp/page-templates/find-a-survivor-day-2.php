@@ -40,17 +40,17 @@ if ( have_posts() ) :
                 </thead>
                 <tbody>
                 <tr>
-                    <th>Event Name</th>
-                    <th>City</th>
-                    <th>State/Province</th>
-                    <th>Postal Code</th>
-                    <th>Country</th>
+                    <td>Montgomery, Alabama</td>
+                    <td>Montgomery</td>
+                    <td>Alabama</td>
+                    <td>36109</td>
+                    <td>United States of America</td>
                 </tr>
                 <tr>
                     <td>Montgomery, Alabama</td>
                     <td>Montgomery</td>
                     <td>Alabama</td>
-                    <td>36109</td>
+                    <td>00001</td>
                     <td>United States of America</td>
                 </tr>
                 </tbody>
@@ -73,26 +73,29 @@ if ( have_posts() ) :
                 jQuery('#isosld').DataTable( {
                                             initComplete: function () {
                                                 this.api().columns().every( function () {
-                                                    var column = this;
+                                                    var column = this
                                                     var select = jQuery('<select><option value=""></option></select>')
-                                                        .appendTo( jQuery(column.header()).empty() )
+                                                        .appendTo( jQuery(column.header()) )
                                                         .on( 'change', function () {
                                                             var val = $.fn.dataTable.util.escapeRegex(
                                                                 jQuery(this).val()
-                                                            );
+                                                            )
 
                                                             column
                                                                 .search( val ? '^'+val+'$' : '', true, false )
                                                                 .draw();
-                                                        } );
+                                                        } )
 
                                                     column.data().unique().sort().each( function ( d, j ) {
                                                         select.append( '<option value="'+d+'">'+d+'</option>' )
-                                                    } );
-                                                } );
-                                            }
-                                        } );
-            } );
+                                                    } )
+                                                } )
+                                            },
+                    paging: false,
+                    searching: false,
+                    order: [ 3, 'asc' ]
+                                        } )
+            } )
         </script>
 
 	<?php
