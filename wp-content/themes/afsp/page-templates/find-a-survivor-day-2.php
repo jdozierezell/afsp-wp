@@ -17,12 +17,19 @@ if ( have_posts() ) :
 		the_post();
 		?>
         <style>
-            .form-group.footable-filtering-search,
-            .footable-filter {
+            #isosld_filter {
                 display: none;
             }
-            .form-control {
-                color: #262626;
+            #selectInstructions {
+                display: inline-block;
+                width: 45%;
+                float: left;
+                line-height: 1.5rem;
+            }
+            #selector {
+                display: inline-block;
+                width: 54%;
+                float: right;
             }
         </style>
 		<section class="container">
@@ -41,7 +48,10 @@ if ( have_posts() ) :
             // The Loop
             if ( $sd_events ) :	?>
             <!-- Table Markup -->
-            <div id="sdSelect"></div>
+                <div id="sdSelect-2"><span id="selectInstructions">In the U.S. or Canada? Select your state to narrow
+                                                                  results</span></div>
+                <div id="sdSelect-4"><span id="selectInstructions">Outside the U.S. or Canada? Select your
+                                                                 country instead</span></div>
             <table id="isosld" class="tablepress">
                 <thead>
                     <tr>
@@ -90,10 +100,11 @@ if ( have_posts() ) :
             jQuery(document).ready(function() {
                 jQuery('#isosld').DataTable( {
                                             initComplete: function () {
-                                                this.api().columns(2).every( function () {
+                                                this.api().columns([ 2, 4 ]).every( function () {
                                                     var column = this
                                                     var select = jQuery('<select><option value=""></option></select>')
-                                                        .appendTo( jQuery('#sdSelect') )
+                                                        .attr( 'id', `selector-${column[0][0]}` )
+                                                        .appendTo( jQuery(`#sdSelect-${column[0][0]}`) )
                                                         .on( 'change', function () {
                                                             var val = jQuery.fn.dataTable.util.escapeRegex(
                                                                 jQuery(this).val()
@@ -110,9 +121,11 @@ if ( have_posts() ) :
                                                 } )
                                             },
                     paging: false,
-                    searching: false,
+                    // searching: false,
                     order: [ 3, 'asc' ]
                                         } )
+                jQuery("#selector-4 option:contains('United States of America')").remove()
+                jQuery("#selector-4 option:contains('Canada')").remove()
             } )
         </script>
 
