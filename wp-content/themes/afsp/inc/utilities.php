@@ -267,18 +267,15 @@ function chapter_to_base_url( $chapters ) {
 			break;
 		case 'AFSP Eastern Missouri':
 			$chapter_url_base = 'eastern-missouri';
-			break; 
-    case 'AFSP Eastern Pennsylvania':
-      $chapter_url_base = 'eastern-pennsylvania';
-      break;
+			break;
+        case 'AFSP Eastern Pennsylvania':
+          $chapter_url_base = 'eastern-pennsylvania';
+          break;
 		case 'AFSP Florida Panhandle':
 			$chapter_url_base = 'florida-panhandle';
 			break;
 		case 'AFSP Georgia':
 			$chapter_url_base = 'georgia';
-			break;
-		case 'AFSP Greater Boston':
-			$chapter_url_base = 'greater-boston';
 			break;
 		case 'AFSP Greater Kansas':
 			$chapter_url_base = 'greater-kansas';
@@ -334,6 +331,9 @@ function chapter_to_base_url( $chapters ) {
 		case 'AFSP Maryland':
 			$chapter_url_base = 'maryland';
 			break;
+        case 'AFSP Massachusetts':
+            $chapter_url_base = 'massachusetts';
+            break;
 		case 'AFSP Michigan':
 			$chapter_url_base = 'michigan';
 			break;
@@ -442,9 +442,6 @@ function chapter_to_base_url( $chapters ) {
 		case 'AFSP West Virginia':
 			$chapter_url_base = 'west-virginia';
 			break;
-		case 'AFSP Western Massachusetts':
-			$chapter_url_base = 'western-massachusetts';
-			break;
 		case 'AFSP Western New York':
 			$chapter_url_base = 'western-new-york';
 			break;
@@ -524,9 +521,6 @@ function chapter_term_to_name( $term ) {
 		case 'afsp-georgia':
 			$chapter = 'AFSP Georgia';
 			break;
-		case 'afsp-greater-boston':
-			$chapter = 'AFSP Greater Boston';
-			break;
 		case 'afsp-greater-kansas':
 			$chapter = 'AFSP Greater Kansas';
 			break;
@@ -581,6 +575,9 @@ function chapter_term_to_name( $term ) {
 		case 'afsp-maryland':
 			$chapter = 'AFSP Maryland';
 			break;
+        case 'afsp-massachusetts':
+            $chapter = 'AFSP Massachusetts';
+            break;
 		case 'afsp-michigan':
 			$chapter = 'AFSP Michigan';
 			break;
@@ -683,9 +680,6 @@ function chapter_term_to_name( $term ) {
 		case 'afsp-west-virginia':
 			$chapter = 'AFSP West Virginia';
 			break;
-		case 'afsp-western-massachusetts':
-			$chapter = 'AFSP Western Massachusetts';
-			break;
 		case 'afsp-western-new-york':
 			$chapter = 'AFSP Western New York';
 			break;
@@ -763,9 +757,6 @@ function chapter_name_to_code( $chapter ) {
 		case 'AFSP Georgia':
 			$chapter_code = 'GA';
 			break;
-		case 'AFSP Greater Boston':
-			$chapter_code = 'MA';
-			break;
 		case 'AFSP Greater Kansas':
 			$chapter_code = 'KS';
 			break;
@@ -820,6 +811,9 @@ function chapter_name_to_code( $chapter ) {
 		case 'AFSP Maryland':
 			$chapter_code = 'MD';
 			break;
+        case 'AFSP Massachusetts':
+            $chapter_code = 'MA';
+            break;
 		case 'AFSP Michigan':
 			$chapter_code = 'MI';
 			break;
@@ -928,9 +922,6 @@ function chapter_name_to_code( $chapter ) {
 		case 'AFSP West Virginia':
 			$chapter_code = 'WV';
 			break;
-		case 'AFSP Western Massachusetts':
-			$chapter_code = 'MAWES';
-			break;
 		case 'AFSP Western New York':
 			$chapter_code = 'NYWNY';
 			break;
@@ -1004,9 +995,6 @@ function afsp_chapter_breadcrumbs( $chapter_code ) {
 		case 'GA':
 			$chapter = 'AFSP Georgia';
 			break;
-		case 'MA':
-			$chapter = 'AFSP Greater Boston';
-			break;
 		case 'KS':
 			$chapter = 'AFSP Greater Kansas';
 			break;
@@ -1061,6 +1049,9 @@ function afsp_chapter_breadcrumbs( $chapter_code ) {
 		case 'MD':
 			$chapter = 'AFSP Maryland';
 			break;
+        case 'MA':
+            $chapter = 'AFSP Massachusetts';
+            break;
 		case 'MI':
 			$chapter = 'AFSP Michigan';
 			break;
@@ -1168,9 +1159,6 @@ function afsp_chapter_breadcrumbs( $chapter_code ) {
 			break;
 		case 'WV':
 			$chapter = 'AFSP West Virginia';
-			break;
-		case 'MAWES':
-			$chapter = 'AFSP Western Massachusetts';
 			break;
 		case 'NYWNY':
 			$chapter = 'AFSP Western New York';
