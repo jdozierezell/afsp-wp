@@ -130,9 +130,11 @@ if ( have_posts() ) :
 				<p><i>In the interest of creating a safe space for loss survivors, some events are exclusively for survivors of suicide loss. In addition, many events cannot accommodate children and teens.  If you have any questions, please contact the event host directly.</i></p>
                 <br>
                 <br>
-                <p><strong>Attendee registration will open in July: please check back to register for an event near you.
+                <p style="font-family: avenirnextltpro-demi,helvetica,arial,sans-serif;">Attendee registration will
+                                                                                         open in July: please check back to register for an
+                                     event near you.
                            You may feel free to contact <a href="mailto:survivorday@afsp.org">survivorday@afsp.org</a> with any questions
-                                                           .</strong></p>
+                                                           .</p>
 			</div>
 			<div class="event__description">
 				<?php if ( '' != get_field( 'sd_custom_date' ) ) : ?>
