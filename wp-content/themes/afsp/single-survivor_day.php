@@ -131,7 +131,8 @@ if ( have_posts() ) :
                 <br>
                 <br>
                 <p><strong>Attendee registration will open in July: please check back to register for an event near you.
-                           You may feel free to contact survivorday@afsp.org with any questions.</strong></p>
+                           You may feel free to contact <a href="mailto:survivorday@afsp.org">survivorday@afsp.org</a> with any questions
+                                                           .</strong></p>
 			</div>
 			<div class="event__description">
 				<?php if ( '' != get_field( 'sd_custom_date' ) ) : ?>
