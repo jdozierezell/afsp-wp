@@ -26,6 +26,10 @@ if ( have_posts() ) :
                 float: left;
                 line-height: 1.5rem;
             }
+            #sdSelect-2,
+            #sdSelect-4 {
+                min-height: 2rem;
+            }
             #selector-2,
             #selector-4 {
                 display: inline-block;
@@ -163,6 +167,7 @@ if ( have_posts() ) :
                     // searching: false,
                     order: [ 3, 'asc' ]
                                         } )
+                // Hide USA and Canada from country selector
                 jQuery("#selector-4 option:contains('United States of America')").remove()
                 jQuery("#selector-4 option:contains('Canada')").remove()
             } )
