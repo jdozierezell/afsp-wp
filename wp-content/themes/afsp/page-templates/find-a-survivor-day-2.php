@@ -36,8 +36,13 @@ if ( have_posts() ) :
                 width: 54%;
                 float: right;
             }
+            @media (max-width: 920px) {
+                .spanHide {
+                    display: none;
+                }
+            }
             @media (max-width: 600px) {
-                .mobileHide {
+                .tableHide {
                     display: none;
                 }
             }
@@ -58,18 +63,18 @@ if ( have_posts() ) :
             // The Loop
             if ( $sd_events ) :	?>
             <!-- Table Markup -->
-                <div id="sdSelect-2"><span id="selectInstructions">In the U.S. or Canada?<span class="mobileHide">
+                <div id="sdSelect-2"><span id="selectInstructions">In the U.S. or Canada?<span class="spanHide">
                             Select your state to narrow results</span></span></div>
-                <div id="sdSelect-4"><span id="selectInstructions">Outside the U.S. or Canada?<span class="mobileHide">
+                <div id="sdSelect-4"><span id="selectInstructions">Outside the U.S. or Canada?<span class="spanHide">
                             Select your country instead</span></span></div>
             <table id="isosld" class="tablepress">
                 <thead>
                     <tr>
                         <th>Event Name</th>
                         <th>City</th>
-                        <th class="mobileHide">State/Province</th>
+                        <th class="tableHide">State/Province</th>
                         <th>Postal Code</th>
-                        <th class="mobileHide">Country</th>
+                        <th class="tableHide">Country</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -85,9 +90,9 @@ if ( have_posts() ) :
                     <tr>
                         <td><?php echo $title; ?></td>
                         <td><?php echo $city; ?></td>
-                        <td class="mobileHide"><?php echo $state; ?></td>
+                        <td class="tableHide"><?php echo $state; ?></td>
                         <td><?php echo $zip; ?></td>
-                        <td class="mobileHide"><?php echo $country; ?></td>
+                        <td class="tableHide"><?php echo $country; ?></td>
                     </tr>
                     <?php endforeach; ?>
                 </tbody>
