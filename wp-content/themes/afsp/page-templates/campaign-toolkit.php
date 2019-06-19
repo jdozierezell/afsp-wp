@@ -12,6 +12,11 @@ if(have_posts()) : while(have_posts()) : the_post();
     if ( !empty( $image ) ) {
       $image_url = $image['url'];
     }
+    $image_mobile = get_field( 't_hero_image_mobile' );
+    $image_mobile_url = false;
+    if ( !empty( $image_mobile ) ) {
+        $image_url = $image_mobile['url'];
+    }
 ?>
 <script>
 var $buoop = {
@@ -44,7 +49,7 @@ catch(e){window.attachEvent("onload", $buo_f)}
 .full-width {
   height: 375px;
   background-color: #396dff;
-  background-image: url(<?php echo $image_url ? $image_url : ''; ?>);
+  background-image: url(<?php echo $image_mobile_url ? $image_mobile_url : ''; ?>);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -216,6 +221,10 @@ catch(e){window.attachEvent("onload", $buo_f)}
 }
 
 @media screen and (min-width: 768px) {
+
+  .full-width {
+      background-image: url(<?php echo $image_url ? $image_url : ''; ?>);
+  }
 
   #grid {
     -ms-grid-columns: 1fr 40px 1fr 40px 1fr;
