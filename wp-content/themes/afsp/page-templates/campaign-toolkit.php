@@ -222,10 +222,6 @@ catch(e){window.attachEvent("onload", $buo_f)}
 
 @media screen and (min-width: 768px) {
 
-  .full-width {
-      background-image: url(<?php echo $image_url ? $image_url : ''; ?>);
-  }
-
   #grid {
     -ms-grid-columns: 1fr 40px 1fr 40px 1fr;
     grid-template-columns: repeat(3, 1fr);
@@ -354,6 +350,10 @@ catch(e){window.attachEvent("onload", $buo_f)}
 }
 
 @media screen and (min-width: 1100px) {
+
+    .full-width {
+        background-image: url(<?php echo $image_url ? $image_url : ''; ?>);
+    }
 
   .grid-children .grid-item:nth-of-type(-n+4) {
     -ms-grid-row: 1 !important;
