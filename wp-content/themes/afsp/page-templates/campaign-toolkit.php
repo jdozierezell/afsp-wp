@@ -15,7 +15,7 @@ if(have_posts()) : while(have_posts()) : the_post();
     $image_mobile = get_field( 't_hero_image_mobile' );
     $image_mobile_url = false;
     if ( !empty( $image_mobile ) ) {
-        $image_url = $image_mobile['url'];
+        $image_mobile_url = $image_mobile['url'];
     }
 ?>
 <script>
