@@ -400,7 +400,7 @@ catch(e){window.attachEvent("onload", $buo_f)}
 <div class="background">
   <div class="full-width"></div>
   <div id="grid">
-    <div class="page-description"><?php the_field( 't_page_description' ); ?></div>
+    <div class="page-description"><?php the_content(); ?></div>
     <?php if ( have_rows( 't_grid_section' ) ) : while ( have_rows( 't_grid_section' ) ) : the_row();
         $image = get_sub_field( 't_grid_image' );
         $image_temp = $image['url'];
