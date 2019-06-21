@@ -400,7 +400,14 @@ catch(e){window.attachEvent("onload", $buo_f)}
 <div class="background">
   <div class="full-width"></div>
   <div id="grid">
-    <div class="page-description"><?php the_content(); ?></div>
+    <div class="page-description">
+        <p>Just as with physical health, disparities exist for minority populations for mental health as well. Such
+              disparities can create greater risk for suffering and mental health problems, and can make access to
+           mental health care more difficult. The American Foundation for Suicide Prevention takes this issue
+           seriously: everyone deserves treatment for any mental health challenge they are experiencing, and
+           successful treatment doesn’t look the same for everyone.</p>
+        <p><a id="intro" href="#">Read more</a></p>
+    </div>
     <?php if ( have_rows( 't_grid_section' ) ) : while ( have_rows( 't_grid_section' ) ) : the_row();
         $image = get_sub_field( 't_grid_image' );
         $image_temp = $image['url'];
@@ -472,6 +479,29 @@ catch(e){window.attachEvent("onload", $buo_f)}
     endif; // end all layouts
     ?>
   </div>
+    <div id="intro-modal" class="grid-item-modal">
+        <p>Just as with physical health, disparities exist for minority populations for mental health as well. Such
+           disparities can create greater risk for suffering and mental health problems, and can make access to
+           mental health care more difficult. The American Foundation for Suicide Prevention takes this issue
+           seriously: everyone deserves treatment for any mental health challenge they are experiencing, and successful treatment doesn’t look the same for everyone.</p>
+
+        <p>We know it’s critically important to take a proactive, culturally informed
+           approach to mental health that is led by minority populations, and is mindful
+           of how history, experiences and societal factors have contributed to the health
+           disparities that exist today. We know there’s more to learn about why these disparities occur, and what we can do about it. AFSP is dedicated to supporting these efforts.</p>
+        <p>AFSP supports research related to preventing suicide in all populations. In addition to encouraging
+           representation of minority populations in all our studies, AFSP has also funded studies specific to
+           minority populations within a variety of diverse communities. As one example, AFSP funded a research study
+           by Dr. Jennifer Humensky, “Life is Precious: Academic-Community Partnership to Reduce Suicidal Behavior in Latina Adolescents.” This work led to additional funding for new sites where the program could be studied, in New York City. It is one example of research that has helped to develop culturally informed treatments that are both evidence-based and are made available to the populations they serve.</p>
+
+        <p>Our advocacy efforts at the federal, state, and local levels seeks to narrow the gaps in access to health
+           care for all, such as supporting legislation that would enforce mental health parity laws, expand the
+           mental health workforce, and increase access to care in underserved areas. At the same time, our local
+           chapters work to better understand what’s needed in terms of support to prevent suicide and address the
+           impact of suicide, both in terms of suicide loss and lived experience.</p>
+
+        <p>We invite organizations and thought leaders with an interest in preventing suicide to join us in our efforts
+           increase support and care for people everywhere.</p></div>
   <div id="calendar-modal" class="grid-item-modal">
     <div><svg id="modal-close" class="modal__close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 99.082 100" enable-background="new 0 0 99.082 100"
               xml:space="preserve">
@@ -496,6 +526,8 @@ var gridItemModals = document.getElementsByClassName( 'grid-item-modal' )
 var gridItemModalButtons = document.getElementsByClassName( 'grid-button-modal' )
 var calendar = document.getElementById( 'calendar' )
 var calendarModal = document.getElementById( 'calendar-modal' )
+var intro = document.getElementById( 'intro' )
+var introModal = document.getElementById( 'intro-modal' )
 var modalClose = document.getElementsByClassName( 'modal__close' )
 var grid = document.getElementById( 'grid' )
 
@@ -539,6 +571,10 @@ for ( var i = 0; i < gridItemModalButtons.length; i++ ) {
     event.target.parentNode.nextSibling.nextSibling.style.display = 'block'
   } )
 }
+
+intro.addEventListener( 'click', function (event) {
+    introModal.style.display = 'block'
+})
 
 calendar.addEventListener( 'click', function (event) {
   calendarModal.style.display = 'block'
