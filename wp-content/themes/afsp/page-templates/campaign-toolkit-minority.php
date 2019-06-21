@@ -61,6 +61,7 @@ catch(e){window.attachEvent("onload", $buo_f)}
 
 #intro-modal .text-wrapper {
     overflow: scroll;
+    overflow-x: hidden;
     max-width: 960px;
     font-size: 1.5rem;
     margin: 0 auto;
