@@ -59,9 +59,11 @@ catch(e){window.attachEvent("onload", $buo_f)}
     color: white;
 }
 
-#intro-modal p {
+#intro-modal .text-wrapper {
+    overflow: scroll;
     max-width: 960px;
     font-size: 1.5rem;
+    margin: 0 auto;
 }
 
 #grid {
@@ -230,6 +232,10 @@ catch(e){window.attachEvent("onload", $buo_f)}
 }
 
 @media screen and (min-width: 768px) {
+
+    #intro-modal .text-wrapper {
+        height: calc(100vh - 13rem);
+    }
 
   #grid {
     -ms-grid-columns: 1fr 40px 1fr 40px 1fr;
@@ -503,6 +509,7 @@ catch(e){window.attachEvent("onload", $buo_f)}
             </g>
         </svg>
         </div>
+        <div class="text-wrapper">
         <p>Just as with physical health, disparities exist for minority populations for mental health as well. Such
            disparities can create greater risk for suffering and mental health problems, and can make access to
            mental health care more difficult. The American Foundation for Suicide Prevention takes this issue
@@ -524,7 +531,7 @@ catch(e){window.attachEvent("onload", $buo_f)}
            impact of suicide, both in terms of suicide loss and lived experience.</p>
 
         <p>We invite organizations and thought leaders with an interest in preventing suicide to join us in our efforts
-           increase support and care for people everywhere.</p></div>
+           increase support and care for people everywhere.</p></div></div>
   <div id="calendar-modal" class="grid-item-modal">
     <div><svg id="modal-close" class="modal__close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 99.082 100" enable-background="new 0 0 99.082 100"
               xml:space="preserve">
