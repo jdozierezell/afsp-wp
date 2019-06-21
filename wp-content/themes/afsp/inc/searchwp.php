@@ -23,5 +23,14 @@ function my_searchwp_query_orderby( $orderby ) {
 add_filter( 'searchwp_query_orderby', 'my_searchwp_query_orderby' );
 
 
+// remove stopwords
+function my_searchwp_stopwords( $terms ) {
 
-?>
+    // we DO NOT want to ignore 'first' so remove it from the list of common words
+    $words_to_keep = array( 'may' );
+
+    $terms = array_diff( $terms, $words_to_keep );
+
+    return $terms;
+}
+add_filter( 'searchwp_stopwords', 'my_searchwp_stopwords' );
