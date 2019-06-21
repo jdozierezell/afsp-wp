@@ -67,6 +67,13 @@ catch(e){window.attachEvent("onload", $buo_f)}
     margin: 0 auto;
 }
 
+.fixed-top {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+}
+
 #grid {
   display: -ms-grid;
   display: grid;
@@ -605,6 +612,7 @@ for ( var i = 0; i < gridItemModalButtons.length; i++ ) {
 
 intro.addEventListener( 'click', function (event) {
     introModal.style.display = 'block'
+    document.body.classList.add('fixed-top')
 })
 
 calendar.addEventListener( 'click', function (event) {
@@ -615,6 +623,9 @@ for ( var i = 0; i < modalClose.length; i++ ) {
   modalClose[i].addEventListener( 'click', function (event) {
     for ( var i = 0; i < gridItemModals.length; i++ ) {
       gridItemModals[i].style.display = 'none'
+        if (document.body.classList.contains('fixed-top')) {
+            document.body.classList.remove('fixed-top')
+        }
     }
   } )
 }
