@@ -67,7 +67,9 @@ catch(e){window.attachEvent("onload", $buo_f)}
 }
 
 @media (pointer:coarse) {
-    overflow: scroll;
+    #intro-modal .text-wrapper {
+        overflow: scroll;
+    }
 }
 
 .fixed-top {
