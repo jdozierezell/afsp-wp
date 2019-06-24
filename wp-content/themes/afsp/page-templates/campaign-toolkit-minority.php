@@ -621,6 +621,10 @@ intro.addEventListener( 'click', function (event) {
     document.body.classList.add('fixed-top')
 })
 
+introModal.addEventListener('click', event => {
+    console.log(event)
+})
+
 calendar.addEventListener( 'click', function (event) {
   calendarModal.style.display = 'block'
 })
