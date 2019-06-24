@@ -66,6 +66,10 @@ catch(e){window.attachEvent("onload", $buo_f)}
     margin: 0 auto;
 }
 
+@media (pointer:coarse) {
+    overflow: scroll;
+}
+
 .fixed-top {
     position: fixed;
     top:0;
