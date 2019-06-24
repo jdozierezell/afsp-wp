@@ -68,8 +68,8 @@ catch(e){window.attachEvent("onload", $buo_f)}
 
 @media (pointer:coarse) {
     #intro-modal .text-wrapper {
-        overflow: scroll;
-        position: relative;
+        overflow: scroll !important;
+        position: relative !important;
     }
 }
 
