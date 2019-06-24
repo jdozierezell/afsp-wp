@@ -60,17 +60,10 @@ catch(e){window.attachEvent("onload", $buo_f)}
 }
 
 #intro-modal .text-wrapper {
-    overflow: auto;
+    overflow: scroll;
     max-width: 960px;
     font-size: 1.5rem;
     margin: 0 auto;
-}
-
-@media (pointer:coarse) {
-    #intro-modal .text-wrapper {
-        overflow: scroll !important;
-        position: relative !important;
-    }
 }
 
 .fixed-top {
