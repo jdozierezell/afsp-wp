@@ -194,7 +194,7 @@ catch(e){window.attachEvent("onload", $buo_f)}
 }
 
 .grid-item-modal {
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
