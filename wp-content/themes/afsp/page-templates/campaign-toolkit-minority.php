@@ -60,7 +60,8 @@ catch(e){window.attachEvent("onload", $buo_f)}
 }
 
 #intro-modal .text-wrapper {
-    overflow: scroll;
+    overflow: auto;
+    overflow-x: hidden;
     max-width: 960px;
     font-size: 1.5rem;
     margin: 0 auto;
@@ -187,7 +188,7 @@ catch(e){window.attachEvent("onload", $buo_f)}
 }
 
 .grid-item-modal {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -612,10 +613,6 @@ for ( var i = 0; i < gridItemModalButtons.length; i++ ) {
 intro.addEventListener( 'click', function (event) {
     introModal.style.display = 'block'
     document.body.classList.add('fixed-top')
-})
-
-introModal.addEventListener('click', event => {
-    console.log(event)
 })
 
 calendar.addEventListener( 'click', function (event) {
