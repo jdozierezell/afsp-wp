@@ -68,10 +68,7 @@ catch(e){window.attachEvent("onload", $buo_f)}
 }
 
 .fixed-top {
-    position: fixed;
-    top:0;
-    left:0;
-    right:0;
+    overflow: hidden;
 }
 
 #grid {
