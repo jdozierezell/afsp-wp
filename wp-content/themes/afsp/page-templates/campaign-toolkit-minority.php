@@ -57,11 +57,10 @@ catch(e){window.attachEvent("onload", $buo_f)}
 
 #intro-modal {
     color: white;
+    overflow: auto;
 }
 
 #intro-modal .text-wrapper {
-    overflow: auto;
-    overflow-x: hidden;
     max-width: 960px;
     font-size: 1.5rem;
     margin: 0 auto;
