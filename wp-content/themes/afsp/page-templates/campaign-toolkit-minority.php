@@ -69,6 +69,7 @@ catch(e){window.attachEvent("onload", $buo_f)}
 @media (pointer:coarse) {
     #intro-modal .text-wrapper {
         overflow: scroll;
+        position: relative;
     }
 }
 
@@ -617,7 +618,7 @@ for ( var i = 0; i < gridItemModalButtons.length; i++ ) {
 
 intro.addEventListener( 'click', function (event) {
     introModal.style.display = 'block'
-    // document.body.classList.add('fixed-top')
+    document.body.classList.add('fixed-top')
 })
 
 introModal.addEventListener('click', event => {
