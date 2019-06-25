@@ -67,7 +67,7 @@ catch(e){window.attachEvent("onload", $buo_f)}
 }
 
 .grid-item-modal {
-    background-color: rgba(38,38,38,0.8);
+    background: rgba(38,38,38,0.9) !important;
 }
 
 .fixed-top {
