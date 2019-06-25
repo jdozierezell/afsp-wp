@@ -66,6 +66,10 @@ catch(e){window.attachEvent("onload", $buo_f)}
     margin: 0 auto;
 }
 
+.grid-item-modal {
+    background-color: rgba(38,38,38,0.8);
+}
+
 .fixed-top {
     overflow: hidden;
 }
