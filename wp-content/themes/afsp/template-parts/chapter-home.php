@@ -79,7 +79,14 @@
 				$secondStaffSrc = $secondStaffImage_array[0];
 	    	if($secondStaffPos = strpos($secondStaffSrc, '?') !== false) :
 	    		$secondStaffSrc = strstr($secondStaffSrc, '?', true);
-	    	endif; ?>
+	    	endif;
+
+            $thirdStaffImage = get_field('v_thirdStaff_image');
+            $thirdStaffImage_array = wp_get_attachment_image_src($thirdStaffImage['id']);
+            $thirdStaffSrc = $thirdStaffImage_array[0];
+            if($thirdStaffPos = strpos($thirdStaffSrc, '?') !== false) :
+                $thirdStaffSrc = strstr($thirdStaffSrc, '?', true);
+            endif; ?>
 
 			<h4 class="volunteer__contact">Contact</h4>
 			<!--First Contact-->
