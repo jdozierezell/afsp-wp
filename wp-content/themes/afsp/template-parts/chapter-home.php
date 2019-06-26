@@ -112,9 +112,9 @@
 				</div>
 			</div>
 
+            <!--Second Contact-->
 			<?php if(get_field('v_second_contact') == true) : ?>
 
-			<!--Second Contact-->
 			<div class="volunteer__contact-details">
 
 				<?php if($secondStaffImage) : ?>
@@ -138,6 +138,35 @@
 			</div>
 
 				<?php endif; ?>
+            <!--Third Contact-->
+            <?php if(get_field('v_third_contact') == true) : ?>
+
+                <div class="volunteer__contact-details">
+
+                    <?php if($thirdStaffImage) : ?>
+
+                        <img class="volunteer__image" src="<?php echo $thirdStaffSrc;
+                        ?>?fit=crop&crop=faces&w=400&h=400"
+                             alt="<?php $thirdStaffImage['alt']; ?>" />
+
+                    <?php endif; ?>
+
+                    <div class="volunteer__contact">
+                        <h3 class="volunteer__name"><?php the_field('v_third_staff_name'); ?></h3>
+                        <h4 class="volunteer__title"><?php the_field('v_third_staff_title'); ?></h4>
+                        <a class="volunteer__email" href="mailto:<?php the_field('v_third_staff_email'); ?>"><?php
+                                the_field('v_third_staff_email'); ?></a>
+
+                        <?php if(get_field('v_third_staff_phone')) : ?>
+
+                            <p class="volunteer__phone"><?php the_field('v_third_staff_phone'); ?></p>
+
+                        <?php endif; ?>
+
+                    </div>
+                </div>
+
+            <?php endif; ?>
 
 		</div>
 	</div>
