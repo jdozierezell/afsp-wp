@@ -70,23 +70,16 @@
 				<?php $staffImage = get_field('v_staff_image');
 				$staffImage_array = wp_get_attachment_image_src($staffImage['id']);
 				$staffSrc = $staffImage_array[0];
-                if($staffPos = strpos($staffSrc, '?') !== false) :
-                    $staffSrc = strstr($staffSrc, '?', true);
-                endif;
+	    	if($staffPos = strpos($staffSrc, '?') !== false) :
+	    		$staffSrc = strstr($staffSrc, '?', true);
+	    	endif;
 
 				$secondStaffImage = get_field('v_secondStaff_image');
 				$secondStaffImage_array = wp_get_attachment_image_src($secondStaffImage['id']);
 				$secondStaffSrc = $secondStaffImage_array[0];
-                if($secondStaffPos = strpos($secondStaffSrc, '?') !== false) :
-                    $secondStaffSrc = strstr($secondStaffSrc, '?', true);
-                endif;
-
-                $thirdStaffImage = get_field('v_thirdStaff_image');
-                $thirdStaffImage_array = wp_get_attachment_image_src($thirdStaffImage['id']);
-                $thirdStaffSrc = $thirdStaffImage_array[0];
-                if($thirdStaffPos = strpos($thirdStaffSrc, '?') !== false) :
-                    $thirdStaffSrc = strstr($thirdStaffSrc, '?', true);
-                endif; ?>
+	    	if($secondStaffPos = strpos($secondStaffSrc, '?') !== false) :
+	    		$secondStaffSrc = strstr($secondStaffSrc, '?', true);
+	    	endif; ?>
 
 			<h4 class="volunteer__contact">Contact</h4>
 			<!--First Contact-->
@@ -111,9 +104,10 @@
 
 				</div>
 			</div>
-            <!--Second Contact-->
+
 			<?php if(get_field('v_second_contact') == true) : ?>
 
+			<!--Second Contact-->
 			<div class="volunteer__contact-details">
 
 				<?php if($secondStaffImage) : ?>
@@ -135,30 +129,6 @@
 
 				</div>
 			</div>
-        <!--Third Contact-->
-        <?php if(get_field('v_second_contact') == true) : ?>
-
-            <div class="volunteer__contact-details">
-
-                <?php if($secondStaffImage) : ?>
-
-                    <img class="volunteer__image" src="<?php echo $secondStaffSrc; ?>?fit=crop&crop=faces&w=400&h=400" alt="<?php $secondStaffImage['alt']; ?>" />
-
-                <?php endif; ?>
-
-                <div class="volunteer__contact">
-                    <h3 class="volunteer__name"><?php the_field('v_second_staff_name'); ?></h3>
-                    <h4 class="volunteer__title"><?php the_field('v_second_staff_title'); ?></h4>
-                    <a class="volunteer__email" href="mailto:<?php the_field('v_second_staff_email'); ?>"><?php the_field('v_second_staff_email'); ?></a>
-
-                    <?php if(get_field('v_second_staff_phone')) : ?>
-
-                        <p class="volunteer__phone"><?php the_field('v_second_staff_phone'); ?></p>
-
-                    <?php endif; ?>
-
-                </div>
-            </div>
 
 				<?php endif; ?>
 
