@@ -532,14 +532,14 @@ catch(e){window.attachEvent("onload", $buo_f)}
            minority populations within a variety of diverse communities. As one example, AFSP funded a research study
            by Dr. Jennifer Humensky, “Life is Precious: Academic-Community Partnership to Reduce Suicidal Behavior in Latina Adolescents.” This work led to additional funding for new sites where the program could be studied, in New York City. It is one example of research that has helped to develop culturally informed treatments that are both evidence-based and are made available to the populations they serve.</p>
 
-        <p>Our advocacy efforts at the federal, state, and local levels seeks to narrow the gaps in access to health
+        <p>Our advocacy efforts at the federal, state, and local levels seek to narrow the gaps in access to health
            care for all, such as supporting legislation that would enforce mental health parity laws, expand the
            mental health workforce, and increase access to care in underserved areas. At the same time, our local
            chapters work to better understand what’s needed in terms of support to prevent suicide and address the
            impact of suicide, both in terms of suicide loss and lived experience.</p>
 
         <p>We invite organizations and thought leaders with an interest in preventing suicide to join us in our efforts
-           increase support and care for people everywhere.</p></div></div>
+           to increase support and care for people everywhere.</p></div></div>
   <div id="calendar-modal" class="grid-item-modal">
     <div><svg id="modal-close" class="modal__close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 99.082 100" enable-background="new 0 0 99.082 100"
               xml:space="preserve">
