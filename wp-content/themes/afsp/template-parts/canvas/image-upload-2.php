@@ -17,8 +17,6 @@
                 var ct = document.getElementById('measure');
                 ct.appendChild(img);
                 console.log("Data: ", data)
-                var orientation = data.exif['274']
-                console.log("Orientation: ", orientation)
                 var width = data.originalWidth
                 console.log("Width: ", width)
                 var height = data.originalHeight
@@ -32,6 +30,10 @@
                 if (newHeight < canvas.height) {
                     newHeight = canvas.height;
                     newWidth = newHeight * wrh;
+                }
+                if (data.exif) {
+                    var orientation = data.exif['274']
+                    console.log("Orientation: ", orientation)
                 }
                 if (orientation != 1) {
                     ctx.translate(((canvas.width-newWidth)/2) + (0.5 * newWidth), ((canvas.height-newHeight)/2) + (0.5 * newHeight))
