@@ -81,6 +81,7 @@ if ( have_posts() ) :
                     <?php global $post;
                         foreach($sd_events as $post) :
                             setup_postdata($post);
+                            $link = get_permalink();
                             $title = get_the_title();
                             $country = get_field( 'sd_event_country' );
                             $city = get_field( 'sd_event_city' );
@@ -88,7 +89,7 @@ if ( have_posts() ) :
                             $zip = get_field( 'sd_event_zip_code' );
                         ?>
                     <tr>
-                        <td><?php echo $title; ?></td>
+                        <td><a href="<?php echo $link; ?>"><?php echo $title; ?></a></td>
                         <td><?php echo $city; ?></td>
                         <td class="tableHide"><?php echo $state; ?></td>
                         <td><?php echo $zip; ?></td>
