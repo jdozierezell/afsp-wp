@@ -129,7 +129,7 @@ if ( have_posts() ) :
                 <a class="features__button" href="https://afsp.wufoo.com/forms/international-survivors-of-suicide-loss-day-2019?Field1018=<?php echo $pageId;
                 ?>&Field1120=<?php echo $lossOnly; ?>"
                 target="_blank">Register today</a>
-				<p><i>In the interest of creating a safe space for loss survivors, some events are exclusively for survivors of suicide loss. In addition, many events cannot accommodate children and teens.  If you have any questions, please contact the event host directly.</i></p>
+				<p><i>In the interest of creating a safe space for loss survivors, most events are specific to survivors of suicide loss. In addition, many events cannot accommodate children and teens. If you have any questions, please contact the event host directly.</i></p>
 			</div>
 			<div class="event__description">
 				<?php if ( '' != get_field( 'sd_custom_date' ) ) : ?>
