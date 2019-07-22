@@ -123,18 +123,14 @@ if ( have_posts() ) :
 				if ( get_field( 'sd_additional_event' ) ) :
 					echo wp_kses( get_field( 'sd_additional_event' ), $GLOBALS['allowed_html'] );
 				endif;
-				// if ( get_field( 'sd_registration_link' ) ) :
-				?>
-<!--					<a class="features__button" href="https://www.surveymonkey.com/r/99JL2FB" target="_blank">Register today</a>-->
-				<?php // endif; ?>
+                $pageId = get_the_ID();
+                $lossOnly = get_field('sd_attendee_type') === 'loss_only' ? 1 : 0
+                ?>
+                <a class="features__button" href="https://afsp.wufoo
+                .com/forms/international-survivors-of-suicide-loss-day-2019?Field1018=<?php echo $pageId;
+                ?>&Field1120=<?php echo $lossOnly; ?>"
+                target="_blank">Register today</a>
 				<p><i>In the interest of creating a safe space for loss survivors, some events are exclusively for survivors of suicide loss. In addition, many events cannot accommodate children and teens.  If you have any questions, please contact the event host directly.</i></p>
-                <br>
-                <br>
-                <p style="font-family: avenirnextltpro-demi,helvetica,arial,sans-serif;">Attendee registration will
-                                                                                         open in July: please check back to register for an
-                                     event near you.
-                           You may feel free to contact <a href="mailto:survivorday@afsp.org">survivorday@afsp.org</a> with any questions
-                                                           .</p>
 			</div>
 			<div class="event__description">
 				<?php if ( '' != get_field( 'sd_custom_date' ) ) : ?>
