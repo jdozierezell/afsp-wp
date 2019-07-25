@@ -228,7 +228,7 @@ if ( have_posts() ) :
 				<h4>Charge/Donation</h4>
 				<p>Free
 					<?php
-          $fee = get_field( 'sd_fee' );
+          $fee = get_field( 'sd_custom_fee' );
           if($fee) {
 					switch ( $fee ) {
 						case 'no':
