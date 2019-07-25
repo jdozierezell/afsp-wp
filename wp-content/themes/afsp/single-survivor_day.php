@@ -226,7 +226,7 @@ if ( have_posts() ) :
 				<h4>Food Served</h4>
 				<p><?php the_field( 'sd_food' ); ?></p>
 				<h4>Charge/Donation</h4>
-				<p>Free
+				<p>
 					<?php
           echo get_field( 'sd_custom_fee' ) ? get_field('sd_custom_fee') : 'Free'
 					?>
