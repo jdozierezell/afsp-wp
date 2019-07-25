@@ -85,7 +85,7 @@ if ( have_posts() ) :
                             $title = get_the_title();
                             $country = get_field( 'sd_event_country' );
                             $city = get_field( 'sd_event_city' );
-                            $state = get_field( 'sd_event_state' ) != '' ? get_field( 'sd_event_state' ) : '';
+                            $state = get_field( 'sd_event_state' ) != '' ? get_field( 'sd_event_state' ) : get_field( 'sd_event_province');
                             $zip = get_field( 'sd_event_zip_code' );
                         ?>
                     <tr>
