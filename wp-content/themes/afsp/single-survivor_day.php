@@ -228,18 +228,19 @@ if ( have_posts() ) :
 				<h4>Charge/Donation</h4>
 				<p>Free
 					<?php
-//					$fee = get_field( 'sd_fee' );
-//					switch ( $fee ) {
-//						case 'no':
-//							echo 'None';
-//							break;
-//						case 'donation':
-//							echo get_field( 'sd_donation' ) !== '' ? 'Suggested donation: ' . esc_html( get_field( 'sd_donation' ) ) : 'Donations welcome';
-//							break;
-//						case 'yes':
-//							echo 'Registration/attendance fee: ' . esc_html( get_field( 'sd_fee_amount' ) );
-//							break;
-//					}
+          $fee = get_field( 'sd_fee' );
+          if($fee) {
+					switch ( $fee ) {
+						case 'no':
+							echo 'Free';
+							break;
+						case 'donation':
+							echo get_field( 'sd_donation' ) !== '' ? 'Suggested donation: ' . esc_html( get_field( 'sd_donation' ) ) : 'Donations welcome';
+							break;
+						case 'yes':
+							echo 'Registration/attendance fee: ' . esc_html( get_field( 'sd_fee_amount' ) );
+							break;
+					}}
 					?>
 				</p>
 				<?php
