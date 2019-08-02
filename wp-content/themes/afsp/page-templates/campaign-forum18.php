@@ -103,6 +103,11 @@ if ( have_posts() ) :
 			endif;
 			?>
 		</section>
+    <section class="container">
+  <div class="videoEmbed">
+	  <iframe src='https://vimeo.com/showcase/5269921/embed' allowfullscreen frameborder='0' style='position:absolute;top:0;left:0;width:100%;height:100%;'></iframe>
+  </div>
+</section>
 		<section class="features features--forum features--full-background">
 			<div class="features__cta">
 			<div class="container container--flex">
