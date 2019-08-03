@@ -13,7 +13,7 @@ $client = Algolia\AlgoliaSearch\SearchClient::create(
 // $index = $client->initIndex('Donor Drive');
 $batch = json_decode(file_get_contents('merged.json'), true);
 echo '<pre>';
-echo var_dump($batch.result.row);
+echo var_dump($batch[result][row]);
 echo'</pre>';
 $index->saveObjects($batch, ['autoGenerateObjectIDIfNotExist' => true]);
 
