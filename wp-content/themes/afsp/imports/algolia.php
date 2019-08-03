@@ -1,7 +1,7 @@
 <?php
 // composer autoload
 require __DIR__ . '/vendor/autoload.php';
-
+echo 'howdy';
 // if you are not using composer
 // require_once 'path/to/algolia/folder/autoload.php';
 
