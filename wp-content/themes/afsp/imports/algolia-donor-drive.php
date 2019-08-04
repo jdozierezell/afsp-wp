@@ -1,6 +1,6 @@
 <?php
 
-	$filename = 'https://afsp.org/wp-content/themes/afsp/imports/donor-drive.xml';
+	$filename = dirname(__FILE__).'/donor-drive.xml';
 
   libxml_use_internal_errors(true);
   $xml = simplexml_load_file($filename);
@@ -10,7 +10,7 @@
     return;
   endif;
 
-  $json_file = 'https://afsp.org/wp-content/themes/afsp/imports/algolia-merged.json';
+  $json_file = dirname(__FILE__).'/algolia-merged.json';
 
   if(!file_exists($filename)) {
     echo 'File not found.';
@@ -24,5 +24,3 @@
 
   fwrite($fp, $json);
   fclose($fp);
-
-echo var_dump($array);
