@@ -5,7 +5,7 @@
   libxml_use_internal_errors(true);
   $xml = simplexml_load_file($filename);
   $json = json_encode($xml);
-
+var_dump($json);
   if(!$json) : // make sure donor drive isn't being f*cking stupid
     return;
   endif;
