@@ -4,7 +4,7 @@
 
   libxml_use_internal_errors(true);
   $xml = simplexml_load_file($filename);
-var_dump($xml)
+var_dump($xml);
   $json = json_encode($xml);
   $array = json_decode($json, true);
 
