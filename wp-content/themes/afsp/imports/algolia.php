@@ -5,7 +5,7 @@
 // if you are not using composer
 require_once 'algoliasearch-client-php-master/autoload.php';
 
-$batch = json_decode(file_get_contents('merged.json'), true);
+$batch = json_decode(file_get_contents('algolia-merged.json'), true);
 
 $client = Algolia\AlgoliaSearch\SearchClient::create(
   'BONWJFMMRS',
