@@ -17,13 +17,13 @@
     echo 'File not found.';
   }
 
-//   $fp = fopen($json_file, 'w');
+  $fp = fopen($json_file, 'w');
 
-//   if(!$fp) {
-//       echo 'File open failed.';
-//   }
+  if(!$fp) {
+      echo 'File open failed.';
+  }
 
-//   fwrite($fp, json_encode($array));
-//   fclose($fp);
+  fwrite($fp, json_encode($array));
+  fclose($fp);
 
 echo var_dump($array);
