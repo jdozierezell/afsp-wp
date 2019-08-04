@@ -17,7 +17,8 @@ $index = $client->initIndex('Donor Drive');
 $index->saveObjects($batch[result][row], ['autoGenerateObjectIDIfNotExist' => true]);
 
 echo '<pre>';
-echo var_dump($batch[result][row]);
+var_dump($batch[result][row]);
+var_dump($index);
 echo'</pre>';
 
 // $index->setSettings(
