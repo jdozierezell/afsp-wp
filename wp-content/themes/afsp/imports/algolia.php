@@ -8,7 +8,7 @@ require_once 'algoliasearch-client-php-master/autoload.php';
 echo 'foo';
 
 $file = file_get_contents('merged.json');
-$batch = json_decode($file, true);
+$batch = json_decode($file[result], true);
 
 $client = \Algolia\AlgoliaSearch\SearchClient::create('BONWJFMMRS', '1c59c2fc48ff2c40b1934b48f45a77f5');
 $index = $client->initIndex('Donor Drive');
