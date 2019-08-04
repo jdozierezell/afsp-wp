@@ -5,9 +5,8 @@
   libxml_use_internal_errors(true);
   $xml = simplexml_load_file($filename);
   $json = json_encode($xml);
-  $array = json_decode($json, true);
 
-  if(!$array) : // make sure donor drive isn't being f*cking stupid
+  if(!$json) : // make sure donor drive isn't being f*cking stupid
     return;
   endif;
 
@@ -23,7 +22,7 @@
       echo 'File open failed.';
   }
 
-  fwrite($fp, json_encode($array));
+  fwrite($fp, $json);
   fclose($fp);
 
 echo var_dump($array);
