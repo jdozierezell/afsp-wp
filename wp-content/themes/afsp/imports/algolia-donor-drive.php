@@ -1,6 +1,6 @@
 <?php
 
-	$filename = get_template_directory() . '/imports/donor-drive.xml';
+	$filename = 'https://afsp.org/wp-content/themes/afsp/imports/donor-drive.xml';
 
 //   libxml_use_internal_errors(true);
 //   $xml = simplexml_load_file($filename);
@@ -26,4 +26,4 @@
 //   fwrite($fp, json_encode($array));
 //   fclose($fp);
 
-var_dump($filename);
+echo var_dump($filename);
