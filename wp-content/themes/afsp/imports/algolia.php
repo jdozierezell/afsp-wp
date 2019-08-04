@@ -14,11 +14,11 @@ $client = Algolia\AlgoliaSearch\SearchClient::create(
 
 $index = $client->initIndex('Donor Drive');
 
+$index->saveObjects($batch[result][row], ['autoGenerateObjectIDIfNotExist' => true]);
+
 echo '<pre>';
 echo var_dump($batch[result][row]);
 echo'</pre>';
-
-$index->saveObjects($batch[result][row], ['autoGenerateObjectIDIfNotExist' => true]);
 
 // $index->setSettings(
 //   [
