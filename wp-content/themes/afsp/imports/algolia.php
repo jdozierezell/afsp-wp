@@ -12,7 +12,7 @@ $client = Algolia\AlgoliaSearch\SearchClient::create(
   '1c59c2fc48ff2c40b1934b48f45a77f5'
 );
 
-$index = $client->initIndex('Donor Drive');
+$index = $client->initIndex('Events');
 
 $index->saveObjects($batch[result][row], ['autoGenerateObjectIDIfNotExist' => true]);
 
